@@ -1,8 +1,7 @@
 package br.edu.ifpb.analyzerQuestions.classification;
 
 public class TitleClassification {
-	
-	
+
 	/**
 	 * Understandable title
 	 */
@@ -18,19 +17,35 @@ public class TitleClassification {
 
 		return 0;
 	}
-	
+
 	/**
 	 * Title with capital letters only
 	 */
-	public int TitleCapitaLetters(String title){
-		return 0;
+	public int TitleCapitaLetters(String title) {
+		String titleInCapLetter = title.toUpperCase();
+		if (title.equals(titleInCapLetter)) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
-	
+
 	/**
 	 * Title with capital letters partially
 	 */
-	public int TitleCapitaLettersPartially(String title){
+	public int TitleCapitaLettersPartially(String title) {
+		String[] partsToUpp = title.split(" ");
+
+		for (int i = 0; i < partsToUpp.length; i++) {
+			partsToUpp[i] = partsToUpp[i].toUpperCase();
+		}
+
+		String[] part = title.split(" ");
+		for (int i = 0; i < part.length; i++) {
+			if (part[i].equals(partsToUpp[i])) {
+				return 1;
+			}
+		}
 		return 0;
 	}
-
 }

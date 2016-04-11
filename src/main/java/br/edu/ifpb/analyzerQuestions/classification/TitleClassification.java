@@ -1,5 +1,7 @@
 package br.edu.ifpb.analyzerQuestions.classification;
 
+import br.edu.ifpb.analyzerQuestions.util.StringUtil;
+
 public class TitleClassification {
 
 	/**
@@ -14,8 +16,13 @@ public class TitleClassification {
 	 * Medium size title (2 < words < 6)
 	 */
 	public int mediumSizeTitle(String title) {
-
-		return 0;
+		
+		String str = StringUtil.removeConnective(title);
+		String[] strPart = str.split(" ");
+		if(strPart.length > 2 && strPart.length < 6)
+			return 1;
+		else
+			return 0;
 	}
 
 	/**
@@ -34,13 +41,14 @@ public class TitleClassification {
 	 * Title with capital letters partially
 	 */
 	public int TitleCapitaLettersPartially(String title) {
-		String[] partsToUpp = title.split(" ");
+		String str = StringUtil.removeConnective(title);
+		String[] partsToUpp = str.split(" ");
 
 		for (int i = 0; i < partsToUpp.length; i++) {
 			partsToUpp[i] = partsToUpp[i].toUpperCase();
 		}
 
-		String[] part = title.split(" ");
+		String[] part = str.split(" ");
 		for (int i = 0; i < part.length; i++) {
 			if (part[i].equals(partsToUpp[i])) {
 				return 1;

@@ -1,6 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.util;
 
-public class StringUtil {
+public class StringFormatUtil {
 
 	public static String removeConnective(String str) {
 		String[] strInPart = str.split(" ");
@@ -15,7 +15,7 @@ public class StringUtil {
 
 	public static String trimPosition(String str) {
 
-		for (int i = 1; i <= str.length(); i++) {
+		for (int i = 1; i < str.length(); i++) {
 			if (str.charAt(i) == ',') {
 				if (str.charAt(i - 1) == ' ') {
 					String s = str;
@@ -24,7 +24,6 @@ public class StringUtil {
 				}
 			}
 		}
-
 		return str;
 	}
 

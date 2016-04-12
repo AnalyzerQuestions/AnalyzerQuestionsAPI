@@ -1,6 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.classification;
 
-import br.edu.ifpb.analyzerQuestions.util.StringUtil;
+import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
 
 public class DescriptionClassification {
 
@@ -16,12 +16,11 @@ public class DescriptionClassification {
 	 * Including a vocative
 	 */
 	public int includingVocative(String description) {
-		String str1 = StringUtil.trimPosition(description);
-		String str2 = StringUtil.removeConnective(str1);
-		System.out.println(str2);
+		String str1 = StringFormatUtil.trimPosition(description);
+		String str2 = StringFormatUtil.removeConnective(str1);
 		String[] str = str2.split(" ");
-		String position = str[0];
-		if (position.charAt(position.length()-1) == ',') {
+		String p1 = str[0];
+		if (p1.charAt(p1.length() - 1) == ',') {
 			return 1;
 		} else {
 			return 0;

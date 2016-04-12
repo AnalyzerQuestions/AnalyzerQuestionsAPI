@@ -30,4 +30,15 @@ public class StringFormatUtil {
 	public static String replaceCharAt(String s, int pos, String c) {
 		return s.substring(0, pos) + c + s.substring(pos + 1);
 	}
+	
+	public static String removeCharacterSpecial(String str){
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if(Character.isLetter(c) || Character.isWhitespace(c)){
+				sb.append(c);
+			}
+		}
+		return sb.toString();
+	}
 }

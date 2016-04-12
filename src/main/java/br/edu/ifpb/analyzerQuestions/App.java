@@ -16,11 +16,13 @@ public class App {
 		DescriptionClassification descriptionClassification = new DescriptionClassification();
 		
 		String a = "EM CAIXA ALTA";
-		String b = "iai";
+		String b = " Alguem poderia me dar uma melhor definição do** laço for each**, algum exemplo ? Desde já agradeço";
 		
 
 	
-		System.out.println(descriptionClassification.includingVocative(b));
+		System.out.println(descriptionClassification.shortDescription(b));
+//		System.out.println(descriptionClassification.shortDescription(b));
+		//System.out.println(descriptionClassification.includingVocative(b));
 //		System.out.println(StringUtil.trimPosition(b));
 		//System.out.println(b.charAt(6));
 		

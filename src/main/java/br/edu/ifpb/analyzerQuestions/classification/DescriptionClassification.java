@@ -31,6 +31,11 @@ public class DescriptionClassification {
 	 * Avoid too short description
 	 */
 	public int shortDescription(String description) {
+		String str = StringFormatUtil.removeCharacterSpecial(description);
+		str = StringFormatUtil.removeConnective(str);
+		String strSplited[] = str.split(" ");
+		if(strSplited.length > 10)
+			return 1;
 		return 0;
 	}
 
@@ -38,6 +43,10 @@ public class DescriptionClassification {
 	 * Avoid too long description
 	 */
 	public int longDescription(String description) {
+		String str = StringFormatUtil.removeConnective(description);
+		String strSplited[] = str.split(" ");
+		if(strSplited.length < 700)
+			return 1;
 		return 0;
 	}
 
@@ -45,6 +54,7 @@ public class DescriptionClassification {
 	 * Showing an example
 	 */
 	public int showingExample(String description) {
+
 		return 0;
 	}
 

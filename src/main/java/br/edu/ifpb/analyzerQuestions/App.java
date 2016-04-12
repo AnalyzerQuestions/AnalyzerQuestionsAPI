@@ -14,8 +14,8 @@ public class App {
 		TitleClassification titleClassification = new TitleClassification();
 		DescriptionClassification descriptionClassification = new DescriptionClassification();
 		
-		String a = "EM CAIXA ALTA do";
-		String b = " Alguem poderia me dar uma melhor definição do** laço for each**, algum exemplo ? Desde já agradeço";
+		String a = "EM CAIXA ALTA do class while for boolean int ";
+		String b = " Alguem poderia me dar uma melhor definiç ão do** laço for each**, algum exemplo ? Desde já agradeço";
 		
 
 	

@@ -35,7 +35,7 @@ public class DescriptionClassification {
 		String str = StringFormatUtil.removeCharacterSpecial(description);
 		str = StringFormatUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
-		if(strSplited.length > 10)
+		if (strSplited.length > 10)
 			return 1;
 		return 0;
 	}
@@ -47,7 +47,7 @@ public class DescriptionClassification {
 		String str = StringFormatUtil.removeCharacterSpecial(description);
 		str = StringFormatUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
-		if(strSplited.length < 700)
+		if (strSplited.length < 700)
 			return 1;
 		return 0;
 	}
@@ -58,14 +58,32 @@ public class DescriptionClassification {
 	public int showingExample(String description) {
 		String str = StringFormatUtil.removeCharacterSpecial(description);
 		str = StringFormatUtil.removeConnective(str);
+
+		if (frenquencyOfCode(str) > 4) {
+			return 1;
+		}
+
 		for (int i = 0; i < WordExamples.getWords().length; i++) {
 			String word = WordExamples.getWords()[i];
-			
-			if(description.contains(word)){
+
+			if (description.contains(word)) {
 				return 1;
 			}
 		}
 		return 0;
+
+	}
+
+	public int frenquencyOfCode(String description) {
+		int flag = 0;
+		for (int i = 0; i < WordExamples.getWordsCode().length; i++) {
+			String word = WordExamples.getWordsCode()[i];
+
+			if (description.contains(word)) {
+				flag += 1;
+			}
+		}
+		return flag;
 	}
 
 	/**

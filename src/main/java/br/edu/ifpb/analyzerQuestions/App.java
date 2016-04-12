@@ -14,11 +14,12 @@ public class App {
 		TitleClassification titleClassification = new TitleClassification();
 		DescriptionClassification descriptionClassification = new DescriptionClassification();
 		
-		String a = "EM CAIXA ALTA";
+		String a = "EM CAIXA ALTA do";
 		String b = " Alguem poderia me dar uma melhor definição do** laço for each**, algum exemplo ? Desde já agradeço";
 		
 
 	
+		System.out.println(descriptionClassification.showingExample(a));
 //		System.out.println(descriptionClassification.shortDescription(b));
 //		System.out.println(descriptionClassification.shortDescription(b));
 		//System.out.println(descriptionClassification.includingVocative(b));

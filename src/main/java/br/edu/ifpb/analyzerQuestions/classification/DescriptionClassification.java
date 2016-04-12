@@ -1,6 +1,7 @@
 package br.edu.ifpb.analyzerQuestions.classification;
 
 import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
+import br.edu.ifpb.analyzerQuestions.util.WordExamples;
 
 public class DescriptionClassification {
 
@@ -43,7 +44,8 @@ public class DescriptionClassification {
 	 * Avoid too long description
 	 */
 	public int longDescription(String description) {
-		String str = StringFormatUtil.removeConnective(description);
+		String str = StringFormatUtil.removeCharacterSpecial(description);
+		str = StringFormatUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
 		if(strSplited.length < 700)
 			return 1;
@@ -54,7 +56,15 @@ public class DescriptionClassification {
 	 * Showing an example
 	 */
 	public int showingExample(String description) {
-
+		String str = StringFormatUtil.removeCharacterSpecial(description);
+		str = StringFormatUtil.removeConnective(str);
+		for (int i = 0; i < WordExamples.getWords().length; i++) {
+			String word = WordExamples.getWords()[i];
+			
+			if(description.contains(word)){
+				return 1;
+			}
+		}
 		return 0;
 	}
 

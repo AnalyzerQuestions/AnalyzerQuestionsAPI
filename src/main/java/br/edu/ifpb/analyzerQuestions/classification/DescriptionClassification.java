@@ -74,7 +74,7 @@ public class DescriptionClassification {
 
 	}
 
-	public int frenquencyOfCode(String description) {
+	private int frenquencyOfCode(String description) {
 		int flag = 0;
 		for (int i = 0; i < WordExamples.getWordsCode().length; i++) {
 			String word = WordExamples.getWordsCode()[i];

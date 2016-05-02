@@ -28,7 +28,7 @@ public class TitleClassification {
 	/**
 	 * Title with capital letters only
 	 */
-	public int TitleCapitaLetters(String title) {
+	public int titleCapitaLetters(String title) {
 		String titleInCapLetter = title.toUpperCase();
 		if (title.equals(titleInCapLetter)) {
 			return 1;
@@ -40,7 +40,7 @@ public class TitleClassification {
 	/**
 	 * Title with capital letters partially
 	 */
-	public int TitleCapitaLettersPartially(String title) {
+	public int titleCapitaLettersPartially(String title) {
 		String str = StringFormatUtil.removeConnective(title);
 		String[] partsToUpp = str.split(" ");
 

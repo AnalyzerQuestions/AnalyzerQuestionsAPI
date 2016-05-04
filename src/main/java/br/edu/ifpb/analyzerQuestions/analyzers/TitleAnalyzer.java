@@ -1,8 +1,8 @@
-package br.edu.ifpb.analyzerQuestions.classification;
+package br.edu.ifpb.analyzerQuestions.analyzers;
 
 import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
 
-public class TitleClassification {
+public class TitleAnalyzer {
 
 	/**
 	 * Understandable title

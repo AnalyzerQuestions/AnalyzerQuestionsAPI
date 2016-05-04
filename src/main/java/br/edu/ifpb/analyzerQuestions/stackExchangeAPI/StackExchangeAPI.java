@@ -14,15 +14,15 @@ public class StackExchangeAPI  {
     public static final String SITE_WITH_VERSION = "https://api.stackexchange.com/" + VERSION;
 
     private final String key;
-    private final RestAdapter.Builder builder;
     private String accessToken;
+    private final RestAdapter.Builder builder;
 
     public StackExchangeAPI(String key) {
         this.key = key;
         
         builder = new RestAdapter.Builder()
             .setEndpoint(SITE_WITH_VERSION)
-            .setErrorHandler(new StackExchangeErrorHandler())
+            .setErrorHandler(new StackExchangeError())
             .setLogLevel(RestAdapter.LogLevel.FULL)
             .setConverter(new GsonConverter(this.gsonBuilder(new Gson())));
     }
@@ -31,7 +31,7 @@ public class StackExchangeAPI  {
         this.accessToken = accessToken;
     }
 
-    public StackExchangeSite getSiteService(final String site) {
+    public IStackExchange getSiteService(final String site) {
         return builder.setRequestInterceptor(new RequestInterceptor() {
                 
                 public void intercept(RequestFacade request) {
@@ -40,7 +40,7 @@ public class StackExchangeAPI  {
                     request.addQueryParam("access_token", accessToken);
                     request.addQueryParam("filter","!9YdnSJ*_T");
                 }
-            }).build().create(StackExchangeSite.class);
+            }).build().create(IStackExchange.class);
     }
     
     public Gson gsonBuilder(Gson gson){

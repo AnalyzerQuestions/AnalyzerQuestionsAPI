@@ -1,9 +1,9 @@
-package br.edu.ifpb.analyzerQuestions.classification;
+package br.edu.ifpb.analyzerQuestions.analyzers;
 
 import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
 import br.edu.ifpb.analyzerQuestions.util.WordExamples;
 
-public class DescriptionClassification {
+public class DescriptionAnalyzer {
 
 	/**
 	 * Understandable description

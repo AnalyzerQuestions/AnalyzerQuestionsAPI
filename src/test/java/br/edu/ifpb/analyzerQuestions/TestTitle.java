@@ -4,16 +4,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.edu.ifpb.analyzerQuestions.classification.TitleClassification;
+import br.edu.ifpb.analyzerQuestions.analyzers.TitleAnalyzer;
 import br.edu.ifpb.analyzerQuestions.util.Questions;
 
 public class TestTitle{
 	
-	private TitleClassification title;
+	private TitleAnalyzer title;
 	
 	@Before
 	public void setUp(){
-		title = new TitleClassification();
+		title = new TitleAnalyzer();
 	}
 	
 	/**

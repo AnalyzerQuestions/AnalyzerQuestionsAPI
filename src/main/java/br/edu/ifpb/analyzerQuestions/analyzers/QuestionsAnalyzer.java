@@ -1,8 +1,8 @@
-package br.edu.ifpb.analyzerQuestions.classification;
+package br.edu.ifpb.analyzerQuestions.analyzers;
 
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 
-public class QuestionsClassification {
+public class QuestionsAnalyzer {
 
 	/**
 	 * Coherency between question description and title

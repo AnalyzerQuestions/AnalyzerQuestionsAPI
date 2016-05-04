@@ -4,16 +4,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.edu.ifpb.analyzerQuestions.classification.DescriptionClassification;
+import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.util.Questions;
 
 public class TestDescription {
 	
-	private DescriptionClassification description;
+	private DescriptionAnalyzer description;
 	
 	@Before
 	public void setUp(){
-		description = new DescriptionClassification();
+		description = new DescriptionAnalyzer();
 	}
 	
 	/**

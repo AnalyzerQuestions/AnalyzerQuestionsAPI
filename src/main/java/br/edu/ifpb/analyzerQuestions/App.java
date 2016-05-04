@@ -1,7 +1,8 @@
 package br.edu.ifpb.analyzerQuestions;
 
-import br.edu.ifpb.analyzerQuestions.classification.DescriptionClassification;
-import br.edu.ifpb.analyzerQuestions.classification.TitleClassification;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.QuestionsList;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeAPI;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeSite;
 
 /**
  * Hello world!
@@ -10,22 +11,12 @@ import br.edu.ifpb.analyzerQuestions.classification.TitleClassification;
 public class App {
 
 	public static void main(String[] args) {
-		
-		TitleClassification titleClassification = new TitleClassification();
-		DescriptionClassification descriptionClassification = new DescriptionClassification();
-		
-		String a = "EM CAIXA ALTA do class while for boolean int ";
-		String b = " Alguem poderia me dar uma melhor definiç ão do** laço for each**, algum exemplo ? Desde já agradeço";
-		
 
-	
-		System.out.println(descriptionClassification.showingExample(a));
-//		System.out.println(descriptionClassification.shortDescription(b));
-//		System.out.println(descriptionClassification.shortDescription(b));
-		//System.out.println(descriptionClassification.includingVocative(b));
-//		System.out.println(StringUtil.trimPosition(b));
-		//System.out.println(b.charAt(6));
+		StackExchangeAPI api = new StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((");
+		api.authorize("CEWWD9gissG5heqD0UCc1w))");
 
-		
+		StackExchangeSite siteService = api.getSiteService(StackExchangeSite.STACK_OVERFLOW);
+		QuestionsList questions = siteService.getQuestions();
+
 	}
 }

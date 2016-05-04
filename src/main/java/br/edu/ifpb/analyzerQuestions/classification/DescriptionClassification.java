@@ -8,13 +8,13 @@ public class DescriptionClassification {
 	/**
 	 * Understandable description
 	 */
-	public int understandableBody(String description) {
+	public int understandableDescription(String description) {
 
 		return 0;
 	}
 
 	/**
-	 * Including a vocative
+	 * presença de  vocativo
 	 */
 	public int includingVocative(String description) {
 		String str1 = StringFormatUtil.trimPosition(description);
@@ -29,7 +29,7 @@ public class DescriptionClassification {
 	}
 
 	/**
-	 * Avoid too short description
+	 * Evitar desecrição curta da pergunta
 	 */
 	public int shortDescription(String description) {
 		String str = StringFormatUtil.removeCharacterSpecial(description);
@@ -41,7 +41,7 @@ public class DescriptionClassification {
 	}
 
 	/**
-	 * Avoid too long description
+	 * Evitar descrição longa demais na pergunta
 	 */
 	public int longDescription(String description) {
 		String str = StringFormatUtil.removeCharacterSpecial(description);
@@ -53,7 +53,7 @@ public class DescriptionClassification {
 	}
 
 	/**
-	 * Showing an example
+	 * Presença de exemplo
 	 */
 	public int showingExample(String description) {
 		String str = StringFormatUtil.removeCharacterSpecial(description);

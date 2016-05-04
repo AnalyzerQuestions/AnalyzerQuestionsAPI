@@ -5,11 +5,13 @@
 - Analise e sugestões sobre atratividade de questões
 - Comunicação com StackOverFlow
 
-# Projeto
+# Projeto de Pesquisa
 ### Portal Interativo para resolução de problemas
-* <b>Desenvolvedores</b>
-Franck Aragão 
-José Rafael
+* <b>Pesquisadores</b>
+Cleyton Caetano de Souza (Orientador); 
+ Franck Aragão; 
+ José Rafael; 
+
 
 
 

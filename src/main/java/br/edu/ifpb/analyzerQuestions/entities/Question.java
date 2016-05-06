@@ -1,9 +1,21 @@
 package br.edu.ifpb.analyzerQuestions.entities;
 
+import java.util.Arrays;
+
 public class Question {
 
+	private Long id;
 	private String title;
-	private String description;
+	private String body;
+	private String link;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getTitle() {
 		return title;
@@ -13,17 +25,26 @@ public class Question {
 		this.title = title;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getBody() {
+		return body;
 	}
 
-	public void setDescription(String body) {
-		this.description = body;
+	public void setBody(String body) {
+		this.body = body;
+	}
+
+	public String getLink() {
+		return link;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 	@Override
 	public String toString() {
-		return "Question [title=" + title + ", description=" + description + "]";
+		return "Question [id=" + id + ", title=" + title + ", body=" + body
+				+ ", link=" + link + "]";
 	}
 
 }

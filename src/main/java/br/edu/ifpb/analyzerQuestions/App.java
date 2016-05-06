@@ -1,9 +1,9 @@
 package br.edu.ifpb.analyzerQuestions;
 
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.QuestionsList;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeAPI;
 import br.edu.ifpb.analyzerQuestions.enumerations.Site;
 import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.IStackExchange;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.QuestionsList;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeAPI;
 
 /**
  * Hello world!
@@ -18,5 +18,12 @@ public class App {
 
 		IStackExchange siteService = api.getSiteService(Site.STACK_OVERFLOW.getSite());
 		QuestionsList questions = siteService.getQuestions();
+
+		
+//		Type collectionType = new TypeToken<Collection<Speciality>>(){}.getType();
+//		return new Gson().fromJson(json, collectionType);
+		
+		
+		System.out.println(questions);
 	}
 }

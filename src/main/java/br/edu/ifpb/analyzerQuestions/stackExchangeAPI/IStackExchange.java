@@ -4,6 +4,6 @@ import retrofit.http.GET;
 
 public interface IStackExchange {
 
-	@GET("/questions")
+	@GET("/questions/")
 	QuestionsList getQuestions();
 }

@@ -2,10 +2,10 @@ package br.edu.ifpb.analyzerQuestions.util.similarity;
 
 import java.util.Map;
 
-import br.edu.ifpb.analyzerQuestions.util.data.Questions;
-
 /***
- * SCORE USANDO COSSENO [ score > 0.0]
+ * SCORE USANDO CALCULO DO ANGULO DO COSSENO,
+ * CONSIDERANDO [1.0 => score > 0.0]
+ * SENDO SCORE =~ 1.0 MELHOR SIMILARIDADE
  *
  */
 
@@ -31,7 +31,6 @@ public class ScoreSimilarity {
 		this.vector2 = v2.getVector();
 
 		for (String token : vector1.keySet()) {
-			
 			if(vector2.containsKey(token)){
 				Wn += vector1.get(token) * vector2.get(token);
 			}
@@ -43,7 +42,6 @@ public class ScoreSimilarity {
 		}
 
 		Wd = Math.sqrt(w1) * Math.sqrt(w2);
-		
 		if (Wd == 0.0) {
 			return 0.0;
 		}
@@ -51,20 +49,18 @@ public class ScoreSimilarity {
 		return Wn / Wd;
 	}
 
+	/**
+	 * Obtém a similaridade de uma questão
+	 * 
+	 * @param title - titulo da questão 
+	 * @param description - descrição da questão
+	 * @return - indice de similaridade
+	 */
 	public Double getSimilarity(String title, String description) {
 
 		Vector vectorTitle = FrequencyWordText.getFrequency(title);
 		Vector vectorDescription = FrequencyWordText.getFrequency(description);
 
 		return this.getScoreSimilarity(vectorTitle, vectorDescription);
-	}
-
-	public static void main(String[] args) {
-
-		ScoreSimilarity s = new ScoreSimilarity();
-
-		System.out.println("Result :"+s.getSimilarity(Questions.t1, Questions.d1));
-		System.out.println("Result :"+s.getSimilarity("sim claro", "nao pode"));
-
 	}
 }

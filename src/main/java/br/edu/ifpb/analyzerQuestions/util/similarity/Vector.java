@@ -12,10 +12,12 @@ public class Vector {
 	}
 
 	public Vector(Map<String, Float> vector) {
+		vector = new HashMap<String, Float>();
 		this.vector = vector;
 	}
 
 	public Map<String, Float> getVector() {
+		
 		return vector;
 	}
 

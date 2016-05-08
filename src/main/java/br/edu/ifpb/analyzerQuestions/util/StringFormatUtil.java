@@ -10,7 +10,7 @@ public class StringFormatUtil {
 				sBuffer.append(strInPart[i]).append(" ");
 			}
 		}
-		return sBuffer.toString();
+		return sBuffer.toString().toLowerCase();
 	}
 
 	public static String trimPosition(String str) {
@@ -39,6 +39,6 @@ public class StringFormatUtil {
 				sb.append(c);
 			}
 		}
-		return sb.toString();
+		return sb.toString().toLowerCase();
 	}
 }

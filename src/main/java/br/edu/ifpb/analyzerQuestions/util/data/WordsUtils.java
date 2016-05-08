@@ -13,6 +13,10 @@ public class WordsUtils {
 
 	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,vejam o codigo,";
 
+	public final static String[] WORDS_VACATIVES = {"pessoal", "galera", "povo", "gente", "povao", "turma", "povareu",
+		"grupo", "bando","negrada", "individuos", "habitantes", "nacao", "publico", "populacao", "parentada", "povaleu"};
+	
+	public final static String[] WORDS_GREETINGS = {"obj","vlw", "obrigado", "agradeço", "grato", "valeu", "agradecido"};
 	
 	public final static String[] BRAZILIAN_STOP_WORDS = { "será", "próprio",
 			"pôde", "daqueles", "nesse", "vais", "empresas", "poderia", "está",

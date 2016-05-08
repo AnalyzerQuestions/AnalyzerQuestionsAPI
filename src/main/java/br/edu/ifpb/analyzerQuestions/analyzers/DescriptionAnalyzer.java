@@ -1,9 +1,20 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
 import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
+import br.edu.ifpb.analyzerQuestions.util.StringUtils;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
 public class DescriptionAnalyzer {
+	
+	/**
+	 * NÃO ESTA COBRINDO:
+	 * 
+	 *  Obviating demanding language
+	 *	Using proper language
+	 *	Avoiding creating duplicate questions
+	 *	Avoiding creating factoid questions
+	 *	Do not create homework questions
+	 */
 
 	/**
 	 * Understandable description
@@ -20,12 +31,23 @@ public class DescriptionAnalyzer {
 		String str1 = StringFormatUtil.trimPosition(description);
 		String str2 = StringFormatUtil.removeConnective(str1);
 		String[] str = str2.split(" ");
-		String p1 = str[0];
-		if (p1.charAt(p1.length() - 1) == ',') {
-			return 1;
-		} else {
-			return 0;
+				
+		if(str.length >= 3){
+			for (int i = 0; i < 3; i++) {
+				String sn = str[i];
+				if (sn.charAt(sn.length() - 1) == ',') {
+					return 1;
+				}
+			}
+			String s0 = str[0];
+			for (int i = 0; i < WordsUtils.WORDS_VACATIVES.length; i++) {
+				if(s0.equals(WordsUtils.WORDS_VACATIVES[i])){
+					return 1;
+				}
+			}
 		}
+		
+		return 0;
 	}
 
 	/**
@@ -99,5 +121,26 @@ public class DescriptionAnalyzer {
 	public int avoidDescriptionWithCodeOnly(String description) {
 		return 0;
 	}
-
+	
+	/**
+	 * Restricting each question to a single problem
+	 */
+	public int questionWithSingleProblem(String description) {
+		return 0;
+	}
+	
+	/**
+	 * Including greetings
+	 */
+	public int includingGreetings(String description){
+		String s0 = StringFormatUtil.removeConnective(description);
+		String s1 = StringFormatUtil.removeCharacterSpecial(s0);
+		
+		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
+			if(s1.contains(WordsUtils.WORDS_GREETINGS[i])){
+				return 1;
+			}
+		}
+		return 0;
+	}
 }

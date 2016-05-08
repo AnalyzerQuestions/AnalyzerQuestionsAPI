@@ -51,4 +51,10 @@ public class TestDescription {
 		int i = description.showingExample(Questions.d1);
 		Assert.assertEquals(1, i);
 	}
+	
+	@Test
+	public void includingGreetingsTest(){
+		int i = description.includingGreetings(Questions.d1);
+		Assert.assertEquals(1, i);
+	}
 }

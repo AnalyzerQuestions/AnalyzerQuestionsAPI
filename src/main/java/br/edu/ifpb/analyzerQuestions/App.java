@@ -13,17 +13,18 @@ public class App {
 
 	public static void main(String[] args) {
 
-		StackExchangeAPI api = new StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((");
-		api.authorize("CEWWD9gissG5heqD0UCc1w))");
+		StackExchangeAPI api = new StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((", "CEWWD9gissG5heqD0UCc1w))");
 
 		IStackExchange siteService = api.getSiteService(Site.STACK_OVERFLOW.getSite());
+		
 		QuestionsList questions = siteService.getQuestions();
-
-		
-//		Type collectionType = new TypeToken<Collection<Speciality>>(){}.getType();
-//		return new Gson().fromJson(json, collectionType);
 		
 		
-		System.out.println(questions);
+//		String s = new Gson().toJson(siteService.getQuestions());
+//		
+//		Type collectionType = new TypeToken<Collection<QuestionsList>>(){}.getType();
+//		QuestionsList q = new Gson().fromJson(s, collectionType);
+		
+		
 	}
 }

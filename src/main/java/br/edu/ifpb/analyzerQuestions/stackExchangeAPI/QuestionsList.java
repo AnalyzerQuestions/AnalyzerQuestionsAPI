@@ -1,18 +1,20 @@
 package br.edu.ifpb.analyzerQuestions.stackExchangeAPI;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 
-public class QuestionsList{
+public class QuestionsList implements Iterable<Question> {
 
-	private Question questions[];
+	private List<Question> questions = new ArrayList<Question>();
 
-	public Question[] getQuestions() {
+	public List<Question> getQuestions() {
 		return questions;
 	}
 
-	public void setQuestions(Question[] questions) {
+	public void setQuestions(List<Question> questions) {
 		this.questions = questions;
 	}
 
@@ -20,14 +22,11 @@ public class QuestionsList{
 	public String toString() {
 		final int maxLen = 10;
 		return "QuestionsList [questions="
-				+ (questions != null ? Arrays.asList(questions).subList(0,
-						Math.min(questions.length, maxLen)) : null)
-				+ ", getQuestions()="
-				+ (getQuestions() != null ? Arrays.asList(getQuestions())
-						.subList(0, Math.min(getQuestions().length, maxLen))
-						: null) + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
+				+ (questions != null ? questions.subList(0,
+						Math.min(questions.size(), maxLen)) : null) + "]";
 	}
 
+	public Iterator<Question> iterator() {
+		return questions.iterator();
+	}
 }

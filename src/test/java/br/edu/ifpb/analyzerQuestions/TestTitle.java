@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import br.edu.ifpb.analyzerQuestions.analyzers.TitleAnalyzer;
-import br.edu.ifpb.analyzerQuestions.util.Questions;
+import br.edu.ifpb.analyzerQuestions.util.data.Questions;
 
 public class TestTitle{
 	

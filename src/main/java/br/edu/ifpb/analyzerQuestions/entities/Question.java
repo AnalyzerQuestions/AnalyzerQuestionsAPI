@@ -1,6 +1,5 @@
 package br.edu.ifpb.analyzerQuestions.entities;
 
-import java.util.Arrays;
 
 public class Question {
 

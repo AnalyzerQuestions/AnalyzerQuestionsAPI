@@ -1,7 +1,7 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
 import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
-import br.edu.ifpb.analyzerQuestions.util.WordExamples;
+import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
 public class DescriptionAnalyzer {
 
@@ -63,8 +63,8 @@ public class DescriptionAnalyzer {
 			return 1;
 		}
 
-		for (int i = 0; i < WordExamples.getWords().length; i++) {
-			String word = WordExamples.getWords()[i];
+		for (int i = 0; i < WordsUtils.getWords().length; i++) {
+			String word = WordsUtils.getWords()[i];
 
 			if (description.contains(word)) {
 				return 1;
@@ -76,8 +76,8 @@ public class DescriptionAnalyzer {
 
 	private int frenquencyOfCode(String description) {
 		int flag = 0;
-		for (int i = 0; i < WordExamples.getWordsCode().length; i++) {
-			String word = WordExamples.getWordsCode()[i];
+		for (int i = 0; i < WordsUtils.getWordsCode().length; i++) {
+			String word = WordsUtils.getWordsCode()[i];
 
 			if (description.contains(word)) {
 				flag += 1;

@@ -1,4 +1,4 @@
-package br.edu.ifpb.analyzerQuestions.util;
+package br.edu.ifpb.analyzerQuestions.util.data;
 
 public class Questions {
 

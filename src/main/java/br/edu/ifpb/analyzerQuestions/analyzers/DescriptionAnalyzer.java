@@ -1,7 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
-import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
-import br.edu.ifpb.analyzerQuestions.util.StringUtils;
+import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
 public class DescriptionAnalyzer {
@@ -28,8 +27,8 @@ public class DescriptionAnalyzer {
 	 * presença de  vocativo
 	 */
 	public int includingVocative(String description) {
-		String str1 = StringFormatUtil.trimPosition(description);
-		String str2 = StringFormatUtil.removeConnective(str1);
+		String str1 = StringUtil.trimPosition(description);
+		String str2 = StringUtil.removeConnective(str1);
 		String[] str = str2.split(" ");
 				
 		if(str.length >= 3){
@@ -54,8 +53,8 @@ public class DescriptionAnalyzer {
 	 * Evitar desecrição curta da pergunta
 	 */
 	public int shortDescription(String description) {
-		String str = StringFormatUtil.removeCharacterSpecial(description);
-		str = StringFormatUtil.removeConnective(str);
+		String str = StringUtil.removeCharacterSpecial(description);
+		str = StringUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
 		if (strSplited.length > 10)
 			return 1;
@@ -66,8 +65,8 @@ public class DescriptionAnalyzer {
 	 * Evitar descrição longa demais na pergunta
 	 */
 	public int longDescription(String description) {
-		String str = StringFormatUtil.removeCharacterSpecial(description);
-		str = StringFormatUtil.removeConnective(str);
+		String str = StringUtil.removeCharacterSpecial(description);
+		str = StringUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
 		if (strSplited.length < 700)
 			return 1;
@@ -78,8 +77,8 @@ public class DescriptionAnalyzer {
 	 * Presença de exemplo
 	 */
 	public int showingExample(String description) {
-		String str = StringFormatUtil.removeCharacterSpecial(description);
-		str = StringFormatUtil.removeConnective(str);
+		String str = StringUtil.removeCharacterSpecial(description);
+		str = StringUtil.removeConnective(str);
 
 		if (frenquencyOfCode(str) > 4) {
 			return 1;
@@ -133,8 +132,8 @@ public class DescriptionAnalyzer {
 	 * Including greetings
 	 */
 	public int includingGreetings(String description){
-		String s0 = StringFormatUtil.removeConnective(description);
-		String s1 = StringFormatUtil.removeCharacterSpecial(s0);
+		String s0 = StringUtil.removeConnective(description);
+		String s1 = StringUtil.removeCharacterSpecial(s0);
 		
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
 			if(s1.contains(WordsUtils.WORDS_GREETINGS[i])){

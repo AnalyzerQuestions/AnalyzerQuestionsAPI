@@ -4,8 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import br.edu.ifpb.analyzerQuestions.util.LuceneUtil;
-import br.edu.ifpb.analyzerQuestions.util.StringFormatUtil;
-import br.edu.ifpb.analyzerQuestions.util.StringUtils;
+import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 
 public class FrequencyWordText {
 
@@ -25,9 +24,9 @@ public class FrequencyWordText {
 	 */
 	public static Vector getFrequency(String text) {
 
-		String s0 = StringUtils.removerNaoLetras(text);
-		String s1 = StringUtils.removerAcentos(s0);
-		String s2 = StringFormatUtil.removeConnective(s1);
+		String s0 = StringUtil.removeCharacterSpecial(text);
+		String s1 = StringUtil.removerAcentos(s0);
+		String s2 = StringUtil.removeConnective(s1);
 
 		StringBuffer sb = new StringBuffer(s2);
 

@@ -5,16 +5,18 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
 public class QuestionsAnalyzer {
 
+	private static Float VALUE_SIMILARITY = 0.0f;
 	/**
 	 * Coerência do titulo com a descrição da pergunta
 	 */
 	public int coherencyBodyAndTitle(Question question) {
+		
 
 		ScoreSimilarity scoreSimilarity= new ScoreSimilarity();
 		
 		Double similarity = scoreSimilarity.getSimilarity(question.getTitle(), question.getBody());
 		System.out.println(similarity);
-		if(similarity > 0.0){
+		if(similarity > VALUE_SIMILARITY){
 			return 1;
 		}
 		return 0;

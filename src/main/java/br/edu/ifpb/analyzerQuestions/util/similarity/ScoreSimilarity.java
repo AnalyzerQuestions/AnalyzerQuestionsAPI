@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 /***
- * SCORE USANDO CALCULO DO ANGULO DO COSSENO, CONSIDERANDO [1.0 ~= score >= 0.0]
+ * SCORE USANDO CALCULO DO ANGULO DO COSSENO, CONSIDERANDO [1.0 ~= score > 0.0]
  * SENDO SCORE =~ 1.0 MELHOR SIMILARIDADE
  *
  */
@@ -49,7 +49,7 @@ public class ScoreSimilarity {
 		}
 		
 		result = Wn / Wd;
-		return 1.0 - result;
+		return result;
 	}
 
 	/**

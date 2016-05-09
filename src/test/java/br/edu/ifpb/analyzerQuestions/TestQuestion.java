@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import br.edu.ifpb.analyzerQuestions.analyzers.QuestionsAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.Question;
+import br.edu.ifpb.analyzerQuestions.util.data.Questions;
 
 public class TestQuestion {
 	
@@ -17,8 +18,8 @@ public class TestQuestion {
 	public void setUp(){
 		questionsAnalyzer = new QuestionsAnalyzer();
 		question = new Question();
-		question.setTitle("array em java");
-		question.setBody("Alguem me ajuda a determiar a array em java");
+		question.setTitle(Questions.t2);
+		question.setBody(Questions.d2);
 	
 	}
 	@Test

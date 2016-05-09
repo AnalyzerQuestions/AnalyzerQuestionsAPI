@@ -57,9 +57,9 @@ public class FrequencyWordText {
 
 	public static Map<String, Float> removeSingleTokens(Map<String, Float> map) {
 		HashMap<String, Float> mapAux = new HashMap<String, Float>();
-		for (String s : map.keySet()) {
-			if (map.get(s) != flag) {
-				mapAux.put(s, map.get(s));
+		for (String str : map.keySet()) {
+			if (map.get(str) != flag) {
+				mapAux.put(str, map.get(str));
 			} else
 				flag--;
 		}

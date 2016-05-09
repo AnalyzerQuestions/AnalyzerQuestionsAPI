@@ -25,26 +25,10 @@ public class LuceneUtil {
 		stopWords = new CharArraySet(Arrays.asList(WordsUtils.BRAZILIAN_STOP_WORDS), true);
 	}
 	
-	
-	/**
-	 * Realiza tokenização de stopwords passados do brasil
-	 * 
-	 * @param text - texto a ser tokenizado
-	 * @return - tokens
-	 * @throws IOException
-	 */
-	private static TokenStream tokenizer(String text) throws IOException{
-		
-		Analyzer analyzer = new BrazilianAnalyzer(stopWords);
-		TokenStream stream = analyzer.tokenStream(null, text);
-		
-		return stream;
-	}
-	
 
 	/**
-	 * Faz stemming da String passada filtrando stopwords do brasil e 
-	 * fazendo merge dos tokens em um stringBuffer
+	 * Realiza tokenização e remoção de stopwords passados,
+	 * fazendo stemming da String e faz merge dos tokens em um stringBuffer
 	 * 
 	 * @param text - texto a ser tokenizado
 	 * @return - String em ordem
@@ -54,7 +38,8 @@ public class LuceneUtil {
 		tokensResult = new StringBuffer();
 
 		try {
-			TokenStream tokenStream = tokenizer(text.toString());
+			Analyzer analyzer = new BrazilianAnalyzer(stopWords);
+			TokenStream tokenStream = analyzer.tokenStream(null, text.toString());
 			tokenStream.reset();
 			BrazilianStemFilter filter = new BrazilianStemFilter(tokenStream);
 

@@ -22,19 +22,18 @@ public class FrequencyWordText {
 	 * @param text
 	 * @return
 	 */
-	public static Vector getFrequency(String text) {
+	public static VectorSimilarity getFrequency(String text) {
 
 		String s0 = StringUtil.removeCharacterSpecial(text);
 		String s1 = StringUtil.removerAcentos(s0);
 		String s2 = StringUtil.removeConnective(s1);
-
 		StringBuffer sb = new StringBuffer(s2);
 
 		String aux = LuceneUtil.tokenizeString(sb).toString();
 		textTokens = aux.split(" ");
 
-		flag = (float) textTokens.length;
-		
+		flag = (float) 1 / textTokens.length;
+
 		if (textTokens.length != 0) {
 			for (int i = 0; i < textTokens.length; i++) {
 
@@ -42,20 +41,16 @@ public class FrequencyWordText {
 				Float frequency = frequencyText.get(token);
 
 				if (frequency == null) {
-					frequencyText.put(token, 1F);
+					frequencyText.put(token, flag);
 
 				} else {
-					frequencyText.put(token, frequency + 1F);
+					frequencyText.put(token, frequency + flag);
 				}
 			}
 
 			frequencyText = removeSingleTokens(frequencyText);
 		}
-		for (String s : frequencyText.keySet()) {
-			frequencyText.put(s, (frequencyText.get(s) / flag));
-		}
-
-		Vector vector = new Vector();
+		VectorSimilarity vector = new VectorSimilarity();
 		vector.setVector(frequencyText);
 		return vector;
 	}
@@ -63,7 +58,7 @@ public class FrequencyWordText {
 	public static Map<String, Float> removeSingleTokens(Map<String, Float> map) {
 		HashMap<String, Float> mapAux = new HashMap<String, Float>();
 		for (String s : map.keySet()) {
-			if (map.get(s) != 1) {
+			if (map.get(s) != flag) {
 				mapAux.put(s, map.get(s));
 			} else
 				flag--;

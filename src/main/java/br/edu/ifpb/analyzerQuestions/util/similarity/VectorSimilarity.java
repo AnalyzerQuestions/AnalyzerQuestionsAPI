@@ -3,15 +3,15 @@ package br.edu.ifpb.analyzerQuestions.util.similarity;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Vector {
+public class VectorSimilarity {
 	
 	private Map<String, Float> vector;
 
-	public Vector() {
+	public VectorSimilarity() {
 		vector = new HashMap<String, Float>();
 	}
 
-	public Vector(Map<String, Float> vector) {
+	public VectorSimilarity(Map<String, Float> vector) {
 		vector = new HashMap<String, Float>();
 		this.vector = vector;
 	}
@@ -28,6 +28,4 @@ public class Vector {
 	public String toString() {
 		return vector.toString();
 	}
-
-
 }

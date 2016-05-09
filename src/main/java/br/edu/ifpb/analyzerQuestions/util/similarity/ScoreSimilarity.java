@@ -20,12 +20,9 @@ public class ScoreSimilarity {
 	 *  
 	 *  Disconsidera-se vetores que não possuam frequencia de tokens <= 1
 	 */
-	public Double getScoreSimilarity(Vector v1, Vector v2) {
+	public Double getScoreSimilarity(VectorSimilarity v1, VectorSimilarity v2) {
 
-		double Wn = 0.0;
-		double w1 = 0.0;
-		double w2 = 0.0;
-		double Wd = 0.0;
+		double Wn = 0.0, w1 = 0.0, w2 = 0.0, Wd = 0.0;
 
 		this.vector1 = v1.getVector();
 		this.vector2 = v2.getVector();
@@ -42,11 +39,13 @@ public class ScoreSimilarity {
 		}
 
 		Wd = Math.sqrt(w1) * Math.sqrt(w2);
-		if (Wd == 0.0) {
-			return 0.0;
+		
+		double result = 0.0;
+		if (Wd > result) {
+			return Wn / Wd;
 		}
 
-		return Wn / Wd;
+		return result;
 	}
 
 	/**
@@ -58,8 +57,8 @@ public class ScoreSimilarity {
 	 */
 	public Double getSimilarity(String title, String description) {
 
-		Vector vectorTitle = FrequencyWordText.getFrequency(title);
-		Vector vectorDescription = FrequencyWordText.getFrequency(description);
+		VectorSimilarity vectorTitle = FrequencyWordText.getFrequency(title);
+		VectorSimilarity vectorDescription = FrequencyWordText.getFrequency(description);
 
 		return this.getScoreSimilarity(vectorTitle, vectorDescription);
 	}

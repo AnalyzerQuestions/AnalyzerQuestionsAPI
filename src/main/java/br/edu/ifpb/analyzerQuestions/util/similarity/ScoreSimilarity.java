@@ -63,8 +63,8 @@ public class ScoreSimilarity {
 	 */
 	public Double getSimilarity(String title, String description) {
 
-		VectorSimilarity vectorTitle = FrequencyWordText.getFrequency(title);
-		VectorSimilarity vectorDescription = FrequencyWordText.getFrequency(description);
+		VectorSimilarity vectorTitle = CounterFrequencyText.getFrequency(title);
+		VectorSimilarity vectorDescription = CounterFrequencyText.getFrequency(description);
 
 		return this.getScoreSimilarity(vectorTitle, vectorDescription);
 	}

@@ -6,7 +6,7 @@ import java.util.Map;
 import br.edu.ifpb.analyzerQuestions.util.LuceneUtil;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 
-public class FrequencyWordText {
+public class CounterFrequencyText {
 
 	private static String[] textTokens;
 	private static Map<String, Float> frequencyText;

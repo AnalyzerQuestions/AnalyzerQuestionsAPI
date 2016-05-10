@@ -7,6 +7,15 @@ public class Question {
 	private String title;
 	private String body;
 	private String link;
+	
+	public Question() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Question(String title, String body) {
+		this.title = title;
+		this.body = body;
+	}
 
 	public Long getId() {
 		return id;

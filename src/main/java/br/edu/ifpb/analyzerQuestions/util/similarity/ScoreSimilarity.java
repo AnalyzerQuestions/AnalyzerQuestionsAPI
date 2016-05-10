@@ -65,7 +65,7 @@ public class ScoreSimilarity {
 
 		VectorSimilarity vectorTitle = CounterFrequencyText.getFrequency(title);
 		VectorSimilarity vectorDescription = CounterFrequencyText.getFrequency(description);
-
+		int size = Math.max(title.length(), description.length());
 		return this.getScoreSimilarity(vectorTitle, vectorDescription);
 	}
 }

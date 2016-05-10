@@ -18,7 +18,8 @@ public class TitleAnalyzer {
 	public int mediumSizeTitle(String title) {
 		
 		String str = StringUtil.removeConnective(title);
-		String[] strPart = str.split(" ");
+		String st1 = StringUtil.removeCharacterSpecial(str);
+		String[] strPart = st1.split(" ");
 		if(strPart.length > 2 && strPart.length < 6)
 			return 1;
 		else
@@ -42,13 +43,14 @@ public class TitleAnalyzer {
 	 */
 	public int titleCapitaLettersPartially(String title) {
 		String str = StringUtil.removeConnective(title);
-		String[] partsToUpp = str.split(" ");
+		String st1 = StringUtil.removeCharacterSpecial(str);
 
+		String[] partsToUpp = st1.split(" ");
 		for (int i = 0; i < partsToUpp.length; i++) {
 			partsToUpp[i] = partsToUpp[i].toUpperCase();
 		}
 
-		String[] part = str.split(" ");
+		String[] part = st1.split(" ");
 		for (int i = 0; i < part.length; i++) {
 			if (part[i].equals(partsToUpp[i])) {
 				return 1;

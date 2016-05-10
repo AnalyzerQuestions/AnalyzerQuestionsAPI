@@ -12,10 +12,6 @@ public class CounterFrequencyText {
 	private static Map<String, Float> frequencyText;
 	private static Float flag;
 
-	static {
-		frequencyText = new HashMap<String, Float>();
-	}
-
 	/**
 	 * Obtém a frequencia de tokens em um texto
 	 * 
@@ -30,39 +26,32 @@ public class CounterFrequencyText {
 		StringBuffer sb = new StringBuffer(s2);
 
 		String aux = LuceneUtil.tokenizeString(sb).toString();
-		textTokens = aux.split(" ");
-
-		flag = (float) 1 / textTokens.length;
+		String[] textTokens = aux.split(" ");
+		System.out.println(aux);
+		Map<String, Float> frequencyText = new HashMap<String, Float>();
 
 		if (textTokens.length != 0) {
+			float tam = (float) textTokens.length;
 			for (int i = 0; i < textTokens.length; i++) {
 
 				String token = textTokens[i];
 				Float frequency = frequencyText.get(token);
 
 				if (frequency == null) {
-					frequencyText.put(token, flag);
+					frequencyText.put(token, 1f);
 
 				} else {
-					frequencyText.put(token, frequency + flag);
+					frequencyText.put(token, frequency+1);
 				}
 			}
-
-			frequencyText = removeSingleTokens(frequencyText);
+			
+			for (String s : frequencyText.keySet()) {
+				frequencyText.put(s, (frequencyText.get(s) / tam));
+			}
 		}
+
 		VectorSimilarity vector = new VectorSimilarity();
 		vector.setVector(frequencyText);
 		return vector;
-	}
-
-	public static Map<String, Float> removeSingleTokens(Map<String, Float> map) {
-		HashMap<String, Float> mapAux = new HashMap<String, Float>();
-		for (String str : map.keySet()) {
-			if (map.get(str) != flag) {
-				mapAux.put(str, map.get(str));
-			} else
-				flag--;
-		}
-		return mapAux;
 	}
 }

@@ -1,0 +1,319 @@
+title,body,tituloBemDefinido,tituloMedio,tituloCaixaAlta,tituloParCaixaAlta,coerencia,perguntaBemDefinida,vocativo,evDescricaoCurta,evDescricaoLonga,presencaCodigo,evTrechoGrandeCodigo,evPergComApenasCod,perguntaUnica,incluirAgradecimento,evSerExigente,usoNormaCultaLing,evCriarPergDuplicada,evPergFactoides,evPergSobreTrabAcademicos
+ Busca de numero em um Array,"Galera bom dia,
+
+Seguinte aleatoriamente 1000 números utilizando um array bidimensional, depois preciso digitar um número e pesquisar se tem no array.
+
+Gerei os números, porém, não estou conseguindo fazer ele buscar corretamente.
+
+Mesmo que eu digite um número que foi gerado ele cai no ""else"" e informa que não foi encontrado o número:
+
+Segue o código:
+
+import javax.swing.JOptionPane;
+
+public class Exercicio3_cap5 {
+public static void main(String[] args) {
+int [] [] numeros = new int [50] [20];
+
+	for (int linha = 0; linha < 50; linha++){
+		for(int coluna = 0; coluna < 20; coluna++){
+			numeros [linha] [coluna] = (int) (Math.random() * 1000);
+			System.out.println(numeros[linha][coluna]);
+		}
+	}
+
+	int numDigitado = Integer.parseInt(JOptionPane.showInputDialog(""Digite um número para pesquisar: ""));
+	String mensagem="""";
+	for(int[] busca: numeros){
+		if(busca.equals(numDigitado)){
+			mensagem = ""Número encontrado!"";
+		}
+		else{
+			mensagem = ""Número não encontrado!"";
+		}
+
+	}
+	
+	JOptionPane.showMessageDialog(null, mensagem);
+}
+}
+
+Obrigado!",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Fatorial negativo em Java,"Olá pessoal, boa noite! Sou novo em Java, comecei a aprendê-la nessa semana. 
+Fiz um programa simples que calcula o fatorial de um número:
+
+import java.util.Scanner;
+class fatorial{
+public static void main(String[] args){
+
+    Scanner ler = new Scanner(System.in);
+    System.out.printf(""Você quer calcular o fatorial de que número maior que zero?\n"");      
+    int num = ler.nextInt();
+
+    int fat = 1;
+    for(int n = 1; n <= num; n++){
+        fat = fat*n;
+    }
+    System.out.printf(""O fatorial de %d é %d\n"", num, fat);
+}
+Quando calculo o fatorial de 20, obtenho o número negativo -2102132736. Mudei de int para long e assim consegui o resultado certo. Mas aí quando eu quis obter o fatorial de 50, também obtive um número negativo. 
+Escrevi então um pequeno código em python para calcular fatorial, o que não me apresentou números negativos. Assim, cheguei a conclusão que isso se deve a algum aspecto de Java que eu desconheço.
+
+Algum de vocês poderia me ajudar?",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Função de .trim().split(),"Seguinte, achei um contador de palavras simples e fácil, mas ainda nao ficou claro com a função de .trim().split()
+
+public class contador {
+     public static void main(String args[])
+ {
+ Scanner input = new Scanner(System.in);
+ System.out.println(""Digite uma frase: "");
+ String frase = input.nextLine();
+ String palavras[] = frase.trim().split("" "");
+ System.out.println(""Numero de palavras: "" + palavras.length);
+ }
+}
+Pelo o que pesquisei, e vi, nesse caso após a frase ser digitada, ele é ""separado"" dos espaços (trim) e é cortado em palavras (split), criando um array e no final ele só da o tamanho do array, assim tendo a contagem de palavras. ou entendi errado?
+muito obrigado",0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Como descobrir o tipo de objeto contido na lista?[Generics],"Bom dia
+
+Chamo um método que me retorna uma lista sem especificar o tipo.
+
+mensagemDAO.getRecords();
+E é possível retornar mais de um tipo de lista.
+
+public List<?> getRecords(){
+mas como eu faço para descobrir o tipo de dado contido na lista, sem precisar entrar em um for each para ver o tipo do objeto? Quero dizer, usar uma sintaxe mais curta e objetiva.
+
+Alguem saberia :?:",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Conceito herança e interfaces,"Bem venho estudando orientação a objetos há algum tempo e vejo muito gente falar que interfaces
+pode ter mesmo efeito que herança multipla mas como..? eu gostaria de saber como é isso na teoria,
+não consigo pensar em uma interface com o papel de outra classe uma vez que uma interface é apenas 
+uma idéia abstrata de como uma classe deve aguir implementado seus métodos, estou errado em meus
+conceitos..?",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+"Herança, interface","Olá pessoal!!
+
+Olá pessoal estou com uma pequena duvida. imaginem q eu tenha 5 classes que são subclasses de uma classe base. e preciso que todas elas tenham um metodo q é mostrar informação sobre os atributos das classes. minha duvida é a seguinte, colocando esse metodo em uma interface, eu tenho implementar essa interface em todas as subclasses? ou basta implementar a interace na classe base???",0,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Sobrescrita de método com exceção,"Estou com uma dúvida neste código, quando tento executar a linha ""a.foo();"", estou dizendo pra pegar a referência da classe A e executar o método da class SubB2, certo?
+Pois bem, pq o compilador reclama que devo tratar a exceção Exception no método sobrescrito? Uma vez que estou sobrescrevendo o método sem tal possibilidade de lançar esta exceção?
+
+package teste;
+class A {
+   void foo() throws Exception {
+       throw new Exception();
+   }
+}
+class SubB2 extends A {
+	@Override
+   void foo () {
+       System.out.println(""B"");
+   }
+}
+public class Babble {
+	public static void main(String[] args) {
+       A a = new SubB2();
+       a.foo(); 
+	}
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Duvida em parar o while dentro for,"estou com uma duvida tenho um for e um while dentro dele,depois q eu achar a o registro q me importar eu quero retornar o valor achado e sair do while e for,pelo q sei era so colocar o break mais no momento q eu coloco o return da erro no break?
+
+ public String trataD(String assinantes) throws SQLException 
+	{
+		Statement st_danal =  cnn.createStatement();
+		HashSet <String> destindexS  = new HashSet<String>();
+		for(int i = 0;i < assinantes.length();i++)
+		{
+			sql = "" select distinct digstring,destindex "" + 
+			  "" from danal ""+
+			  "" where digstring = '"" + (i == 0 ? assinantes : assinantes.substring(0,assinantes.length() - i)) + ""'"";
+			//System.out.println(i == 0 ? assinantes : assinantes.substring(0,assinantes.length() - i));
+			ResultSet rs_danal = st_danal.executeQuery(sql);
+				while(rs_danal.next())
+				{
+					System.out.println(""Comecando While"");
+					//destindexS.add(rs_danal.getString(""destindex""));
+					System.out.println(assinantes + "" | ""+rs_danal.getString(""digstring"") +"" | ""+ rs_danal.getString(""destindex""));
+					return rs_danal.getString(""destindex"");
+					break; //<== erro aki
+				}
+		}
+		return null;
+	}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1
+Nao atualiza registro com dados de outra tabela,"Pessoal, estou com alguns probleminha que estão me tirando o sono.
+
+Tenho uma tabela TEAM e FLM. Na team eu tenho os campos TEAM e FLM no qual tento atualizar e só altera o team, já o FLM que vem de outra tabela nao da certo.
+Não gera erro nenhum na console...
+Meu banco está com update on casdade e como falei, as alterações funcionam desde q não seja relacionado com outra. 
+Alguma coisa faltando no código? Alguém poderia ajudar, por favor?
+
+@Entity
+@Table(name=""team"")
+public class Team implements Serializable{
+
+@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
+@Column(name=""id_team"",nullable=false)
+private Integer idTeam;
+
+@Column(name=""team"",nullable=false)
+private String team;
+
+@OneToMany(fetch=FetchType.LAZY, targetEntity=Usuario.class,mappedBy=""team"")
+private Set usuarios = new HashSet(0);
+
+@ManyToOne(fetch=FetchType.LAZY)
+@JoinColumn(name=""id_flm"")
+private Flm flm;
+Outra classe
+
+@Entity
+@Table(name=""flm"")
+public class Flm implements Serializable{
+
+@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
+@Column(name=""id_flm"",nullable=false)
+private Integer idFlm;
+
+@Column(name=""name"",nullable=false)
+private String name;
+
+@Column(name=""username"",nullable=false)
+private String username;
+
+@OneToMany(fetch=FetchType.LAZY, targetEntity=Usuario.class,mappedBy=""flm"")
+private Set usuarios = new HashSet(0);
+
+@OneToMany(fetch=FetchType.LAZY, targetEntity=Team.class,mappedBy=""flm"")
+private Set teams = new HashSet(0);
+public void atualizar(Team team) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        try {
+            session.beginTransaction();
+            session.merge(team);
+            session.beginTransaction().commit();
+        } catch (Exception e){
+            System.out.println(""Erro ao inserir: ""+e.getMessage());
+            session.beginTransaction().rollback();
+        } finally {
+            session.close(); 
+        }
+    }
+atualizar do flm é igual, só muda o nome.",1,1,0,0,1,1,1,1,0,1,0,1,1,0,1,1,1,1,1
+" IF // ELSE ou IF//IF
+","Olá pessoal, bom dia. Alguém me tira uma dúvida básica por favor, qual a diferença entre as duas expressões abaixo? Tipo, quando devo usar uma e quando devo usar a outra?
+
+if(num==20)
+{
+   blah;
+}
+else if(num==21)
+{
+    blah;
+}
+e
+
+if(num==20)
+{
+    blah;
+}
+if(num==21)
+{
+    blah;
+}
+Eu sei que é muito básica minha dúvida, mas qual seria a diferença ai em cima?
+
+Obrigado!",0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Existe polimorfismo sem herança,"Existe polimorfismo sem herança.
+:?:",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+Confusão herança e herança múltipla,"Gostaria de saber se o fato de derivar uma nova classe de apenas uma outra e adicionar algumas funcionalidades, já é possível afirmar que utilizei herança múltipla.
+
+Aguardando resposta,
+Wellington.",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+Transformar Scanner em format ?,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Duvida com JList,PERGUNTA,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Casting no Java,PERGUNTA,0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+For Each Java,PERGUNTA,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1
+Consumo de memória com laço,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Imagem Java,PERGUNTA,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+Ordenando List,PERGUNTA,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Impressão console Eclipse,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Ajuda números para letras,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Desearilzar Objetos,PERGUNTA,0,0,0,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,1
+Confirmação checbox,PERGUNTA,0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Auda com código que estou fazendo,PERGUNTA,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+Tratar erro em webservice,PERGUNTA,0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1
+Por que componente não aparece?,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+String para PDF,PERGUNTA,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Jar não funciona com imgens,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Pegar data mais proxima da data atual em uma lista de objetos,PERGUNTA,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+Data com dia anterior chamada REST,PERGUNTA,1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Lendo arquivo TXT,PERGUNTA,1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Ajuda Regex,PERGUNTA,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Como converter inteiro para String,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Class ou Public Class,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1
+Abrir nova janela GUI,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Porcentagem + votos,PERGUNTA,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Substituir fluxo condicional por polimorfismo,PERGUNTA,1,1,0,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
+Como receber valor da variaveís de outras classes?,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Erro ao inserir dados no List,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Converter XMLGregorianCalendar para Date - WSDL,PERGUNTA,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Java RMI ajuda!?,PERGUNTA,0,1,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+Para que serve uma expressão Lambda?,PERGUNTA,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+Saber qual o Date mais proximo,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+"Dúvida, Lógica ArrayList Erro",PERGUNTA,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Erro ao executar meu arquivo .jar,PERGUNTA,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1
+Existe alguma maneira de formatar Aplicações Java com css (Sem ser JavaFX),PERGUNTA,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Qual valor padrão de uma variavel do tipo String?,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+TextArea,PERGUNTA,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Preencher lista comparando atributos,PERGUNTA,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+Como carregar imagem do banco em um projeto JSF,PERGUNTA,1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Problema ao ler código de barras em uma interface grafica,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Conectar JDBC SQLServer 2012 no windows Server 2012,PERGUNTA,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Exercicio simples - ME AJUDEM,PERGUNTA,1,1,0,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,0
+Erro commando: public static void main(String args[]),PERGUNTA,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Conexão  remota no Java - Ver tela de outro computador,PERGUNTA,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Habilitando / Desabilitando JComboBox,PERGUNTA,1,1,0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1
+No suitable driver found for jdbc:mysql://localhost:3306,PERGUNTA,0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Algoritmo em java /tabuadas de 1 a 10,PERGUNTA,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0
+Adicionar elemento em ArrayList em métodos de outra classe,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Vetor de JButton ,PERGUNTA,1,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1
+Seccionamento de Dados de arquivos .txt,PERGUNTA,1,1,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1
+Como imprimir variavel do tipo date no formato dd/mm/aaaa,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Passar uma Lista de um método para outro,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Erro envio Email SimpleEmail,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Duvida com BigDecimal,PERGUNTA,1,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Cálculos com valores em Arrays,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Comprar Strings com e sem acentos,PERGUNTA,1,1,0,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+Pegando valores que estão em uma tela e enviar para outra tela,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+"Iniciante em java, Duvida Operador Lógico de Negação ou NOT!",PERGUNTA,1,1,0,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1
+Como fazer um contador de click no JButton em um Swing,PERGUNTA,1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Mudar icone da aplicação,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+JFormattedtextField sem valor ,PERGUNTA,1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+JComboBox colocar valor opsoto em JLabel,PERGUNTA,1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+Encontrar o maior valor dentro de um vetor,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Como conseguir o valor do JTextField no MySQL?,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+programação Orientada a Objeto,PERGUNTA,0,1,0,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1
+"Similar ao Sytem(""pause"") do C",PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Logins via .txt? Há um jeito confiável de se fazer isso?,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Dúvida tipos de variáveis - non-static variablee cannot be referenced from a static context,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Conexão com MySql,PERGUNTA,1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+getClass de um tipo T generic,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Diferenciar um List <E> ,PERGUNTA,1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Quebrar String com o método split,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Operadores em Java,PERGUNTA,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Pegar cada letra de uma String e dar um valor,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Programa para gerar números em sequencia,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Problemas com null,PERGUNTA,0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Não estou conseguindo inserir valores do tipo double em meu programa,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Ajuda com getters e setters,PERGUNTA,1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Porque não funciona o colletions.sort,PERGUNTA,1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+Como verificar se existe a palavra em uma String,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Reutilização de Objetos,PERGUNTA,0,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Apenas uma instancia da aplicação,PERGUNTA,1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1
+Operadores logicos,PERGUNTA,0,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Problema com StringTokenizer,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Pergunta simples de incremento,PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Explicação do metodo equals(),PERGUNTA,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,
+Imprimir apenas ultimo elemento de um List,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+JScrollPane na JPanel,PERGUNTA,1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Erro ao ler arquivo,PERGUNTA,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1

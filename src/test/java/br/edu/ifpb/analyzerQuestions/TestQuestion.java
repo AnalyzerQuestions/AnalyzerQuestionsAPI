@@ -18,14 +18,14 @@ public class TestQuestion {
 	public void setUp(){
 		questionsAnalyzer = new QuestionsAnalyzer();
 		question = new Question();
-		question.setTitle(Questions.t2);
-		question.setBody(Questions.d2);
+		question.setTitle("nao");
+	question.setBody("nao");
 	
 	}
 	@Test
 	public void coherencyBodyAndTitle(){
 		int in = questionsAnalyzer.coherencyBodyAndTitle(question);
-	
+		
 		Assert.assertEquals(1, in);
 	}
 

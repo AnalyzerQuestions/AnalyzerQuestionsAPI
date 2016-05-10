@@ -11,13 +11,22 @@ import org.apache.commons.csv.CSVRecord;
 
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 
-public class ReadQuestions {
+/**
+ * 
+ * @author franck
+ *
+ */
+public class ReaderQuestions {
 
+	/**
+	 * 
+	 */
 	private static final String[] FILE_HEADER_MAPPING = { "title", "body","tituloMedio", "tituloBemDefinido",
 		"tituloCaixaAlta", "tituloParCaixaAlta", "coerencia", "perguntaBemDefinida", "vocativo", "evDescricaoCurta"
 		, "evDescricaoLonga", "presencaCodigo", "evTrechoGrandeCodigo", "evPergComApenasCod", "perguntaUnica",
 		"incluirAgradecimento", "evSerExigente", "usoNormaCultaLing", "evCriarPergDuplicada", "evPergFactoides",
 		"evPergSobreTrabAcademicos"};
+	
 	private static final String TITLE = "title";
 	private static final String BODY = "body";
 	private static final String TITULO_BEM_DEFINDO = "tituloBemDefinido";
@@ -44,6 +53,10 @@ public class ReadQuestions {
 	private static final String FILE_NAME = "dataset.csv";
 	private List<QuestionsDataSet> questions;
 
+	/**
+	 * 
+	 * @return
+	 */
 	public List<QuestionsDataSet> readCsvFile() {
 		FileReader fileReader = null;
 		CSVParser csvFileParser = null;
@@ -87,7 +100,7 @@ public class ReadQuestions {
 	}
 
 	public static void main(String[] args) {
-		ReadQuestions r = new ReadQuestions();
+		ReaderQuestions r = new ReaderQuestions();
 		System.out.println(r.readCsvFile());
 	}
 

@@ -8,11 +8,21 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+/**
+ * 
+ * @author franck
+ *
+ */
+
+/**
+ * 
+ * Classe que faz a comunnicação e configuração de requisições com ES 
+ *
+ */
 public class StackExchangeAPI{
 
 	public static final double VERSION = 2.2;
-	public static final String SITE_WITH_VERSION = "https://api.stackexchange.com/"
-			+ VERSION;
+	public static final String SITE_WITH_VERSION = "https://api.stackexchange.com/"+ VERSION;
 
 	private final String key;
 	private String accessToken;

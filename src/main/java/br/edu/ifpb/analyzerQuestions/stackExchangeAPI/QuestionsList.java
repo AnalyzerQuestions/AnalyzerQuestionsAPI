@@ -6,6 +6,16 @@ import java.util.List;
 
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 
+/**
+ * 
+ * @author franck
+ *
+ */
+
+/**
+ * Modelo para representar uma lista de questões, uso na API do SE
+ *
+ */
 public class QuestionsList implements Iterable<Question> {
 
 	private List<Question> questions = new ArrayList<Question>();

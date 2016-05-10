@@ -12,6 +12,11 @@ import org.apache.lucene.analysis.util.CharArraySet;
 
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
+/**
+ * 
+ * @author franck
+ *
+ */
 public class LuceneUtil {
 
 	private static CharArraySet stopWords;

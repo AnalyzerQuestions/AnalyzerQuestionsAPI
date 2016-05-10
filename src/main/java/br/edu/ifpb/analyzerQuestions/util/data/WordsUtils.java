@@ -1,5 +1,10 @@
 package br.edu.ifpb.analyzerQuestions.util.data;
 
+/**
+ * 
+ * @author franck
+ *
+ */
 public class WordsUtils {
 
 	/**

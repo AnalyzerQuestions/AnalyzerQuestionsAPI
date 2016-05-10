@@ -1,5 +1,10 @@
 package br.edu.ifpb.analyzerQuestions.enumerations;
 
+/**
+ * 
+ * @author franck
+ *
+ */
 public enum Site {
 
 	STACK_OVERFLOW("pt.stackoverflow");

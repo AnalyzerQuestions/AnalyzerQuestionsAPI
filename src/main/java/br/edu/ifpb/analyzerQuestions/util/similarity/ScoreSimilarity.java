@@ -4,8 +4,12 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author franck
+ */
+
 /***
- * SCORE USANDO CALCULO DO ANGULO DO COSSENO, CONSIDERANDO [1.0 ~= score > 0.0]
+ * SCORE USANDO CALCULO DO ANGULO DO COSSENO, CONSIDERANDO [0.0 =< SCORE =~ 1.0]
  * SENDO SCORE =~ 1.0 MELHOR SIMILARIDADE
  *
  */
@@ -27,7 +31,8 @@ public class ScoreSimilarity {
 		this.vector2 = v2.getVector();
 		double Wn = 0.0, w1 = 0.0, w2 = 0.0, result = 0.0;
 
-		Set<String> both = new HashSet(vector1.keySet());
+		// considera tokens pertencentes aos dois vetores
+		Set<String> both = new HashSet<String>(vector1.keySet());
 		both.retainAll(vector2.keySet());
 
 		for (String token : both) {
@@ -65,7 +70,6 @@ public class ScoreSimilarity {
 
 		VectorSimilarity vectorTitle = CounterFrequencyText.getFrequency(title);
 		VectorSimilarity vectorDescription = CounterFrequencyText.getFrequency(description);
-		int size = Math.max(title.length(), description.length());
 		return this.getScoreSimilarity(vectorTitle, vectorDescription);
 	}
 }

@@ -18,8 +18,8 @@ public class TestQuestion {
 	public void setUp(){
 		questionsAnalyzer = new QuestionsAnalyzer();
 		question = new Question();
-		question.setTitle("nao");
-	question.setBody("nao");
+		question.setTitle("nao sei programar em java");
+	question.setBody("nao programo");
 	
 	}
 	@Test

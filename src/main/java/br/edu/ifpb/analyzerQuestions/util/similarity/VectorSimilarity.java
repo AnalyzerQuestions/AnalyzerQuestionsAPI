@@ -3,8 +3,17 @@ package br.edu.ifpb.analyzerQuestions.util.similarity;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author franck
+ */
+
+/**
+ * Modelo para representar um token de um texto e a frequencia de desse token
+ * num texto
+ *
+ */
 public class VectorSimilarity {
-	
+
 	private Map<String, Float> vector;
 
 	public VectorSimilarity() {
@@ -17,7 +26,7 @@ public class VectorSimilarity {
 	}
 
 	public Map<String, Float> getVector() {
-		
+
 		return vector;
 	}
 

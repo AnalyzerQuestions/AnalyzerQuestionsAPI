@@ -26,7 +26,6 @@ public class QuestionsAnalyzer {
 		ScoreSimilarity scoreSimilarity= new ScoreSimilarity();
 		
 		Double similarity = scoreSimilarity.getSimilarity(question.getTitle(), question.getBody());
-		System.out.println(similarity);
 		if(similarity > VALUE_SIMILARITY){
 			return 1;
 		}

@@ -6,16 +6,6 @@ import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 public class DescriptionAnalyzer {
 	
 	/**
-	 * NÃO ESTA COBRINDO:
-	 * 
-	 *  Obviating demanding language
-	 *	Using proper language
-	 *	Avoiding creating duplicate questions
-	 *	Avoiding creating factoid questions
-	 *	Do not create homework questions
-	 */
-
-	/**
 	 * Understandable description
 	 */
 	public int understandableDescription(String description) {
@@ -68,7 +58,7 @@ public class DescriptionAnalyzer {
 		String str = StringUtil.removeCharacterSpecial(description);
 		str = StringUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
-		if (strSplited.length < 700)
+		if (strSplited.length < 800)
 			return 1;
 		return 0;
 	}
@@ -80,7 +70,7 @@ public class DescriptionAnalyzer {
 		String str = StringUtil.removeCharacterSpecial(description);
 		str = StringUtil.removeConnective(str);
 
-		if (frenquencyOfCode(str) > 4) {
+		if (frenquencyOfCode(str) > 3) {
 			return 1;
 		}
 
@@ -108,23 +98,32 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
-	 * Avoiding too much code
+	 * Evitar muito codigo
 	 */
 	public int avoidingMuchCode(String description) {
 		return 0;
 	}
 
 	/**
-	 * Avoid description with code only
+	 * evitar descricao com apenas código
 	 */
 	public int avoidDescriptionWithCodeOnly(String description) {
 		return 0;
 	}
 	
 	/**
-	 * Restricting each question to a single problem
+	 * Restringir a pergunta a um unico problema
 	 */
 	public int questionWithSingleProblem(String description) {
+		int flag = 0;
+		for (int i = 0; i < description.length(); i++) {
+			if(description.charAt(i) == '?'){
+				flag++;
+			}
+		}
+		if(flag > 1){
+			return 1;
+		}
 		return 0;
 	}
 	
@@ -132,14 +131,43 @@ public class DescriptionAnalyzer {
 	 * Including greetings
 	 */
 	public int includingGreetings(String description){
-		String s0 = StringUtil.removeConnective(description);
-		String s1 = StringUtil.removeCharacterSpecial(s0);
-		
+		String s0 = StringUtil.removeCharacterSpecial(description);
+		String s1 = StringUtil.removeConnective(s0);
+				
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
 			if(s1.contains(WordsUtils.WORDS_GREETINGS[i])){
 				return 1;
 			}
 		}
+		return 0;
+	}
+	
+	/**
+	 * Obviating demanding language
+	 */
+	public int obviatingDemandingLanguage(String description){
+		
+		return 0;
+	}
+	
+	/**
+	 * Using proper language
+	 */
+	public int usingProperLanguage(String description){
+		return 0;
+	}
+	
+	/**
+	 * Avoiding creating factoid questions
+	 */
+	public int avoidingCreatingFactoidQuestions(String description){
+		return 0;
+	}
+	
+	/**
+	 * Do not create homework questions
+	 */
+	public int doNotCreateHomeworkQuestions(String description){
 		return 0;
 	}
 }

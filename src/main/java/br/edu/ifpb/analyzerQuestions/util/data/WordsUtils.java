@@ -12,14 +12,15 @@ public class WordsUtils {
 	 */
 	public final static String WORDS_CODE = "abstract,assert,boolean,break,byte,case,catch,char,class,const,default"
 			+ "else,enum,extends,false,final,finally,float,for,goto"
-			+ "if,implements,import,instanceof,int,interface,long,native,new,null,package"
+			+ "if,implements,import,instanceof,int,long,native,new,null,package"
 			+ "private,protected,public,return,short,static,strictfp,super,switch,synchronized"
-			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,{,}";
+			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,{,},equals,out,interger,valueof,super,"
+			+ "|,|,&&, List, <,>, (), get, set";
 
 	/**
 	 * Lista de palavras que podem identificador presença de exemplo numa pergunta
 	 */
-	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,vejam o codigo,";
+	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,ex:";
 
 	/**
 	 * Lista de palavras que pode identificar presença de vocativo em um texto
@@ -30,7 +31,7 @@ public class WordsUtils {
 	/**
 	 * Lista de palavras que pode identificar agradecimento no texto
 	 */
-	public final static String[] WORDS_GREETINGS = {"obj","vlw", "obrigado", "agradeço", "grato", "valeu", "agradecido"};
+	public final static String[] WORDS_GREETINGS = {"vlw", "obrigado","obrigado!","obrigadu","valeeu", "agradeço", "grato", "valeu", "agradecido"};
 	
 	public final static String[] BRAZILIAN_STOP_WORDS = { "será", "próprio",
 			"pôde", "daqueles", "nesse", "vais", "empresas", "poderia", "está",

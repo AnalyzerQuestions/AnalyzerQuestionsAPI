@@ -21,6 +21,10 @@ public class ReaderQuestions {
 	/**
 	 * 
 	 */
+	
+	public ReaderQuestions(String file) {
+		this.FILE_NAME = file;
+	}
 	private static final String[] FILE_HEADER_MAPPING = { "title", "body","tituloMedio", "tituloBemDefinido",
 		"tituloCaixaAlta", "tituloParCaixaAlta", "coerencia", "perguntaBemDefinida", "vocativo", "evDescricaoCurta"
 		, "evDescricaoLonga", "presencaCodigo", "evTrechoGrandeCodigo", "evPergComApenasCod", "perguntaUnica",
@@ -50,7 +54,7 @@ public class ReaderQuestions {
 	private static final String EV_PERG_SOBRE_TRAB_ACADEMICOS = "evPergSobreTrabAcademicos";
 
 
-	private static final String FILE_NAME = "dataset.csv";
+	private static String FILE_NAME;
 	private List<QuestionsDataSet> questions;
 
 	/**
@@ -97,11 +101,6 @@ public class ReaderQuestions {
 
 	public List<QuestionsDataSet> getQuestions() {
 		return questions;
-	}
-
-	public static void main(String[] args) {
-		ReaderQuestions r = new ReaderQuestions();
-		System.out.println(r.readCsvFile());
 	}
 
 }

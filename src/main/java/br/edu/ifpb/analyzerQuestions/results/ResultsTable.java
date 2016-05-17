@@ -59,7 +59,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.print("Questão "+flag+": "+qds.getTitle()+" "+ " Titulo Médio: -> ");
+			System.out.print("Questão "+flag+": "+qds.getTitle());
 			if(titleAnalyzer.mediumSizeTitle(qds.getTitle()) == Integer.parseInt(qds.getTituloMedio())){
 				System.out.println("IGUAL (" + titleAnalyzer.mediumSizeTitle(qds.getTitle())+"-"+ qds.getTituloMedio()+")");
 				igual++;
@@ -80,7 +80,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.print("Questão "+flag+": "+qds.getTitle()+" "+ " Titulo Médio: -> ");
+			System.out.print("Questão "+flag+": "+qds.getTitle());
 			if(titleAnalyzer.titleCapitaLetters(qds.getTitle()) == Integer.parseInt(qds.getTituloCaixaAlta())){
 				System.out.println("IGUAL (" + titleAnalyzer.titleCapitaLetters(qds.getTitle())+"-"+ qds.getTituloCaixaAlta()+")");
 				igual++;
@@ -136,6 +136,108 @@ public class ResultsTable {
 		System.out.println("IGUAIS :" + igual);
 		System.out.println("DIFERENTES :" + diferente);
 
+	}
+	
+	public void executeShortDescription(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.shortDescription(qds.getBody()) == Integer.parseInt(qds.getEvDescricaoCurta())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.shortDescription(qds.getBody())+"-"+ qds.getEvDescricaoCurta()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.shortDescription(qds.getBody())+"-"+ qds.getEvDescricaoCurta()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+
+	}
+	
+	public void executeLongDescription(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.longDescription(qds.getBody()) == Integer.parseInt(qds.getEvDescricaoLonga())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.longDescription(qds.getBody())+"-"+ qds.getEvDescricaoLonga()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.longDescription(qds.getBody())+"-"+ qds.getEvDescricaoLonga()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+
+	}
+	
+	public void executeShowingExample(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.showingExample(qds.getBody()) == Integer.parseInt(qds.getPresencaCodigo())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	
+	public void executeIncludingGreetings(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.includingGreetings(qds.getBody()) == Integer.parseInt(qds.getIncluirAgradecimento())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.includingGreetings(qds.getBody())+"-"+ qds.getIncluirAgradecimento()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.includingGreetings(qds.getBody())+"-"+ qds.getIncluirAgradecimento()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	
+	public void executeQuestionWithSingleProblem(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.questionWithSingleProblem(qds.getBody()) == Integer.parseInt(qds.getPerguntaUnica())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
 	}
 	
 	

@@ -8,7 +8,6 @@ public class DescriptionAnalyzer {
 	/**
 	 * Understandable
 	 */
-
 	/**
 	 * Considera-se pesos para cada caracteristca que a descrição atende, sendo
 	 * que umas tem pesos maiores que outras. Considera-se que a descrição tenha
@@ -129,6 +128,12 @@ public class DescriptionAnalyzer {
 	 * Evitar muito codigo
 	 */
 	public int avoidingMuchCode(String description) {
+		for (int i = 0; i < WordsUtils.WORDS_INIT_COD.length; i++) {
+			if(Character.toString(description.charAt(0)) == WordsUtils.WORDS_INIT_COD[i]){
+			}
+			
+		}
+		
 		return 0;
 	}
 

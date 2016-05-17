@@ -18,26 +18,47 @@ public class WordsUtils {
 			+ "|,|,&&, List, <,>, (), get, set";
 
 	/**
-	 * Lista de palavras que podem identificador presença de exemplo numa pergunta
+	 * Lista de palavras que podem identificador presença de exemplo numa
+	 * pergunta
 	 */
 	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,ex:";
-	
-	/*
+
+	/**
 	 * Lista de palavras que podem identificar se a pergunta possui exigencia.
 	 */
-	public final static String[] WORDS_DEMANDING = {"urgente","me mandem o codigo","mandem o codigo","mandem um exemplo","rapido"};
+	public final static String[] WORDS_DEMANDING = { "urgente",
+			"me mandem o codigo", "mandem o codigo", "mandem um exemplo",
+			"rapido" };
 
 	/**
 	 * Lista de palavras que pode identificar presença de vocativo em um texto
 	 */
-	public final static String[] WORDS_VACATIVES = {"pessoal", "galera", "povo", "gente", "povao", "turma", "povareu",
-		"grupo", "bando","negrada", "individuos", "habitantes", "nacao", "publico", "populacao", "parentada", "povaleu"};
-	
+	public final static String[] WORDS_VACATIVES = { "pessoal", "galera",
+			"povo", "gente", "povao", "turma", "povareu", "grupo", "bando",
+			"negrada", "individuos", "habitantes", "nacao", "publico",
+			"populacao", "parentada", "povaleu" };
+
 	/**
 	 * Lista de palavras que pode identificar agradecimento no texto
 	 */
-	public final static String[] WORDS_GREETINGS = {"vlw", "obrigado","obrigado!","obrigadu","valeeu", "agradeço", "grato", "valeu", "agradecido"};
-	
+	public final static String[] WORDS_GREETINGS = { "vlw", "obrigado",
+			"obrigado!", "obrigadu", "valeeu", "agradeço", "grato", "valeu",
+			"agradecido" };
+
+	/**
+	 * Lista de palvras que podem iniciar uma estrutura de código java ou xml
+	 */
+	public final static String[] WORDS_INIT_COD = { "public", "private",
+			"protected", "class", "abstract", "interface", "enum", "<" };
+
+	/**
+	 * Lista de palavras que podem finalizar uma estrutura de código java e xml
+	 */
+	public final static String[] WORDS_END_COD = { "}", "/>", ";" };
+
+	/**
+	 * Lista stop words do brasil
+	 */
 	public final static String[] BRAZILIAN_STOP_WORDS = { "será", "próprio",
 			"pôde", "daqueles", "nesse", "vais", "empresas", "poderia", "está",
 			"seus", "serão", "podem", "dessas", "nestas", "valor", "equipe",
@@ -229,8 +250,7 @@ public class WordsUtils {
 			"xtavam", "xtavamos", "xte", "xteja", "xtejam", "xtejamos",
 			"xteve", "xtive", "xtivemos", "xtivera", "xtiveram", "xtiveramos",
 			"xtivermos", "xtivesse", "xtivessem", "xtiveste", "xtivestes",
-			"xtou", "xtas", "xtao", "n"
-	};
+			"xtou", "xtas", "xtao", "n" };
 
 	public static String[] getWords() {
 		String[] splited = WORDS_EXAMPLES.split(",");

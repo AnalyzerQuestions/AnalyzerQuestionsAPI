@@ -3,10 +3,6 @@ package br.edu.ifpb.analyzerQuestions.results;
 import java.util.List;
 
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
-import br.edu.ifpb.analyzerQuestions.enumerations.Site;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.IStackExchange;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.QuestionsList;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeAPI;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 
 /**
@@ -39,7 +35,7 @@ public class App {
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 		ResultsTable resultsTable = new ResultsTable(q);
 		
-		resultsTable.executeCoherencyBodyAndTitle();
+		//resultsTable.executeCoherencyBodyAndTitle();
 		
 		//resultsTable.executeTitleMedio();
 		//resultsTable.executeTituloCaixaAlta();
@@ -52,6 +48,7 @@ public class App {
 		//resultsTable.executeIncludingGreetings();
 		
 		//resultsTable.executeQuestionWithSingleProblem();
+		resultsTable.executeUnderstandableDescription();
 		
 		
 	}

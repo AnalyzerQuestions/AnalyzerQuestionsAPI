@@ -240,6 +240,29 @@ public class ResultsTable {
 		System.out.println("DIFERENTES :" + diferente);
 	}
 	
+	/**
+	 * Mostra resultados para descrição bem definida
+	 */
+	public void executeUnderstandableDescription(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.understandableDescription(qds.getBody()) == Integer.parseInt(qds.getPerguntaUnica())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.understandableDescription(qds.getBody())+"-"+ qds.getPerguntaBemDefinda()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.understandableDescription(qds.getBody())+"-"+ qds.getPerguntaBemDefinda()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	
 	
 
 }

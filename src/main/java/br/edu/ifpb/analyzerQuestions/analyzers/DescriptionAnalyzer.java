@@ -4,24 +4,52 @@ import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
 public class DescriptionAnalyzer {
-	
+
 	/**
-	 * Understandable description
+	 * Understandable
+	 */
+
+	/**
+	 * Considera-se pesos para cada caracteristca que a descrição atende, sendo
+	 * que umas tem pesos maiores que outras. Considera-se que a descrição tenha
+	 * 70% dos pesos das caracteristicas cobradas
+	 * 
+	 * p1 + p2  + p3 + p(n)/1.40(=~70%)
 	 */
 	public int understandableDescription(String description) {
+		float is = 0;
+		float bestResult = 1f + 1f + 0.5f + 0.2f + 0.1f;
 
+		if (shortDescription(description) == 1) {
+			is++;
+		}
+		if (longDescription(description) == 1) {
+			is++;
+		}
+		if (showingExample(description) == 1) {
+			is += 0.5f;
+		}
+		if (includingGreetings(description) == 1) {
+			is += 0.2f;
+		}
+		if (includingVocative(description) == 1) {
+			is = is + 0.1f;
+		}
+		if (is >= (bestResult/1.40)) {
+			return 1;
+		}
 		return 0;
 	}
 
 	/**
-	 * presença de  vocativo
+	 * presença de vocativo
 	 */
 	public int includingVocative(String description) {
 		String str1 = StringUtil.trimPosition(description);
 		String str2 = StringUtil.removeConnective(str1);
 		String[] str = str2.split(" ");
-				
-		if(str.length >= 3){
+
+		if (str.length >= 3) {
 			for (int i = 0; i < 3; i++) {
 				String sn = str[i];
 				if (sn.charAt(sn.length() - 1) == ',') {
@@ -30,12 +58,12 @@ public class DescriptionAnalyzer {
 			}
 			String s0 = str[0];
 			for (int i = 0; i < WordsUtils.WORDS_VACATIVES.length; i++) {
-				if(s0.equals(WordsUtils.WORDS_VACATIVES[i])){
+				if (s0.equals(WordsUtils.WORDS_VACATIVES[i])) {
 					return 1;
 				}
 			}
 		}
-		
+
 		return 0;
 	}
 
@@ -110,64 +138,64 @@ public class DescriptionAnalyzer {
 	public int avoidDescriptionWithCodeOnly(String description) {
 		return 0;
 	}
-	
+
 	/**
 	 * Restringir a pergunta a um unico problema
 	 */
 	public int questionWithSingleProblem(String description) {
 		int flag = 0;
 		for (int i = 0; i < description.length(); i++) {
-			if(description.charAt(i) == '?'){
+			if (description.charAt(i) == '?') {
 				flag++;
 			}
 		}
-		if(flag > 1){
+		if (flag > 1) {
 			return 1;
 		}
 		return 0;
 	}
-	
+
 	/**
 	 * Including greetings
 	 */
-	public int includingGreetings(String description){
+	public int includingGreetings(String description) {
 		String s0 = StringUtil.removeCharacterSpecial(description);
 		String s1 = StringUtil.removeConnective(s0);
-				
+
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
-			if(s1.contains(WordsUtils.WORDS_GREETINGS[i])){
+			if (s1.contains(WordsUtils.WORDS_GREETINGS[i])) {
 				return 1;
 			}
 		}
 		return 0;
 	}
-	
+
 	/**
 	 * Obviating demanding language
 	 */
-	public int obviatingDemandingLanguage(String description){
-		
+	public int obviatingDemandingLanguage(String description) {
+
 		return 0;
 	}
-	
+
 	/**
 	 * Using proper language
 	 */
-	public int usingProperLanguage(String description){
+	public int usingProperLanguage(String description) {
 		return 0;
 	}
-	
+
 	/**
 	 * Avoiding creating factoid questions
 	 */
-	public int avoidingCreatingFactoidQuestions(String description){
+	public int avoidingCreatingFactoidQuestions(String description) {
 		return 0;
 	}
-	
+
 	/**
 	 * Do not create homework questions
 	 */
-	public int doNotCreateHomeworkQuestions(String description){
+	public int doNotCreateHomeworkQuestions(String description) {
 		return 0;
 	}
 }

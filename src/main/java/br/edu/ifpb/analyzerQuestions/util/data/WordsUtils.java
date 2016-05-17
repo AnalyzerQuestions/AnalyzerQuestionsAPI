@@ -21,6 +21,11 @@ public class WordsUtils {
 	 * Lista de palavras que podem identificador presença de exemplo numa pergunta
 	 */
 	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,ex:";
+	
+	/*
+	 * Lista de palavras que podem identificar se a pergunta possui exigencia.
+	 */
+	public final static String[] WORDS_DEMANDING = {"urgente","me mandem o codigo","mandem o codigo","mandem um exemplo","rapido"};
 
 	/**
 	 * Lista de palavras que pode identificar presença de vocativo em um texto

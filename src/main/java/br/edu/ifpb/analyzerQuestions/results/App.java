@@ -2,6 +2,7 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
+import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 
@@ -48,7 +49,16 @@ public class App {
 		//resultsTable.executeIncludingGreetings();
 		
 		//resultsTable.executeQuestionWithSingleProblem();
-		resultsTable.executeUnderstandableDescription();
+		//resultsTable.executeUnderstandableDescription();
+		resultsTable.executeAvoidDescriptionWithCodeOnly();
+		
+		
+		
+//		DescriptionAnalyzer d = new DescriptionAnalyzer();
+//		
+//		String s = "public class{};";
+//		
+//		System.out.println(d.avoidDescriptionWithCodeOnly(s));
 		
 		
 	}

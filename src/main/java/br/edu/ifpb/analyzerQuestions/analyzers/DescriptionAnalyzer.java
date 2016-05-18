@@ -1,5 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
+import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
@@ -13,7 +14,7 @@ public class DescriptionAnalyzer {
 	 * que umas tem pesos maiores que outras. Considera-se que a descrição tenha
 	 * 70% dos pesos das caracteristicas cobradas
 	 * 
-	 * p1 + p2  + p3 + p(n)/1.40(=~70%)
+	 * p1 + p2 + p3 + p(n)/1.40(~=70%)
 	 */
 	public int understandableDescription(String description) {
 		float is = 0;
@@ -34,7 +35,7 @@ public class DescriptionAnalyzer {
 		if (includingVocative(description) == 1) {
 			is = is + 0.1f;
 		}
-		if (is >= (bestResult/1.40)) {
+		if (is >= (bestResult / 1.40)) {
 			return 1;
 		}
 		return 0;
@@ -128,12 +129,7 @@ public class DescriptionAnalyzer {
 	 * Evitar muito codigo
 	 */
 	public int avoidingMuchCode(String description) {
-		for (int i = 0; i < WordsUtils.WORDS_INIT_COD.length; i++) {
-			if(Character.toString(description.charAt(0)) == WordsUtils.WORDS_INIT_COD[i]){
-			}
-			
-		}
-		
+
 		return 0;
 	}
 
@@ -141,7 +137,30 @@ public class DescriptionAnalyzer {
 	 * evitar descricao com apenas código
 	 */
 	public int avoidDescriptionWithCodeOnly(String description) {
-		return 0;
+		
+		boolean isInit = false;
+		boolean isEnd = false;
+		String[] s = {};
+		
+		for (int i = 0; i < WordsUtils.WORDS_INIT_COD.length; i++) {
+			s = StringTokenizerUtils.parseToken(description);
+			if (s[0].equals(WordsUtils.WORDS_INIT_COD[i])) {
+				isInit = true;
+			}
+		}
+		s = StringTokenizerUtils.parseToken(description);
+		String f = s[s.length-1];
+		String f2 = Character.toString(f.charAt(f.length()-1));
+		
+		for (int i = 0; i < WordsUtils.WORDS_END_COD.length; i++) {
+			if(s[s.length-1].equals(WordsUtils.WORDS_END_COD[i]) || f2.equals(WordsUtils.WORDS_END_COD[i])){
+				isEnd = true;
+			}
+		}
+		
+		if(isInit && isEnd)
+			return 0;
+		return 1;
 	}
 
 	/**

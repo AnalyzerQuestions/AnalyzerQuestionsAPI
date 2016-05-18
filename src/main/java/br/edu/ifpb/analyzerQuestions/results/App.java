@@ -50,7 +50,8 @@ public class App {
 		
 		//resultsTable.executeQuestionWithSingleProblem();
 		//resultsTable.executeUnderstandableDescription();
-		resultsTable.executeAvoidDescriptionWithCodeOnly();
+		//resultsTable.executeAvoidDescriptionWithCodeOnly();
+		resultsTable.executeDoNotCreateHomeworkQuestions();
 		
 		
 		

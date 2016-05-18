@@ -1,5 +1,8 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
+import java.util.Arrays;
+import java.util.List;
+
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
@@ -137,11 +140,11 @@ public class DescriptionAnalyzer {
 	 * evitar descricao com apenas código
 	 */
 	public int avoidDescriptionWithCodeOnly(String description) {
-		
+
 		boolean isInit = false;
 		boolean isEnd = false;
 		String[] s = {};
-		
+
 		for (int i = 0; i < WordsUtils.WORDS_INIT_COD.length; i++) {
 			s = StringTokenizerUtils.parseToken(description);
 			if (s[0].equals(WordsUtils.WORDS_INIT_COD[i])) {
@@ -149,16 +152,17 @@ public class DescriptionAnalyzer {
 			}
 		}
 		s = StringTokenizerUtils.parseToken(description);
-		String f = s[s.length-1];
-		String f2 = Character.toString(f.charAt(f.length()-1));
-		
+		String f = s[s.length - 1];
+		String f2 = Character.toString(f.charAt(f.length() - 1));
+
 		for (int i = 0; i < WordsUtils.WORDS_END_COD.length; i++) {
-			if(s[s.length-1].equals(WordsUtils.WORDS_END_COD[i]) || f2.equals(WordsUtils.WORDS_END_COD[i])){
+			if (s[s.length - 1].equals(WordsUtils.WORDS_END_COD[i])
+					|| f2.equals(WordsUtils.WORDS_END_COD[i])) {
 				isEnd = true;
 			}
 		}
-		
-		if(isInit && isEnd)
+
+		if (isInit && isEnd)
 			return 0;
 		return 1;
 	}
@@ -188,10 +192,10 @@ public class DescriptionAnalyzer {
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
 			if (s1.contains(WordsUtils.WORDS_GREETINGS[i])) {
-				return 1;
+				return 0;
 			}
 		}
-		return 0;
+		return 1;
 	}
 
 	/**
@@ -220,6 +224,24 @@ public class DescriptionAnalyzer {
 	 * Do not create homework questions
 	 */
 	public int doNotCreateHomeworkQuestions(String description) {
-		return 0;
+
+		String s0 = StringUtil.removerAcentos(description);
+		String s1 = StringUtil.removeCharacterSpecial(s0);
+		String s2 = StringUtil.removeConnective(s1);
+
+		String[] aStr = StringTokenizerUtils.parseToken(s2);
+		List<String> list = Arrays.asList(aStr);
+		int flag = 0;
+
+		for (int i = 0; i < WordsUtils.HOMEWORK_WORDS.length; i++) {
+			for (int j = 0; j < aStr.length; j++) {
+				if (aStr[j].equals(WordsUtils.HOMEWORK_WORDS[i])) {
+					flag++;
+				}
+			}
+		}
+		if(flag >= 2)
+			return 0;
+		return 1;
 	}
 }

@@ -286,6 +286,26 @@ public class ResultsTable {
 		System.out.println("DIFERENTES :" + diferente);
 	}
 	
+	public void executeDoNotCreateHomeworkQuestions(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.doNotCreateHomeworkQuestions(qds.getBody()) == Integer.parseInt(qds.getEvPergSobreTrabAcademicos())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.doNotCreateHomeworkQuestions(qds.getBody())+"-"+ qds.getEvPergSobreTrabAcademicos()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.doNotCreateHomeworkQuestions(qds.getBody())+"-"+ qds.getEvPergSobreTrabAcademicos()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	
 	
 
 }

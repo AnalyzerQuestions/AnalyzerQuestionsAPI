@@ -1,4 +1,4 @@
-title,body,tituloBemDefinido,tituloMedio,tituloCaixaAlta,tituloParCaixaAlta,coerencia,perguntaBemDefinida,vocativo,evDescricaoCurta,evDescricaoLonga,presencaCodigo,evTrechoGrandeCodigo,evPergComApenasCod,perguntaUnica,incluirAgradecimento,evSerExigente,usoNormaCultaLing,evCriarPergDuplicada,evPergFactoides,evPergSobreTrabAcademicos
+title,body,tituloBemDefinido,tituloMedio,tituloCaixaAlta,tituloParCaixaAlta,coerencia,perguntaBemDefinida,vocativo,evDescricaoCurta,evDescricaoLonga,presencaCodigo,evTrechoGrandeCodigo,evPergComApenasCod,perguntaUnica,incluirAgradecimento,evSerExigente,usoNormaCultaLing,evCriarPergDuplicada,evPergFactoides,evPergSobreTrabAcademicos,/
  Busca de numero em um Array,"Galera bom dia,
 
 Seguinte aleatoriamente 1000 números utilizando um array bidimensional, depois preciso digitar um número e pesquisar se tem no array.
@@ -38,7 +38,7 @@ int [] [] numeros = new int [50] [20];
 }
 }
 
-Obrigado!",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Obrigado!",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Fatorial negativo em Java,"Olá pessoal, boa noite! Sou novo em Java, comecei a aprendê-la nessa semana. 
 Fiz um programa simples que calcula o fatorial de um número:
 
@@ -59,7 +59,7 @@ public static void main(String[] args){
 Quando calculo o fatorial de 20, obtenho o número negativo -2102132736. Mudei de int para long e assim consegui o resultado certo. Mas aí quando eu quis obter o fatorial de 50, também obtive um número negativo. 
 Escrevi então um pequeno código em python para calcular fatorial, o que não me apresentou números negativos. Assim, cheguei a conclusão que isso se deve a algum aspecto de Java que eu desconheço.
 
-Algum de vocês poderia me ajudar?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Algum de vocês poderia me ajudar?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Função de .trim().split(),"Seguinte, achei um contador de palavras simples e fácil, mas ainda nao ficou claro com a função de .trim().split()
 
 public class contador {
@@ -73,7 +73,7 @@ public class contador {
  }
 }
 Pelo o que pesquisei, e vi, nesse caso após a frase ser digitada, ele é ""separado"" dos espaços (trim) e é cortado em palavras (split), criando um array e no final ele só da o tamanho do array, assim tendo a contagem de palavras. ou entendi errado?
-muito obrigado",0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+muito obrigado",0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Como descobrir o tipo de objeto contido na lista?[Generics],"Bom dia
 
 Chamo um método que me retorna uma lista sem especificar o tipo.
@@ -84,15 +84,15 @@ E é possível retornar mais de um tipo de lista.
 public List<?> getRecords(){
 mas como eu faço para descobrir o tipo de dado contido na lista, sem precisar entrar em um for each para ver o tipo do objeto? Quero dizer, usar uma sintaxe mais curta e objetiva.
 
-Alguem saberia :?:",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Alguem saberia :?:",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Conceito herança e interfaces,"Bem venho estudando orientação a objetos há algum tempo e vejo muito gente falar que interfaces
 pode ter mesmo efeito que herança multipla mas como..? eu gostaria de saber como é isso na teoria,
 não consigo pensar em uma interface com o papel de outra classe uma vez que uma interface é apenas 
 uma idéia abstrata de como uma classe deve aguir implementado seus métodos, estou errado em meus
-conceitos..?",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+conceitos..?",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,
 "Herança, interface","Olá pessoal!!
 
-Olá pessoal estou com uma pequena duvida. imaginem q eu tenha 5 classes que são subclasses de uma classe base. e preciso que todas elas tenham um metodo q é mostrar informação sobre os atributos das classes. minha duvida é a seguinte, colocando esse metodo em uma interface, eu tenho implementar essa interface em todas as subclasses? ou basta implementar a interace na classe base???",0,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Olá pessoal estou com uma pequena duvida. imaginem q eu tenha 5 classes que são subclasses de uma classe base. e preciso que todas elas tenham um metodo q é mostrar informação sobre os atributos das classes. minha duvida é a seguinte, colocando esse metodo em uma interface, eu tenho implementar essa interface em todas as subclasses? ou basta implementar a interace na classe base???",0,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,
 Sobrescrita de método com exceção,"Estou com uma dúvida neste código, quando tento executar a linha ""a.foo();"", estou dizendo pra pegar a referência da classe A e executar o método da class SubB2, certo?
 Pois bem, pq o compilador reclama que devo tratar a exceção Exception no método sobrescrito? Uma vez que estou sobrescrevendo o método sem tal possibilidade de lançar esta exceção?
 
@@ -113,7 +113,7 @@ public class Babble {
        A a = new SubB2();
        a.foo(); 
 	}
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Duvida em parar o while dentro for,"estou com uma duvida tenho um for e um while dentro dele,depois q eu achar a o registro q me importar eu quero retornar o valor achado e sair do while e for,pelo q sei era so colocar o break mais no momento q eu coloco o return da erro no break?
 
  public String trataD(String assinantes) throws SQLException 
@@ -137,7 +137,7 @@ Duvida em parar o while dentro for,"estou com uma duvida tenho um for e um while
 				}
 		}
 		return null;
-	}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1
+	}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,
 Nao atualiza registro com dados de outra tabela,"Pessoal, estou com alguns probleminha que estão me tirando o sono.
 
 Tenho uma tabela TEAM e FLM. Na team eu tenho os campos TEAM e FLM no qual tento atualizar e só altera o team, já o FLM que vem de outra tabela nao da certo.
@@ -198,7 +198,7 @@ public void atualizar(Team team) {
             session.close(); 
         }
     }
-atualizar do flm é igual, só muda o nome.",1,1,0,0,1,1,1,1,0,1,0,1,1,0,1,1,1,1,1
+atualizar do flm é igual, só muda o nome.",1,1,0,0,1,1,1,1,0,1,0,1,1,0,1,1,1,1,1,
 " IF // ELSE ou IF//IF
 ","Olá pessoal, bom dia. Alguém me tira uma dúvida básica por favor, qual a diferença entre as duas expressões abaixo? Tipo, quando devo usar uma e quando devo usar a outra?
 
@@ -222,13 +222,13 @@ if(num==21)
 }
 Eu sei que é muito básica minha dúvida, mas qual seria a diferença ai em cima?
 
-Obrigado!",0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Obrigado!",0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Existe polimorfismo sem herança,"Existe polimorfismo sem herança.
-:?:",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+:?:",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,
 Confusão herança e herança múltipla,"Gostaria de saber se o fato de derivar uma nova classe de apenas uma outra e adicionar algumas funcionalidades, já é possível afirmar que utilizei herança múltipla.
 
 Aguardando resposta,
-Wellington.",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+Wellington.",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,
 Transformar Scanner em format ?,"Olá amigos , bom sou iniciante , más não sei se isso é possivel
 eu queria transformar uma String de Scanner em um formato por exemplo
 
@@ -243,7 +243,7 @@ ai eu gostaria de saber se eu poderia exibir elas separadamente ou transformar e
 Nome = info //ai eu queria pegar apenas o nome
 Idade = info // e aqui a idade
 
-gostaria de saber se isso é possivel ! , obrigado!",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+gostaria de saber se isso é possivel ! , obrigado!",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Duvida com JList,"Boa Noite,
 
 Estou tentando utilizar o JList, mas estou com dificuldade. Preciso criar uma telinha para realizar soma, criei uma textfield, recuperei o dado e estou jogando o valor para dentro do meu JList, acredito que ate ai esteja correto, meu problema agora é realizar o calculo e mostrar na tela.
@@ -285,7 +285,7 @@ Estou tentando utilizar o JList, mas estou com dificuldade. Preciso criar uma te
 			}
 		}
 	});
-Obrigado!",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Obrigado!",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Casting no Java,"Ola galera boa noite tenho um duvida no java , a respeito de fazer casting, tipo assim quando eu tento imprimir um valor que ta na variavel tipo double com o valor: 20.950.40 , em uma variavel tipo int ele me da um erro.. Porem quando eu coloco este valor 20_950_40, ele ignora todo o _ e imprimir o numero ..
 
 Abaixo esta os codigo:
@@ -302,21 +302,21 @@ long d =  20_950_40;
 		int i;
 		i = (int)d;
 		System.out.println(d);
-Qual a Difrença ?",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Qual a Difrença ?",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 For Each Java,"Alguem poderia me dar uma melhor definição do** laço for each**, algum exemplo ? Desde já agradeço
 
-",1,1,0,0,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,0,0,1,0,1,1,1,1,1,1,1,1,1,
 Consumo de memória com laço,"Pessoal, tenho um laço onde percorro e atualizo 100 registros. O grande problema é que minha aplicação é web e este laço precisa ser chama a cada 3 ou 4 segundos e isso esta consumindo muita memoria. Existe alguma forma de eu atualizar todos esses registros de uma forma mais rapida, sem precisar de um laço ou pelo menos deixar o laço mais rapido? O meu código esta mais ou menos assim (é uma fila de taxi, onde o primeiro a sair e o ultimo a entrar):
 
             for(int i=0;i<pessoasdao.listarfila(posicao).size();i++){
                 pessoasdao.avancar_fila(pessoasdao.listarfila(posicao).get(i), pessoasdao.listarfila(posicao).get(i).getPosicao()-1);
-            }",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
-Imagem Java,Tem como eu importar imagem para o meu projeto java ?,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+            }",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
+Imagem Java,Tem como eu importar imagem para o meu projeto java ?,0,0,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,
 Ordenando List,"Galera, seguinte...
 
 Eu tenho uma List de Objetos, e gostaria de saber se existe alguma classe q faz a ordenação desta lista por determinado atributo de cada objeto.
 
-Grato,",0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Grato,",0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,
 Impressão console Eclipse,"Pessoal, bom dia/tarde/noite.
 
 Estou com um pequeno probleminha na impressão pelo Console no Eclipse.
@@ -325,7 +325,7 @@ O mesmo me traz um resultado parecido com br.com.exemplo.nome_do_pacote.nome_da_
 
 O que poderia ser?
 
-",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Ajuda números para letras,"boa noite
 o meu tio quer fazer um jogo e me falo se que posso ajudar ele 
 eu ja fiz muita coisa ja mais uma coisa que eu nao achei como faz e como trocar numeros para letras java ele quer fazer uma coisa mais ou menos assim
@@ -339,7 +339,7 @@ bbee 2255
 a = 1 
 b =2 
 c=3 
-e assim que,m me da uma ajuda que ta foda kk Flw",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+e assim que,m me da uma ajuda que ta foda kk Flw",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Desearilzar Objetos,"Olá, gostaria de transformar esse XML, em Classes pojos
 
 <ISBNdb server_time=""2015-12-24T23:02:16Z"">
@@ -350,7 +350,7 @@ Desearilzar Objetos,"Olá, gostaria de transformar esse XML, em Classes pojos
 <AuthorsText/>
 <PublisherText publisher_id=""ulverscroft"">Leicester, [Eng.]; Ulverscroft</PublisherText>
 </BookData>
-Existe essa possibilidade? Quais as Ferramentas? Eu tentei com XStream mais sem sucesso!",0,0,0,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,1
+Existe essa possibilidade? Quais as Ferramentas? Eu tentei com XStream mais sem sucesso!",0,0,0,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,1,
 Confirmação checbox,"Preciso fazer essa confirmação ao usuário selecionar um checkbox.
 
 int resp = JOptionPane.showConfirmDialog(null, ""Realmente deseja enviar as fotos ao servidor?"", ""Enviar fotos"", JOptionPane.YES_NO_OPTION);
@@ -359,19 +359,19 @@ if (resp == JOptionPane.NO_OPTION) {
 }else{
          checkBox.setSelected(true);
 }
-Qual evento posso utilizar para fazer isso? Tentei alguns mas nenhum deu certo.",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Qual evento posso utilizar para fazer isso? Tentei alguns mas nenhum deu certo.",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Auda com código que estou fazendo,"Olá a todos, sou novo por aqui e não tenho muito conhecimento da área, mas estou tentando criar um programa para fazer uns cálculos simples. Consegui construir uma interface gráfica, mas agr quero fazer ela funcionar. Vou deixar abaixo o código:
 
 A minha duvida é como faço pra somar, multiplicar variáveis como essa "" public JTextField tempo1; ""
 
-Código inteiro:",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+Código inteiro:",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,
 Tratar erro em webservice,"Como posso tratar possíveis erros em uma aplicação Java que consome um WebService ?
 
 Erros, por exemplo, de comunicação com servidor, de dar algum erro no WebService...
 
 Qual a melhor forma de se tratar isso?
 
-",0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1
+",0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,
 Por que componente não aparece?,"Olá, eu possuo uma classe component que eu criei, ela está assim:
 `
 
@@ -421,7 +421,7 @@ Porém em outra classe eu tentei adiciona-la ao JPanel coisas que possui o geren
 Sol s = new Sol();
 coisas.add(s);
 
-Porque que a bolinha não é exibida?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Porque que a bolinha não é exibida?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 String para PDF,"Bom dia.
 
 Estou consultando um WebService que, segundo os desenvolvedores, retorna em determinado momento o binário de um PDF que precisarei salvar em disco. O retorno é algo semelhante a JVBERi0xLjIgCiXi48/TIAoxIDAgb2JqIAo8PCAKL1R5 [...] (e mais um zilhão de caracteres).
@@ -433,7 +433,7 @@ FileOutputStream stream = new FileOutputStream( pdf );
 stream.write( content.getBytes() );
 stream.flush();
 stream.close();
-Porém, sempre obtenho uma mensagem (ao tentar abrir o PDF) informando que o arquivo não é válido (corrompido). Alguém poderia ajudar com qualquer ideia? Grato desde já.",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Porém, sempre obtenho uma mensagem (ao tentar abrir o PDF) informando que o arquivo não é válido (corrompido). Alguém poderia ajudar com qualquer ideia? Grato desde já.",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Jar não funciona com imgens,"Oi pessoal,
 o problema que eu to tendo é o seguinte:
 eu do load the uma image com o ImagIO
@@ -443,10 +443,10 @@ eu to fazendo assim:
 
 Tile.imagem = ImageIO.read(new File(""res/imagem.png""));
 eu adicionei a pasta ""res"" no Build Path, mas mesmo assim nao function!,
-alguem pode me ajdua?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+alguem pode me ajdua?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Pegar data mais proxima da data atual em uma lista de objetos,"Tenho uma lista de objetos que contem datas e queria saber qual a data mais próxima da data atual?
 
-",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,
 Data com dia anterior chamada REST,"Olá!
 
 Estou com seguinte problema depois de passar uma lista de objetos em uma chamada Rest.
@@ -461,7 +461,7 @@ O sistema que recebe essa lista de objetos está recebendo o campo de data no se
 
 Tue Nov 24 21:00:00 ART 2015 Sempre no dia anterior e com hora.
 
-Alguém tem uma ideia ou sujestão do que pode estar ocorrendo.",1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Alguém tem uma ideia ou sujestão do que pode estar ocorrendo.",1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Lendo arquivo TXT,"Preciso ler um arquivo de texto onde cada linha representa um estado de uma maquina de estado. E gostaria de tirar as informações de cada linha.
 
 ex:
@@ -483,7 +483,7 @@ BufferedReader arquivo = new BufferedReader(new FileReader(""caminho_do_arquivo"
 while(arquivo.ready()) {  
        String linha = arquivo.readLine();  
 }
-Mas não sei como prosseguir ",1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Mas não sei como prosseguir ",1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Ajuda Regex,"Boa tarde galera,
 
 tenho uma String dessa forma:
@@ -491,7 +491,7 @@ tenho uma String dessa forma:
 input type=""hidden"" name=""CIC"" Resposta=nsyKWVxdDSXEpM2uYmdsed14fd4Jsbiu8AaVuaUfijKRyWm3K9UpRZgZJvT79Gt9ppVY2Y9D9B8GinK-zjm-5XC6Msgjaz.
 Gostaria de pegar, através de Regex, tudo o que tiver a partir de 'Resposta='
 
-Alguém saberia? Se puder dar uma leve explicada agradeço...",0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Alguém saberia? Se puder dar uma leve explicada agradeço...",0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Como converter inteiro para String,"Como faço a converssão de um valor de uma variável de inteiro para string!!
 
 Ex.
@@ -506,7 +506,7 @@ a = ""0"" + b;
 o valor de a vai ser,
 a = 03!!
 
-",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Class ou Public Class,"Bom dia a todos,
 
 Peguei um exemplo na net de uma serie de comandos que faz com que uma pequena janela, com uma frase x, apareça no computador, assim que executado. 
@@ -515,7 +515,7 @@ No entanto, ao inves de comecar o arquivo como ""class"", o autor colocou ""publ
 Entao qual a diferença entre class e public class?? 
 Qdo devo usar um ou usar o outro?
 
-Valeu",1,1,0,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1
+Valeu",1,1,0,0,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1,
 Abrir nova janela GUI,"Estou com dificuldade em um procedimento que até então não tive problemas... o código esta igual a outras exemplos.
 
 Tenho um JButton_Consultar que gera o evento mouseClicked e vai para o seguinte metodo:
@@ -535,7 +535,7 @@ Que na verdade, além da primeira se classe anônima.Todas as 3 formas fazem pra
 
 Tenho outros botões na janela que abrem outras janelas e tudo esta funcionando.. a unica diferença para esta janela é que ela foi gerada automaticamente(trata-se de um Form Amostra Mestre/Detalhes da IDE Netbenas. Mas não creio que seja este o erro.
 
-Abraço a todos",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Abraço a todos",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Porcentagem + votos,"Boa noite!
 
 Primeiramente gostaria de antemão, agradecer a qualquer um que se dispor a me ajudar!
@@ -552,10 +552,10 @@ NÂO SEI: 10% dos votos
 
 Obs: esse codigo do JAVA e para um aplicativo que estou desenvolvendo no Android.
 
-Abraços.",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Abraços.",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Substituir fluxo condicional por polimorfismo,"Olá, minha dúvida é simples.
-É possível substituir qualquer fluxo condicional por polimorfismo.",1,1,0,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1
-Como receber valor da variaveís de outras classes?,o que fazer para o valor de certa variável ser o mesmo para todas as classes? preciso da mesma variável em todo o programa,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+É possível substituir qualquer fluxo condicional por polimorfismo.",1,1,0,0,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,
+Como receber valor da variaveís de outras classes?,o que fazer para o valor de certa variável ser o mesmo para todas as classes? preciso da mesma variável em todo o programa,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,
 Erro ao inserir dados no List,"Tenho um JList:
 
 private DefaultListModel listModelLogs = new DefaultListModel();
@@ -574,7 +574,7 @@ private void btEnviarActionPerformed(java.awt.event.ActionEvent evt) {
 Está acontecendo o seguinte:
 Ao invés de inserir a primeira mensagem e depois de 2 segundos inserir a outra e assim por diante, está acontecendo assim: ele fica parado processando tudo sem exibir nada, ai na hora que termina o processamento(10 segundos) ele exibe as mensagem tudo de uma vez...
 
-Como resolver isso?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Como resolver isso?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Converter XMLGregorianCalendar para Date - WSDL,"Prezados, estou tentar converter o XMLGregorianCalendar para Date ou Calendar no momento em que o Java gerar as classes através de 'jaxb:globalBindings', porém nenhuma alteração que faço é efetiva.
 
 Meu arquivo WSDL:
@@ -601,7 +601,7 @@ public static String marshalDateTime(Date dateTime) {
 }
 }
 
-O que estou fazendo de errado?",1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+O que estou fazendo de errado?",1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Java RMI ajuda!?,"Boa noite galera, tudo bom?
 
 Comecei a estudar JAVA RMI, daí conseguir por meio de tutoriais rodar uma aplicação de Serviço de Mensagens, bem simples.
@@ -614,15 +614,15 @@ O problema é que por ser um código com um nível de complexidade bem maior, n�
 
 Queria saber se eu consigo rodar esse projeto apenas pelo prompt como fiz no Serviço de Mensagens e deu certo, ou teria alguma forma de fazer isso direto pelo Eclipse e/ou NetBeans. Se sim, alguém que também curte o assunto poderia me ajudar?
 
-Obrigado pela atenção..",0,1,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
-Para que serve uma expressão Lambda?,Para que serve uma expressão Lambda em java?,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1
+Obrigado pela atenção..",0,1,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,
+Para que serve uma expressão Lambda?,Para que serve uma expressão Lambda em java?,1,1,0,0,1,1,0,0,1,0,1,1,1,0,1,1,1,1,1,
 Saber qual o Date mais proximo,"Galera, tenho uma lista de datas (17/05/2009, 17/06/2009) + hora + min + seg.
 
 Preciso saber a que mais se aproxima da date atual! (new Date());
 
 Tem como?
 
-",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 "Dúvida, Lógica ArrayList Erro","Olá, eu sou novo em programação, estou fazendo um curso de programação e estou com dúvida em um exercício que tenho que fazer, eu tenho que criar uma aplicação que registra a apuração de uma eleição, tem a classe partido, candidato e apuração e na classe apuração eu devo somar todos os votos que teve na votação, pela classe candidato( no exercício especifica 6 candidatos e 3 partidos) com um ArrayList, minha dúvida é como eu faço pra percorrer a lista para somar os votos que cada candidato recebeu, o objetivo do exercício é trabalhar com as classes com escapsulamento e etc.
 public int getTotalVotos(){
 int total = 0;
@@ -631,11 +631,11 @@ total += candidatos.getVotos();
 }
 meu método ficou assim, mas por algum motivo da erro no for, se alguém poder me ajudar, agradeço
 
-",0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+",0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Erro ao executar meu arquivo .jar,"Olá, boa tarde! 
 Desenvolvi um projeto no NetBeans, porém ao tentar executar o arquivo .jar, aparece o seguinte erro:
 Alguém poderia me ajudar?
-Obrigada!",1,1,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1
+Obrigada!",1,1,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,
 Existe alguma maneira de formatar Aplicações Java com css (Sem ser JavaFX),"E ae meninitos e meninitas, bom... o titulo é bem auto explicativo. existe alguma maneira de formatar o Java ( não o JavaFX) com CSS? tipo formatar os JLabels, JPanels, Jbuttons e outros J's por aí.
 
 Caso exista tal forma maravilhosa, por favor me mostrem o caminho para OZ e me elucidem de minha falta de conhecimento, Óh mestres Javásticos.
@@ -644,11 +644,11 @@ Caso essa forma não exista (caso seja exclusiva do JavaFX), me respondam o segu
 O JFX é muito diferente do JSE?
 Um iniciante devo estuda-lo paralelamente?
 
--Grato desde já",1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
-Qual valor padrão de uma variavel do tipo String?,Gostaria de saber qual o valor padrão de uma variável do tipo String estou criando uma função mas não sei qual o valor padrão de uma String. Obrigado.,1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+-Grato desde já",1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,
+Qual valor padrão de uma variavel do tipo String?,Gostaria de saber qual o valor padrão de uma variável do tipo String estou criando uma função mas não sei qual o valor padrão de uma String. Obrigado.,1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,
 TextArea,"Olá, gostaria de saber como eu posso chamar diversos textos de TextFields em uma TextArea, fazendo com que uma linha seja pulada para cada item adicionado, ja tentei usar o .append e também o getText mas não deu em nada, não consigo se quer adicionar 1 item, desde já obrigado
 
-",0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+",0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,
 Preencher lista comparando atributos,"Boa tarde, estou com um problema.
 
 Tenho duas classes com seus devidos atributos.
@@ -657,12 +657,12 @@ preciso percorrer um array em uma delas setando apenas os valores cujos nomes se
 
 como acesso o nome do atributo da classe para essa comparação? sendo que a classe criada para receber esses nomes tem os mesmos campos com os mesmos nomes... alguem tem um exemplo?
 
-",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,
 Como carregar imagem do banco em um projeto JSF,"Tenho uma tela que faz um upload de um arquivo e salva em uma pasta em um diretorio do computador, e salva no banco o caminho completo da imagem, agora quero exibir essa imagem em uma tabela, existe maneiras de exibir com primefaces, mas preciso fazer em JSF.
 
-Eu não sei por onde começar já fiz algumas tentativas, mas não adiantaram.",1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Eu não sei por onde começar já fiz algumas tentativas, mas não adiantaram.",1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,
 Problema ao ler código de barras em uma interface grafica,"Opa bom dia.
-Estou com um problema na minha aplicação em relação a código de barras pois quando eu leio um código de barras sem usar interface gráfica ele lé o código certinho mais quando eu tento ler o código em uma interface gráfica(mais precisamente em um Jtextfield) ele sai todo errado,gostaria de saber se tem alguma solução para esse tipo de caso.",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+Estou com um problema na minha aplicação em relação a código de barras pois quando eu leio um código de barras sem usar interface gráfica ele lé o código certinho mais quando eu tento ler o código em uma interface gráfica(mais precisamente em um Jtextfield) ele sai todo errado,gostaria de saber se tem alguma solução para esse tipo de caso.",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,
 Conectar JDBC SQLServer 2012 no windows Server 2012,"Olá,
 
 Estou desenvolvendo um projeto que utiliza o SQLServer 2012 de base de dados e, em meu ambiente usando Windows 7 64 bits eu consegui realizar login tranquilamente com o jdbc, colocando os dados corretos e etc. Porém, ao tentar homologar no Windows Server 2012, tenho o erro 4060 ao executar o mesmo código.
@@ -672,7 +672,7 @@ O trecho que estou usando de código é:
 ""jdbc:sqlserver://[nomeDoPC]\\[nomeDaInstancia]:1433;databaseName=[dbName];user=[user];password=[*****]"";
 Vale ressaltar que, em ambos, eu coloquei o arquivo de auth no System32 e também liberei a TCP e a porta 1433.
 
-Valeu",1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Valeu",1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Exercicio simples - ME AJUDEM,"Pessoal, devem ser bem fácil pra vcs, mas fiquei doente bem no dia da aula e não sei como fazer, alguem pode ajudar nessa questão na moralzinha?
 As letras b e c não consegui.
 a) crie uma classe de nome ""Aluno"" com os seguintes atributos:
@@ -684,7 +684,7 @@ este aluno tenha média inferior a 6,0 pontos, do contrário, apresentar a mensa
 d) crie uma classe ""Principal"". O programa deve permitir que o usuário faça quantas entradas
 desejar. Por fim, apresente dados dos alunos (nome, notas, média e situação).
 
-",1,1,0,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,0
+",1,1,0,1,1,0,1,1,1,0,1,1,0,0,1,1,1,1,0,
 Erro commando: public static void main(String args[]),"Boa tarde pessoal,
 Eu fiz uma atualização do Windows 7 (Ultimate) e agora não consigo compilar um programa,
 
@@ -705,14 +705,14 @@ Estou usando o NetBeans IDE 6.9.1
 Alguém pode me dizer porque desse erro?
 Já pesquisei em varios locais e nao consigo identificar.
 
-Obrigado",1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Obrigado",1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Conexão  remota no Java - Ver tela de outro computador,"Ola, gostaria de saber se existe alguma classe que permita vizualizar a tela de outro computador atraves do java, tipo um vnc.
 
 Caso nao, qual a logica devo usar para fazer um sistema desse tipo?
 
 Abraços
 
-",1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,
 Habilitando / Desabilitando JComboBox,"Olá!! 
 Tenho uma classe que possui dois ComboBox...Origem / Destino.... Gostaria que o segundo de default fosse desabilitado, habilitado-o apenas quando o primeiro fosse selecionado....
 
@@ -720,7 +720,7 @@ De que forma posso resolver isso?? :?:....
 
 Sds.
 
-",1,1,0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,
 No suitable driver found for jdbc:mysql://localhost:3306,"pessoal, tem um erro que parece ser simples..mas esta me atormentando...
 
 de uma hora para outra...começou a ocorrer o seguinte erro na aplicacao que uso(jsp.mysql..hibernate)
@@ -735,14 +735,14 @@ Os jars estao certinho..! uma hora fui ""recompilar"" o codigo todo(netbeans 6.7
 
 Alguem tem alguma ideia?
 
-abraços",0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-Algoritmo em java /tabuadas de 1 a 10,"Olá pessoal , to no primeiro periodo de SI, e to com dificuldade pra organizar minha questao, sei a sintaxe, mas nao sei montar a questao dada pelo prof, agora to tentando fazer um exercciio simples de um programa q imprimena tela as tabuadas de 1 a 10",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0
+abraços",0,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+Algoritmo em java /tabuadas de 1 a 10,"Olá pessoal , to no primeiro periodo de SI, e to com dificuldade pra organizar minha questao, sei a sintaxe, mas nao sei montar a questao dada pelo prof, agora to tentando fazer um exercciio simples de um programa q imprimena tela as tabuadas de 1 a 10",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0,
 Adicionar elemento em ArrayList em métodos de outra classe,"Pessoal,
 
 Estou mexendo com a simpática Swing e estou tendo problemas de adicionar elemento em uma ArrayList usando outra classe referente a uma janela de cadastro.
 
-Explicando melhor, eu tenho uma classe com o método main da minha janela principal, e nesta janela contém um botão que dispara uma outra janela de cadastro de dados que é obviamente de outra classe, pra assim quando pressionar o botão cadastrar instanciar um objeto e os atributos são inseridos através do construtor, pegando elementos como nome com o método textField.getText() por exemplo, e então eu preciso pegar esse objeto e inserir na ArrayList que está na classe principal, pela maneira que eu fiz até vejo que está adicionando elementos na ArrayList, porém não com os dados digitados na janela de cadastro, quando acesso dá NullPointerException, porém já notei que tem a quantidade de elementos que cadastro todos com null, alguém pode me dar um norte de como inserir elementos nessa ArrayList localizada na classe principal usando recursos desta outra classe?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
-Vetor de JButton ,"É possível criar um vetor ou array usando JButton? To idealizando um sistema de compra de ingressos e to tendo problema na hora da seleção de poltronas, pois tenho em mente fazer as colunas e linhas e cada assento ser um botão, porem não estou conseguindo armazenar isso nem em um array nem em um vetor. Queria saber se existe uma solução mais cabível.",1,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1
+Explicando melhor, eu tenho uma classe com o método main da minha janela principal, e nesta janela contém um botão que dispara uma outra janela de cadastro de dados que é obviamente de outra classe, pra assim quando pressionar o botão cadastrar instanciar um objeto e os atributos são inseridos através do construtor, pegando elementos como nome com o método textField.getText() por exemplo, e então eu preciso pegar esse objeto e inserir na ArrayList que está na classe principal, pela maneira que eu fiz até vejo que está adicionando elementos na ArrayList, porém não com os dados digitados na janela de cadastro, quando acesso dá NullPointerException, porém já notei que tem a quantidade de elementos que cadastro todos com null, alguém pode me dar um norte de como inserir elementos nessa ArrayList localizada na classe principal usando recursos desta outra classe?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
+Vetor de JButton ,"É possível criar um vetor ou array usando JButton? To idealizando um sistema de compra de ingressos e to tendo problema na hora da seleção de poltronas, pois tenho em mente fazer as colunas e linhas e cada assento ser um botão, porem não estou conseguindo armazenar isso nem em um array nem em um vetor. Queria saber se existe uma solução mais cabível.",1,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,1,1,1,
 Seccionamento de Dados de arquivos .txt,"Boa tarde pessoal,
 
 Apesar dos diversos tópicos sobre o assunto, tais como, método split, scanner, estou com um problema com a leitura de um padrão de dados que preciso seccionar em colunas para futuramente tratá-los de forma separada e colocá-los em uma base de dados.
@@ -758,8 +758,8 @@ Dentro de DADO4: há vários dados de 2 caractéres separados por um espaço por
 Os dados contidos dentro de DADO4 (2 caractéres) também precisam num segundo momento serem separados e dispostos em novas colunas.
 A ""distância"" ou números de caractéres entre um DADO e outro DADO é fixa, por exemplo, o número de caractéres do início de DADO1 até o início de DADO2 é de 10 caractéres já contando o número de espaços que separam os mesmos.
 
-Gostaria que, se possível, vocês pudessem me ajudar ou me orientar qual método seria mais interessante para este tipo de implementação e caso necessitem de mais informações estou a disposição.",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
-Como imprimir variavel do tipo date no formato dd/mm/aaaa,"Tenho uma variável do tipo date com data sendo exibida no seguinte formato Tue May 12 00:00:00 BRT 2015, preciso imprimi-la na tela no formato dd/mm/aaaa para ficar mais intuitivo para o usuário. Alguém sabe como devo proceder?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Gostaria que, se possível, vocês pudessem me ajudar ou me orientar qual método seria mais interessante para este tipo de implementação e caso necessitem de mais informações estou a disposição.",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
+Como imprimir variavel do tipo date no formato dd/mm/aaaa,"Tenho uma variável do tipo date com data sendo exibida no seguinte formato Tue May 12 00:00:00 BRT 2015, preciso imprimi-la na tela no formato dd/mm/aaaa para ficar mais intuitivo para o usuário. Alguém sabe como devo proceder?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Passar uma Lista de um método para outro,"Alguém pode me ajudar em como passar uma lista de um metodo para outro metodo?
 
 por exemplo, tenho um metodo de time
@@ -780,7 +780,7 @@ como eu passo essa lista criada de times para outro metodo?
 public static String placar(passo algo como parametro?List time?){
 no caso como eu pegaria a lista criada em times e passaria para cá, alguém sabe como me ajudar?
 
-",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Erro envio Email SimpleEmail,"Boa tarde!
 
 Pessoal estou tentando enviar emails através de uma aplicação java, para isso entrei na documentação do apache.commons.mail e usei o exemplo deles. Uso o netbeans 8.1, por dentro do netbeans ocorre o seguinte erro: connecting to the mail server(host: smtp.gmail.com, port 465). Mas se gero um Jar e executo por fora via prompt de comando funciona. Tenho outra maquina na qual a versão do netbeans é 8.0.2 ou seja inferior a minha, mandei executar lá e funciona também, Ou seja o problema esta quando executo por dentro do netbeans 8.1, a versão do JRE: é 1.8.0.65 no prompt (java -version). Acredito que tenha algo haver com essa versão, tipo o netbeans ta executando com outra ou alguma directiva de compilação diferente. Vou postar o exemplo abaixo embora o codificação acho que esta correta. Alguém pode me dar alguma sugestão?
@@ -796,13 +796,13 @@ Pessoal estou tentando enviar emails através de uma aplicação java, para isso
     email.addTo(""destinatario@gmail.com"");
     email.send();
 Grato pela ajuda, 
-Erick",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Erick",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Duvida com BigDecimal,"qual a diferença entre b1 e b2?
 
 double b = 1.25
 
 BigDecimal b1 = new BigDecimal("""" + b);
-BigDecimal b2 = new BigDecimal(b);",1,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+BigDecimal b2 = new BigDecimal(b);",1,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,
 Cálculos com valores em Arrays,"Pessoal, tenho uma String que recebe valores numéricos de uma jTextField. Eu faço a quebra da string no operador ""+"" e armazeno os novos valores em um Array. O problema é que eu quero somar todos os números no array mas não sei como identificar a quantidade de números no array, levando a soma total de apenas 2 números. Como eu posso somar todos os valores do array?
 
 Obs: Eu também quero fazer o procedimento para as demais operações. Há alguma diferença?
@@ -812,7 +812,7 @@ String valores[] = formula.split(""\\+"");
 double soma = Double.parseDouble(valores[0])+Double.parseDouble(valores[1]);
 Agradeço desde já.
 
-",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Comprar Strings com e sem acentos,"Bom dia.
 Alguém sabe se existe algum método de comparação da Classe String ignorando acentos?
 
@@ -820,7 +820,7 @@ ex.:
 
 out(""a"".equals(""á""));
 // preciso que retorne true.
-Abraço.s",1,1,0,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1
+Abraço.s",1,1,0,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,
 Pegando valores que estão em uma tela e enviar para outra tela,"Boa noite.
 
 Nesse código abaixo eu pego os valores que estão na tabela e passo para o método que está em outra tela, após ele chegar os dados da check box.
@@ -844,7 +844,7 @@ E com esse método que está na tela q eu quero inserir o dados que eu peguei co
     }
 O problema é que eu mando imprimir os valores que estão na lista, aparece o [] conchete vazio.
 
-Pq que não está chegando nenhum valor?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+Pq que não está chegando nenhum valor?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 "Iniciante em java, Duvida Operador Lógico de Negação ou NOT!","Ola pessoal, tudo bem? espero que sim!
 
 Seguinte, estou começando a programar em Java, mas estou com problema referente a Lógica, devido a não fazer exercícios usando operador de Negação
@@ -860,7 +860,7 @@ Tipo como saber qual é a hora certa de usar esse operador lógico? em quais sit
 
 Espero que alguém me ajude, de forma mais simples possível para que eu consiga entender!
 
-Muito obrigado a todos que responderem, abraço. Té +",1,1,0,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1
+Muito obrigado a todos que responderem, abraço. Té +",1,1,0,1,1,1,1,1,1,0,1,1,0,1,1,1,1,1,1,
 Como fazer um contador de click no JButton em um Swing,"Alguem sabe alguma maneira de contar a quantidade de vez em que o usuario clicka em um jButton no swing.
 
 Tentei dessa forma:
@@ -871,15 +871,15 @@ cont++;
 
 Mas o problema é que sempre trava no 2,ele não continua a contagem.
 
-",1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
-Mudar icone da aplicação,"Acho q deva ser trivial, mas como nunca fiz, como mudo o icone da minha app? Quero mudar akele icone da xicara de cafe do Java q aparece tanto do lado superior esquerdo, qto na barra de tarefas, como faco? E p por outro, posso usar img jpeg? vlw...",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,
+Mudar icone da aplicação,"Acho q deva ser trivial, mas como nunca fiz, como mudo o icone da minha app? Quero mudar akele icone da xicara de cafe do Java q aparece tanto do lado superior esquerdo, qto na barra de tarefas, como faco? E p por outro, posso usar img jpeg? vlw...",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,
 JFormattedtextField sem valor ,"Boa tarde, galera tenho um JFormattedTextField adicionado a partir do netbeans, porém seu eu gravo os dados sem preencher meu compo com mascara ele gravar normal mas quando recupero os dados do banco para os campos... onde tem mascara faz um barulho do windows, ou se eu navego nos dados, onde tem valor preenchido quando chega em um registro que não tem valor na mascara ele preenche com o valor do outro registro.. ou seja não deixa em branco
 
 alguem ja resolveu isso????
 
-vlwww",1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1
+vlwww",1,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,
 JComboBox colocar valor opsoto em JLabel,"Gente, eu preciso de uma ajuda, sou nova em programar, e queria fazer uma lista com o jcombobox, que quando eu selecionasse uma opção no campo de resposta, já me retornasse a outra seleção.
-Por exemplo, na lista está o ano de nasc. e a idade, então se eu selecionar a idade para colocar informações, logo abaixo, aparece o ano de nasc. e na frente o numero. Estou usando o netbeans.",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1
+Por exemplo, na lista está o ano de nasc. e a idade, então se eu selecionar a idade para colocar informações, logo abaixo, aparece o ano de nasc. e na frente o numero. Estou usando o netbeans.",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,
 Encontrar o maior valor dentro de um vetor,"Pessoal, este código funciona, mas não entendi o porquê... Ele não está comparando sempre com o valor do primeiro elemento do vetor? Não está comparando uns com os outros...
 Pelo que eu entendi, é atribuido o valor do elemento [0] do Array, ou seja, o valor 1.9 à variável max.
 Depois o vetor é percorrido, e a cada análise de cada valor dentro do elemento, é comparado o número daquele elemento qualquer com o valor contido em max, e se este valor for maior do que max, ou seja, em nosso exemplo, 1.9, esse valor é atribuido a max, que depois é exibido...
@@ -896,7 +896,7 @@ public class TestArray {
       }
 System.out.println(""Maximo elemento é "" + max);
 }
-}",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+}",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Como conseguir o valor do JTextField no MySQL?,"Pessoal, estou fazendo um programa via Windows Builder no Eclipse. Criei a parte visual através do programa, e agora estou tentando capturar o valor que eu escrevi na caixa de texto para o meu método e inserir no banco de dados. A parte visual dessa parte é:
 
 JLabel lblNomeDoCliente = new JLabel(""Nome do Cliente"");
@@ -918,20 +918,20 @@ Qual campo eu tenho que colocar no meu método pra dar certo?
             cadastroCliente.inserirCliente(txtNomeCliente, txtEmailCliente, txtCodigoCliente);
             }
     });
-O erro que ele está dando é que não é do mesmo tipo e que não pode fazer a inclusão dos dados. Obrigado desde já, pessoal.",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+O erro que ele está dando é que não é do mesmo tipo e que não pode fazer a inclusão dos dados. Obrigado desde já, pessoal.",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 programação Orientada a Objeto,"Ola galera, tou cheio de duvidas com relação a uma disciplina que eu pago na minha Universidade, tudo bem... até tem apoio dos professores, mas nem sempre conseguimos absorver tudo, e eu quero ajuda dos feras em Java, preciso de algo tipo: uma lista completa de todas as funções e comandos em java para iniciante.
 
-",0,1,0,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1
+",0,1,0,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,
 "Similar ao Sytem(""pause"") do C","Olá pessoal,
 
 O programa que estou fazendo usa interface modo texto, mas não consigo fazer o programa pausar depois que ele termina... Preciso que ele pare pois é gerado um relatório com os resultados do processamento. Seria algo similar ao system(""pause""); do C . Alguém sabe como resolver esse problema?
 
 Agradeço se puderem responder.
 
-",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Logins via .txt? Há um jeito confiável de se fazer isso?,"Estou querendo fazer um sistema de login bem básico para meu software, mas de forma confiável. Sei que há inúmeras formas de se fazer via linguagens de busca (SQL, MySQL), mas como o meu projeto tenta dispensar isso. Queria saber se há um jeito confiável de se elaborar isso. Pensei em criar uma pasta com os logins (que seriam no formato login.txt) e com a senha criptografada dentro deles, mas não sei se isso é confiável (em questão de segurança, desempenho e integridade). Minha aplicação será para rede local e apenas a aplicação estará instalada no computador com as senhas. O que vocês me recomendam?
 
-",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,
 Dúvida tipos de variáveis - non-static variablee cannot be referenced from a static context,"Boa noite pessoa, to querendo imprimir o mesatual para ver se o método ta fazendo a troca correta, mas ta tando esse erro depois de instanciar a classe na classe main - non-static variable n cannot be referenced from a static context
 
 //classe que vai checar o mes
@@ -963,7 +963,7 @@ public class Testedata {
     public static void main(String[] args) {
        n.imprimir();
     }
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Conexão com MySql,"Olá! Estou usando Netbeans e Mysql(wampserver), mas não consigo estabelecer a conexão.
 O código está simplório, mas é o 1º exemplo.
 
@@ -988,14 +988,14 @@ private void btInserirActionPerformed(java.awt.event.ActionEvent evt) {
     }
 No netbeans, adicionei a biblioteca Driver JDBC do MySQL. Na aba Serviços, seleciono o BD e conectar (o driver, logo abaixo, mostra que está conectado).
 No MySQL (wampserver) criei o BD ex-login, a tabela tablogin e os campos.
-O que está errado? pois quando executo, recebo uma mensagem de driver não encontrado.",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+O que está errado? pois quando executo, recebo uma mensagem de driver não encontrado.",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 getClass de um tipo T generic,"Estou precisando obter o class de um T Generic:
 
 return (T) this.manager.find(T.class, id);
 
 Existe algum método do java 6 que retorne essa informação?
 
-",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Diferenciar um List <E> ,"Olá.....
 
 Tenho um método que recebe um List como parametro...
@@ -1009,7 +1009,7 @@ if (obj instanceof Cliente){ ... else ...
 
 Porém quando é um List de Objetos , como faz?
 
-",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Quebrar String com o método split,"Srs, boa tarde!
 
 Eu estou com uma dúvida relacionada aos tipos primitivos Byte e Short. Sabemos que na hierarquia dos operadores um short ""comporta"" um valor de Byte, como nesse exemplo:
@@ -1028,7 +1028,7 @@ class Teste {
 		short vShort2 = vByte + 1;
 	}
 }
-Agradeço antecipadamente.",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+Agradeço antecipadamente.",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Operadores em Java,"Srs, boa tarde!
 
 Eu estou com uma dúvida relacionada aos tipos primitivos Byte e Short. Sabemos que na hierarquia dos operadores um short ""comporta"" um valor de Byte, como nesse exemplo:
@@ -1047,7 +1047,7 @@ class Teste {
 		short vShort2 = vByte + 1;
 	}
 }
-Agradeço antecipadamente.",1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Agradeço antecipadamente.",1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Pegar cada letra de uma String e dar um valor,"Oi Pessoal, sou novo aqui no forum. Agradeço qualquer ajuda de antemão.
 
 Estou tentando pegar uma string, separa-la em letra por letra, e pra cada letra dar um valor.
@@ -1065,7 +1065,7 @@ char[] letras;
         letras = name.toCharArray();
 porem, nao consigo agora jogar a variavel letras num switch. da um erro.
 
-alguem pode me ajudar?",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+alguem pode me ajudar?",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 Programa para gerar números em sequencia,"Eae pessoal, sou leigo no assunto e hoje na faculdade a professora me passou um exercício para fazer um programa de números sequenciais. É bem simples, mas eu não tenho bom conhecimento ainda.
 Precisa:
 Pedir quantos números a pessoa quer que apareça em sequência
@@ -1090,7 +1090,7 @@ JOptionPane.showMessageDialog(null, ""Número inválido"");
 
 E eu não consigo avançar daqui. Por favor, ajudem ! (Desculpe pelos erros)
 
-",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Problemas com null,"Olá pessoal!
 
 Primeiro quero agradecer por diversas respostas que li aqui e me ajudaram muito.
@@ -1135,7 +1135,7 @@ Não estou conseguindo resolver essa situação. Poderiam me ajudar? Muito obrig
 			tam--;
 			pos--;
 		}
-	}",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+	}",0,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Não estou conseguindo inserir valores do tipo double em meu programa,"Quando coloco o valor 3.4 na minha entrada de dados, o Java me dá uma exceção. Bem, resumindo o objetivo do meu programa: ""Desejo digitar 6 valores, considerando apenas os positivos e negativos, e no final mostrar quantos valores positivos foram digitados"". Agradeço à quem puder me ajudar!
 
 import java.util.Scanner;
@@ -1161,7 +1161,7 @@ Exception in thread &quot;main&quot; java.util.InputMismatchException
 	at java.util.Scanner.next(Scanner.java:1485)
 	at java.util.Scanner.nextDouble(Scanner.java:2413)
 	at testes.Testes.main(Testes.java:13)
-Java Result: 1",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+Java Result: 1",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,
 Ajuda com getters e setters,"Porque fazemos esse código:
 
 private int var;
@@ -1174,7 +1174,7 @@ public int getVar() {
 Ao invés de simplesmente fazer esse:
 
 public int var;
-Pra mim os dois dão no mesmo.",1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Pra mim os dois dão no mesmo.",1,1,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,
 Porque não funciona o colletions.sort,"Bom dia gostaria de ordenar um list mas o eclipse mostra essa anotacao
 
 //esta chamada o sort fica sublinhado de vermelho mandando renomear!!
@@ -1192,13 +1192,13 @@ public class OrdenarIdNfe  implements Comparator<BeanProdutosXML>{
 	    }
 }
 alguem pode me explicar pq do erro e como contornar?/
-desde ja grato",1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+desde ja grato",1,1,0,0,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,
 Como verificar se existe a palavra em uma String,"Ao contrário do contains que vê se a String é exatamente igual a que estou comparando, gostaria de saber como faço para ver se na String tem parte de uma palvra só que queira
 
 String = Hoje o Sol está forte.
 gostaria de saber se na String acima tem a palavra ""sol"".
 
-",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Reutilização de Objetos,"Todo mundo sempre faz esse código assim: 
 
 jpanel1.setLayout(new FlowLayout());
@@ -1214,19 +1214,19 @@ jpanel1.setLayout(f);
 jpanel2.setLayout(f);
 jpanel3.setLayout(f);
 jbutton1.addActionListener(b);
-jbutton2.addActionListener(b);",0,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+jbutton2.addActionListener(b);",0,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,
 Apenas uma instancia da aplicação,"Olá PessoALL,
 
 Se existe a resposta pra isso no Fórum, ta bem escondida.. oiUHSoiUHSoIs :smiley:
 
 É possivel em JAVA, deixar apenas uma instância da app rodar? caso o usuário tente rodar ela novamente, e já esteja aberta, ela seja chamada ""à frente""?  :wink:
 
-Obrigadu!! :!:",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1
+Obrigadu!! :!:",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,0,1,1,1,
 Operadores logicos,"Duvida básica. Qual a diferença entre usar:
 | ou || 
 e ente & ou &&
 
-Venom",0,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1
+Venom",0,0,0,0,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,
 Problema com StringTokenizer,"Pessoal, to com um problema com StringTokenizer que é o seguinte:
 
 Eu tenho que ler uma frase que esta dentro de frase.txt
@@ -1264,7 +1264,7 @@ eu fiz assim, mas ele so pega a ultima palavra da ""quebra""
             FileOutputStream fos = new FileOutputStream(arquivo);  
             String tokens = xx;
             fos.write(tokens.getBytes());  
-            }",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+            }",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Pergunta simples de incremento,"Pergunta simples abaixo, está bem explicada a pegunta, mas não entendi o porquê disso.
 
 > Neste código, as variáveis a e b são inicializadas para referenciar o mesmo objeto Integer com valor 3.
@@ -1276,7 +1276,7 @@ valor já que referenciam o mesmo objeto?
 Integer a = 3;
 Integer b = a;
 b++;
-System.out.println(a + "" "" + b); //exibe ""3 4""",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1
+System.out.println(a + "" "" + b); //exibe ""3 4""",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Explicação do metodo equals(),"por gentileza alguem pode me explicar detalhadamente estas 2 linhas marcadas no metodo equals(); e como ele funciona? :?: 
 
 public boolean equals(Object obj) {
@@ -1286,7 +1286,7 @@ public boolean equals(Object obj) {
         } else {
             return false;
         }
-    }",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,
+    }",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,
 Imprimir apenas ultimo elemento de um List,"Bom dia prezados, estou com dificuldades para imprimir apenas o ultimo elemento de uma lista:
 
 List<Noticia> noticias = new ArrayList<Noticia>();
@@ -1295,7 +1295,7 @@ dai recebo isso em:
 noticias = noticiaBO.consultaNoticia(cbp);
 retorno noticias e monto uma tabela no richfaces. mas devo mostrar agora apenas o elemento mais recente, ou seja, o ultimo elemento da lista. alguma ajuda? grato.
 
-",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 JScrollPane na JPanel,"Pessoal, eu quero colocar ScrollBar no meu JPanel, e que que a ScrollBar apareça quando o tamanho da linha que eu desenho ultrapasse o tamanho do JPanel, mas não estou conseguindo. Alguém pode ajudar?
 
 class Grafico extends JPanel{
@@ -1313,7 +1313,7 @@ class Grafico extends JPanel{
             g.drawLine(100, 2000, 100, 50);
             g.drawLine(300, 100, 50, 100);
         }
-    }",1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1
+    }",1,0,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,
 Erro ao ler arquivo,"Opa galera, tudo bom?
 
 Estou fazendo um teste aqui, porem esta dando um erro que nao sei resolver, apenas tento ler um arquivo, porem sem sucesso.
@@ -1342,4 +1342,4 @@ at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
 at java.io.ObjectInputStream.(Unknown Source)
 at Teste1.main(Teste1.java:18)
 
-Valeeu",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Valeeu",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,

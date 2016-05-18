@@ -56,6 +56,10 @@ public class WordsUtils {
 	 */
 	public final static String[] WORDS_END_COD = { "}", "/>", ";" };
 
+	public final static String[] HOMEWORK_WORDS = { "exercicio", "exercicios",
+			"trabalho", "questoes", "questao", "faculdade", "escola",
+			"aula" };
+
 	/**
 	 * Lista stop words do brasil
 	 */

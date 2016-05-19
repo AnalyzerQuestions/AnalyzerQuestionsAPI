@@ -28,7 +28,9 @@ public class WordsUtils {
 	 */
 	public final static String[] WORDS_DEMANDING = { "urgente",
 			"me mandem o codigo", "mandem o codigo", "mandem um exemplo",
-			"rapido" };
+			"estou com pressa","o mais rapido possivel", "sim eu sei", "mandem a resposta", "Como possa fazer isso", 
+			"como faz isso", "respondam", "merda","porra","Me ajudem, "
+					+ "codigo abaixo","Me ajudem codigo abaixo"};
 
 	/**
 	 * Lista de palavras que pode identificar presença de vocativo em um texto

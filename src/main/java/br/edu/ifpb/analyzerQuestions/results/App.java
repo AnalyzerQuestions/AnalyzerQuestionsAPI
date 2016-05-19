@@ -51,7 +51,7 @@ public class App {
 		//resultsTable.executeQuestionWithSingleProblem();
 		//resultsTable.executeUnderstandableDescription();
 		//resultsTable.executeAvoidDescriptionWithCodeOnly();
-		resultsTable.executeDoNotCreateHomeworkQuestions();
+		//resultsTable.executeDoNotCreateHomeworkQuestions();
 		
 		
 		
@@ -61,6 +61,8 @@ public class App {
 //		
 //		System.out.println(d.avoidDescriptionWithCodeOnly(s));
 		
+		//46, 17
+		resultsTable.executeObviatingDemandingLanguage();
 		
 	}
 }

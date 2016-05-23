@@ -14,7 +14,8 @@ public class WordsUtils {
 			+ "else,enum,extends,false,final,finally,float,for,goto"
 			+ "if,implements,instanceof,int,long,native,new,null"
 			+ "private,protected,public,return,short,static,strictfp,super,switch,synchronized"
-			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,equals,out,interger,valueof,super,get,set";
+			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,equals,out,interger,"
+			+ "valueof,super,get,set,|,||,&,&&";
 	
 	/**
 	 * Lista de palavras que podem identificador presença de exemplo numa

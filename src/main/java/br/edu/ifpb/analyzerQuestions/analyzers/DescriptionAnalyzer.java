@@ -114,10 +114,9 @@ public class DescriptionAnalyzer {
 	 * Presença de exemplo
 	 */
 	public int showingExample(String description) {
-		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
-		str = StringUtil.removeConnective(str);
-
-		if (frenquencyOfCode(str) > 3) {
+		description = StringUtil.removeConnective(description);
+		
+		if (frenquencyOfCode(description) >= 3) {
 			return 1;
 		}
 
@@ -131,28 +130,28 @@ public class DescriptionAnalyzer {
 		return 0;
 	}
 
+	/**
+	 * 
+	 * @param description
+	 * @return
+	 */
 	private int frenquencyOfCode(String description) {
-
-		description = description.toLowerCase();
 
 		int flag = 0;
 		for (int i = 0; i < WordsUtils.getWordsCode().length; i++) {
 			String word = WordsUtils.getWordsCode()[i];
 
 			if (description.contains(word)) {
-				flag += 1;
+				flag++;
 			}
 		}
-
 		String[] tTokens = StringTokenizerUtils.parseToken(description);
 
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 
 		for (int i = 0; i < tJavaClasses.length; i++) {
-			for (int j = 0; j < tTokens.length; j++) {
-				if (tTokens[j].equals(tJavaClasses[i])) {
-					flag++;
-				}
+			if(description.contains(tJavaClasses[i])){
+				flag++;
 			}
 		}
 		return flag;
@@ -216,15 +215,10 @@ public class DescriptionAnalyzer {
 	 */
 	public int questionWithSingleProblem(String description) {
 
-		String s0 = StringUtil.removerAcentos(description.toLowerCase());
-		String s1 = StringUtil.trim(s0);
-
 		int flag = 0;
-		for (int i = 1; i <= s1.length() - 1; i++) {
+		for (int i = 0; i < description.length(); i++) {
 			if (description.charAt(i) == '?') {
-				if (description.charAt(i - 1) != '?') {
 					flag++;
-				}
 			}
 		}
 

@@ -25,7 +25,7 @@ public class ReaderQuestions {
 	public ReaderQuestions(String file) {
 		this.FILE_NAME = file;
 	}
-	private static final String[] FILE_HEADER_MAPPING = { "title", "body","tituloMedio", "tituloBemDefinido",
+	private static final String[] FILE_HEADER_MAPPING = { "title", "body","tituloBemDefinido", "tituloMedio",
 		"tituloCaixaAlta", "tituloParCaixaAlta", "coerencia", "perguntaBemDefinida", "vocativo", "evDescricaoCurta"
 		, "evDescricaoLonga", "presencaCodigo", "evTrechoGrandeCodigo", "evPergComApenasCod", "perguntaUnica",
 		"incluirAgradecimento", "evSerExigente", "usoNormaCultaLing", "evCriarPergDuplicada", "evPergFactoides",

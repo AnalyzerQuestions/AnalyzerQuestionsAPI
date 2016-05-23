@@ -3,14 +3,27 @@ package br.edu.ifpb.analyzerQuestions.analyzers;
 import java.util.Arrays;
 import java.util.List;
 
+import br.edu.ifpb.analyzerQuestions.enumerations.Site;
+import br.edu.ifpb.analyzerQuestions.util.HttpUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
+/**
+ * 
+ * @author franck
+ *
+ */
 public class DescriptionAnalyzer {
 
+	private String javaClasses;
+
+	{
+		this.setClassesJava();
+	}
+
 	/**
-	 * Understandable
+	 * Understandable description
 	 */
 	/**
 	 * Considera-se pesos para cada caracteristca que a descrição atende, sendo
@@ -48,12 +61,12 @@ public class DescriptionAnalyzer {
 	 * presença de vocativo
 	 */
 	public int includingVocative(String description) {
-		String str1 = StringUtil.trimPosition(description);
+		String str1 = StringUtil.trimPosition(description.toLowerCase());
 		String str2 = StringUtil.removeConnective(str1);
 		String[] str = str2.split(" ");
 
 		if (str.length >= 3) {
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 4; i++) {
 				String sn = str[i];
 				if (sn.charAt(sn.length() - 1) == ',') {
 					return 1;
@@ -74,7 +87,8 @@ public class DescriptionAnalyzer {
 	 * Evitar desecrição curta da pergunta
 	 */
 	public int shortDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description);
+		String str = StringUtil.removeCharacterSpecial(description
+				.toLowerCase());
 		str = StringUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
 		if (strSplited.length > 10)
@@ -83,10 +97,11 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
+	 * 
 	 * Evitar descrição longa demais na pergunta
 	 */
 	public int longDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description);
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
 		if (strSplited.length < 800)
@@ -95,10 +110,11 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
+	 * 
 	 * Presença de exemplo
 	 */
 	public int showingExample(String description) {
-		String str = StringUtil.removeCharacterSpecial(description);
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removeConnective(str);
 
 		if (frenquencyOfCode(str) > 3) {
@@ -113,16 +129,30 @@ public class DescriptionAnalyzer {
 			}
 		}
 		return 0;
-
 	}
 
 	private int frenquencyOfCode(String description) {
+
+		description = description.toLowerCase();
+
 		int flag = 0;
 		for (int i = 0; i < WordsUtils.getWordsCode().length; i++) {
 			String word = WordsUtils.getWordsCode()[i];
 
 			if (description.contains(word)) {
 				flag += 1;
+			}
+		}
+
+		String[] tTokens = StringTokenizerUtils.parseToken(description);
+
+		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
+
+		for (int i = 0; i < tJavaClasses.length; i++) {
+			for (int j = 0; j < tTokens.length; j++) {
+				if (tTokens[j].equals(tJavaClasses[i])) {
+					flag++;
+				}
 			}
 		}
 		return flag;
@@ -133,7 +163,21 @@ public class DescriptionAnalyzer {
 	 */
 	public int avoidingMuchCode(String description) {
 
-		return 0;
+		description = description.toLowerCase();
+
+		int flag = frenquencyOfCode(description);
+
+		if (flag > 200)
+			return 0;
+		return 1;
+	}
+
+	/**
+	 * método auxiliar para carregar os nomes das classes do java. Deve ser
+	 * executado antes para não ter que fazer conexão com a pagina toda vez.
+	 */
+	public void setClassesJava() {
+		javaClasses = HttpUtils.getPageContent(Site.JAVA_CLASSES.getSite());
 	}
 
 	/**
@@ -146,12 +190,12 @@ public class DescriptionAnalyzer {
 		String[] s = {};
 
 		for (int i = 0; i < WordsUtils.WORDS_INIT_COD.length; i++) {
-			s = StringTokenizerUtils.parseToken(description);
+			s = StringTokenizerUtils.parseToken(description.toLowerCase());
 			if (s[0].equals(WordsUtils.WORDS_INIT_COD[i])) {
 				isInit = true;
 			}
 		}
-		s = StringTokenizerUtils.parseToken(description);
+		s = StringTokenizerUtils.parseToken(description.toLowerCase());
 		String f = s[s.length - 1];
 		String f2 = Character.toString(f.charAt(f.length() - 1));
 
@@ -171,39 +215,59 @@ public class DescriptionAnalyzer {
 	 * Restringir a pergunta a um unico problema
 	 */
 	public int questionWithSingleProblem(String description) {
+
+		String s0 = StringUtil.removerAcentos(description.toLowerCase());
+		String s1 = StringUtil.trim(s0);
+
 		int flag = 0;
-		for (int i = 0; i < description.length(); i++) {
+		for (int i = 1; i <= s1.length() - 1; i++) {
 			if (description.charAt(i) == '?') {
-				flag++;
+				if (description.charAt(i - 1) != '?') {
+					flag++;
+				}
 			}
 		}
+
+		/*
+		 * for (int i = 0; i < WordsUtils.WORDS_ONLY_ONE.length; i++) {
+		 * if(s1.contains(WordsUtils.WORDS_ONLY_ONE[i])){ flag++; } }
+		 */
+
 		if (flag > 1) {
-			return 1;
+			return 0;
 		}
-		return 0;
+		return 1;
 	}
 
 	/**
 	 * Including greetings
 	 */
 	public int includingGreetings(String description) {
-		String s0 = StringUtil.removeCharacterSpecial(description);
+		String s0 = StringUtil
+				.removeCharacterSpecial(description.toLowerCase());
 		String s1 = StringUtil.removeConnective(s0);
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
 			if (s1.contains(WordsUtils.WORDS_GREETINGS[i])) {
-				return 0;
+				return 1;
 			}
 		}
-		return 1;
+		return 0;
 	}
 
 	/**
 	 * Obviating demanding language
 	 */
 	public int obviatingDemandingLanguage(String description) {
+		String str = StringUtil.removerAcentos(description.toLowerCase());
+		String[] demandingWords = WordsUtils.WORDS_DEMANDING;
+		for (int i = 0; i < demandingWords.length; i++) {
+			if (str.contains(demandingWords[i])) {
+				return 0;
+			}
+		}
 
-		return 0;
+		return 1;
 	}
 
 	/**
@@ -227,7 +291,7 @@ public class DescriptionAnalyzer {
 
 		String s0 = StringUtil.removerAcentos(description);
 		String s1 = StringUtil.removeCharacterSpecial(s0);
-		String s2 = StringUtil.removeConnective(s1);
+		String s2 = StringUtil.removeConnective(s1).toLowerCase();
 
 		String[] aStr = StringTokenizerUtils.parseToken(s2);
 		List<String> list = Arrays.asList(aStr);
@@ -240,7 +304,7 @@ public class DescriptionAnalyzer {
 				}
 			}
 		}
-		if(flag >= 2)
+		if (flag > 2)
 			return 0;
 		return 1;
 	}

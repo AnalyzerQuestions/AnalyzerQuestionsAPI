@@ -36,7 +36,7 @@ public class StringUtil {
 	}
 
 	public static String removerTagsHtml(String html) {
-		return html.replaceAll("<.*?>", "");
+		return html.replaceAll("<.*?>", " ");
 	}
 	
 	public static String removeConnective(String str) {
@@ -47,7 +47,7 @@ public class StringUtil {
 				sBuffer.append(strInPart[i]).append(" ");
 			}
 		}
-		return sBuffer.toString().toLowerCase();
+		return sBuffer.toString();
 	}
 
 	public static String trimPosition(String str) {
@@ -76,7 +76,7 @@ public class StringUtil {
 				sb.append(c);
 			}
 		}
-		return sb.toString().toLowerCase();
+		return sb.toString();
 	}
 
 	/* remove leading whitespace */

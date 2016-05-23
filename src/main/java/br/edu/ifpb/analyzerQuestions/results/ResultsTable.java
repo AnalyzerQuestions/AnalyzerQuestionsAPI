@@ -78,6 +78,27 @@ public class ResultsTable {
 
 	}
 	
+	public void executeUnderstandableTitle(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.print("Questão "+flag+": "+qds.getTitle());
+			if(titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody()) == Integer.parseInt(qds.getTituloBemDefinido())){
+				System.out.println("IGUAL (" + titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+
+	}
+	
 	public void executeTituloCaixaAlta(){
 		int flag = 1;
 		int igual = 0;
@@ -324,6 +345,28 @@ public class ResultsTable {
 				igual++;
 			}else{
 				System.out.println("DIFERENTE (" + aux.obviatingDemandingLanguage(qds.getBody())+"-"+ qds.getEvSerExigente()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	/**
+	 * 
+	 */
+	public void executeAvoidingMuchCode(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.avoidingMuchCode(qds.getBody()) == Integer.parseInt(qds.getEvTrechoGrandeCodigo())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.avoidingMuchCode(qds.getBody())+"-"+ qds.getEvTrechoGrandeCodigo()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.avoidingMuchCode(qds.getBody())+"-"+ qds.getEvTrechoGrandeCodigo()+")");
 				diferente ++;
 			}
 			flag ++;

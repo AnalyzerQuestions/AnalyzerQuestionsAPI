@@ -12,17 +12,18 @@ public class WordsUtils {
 	 */
 	public final static String WORDS_CODE = "abstract,assert,boolean,break,byte,case,catch,char,class,const,default"
 			+ "else,enum,extends,false,final,finally,float,for,goto"
-			+ "if,implements,import,instanceof,int,long,native,new,null,package"
+			+ "if,implements,instanceof,int,long,native,new,null"
 			+ "private,protected,public,return,short,static,strictfp,super,switch,synchronized"
-			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,{,},equals,out,interger,valueof,super,"
-			+ "|,|,&&, List, <,>, (), get, set";
-
+			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,equals,out,interger,valueof,super,get,set";
+	
 	/**
 	 * Lista de palavras que podem identificador presença de exemplo numa
 	 * pergunta
 	 */
 	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,ex:";
 
+	public final static String[] WORDS_ONLY_ONE = {"tudo bem", "tudo bom", "blza"};
+	
 	/**
 	 * Lista de palavras que podem identificar se a pergunta possui exigencia.
 	 */
@@ -38,7 +39,7 @@ public class WordsUtils {
 	public final static String[] WORDS_VACATIVES = { "pessoal", "galera",
 			"povo", "gente", "povao", "turma", "povareu", "grupo", "bando",
 			"negrada", "individuos", "habitantes", "nacao", "publico",
-			"populacao", "parentada", "povaleu" };
+			"populacao", "parentada", "povaleu", "todos"};
 
 	/**
 	 * Lista de palavras que pode identificar agradecimento no texto

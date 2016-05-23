@@ -34,35 +34,38 @@ public class App {
 		 */
 		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
+		
+		
+/*    	ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
+		List<QuestionsDataSet> q2 = readerQuestions2.readCsvFile();
+		
+		
+		for (QuestionsDataSet questionsDataSet : q2) {
+			q.add(questionsDataSet);
+		}*/
+		
 		ResultsTable resultsTable = new ResultsTable(q);
 		
 		//resultsTable.executeCoherencyBodyAndTitle();
 		
+		//resultsTable.executeUnderstandableTitle();
 		//resultsTable.executeTitleMedio();
 		//resultsTable.executeTituloCaixaAlta();
 		//resultsTable.executeTitleCapitaLettersPartially();
 		
+		//resultsTable.executeUnderstandableDescription();
 		//resultsTable.executeIncludingVocative();
-		//resultsTable.executeShortDescription();
+		//esultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
-		//resultsTable.executeShowingExample();
+		resultsTable.executeShowingExample();
 		//resultsTable.executeIncludingGreetings();
 		
 		//resultsTable.executeQuestionWithSingleProblem();
-		//resultsTable.executeUnderstandableDescription();
 		//resultsTable.executeAvoidDescriptionWithCodeOnly();
 		//resultsTable.executeDoNotCreateHomeworkQuestions();
-		
-		
-		
-//		DescriptionAnalyzer d = new DescriptionAnalyzer();
-//		
-//		String s = "public class{};";
-//		
-//		System.out.println(d.avoidDescriptionWithCodeOnly(s));
-		
-		//46, 17
-		resultsTable.executeObviatingDemandingLanguage();
+			
+		//resultsTable.executeObviatingDemandingLanguage();
+		//resultsTable.executeAvoidingMuchCode();
 		
 	}
 }

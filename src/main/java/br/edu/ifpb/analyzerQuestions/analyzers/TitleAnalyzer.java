@@ -1,13 +1,35 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
+import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 
+/**
+ * 
+ * @author franck
+ *
+ */
 public class TitleAnalyzer {
 
+	private QuestionsAnalyzer questionsAnalyzer;
 	/**
 	 * Understandable title
 	 */
-	public int understandableTitle(String title) {
+	public int understandableTitle(String title, String description) {
+		questionsAnalyzer = new QuestionsAnalyzer();
+		
+		float is = 0;
+
+		if (mediumSizeTitle(title) == 1) {
+			is++;
+		}
+		
+		if(questionsAnalyzer.coherencyBodyAndTitle(new Question(title, description)) == 1){
+			is++;
+		}
+
+		if (is >= 1) {
+			return 1;
+		}
 		return 0;
 
 	}
@@ -16,11 +38,11 @@ public class TitleAnalyzer {
 	 * Medium size title (2 < words < 6)
 	 */
 	public int mediumSizeTitle(String title) {
-		
+
 		String str = StringUtil.removeConnective(title);
 		String st1 = StringUtil.removeCharacterSpecial(str);
 		String[] strPart = st1.split(" ");
-		if(strPart.length > 2 && strPart.length < 6)
+		if (strPart.length > 2 && strPart.length <= 6)
 			return 1;
 		else
 			return 0;

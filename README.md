@@ -1,5 +1,5 @@
 # AnalyzerQuestionsAPI
-[![License - Apache 2.0](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![platform - web](https://img.shields.io/hexpm/l/plug.svg)]
 ### API para análise de atratividade de questões de programação
 
 ###Funcionalidades

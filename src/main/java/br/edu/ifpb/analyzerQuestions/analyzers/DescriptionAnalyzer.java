@@ -66,7 +66,7 @@ public class DescriptionAnalyzer {
 		String[] str = str2.split(" ");
 
 		if (str.length >= 3) {
-			for (int i = 0; i < 4; i++) {
+			for (int i = 0; i < 3; i++) {
 				String sn = str[i];
 				if (sn.charAt(sn.length() - 1) == ',') {
 					return 1;
@@ -74,12 +74,11 @@ public class DescriptionAnalyzer {
 			}
 			String s0 = str[0];
 			for (int i = 0; i < WordsUtils.WORDS_VACATIVES.length; i++) {
-				if (s0.equals(WordsUtils.WORDS_VACATIVES[i])) {
+				if (s0.equalsIgnoreCase(WordsUtils.WORDS_VACATIVES[i])) {
 					return 1;
 				}
 			}
 		}
-
 		return 0;
 	}
 

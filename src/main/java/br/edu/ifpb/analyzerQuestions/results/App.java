@@ -32,17 +32,17 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 		
 		
-/*   	ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
+   	ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
 		List<QuestionsDataSet> q2 = readerQuestions2.readCsvFile();
 		
 		
 		for (QuestionsDataSet questionsDataSet : q2) {
 			q.add(questionsDataSet);
-		}*/
+		}
 		
 		ResultsTable resultsTable = new ResultsTable(q);
 		
@@ -54,7 +54,7 @@ public class App {
 		//resultsTable.executeTitleCapitaLettersPartially();
 		
 		//resultsTable.executeUnderstandableDescription();
-		//resultsTable.executeIncludingVocative();
+		resultsTable.executeIncludingVocative();
 		//esultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
 		//resultsTable.executeShowingExample();
@@ -65,7 +65,7 @@ public class App {
 		//resultsTable.executeDoNotCreateHomeworkQuestions();
 			
 		//resultsTable.executeObviatingDemandingLanguage();
-		resultsTable.executeAvoidingMuchCode();
+		//resultsTable.executeAvoidingMuchCode();
 		
 	}
 }

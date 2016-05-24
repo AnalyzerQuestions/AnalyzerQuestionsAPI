@@ -15,13 +15,13 @@ public class WordsUtils {
 			+ "if,implements,instanceof,int,long,native,new,null"
 			+ "private,protected,public,return,short,static,strictfp,super,switch,synchronized"
 			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,equals,out,interger,"
-			+ "valueof,super,get,set,|,||,&,&&";
+			+ "valueof,super,get,set,|,||,&,&&,from. where, like,select,join";
 	
 	/**
 	 * Lista de palavras que podem identificador presença de exemplo numa
 	 * pergunta
 	 */
-	public final static String WORDS_EXAMPLES = "exemplo,por exemplo,codigo,segue o codigo,ex:";
+	public final static String WORDS_EXAMPLES = "por exemplo,codigo,segue o codigo,ex:";
 
 	public final static String[] WORDS_ONLY_ONE = {"tudo bem", "tudo bom", "blza"};
 	

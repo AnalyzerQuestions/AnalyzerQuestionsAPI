@@ -1,7 +1,13 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
+
+import org.cogroo.analyzer.ComponentFactory;
+import org.cogroo.checker.CheckDocument;
+import org.cogroo.checker.GrammarChecker;
 
 import br.edu.ifpb.analyzerQuestions.enumerations.Site;
 import br.edu.ifpb.analyzerQuestions.util.HttpUtils;
@@ -18,9 +24,11 @@ public class DescriptionAnalyzer {
 
 	private String javaClasses;
 
-	{
+	
+	public DescriptionAnalyzer() {
 		this.setClassesJava();
-	}
+		}
+
 
 	/**
 	 * Understandable description
@@ -100,7 +108,8 @@ public class DescriptionAnalyzer {
 	 * Evitar descrição longa demais na pergunta
 	 */
 	public int longDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		String str = StringUtil.removeCharacterSpecial(description
+				.toLowerCase());
 		str = StringUtil.removeConnective(str);
 		String strSplited[] = str.split(" ");
 		if (strSplited.length < 800)
@@ -114,8 +123,8 @@ public class DescriptionAnalyzer {
 	 */
 	public int showingExample(String description) {
 		description = StringUtil.removeConnective(description);
-		
-		if (frenquencyOfCode(description) >= 3) {
+
+		if (frenquencyOfCode(description) >= 4) {
 			return 1;
 		}
 
@@ -144,12 +153,11 @@ public class DescriptionAnalyzer {
 				flag++;
 			}
 		}
-		String[] tTokens = StringTokenizerUtils.parseToken(description);
 
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 
 		for (int i = 0; i < tJavaClasses.length; i++) {
-			if(description.contains(tJavaClasses[i])){
+			if (description.contains(tJavaClasses[i])) {
 				flag++;
 			}
 		}
@@ -217,7 +225,7 @@ public class DescriptionAnalyzer {
 		int flag = 0;
 		for (int i = 0; i < description.length(); i++) {
 			if (description.charAt(i) == '?') {
-					flag++;
+				flag++;
 			}
 		}
 
@@ -267,7 +275,26 @@ public class DescriptionAnalyzer {
 	 * Using proper language
 	 */
 	public int usingProperLanguage(String description) {
-		return 0;
+		
+		String s0 = StringUtil.removeCharacterSpecial(description);
+		String s1 = StringUtil.removerTagsHtml(s0);
+		String s2 = StringUtil.trim(s1);
+		
+		ComponentFactory factory = ComponentFactory.create(new Locale("pt", "BR"));
+		CheckDocument document = null;
+		try {
+			GrammarChecker gc = new GrammarChecker(factory.createPipe());
+			document = new CheckDocument(s2);
+			gc.analyze(document);
+		
+		} catch (IllegalArgumentException | IOException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(document.getMistakesAsString());
+		if(document.getMistakes().size() > 0)
+			return 0;
+		return 1;
 	}
 
 	/**

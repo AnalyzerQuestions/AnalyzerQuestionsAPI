@@ -70,9 +70,12 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.5.2</version>
 		</dependency>
-
-
-
-
+		
+		<!-- API PLN Gramatical COgroo -->
+		<dependency>
+			<groupId>org.cogroo.lang.pt_br</groupId>
+			<artifactId>cogroo-gc-pt_br</artifactId>
+			<version>4.0.0</version>
+		</dependency>
 	</dependencies>
 </project>

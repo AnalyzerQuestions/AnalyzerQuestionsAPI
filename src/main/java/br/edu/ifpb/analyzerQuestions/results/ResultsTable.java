@@ -376,5 +376,28 @@ public class ResultsTable {
 		System.out.println("DIFERENTES :" + diferente);
 	}
 	
+	/**
+	 * 
+	 */
+	public void executeUsingProperLanguage(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.usingProperLanguage(qds.getBody()) == Integer.parseInt(qds.getUsoNormaCultaLing())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.usingProperLanguage(qds.getBody())+"-"+ qds.getUsoNormaCultaLing()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.usingProperLanguage(qds.getBody())+"-"+ qds.getUsoNormaCultaLing()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	
 
 }

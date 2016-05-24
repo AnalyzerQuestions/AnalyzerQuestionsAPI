@@ -26,12 +26,17 @@ public class TitleAnalyzer {
 		if(questionsAnalyzer.coherencyBodyAndTitle(new Question(title, description)) == 1){
 			is++;
 		}
-
-		if (is >= 1) {
-			return 1;
+		if(titleCapitaLetters(description) == 1){
+			is +=0.5f;
 		}
-		return 0;
+		
+		if(titleCapitaLettersPartially(description) == 1){
+			is+=0.5f;
+		}
 
+		if (is >= 1.0)
+			return 1;
+		return 0;
 	}
 
 	/**

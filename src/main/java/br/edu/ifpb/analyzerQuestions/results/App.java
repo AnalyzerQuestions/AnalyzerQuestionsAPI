@@ -1,6 +1,12 @@
 package br.edu.ifpb.analyzerQuestions.results;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Locale;
+
+import org.cogroo.analyzer.ComponentFactory;
+import org.cogroo.checker.CheckDocument;
+import org.cogroo.checker.GrammarChecker;
 
 import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
@@ -18,54 +24,62 @@ public class App {
 		/**
 		 * API StackExchange
 		 */
-//		StackExchangeAPI api = new StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((", "CEWWD9gissG5heqD0UCc1w))");
-////
-//		IStackExchange siteService = api.getSiteService(Site.STACK_OVERFLOW.getSite());
-////		
-//		QuestionsList questions = siteService.getQuestions();
-		
-//		String s = new Gson().toJson(siteService.getQuestions());
-//		
-//		Type collectionType = new TypeToken<Collection<QuestionsList>>(){}.getType();
-//		QuestionsList q = new Gson().fromJson(s, collectionType);
-		
+		// StackExchangeAPI api = new
+		// StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((",
+		// "CEWWD9gissG5heqD0UCc1w))");
+		// //
+		// IStackExchange siteService =
+		// api.getSiteService(Site.STACK_OVERFLOW.getSite());
+		// //
+		// QuestionsList questions = siteService.getQuestions();
+
+		// String s = new Gson().toJson(siteService.getQuestions());
+		//
+		// Type collectionType = new
+		// TypeToken<Collection<QuestionsList>>(){}.getType();
+		// QuestionsList q = new Gson().fromJson(s, collectionType);
+
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
 		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
-		
-		
-   	ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
+
+		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
 		List<QuestionsDataSet> q2 = readerQuestions2.readCsvFile();
-		
-		
+
 		for (QuestionsDataSet questionsDataSet : q2) {
 			q.add(questionsDataSet);
 		}
-		
+
 		ResultsTable resultsTable = new ResultsTable(q);
-		
-		//resultsTable.executeCoherencyBodyAndTitle();
-		
+
+		// resultsTable.executeCoherencyBodyAndTitle();
+
 		//resultsTable.executeUnderstandableTitle();
-		//resultsTable.executeTitleMedio();
-		//resultsTable.executeTituloCaixaAlta();
-		//resultsTable.executeTitleCapitaLettersPartially();
-		
-		//resultsTable.executeUnderstandableDescription();
-		resultsTable.executeIncludingVocative();
-		//esultsTable.executeShortDescription();
-		//resultsTable.executeLongDescription();
+		// resultsTable.executeTitleMedio();
+		// resultsTable.executeTituloCaixaAlta();
+		// resultsTable.executeTitleCapitaLettersPartially();
+
+		// resultsTable.executeUnderstandableDescription();
+		// resultsTable.executeIncludingVocative();
+		// esultsTable.executeShortDescription();
+		// resultsTable.executeLongDescription();
 		//resultsTable.executeShowingExample();
-		//resultsTable.executeIncludingGreetings();
+		// resultsTable.executeIncludingGreetings();
+
+		// resultsTable.executeQuestionWithSingleProblem();
+		// resultsTable.executeAvoidDescriptionWithCodeOnly();
+		// resultsTable.executeDoNotCreateHomeworkQuestions();
+
+		// resultsTable.executeObviatingDemandingLanguage();
+		 //resultsTable.executeAvoidingMuchCode();
+		resultsTable.executeUsingProperLanguage();
 		
-		//resultsTable.executeQuestionWithSingleProblem();
-		//resultsTable.executeAvoidDescriptionWithCodeOnly();
-		//resultsTable.executeDoNotCreateHomeworkQuestions();
-			
-		//resultsTable.executeObviatingDemandingLanguage();
-		//resultsTable.executeAvoidingMuchCode();
+/*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
+		int i =descriptionAnalyzer.usingProperLanguage("");
+		System.out.println(i);*/
+		
 		
 	}
 }

@@ -229,11 +229,6 @@ public class DescriptionAnalyzer {
 			}
 		}
 
-		/*
-		 * for (int i = 0; i < WordsUtils.WORDS_ONLY_ONE.length; i++) {
-		 * if(s1.contains(WordsUtils.WORDS_ONLY_ONE[i])){ flag++; } }
-		 */
-
 		if (flag > 1) {
 			return 0;
 		}
@@ -272,6 +267,7 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
+	 * 
 	 * Using proper language
 	 */
 	public int usingProperLanguage(String description) {
@@ -282,6 +278,7 @@ public class DescriptionAnalyzer {
 		
 		ComponentFactory factory = ComponentFactory.create(new Locale("pt", "BR"));
 		CheckDocument document = null;
+		
 		try {
 			GrammarChecker gc = new GrammarChecker(factory.createPipe());
 			document = new CheckDocument(s2);

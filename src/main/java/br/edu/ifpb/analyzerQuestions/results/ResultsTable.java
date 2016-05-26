@@ -2,14 +2,11 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
-import br.edu.ifpb.analyzerQuestions.analyzers.Aux;
 import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.analyzers.QuestionsAnalyzer;
 import br.edu.ifpb.analyzerQuestions.analyzers.TitleAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
-import br.edu.ifpb.analyzerQuestions.util.StringUtil;
-import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
 /**
  * 
@@ -337,14 +334,13 @@ public class ResultsTable {
 		int flag = 1;
 		int igual = 0;
 		int diferente = 0;
-		Aux aux = new Aux();
 		for (QuestionsDataSet qds : questionsDataSet) {
 			System.out.println("Questão "+flag+": "+qds.getTitle());
-			if(aux.obviatingDemandingLanguage(qds.getBody()) == Integer.parseInt(qds.getEvSerExigente())){
-				System.out.println("IGUAL (" + aux.obviatingDemandingLanguage(qds.getBody())+"-"+ qds.getEvSerExigente()+")");
+			if(descriptionAnalyzer.obviatingDemandingLanguage(qds.getBody()) == Integer.parseInt(qds.getEvSerExigente())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.obviatingDemandingLanguage(qds.getBody())+"-"+ qds.getEvSerExigente()+")");
 				igual++;
 			}else{
-				System.out.println("DIFERENTE (" + aux.obviatingDemandingLanguage(qds.getBody())+"-"+ qds.getEvSerExigente()+")");
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.obviatingDemandingLanguage(qds.getBody())+"-"+ qds.getEvSerExigente()+")");
 				diferente ++;
 			}
 			flag ++;

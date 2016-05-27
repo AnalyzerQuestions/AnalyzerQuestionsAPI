@@ -35,10 +35,6 @@ public class CoGrooUtils {
 	 */
 	public static final String ADV = "adv";
 	
-	/**
-	 * utilizada para idetificar um verbo[finito, infinito]
-	 */
-	public static final String[] VERB_CLASSES = {"v-fin", "v-inf"};
 
 	/**
 	 * Método avalia se um texto está gramaticalmente correto
@@ -48,8 +44,7 @@ public class CoGrooUtils {
 	 * @return sim ou não
 	 */
 	public static boolean isCorrectText(String txt) {
-		ComponentFactory factory = ComponentFactory.create(new Locale("pt",
-				"BR"));
+		ComponentFactory factory = ComponentFactory.create(new Locale("pt","BR"));
 		CheckDocument document = null;
 
 		try {
@@ -83,17 +78,5 @@ public class CoGrooUtils {
 		cogroo.analyze(document);
 
 		return document;
-	}
-	
-	public static void main(String[] args) {
-		// "como", "onde", "quando","qual"
-		Document d = CoGrooUtils.getDocument("Quando eu executo o glasfish, diz que aplicação não pode ser implatada devido a uma notação invalida do CDI, como resolvo?");
-		
-		for (Sentence s : d.getSentences()) {
-			for (Token t : s.getTokens()) {
-				System.out.println(t.getPOSTag());
-			}
-			
-		}
 	}
 }

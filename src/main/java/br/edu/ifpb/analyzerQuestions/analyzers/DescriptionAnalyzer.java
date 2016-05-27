@@ -315,7 +315,6 @@ public class DescriptionAnalyzer {
 				}
 			}
 		}
-
 		return 0;
 	}
 	

@@ -42,7 +42,7 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
+/*		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
@@ -52,7 +52,7 @@ public class App {
 			q.add(questionsDataSet);
 		}
 
-		ResultsTable resultsTable = new ResultsTable(q);
+		ResultsTable resultsTable = new ResultsTable(q);*/
 
 		// resultsTable.executeCoherencyBodyAndTitle();
 
@@ -74,11 +74,11 @@ public class App {
 
 		// resultsTable.executeObviatingDemandingLanguage();
 		 //resultsTable.executeAvoidingMuchCode();
-		resultsTable.executeUsingProperLanguage();
+		//resultsTable.executeUsingProperLanguage();
 		
-/*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
-		int i =descriptionAnalyzer.usingProperLanguage("");
-		System.out.println(i);*/
+		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
+		int i =descriptionAnalyzer.avoidingCreatingFactoidQuestions("Onde fica a configuração do jpa no projeto maven?");
+		System.out.println(i);
 		
 		
 	}

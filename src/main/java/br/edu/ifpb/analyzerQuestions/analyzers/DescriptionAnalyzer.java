@@ -1,15 +1,14 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 
-import org.cogroo.analyzer.ComponentFactory;
-import org.cogroo.checker.CheckDocument;
-import org.cogroo.checker.GrammarChecker;
+import org.cogroo.text.Document;
+import org.cogroo.text.Sentence;
+import org.cogroo.text.Token;
 
 import br.edu.ifpb.analyzerQuestions.enumerations.Site;
+import br.edu.ifpb.analyzerQuestions.util.CoGrooUtils;
 import br.edu.ifpb.analyzerQuestions.util.HttpUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
@@ -24,11 +23,9 @@ public class DescriptionAnalyzer {
 
 	private String javaClasses;
 
-	
 	public DescriptionAnalyzer() {
 		this.setClassesJava();
-		}
-
+	}
 
 	/**
 	 * Understandable description
@@ -182,7 +179,7 @@ public class DescriptionAnalyzer {
 	 * método auxiliar para carregar os nomes das classes do java. Deve ser
 	 * executado antes para não ter que fazer conexão com a pagina toda vez.
 	 */
-	public void setClassesJava() {
+	private void setClassesJava() {
 		javaClasses = HttpUtils.getPageContent(Site.JAVA_CLASSES.getSite());
 	}
 
@@ -271,25 +268,12 @@ public class DescriptionAnalyzer {
 	 * Using proper language
 	 */
 	public int usingProperLanguage(String description) {
-		
+
 		String s0 = StringUtil.removeCharacterSpecial(description);
 		String s1 = StringUtil.removerTagsHtml(s0);
 		String s2 = StringUtil.trim(s1);
-		
-		ComponentFactory factory = ComponentFactory.create(new Locale("pt", "BR"));
-		CheckDocument document = null;
-		
-		try {
-			GrammarChecker gc = new GrammarChecker(factory.createPipe());
-			document = new CheckDocument(s2);
-			gc.analyze(document);
-		
-		} catch (IllegalArgumentException | IOException e) {
-			e.printStackTrace();
-		}
-		
-		System.out.println(document.getMistakesAsString());
-		if(document.getMistakes().size() > 0)
+
+		if (!CoGrooUtils.isCorrectText(s2))
 			return 0;
 		return 1;
 	}
@@ -297,8 +281,73 @@ public class DescriptionAnalyzer {
 	/**
 	 * Avoiding creating factoid questions
 	 */
+
+	/**
+	 * Considera uma pergunta factual tendo: 
+	 * 
+	 * Um pronome interrogativo/advebio[relatives, interrogatives]
+	 * (qual,como,onde, quantos) no inicio da pergunta.
+	 * 
+	 * Pergunta curta.
+	 * 
+	 * Objetiva e envolva um único objectivo
+	 * 
+	 * @param description
+	 * @return
+	 */
 	public int avoidingCreatingFactoidQuestions(String description) {
+		
+		String s0 = StringUtil.removeConnective(description);
+		String s1 = StringUtil.removerAcentos(s0);
+
+		String[] tStr = StringTokenizerUtils.parseToken(s1);
+		
+		if (tStr.length <= 8) {
+			
+			Document doc = CoGrooUtils.getDocument(s1);
+			Sentence sentence = doc.getSentences().get(0);
+			Token token = sentence.getTokens().get(0);
+			String classe = token.getPOSTag();
+			
+			if(classe.equals(CoGrooUtils.PRON) || classe.equals(CoGrooUtils.ADV)){
+				if(this.isObjective(doc)){
+					return 1;
+				}
+			}
+		}
+
 		return 0;
+	}
+	
+	/**
+	 * Verifica se um texto é objetivo (i.e., se é focado em apenas uma coisa).
+	 * 
+	 * Verifica a quantidade de verbos e substantivos no texto.
+	 * Considerando a aplicabilidade para perguntas factuais, tendo que uma pergunta 
+	 * factual é curta, verifica-se se o texto tem no máximo três substantivos e três verbos
+	 * 
+	 * @param doc documento do tipo CoGroo
+	 * @return true or false
+	 */
+	private boolean isObjective(Document doc){
+		int countVerb = 0;
+		int countSub = 0;
+		for (Sentence s : doc.getSentences()) {
+			for (Token t : s.getTokens()) {
+				for (int i = 0; i < CoGrooUtils.VERB_CLASSES.length; i++) {
+					if(t.getPOSTag().equals(CoGrooUtils.VERB_CLASSES[i]))
+						countVerb++;
+				}
+				if(t.getPOSTag().equals("n")){
+					countSub++;
+				}
+			}
+		}
+		
+		if(countSub <= 3 && countVerb <= 3 ){
+			return true;
+		}
+		return false;
 	}
 
 	/**

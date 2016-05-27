@@ -16,23 +16,27 @@ public class WordsUtils {
 			+ "private,protected,public,return,short,static,strictfp,super,switch,synchronized"
 			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,equals,out,interger,"
 			+ "valueof,super,get,set,|,||,&,&&,from. where, like,select,join";
-	
+
 	/**
 	 * Lista de palavras que podem identificador presença de exemplo numa
 	 * pergunta
 	 */
 	public final static String WORDS_EXAMPLES = "por exemplo,codigo,segue o codigo,ex:";
 
-	public final static String[] WORDS_ONLY_ONE = {"tudo bem", "tudo bom", "blza"};
-	
+	/**
+	 * Lista de palavras que podem ajudar na identificação de uma palavra factual
+	 */
+	public final static String[] WORDS_FACTUAL = { "como", "onde", "quando","qual" };
+
 	/**
 	 * Lista de palavras que podem identificar se a pergunta possui exigencia.
 	 */
 	public final static String[] WORDS_DEMANDING = { "urgente",
 			"me mandem o codigo", "mandem o codigo", "mandem um exemplo",
-			"estou com pressa","o mais rapido possivel", "sim eu sei", "mandem a resposta", "Como possa fazer isso", 
-			"como faz isso", "respondam", "merda","porra","Me ajudem, "
-					+ "codigo abaixo","Me ajudem codigo abaixo"};
+			"estou com pressa", "o mais rapido possivel", "sim eu sei",
+			"mandem a resposta", "Como possa fazer isso", "como faz isso",
+			"respondam", "merda", "porra", "Me ajudem, " + "codigo abaixo",
+			"Me ajudem codigo abaixo" };
 
 	/**
 	 * Lista de palavras que pode identificar presença de vocativo em um texto
@@ -40,7 +44,7 @@ public class WordsUtils {
 	public final static String[] WORDS_VACATIVES = { "pessoal", "galera",
 			"povo", "gente", "povao", "turma", "povareu", "grupo", "bando",
 			"negrada", "individuos", "habitantes", "nacao", "publico",
-			"populacao", "parentada", "povaleu", "todos"};
+			"populacao", "parentada", "povaleu", "todos" };
 
 	/**
 	 * Lista de palavras que pode identificar agradecimento no texto
@@ -61,8 +65,7 @@ public class WordsUtils {
 	public final static String[] WORDS_END_COD = { "}", "/>", ";" };
 
 	public final static String[] HOMEWORK_WORDS = { "exercicio", "exercicios",
-			"trabalho", "questoes", "questao", "faculdade", "escola",
-			"aula" };
+			"trabalho", "questoes", "questao", "faculdade", "escola", "aula" };
 
 	/**
 	 * Lista stop words do brasil

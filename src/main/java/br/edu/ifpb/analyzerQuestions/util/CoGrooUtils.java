@@ -8,8 +8,6 @@ import org.cogroo.analyzer.ComponentFactory;
 import org.cogroo.checker.CheckDocument;
 import org.cogroo.checker.GrammarChecker;
 import org.cogroo.text.Document;
-import org.cogroo.text.Sentence;
-import org.cogroo.text.Token;
 import org.cogroo.text.impl.DocumentImpl;
 
 /**
@@ -30,11 +28,16 @@ public class CoGrooUtils {
 	 * utilizada para identificar um pronome deterministo
 	 */
 	public static final String PRON = "pron-det";
+	
 	/**
 	 * utilizada para identificar um adverbio
 	 */
 	public static final String ADV = "adv";
 	
+	/**
+	 * utilizada para idetificar um verbo[finito, infinito]
+	 */
+	public static final String[] VERB_CLASSES = {"v-fin", "v-inf"};
 
 	/**
 	 * Método avalia se um texto está gramaticalmente correto
@@ -44,7 +47,8 @@ public class CoGrooUtils {
 	 * @return sim ou não
 	 */
 	public static boolean isCorrectText(String txt) {
-		ComponentFactory factory = ComponentFactory.create(new Locale("pt","BR"));
+		ComponentFactory factory = ComponentFactory.create(new Locale("pt",
+				"BR"));
 		CheckDocument document = null;
 
 		try {

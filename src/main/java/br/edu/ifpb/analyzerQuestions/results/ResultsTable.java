@@ -114,6 +114,8 @@ public class ResultsTable {
 		System.out.println("________________________________________");
 		System.out.println("IGUAIS :" + igual);
 		System.out.println("DIFERENTES :" + diferente);
+		
+		
 
 	}
 	
@@ -386,6 +388,26 @@ public class ResultsTable {
 				igual++;
 			}else{
 				System.out.println("DIFERENTE (" + descriptionAnalyzer.usingProperLanguage(qds.getBody())+"-"+ qds.getUsoNormaCultaLing()+")");
+				diferente ++;
+			}
+			flag ++;
+		}
+		System.out.println("________________________________________");
+		System.out.println("IGUAIS :" + igual);
+		System.out.println("DIFERENTES :" + diferente);
+	}
+	
+	public void executeAvoidingCreatingFactoidQuestions(){
+		int flag = 1;
+		int igual = 0;
+		int diferente = 0;
+		for (QuestionsDataSet qds : questionsDataSet) {
+			System.out.println("Questão "+flag+": "+qds.getTitle());
+			if(descriptionAnalyzer.avoidingCreatingFactoidQuestions(qds.getBody()) == Integer.parseInt(qds.getEvPergFactoides())){
+				System.out.println("IGUAL (" + descriptionAnalyzer.avoidingCreatingFactoidQuestions(qds.getBody())+"-"+ qds.getEvPergFactoides()+")");
+				igual++;
+			}else{
+				System.out.println("DIFERENTE (" + descriptionAnalyzer.avoidingCreatingFactoidQuestions(qds.getBody())+"-"+ qds.getEvPergFactoides()+")");
 				diferente ++;
 			}
 			flag ++;

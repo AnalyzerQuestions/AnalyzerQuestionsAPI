@@ -1,6 +1,8 @@
 package br.edu.ifpb.analyzerQuestions.util.data;
 
 /**
+ * Classe contém atributos contento listas de palavras especificas usadas para
+ * ajudar na análise de uma caracteristica especifica em uma pergunta
  * 
  * @author franck
  *
@@ -24,9 +26,11 @@ public class WordsUtils {
 	public final static String WORDS_EXAMPLES = "por exemplo,codigo,segue o codigo,ex:";
 
 	/**
-	 * Lista de palavras que podem ajudar na identificação de uma palavra factual
+	 * Lista de palavras que podem ajudar na identificação de uma palavra
+	 * factual
 	 */
-	public final static String[] WORDS_FACTUAL = { "como", "onde", "quando","qual" };
+	public final static String[] WORDS_FACTUAL = { "como", "onde", "quando",
+			"qual" };
 
 	/**
 	 * Lista de palavras que podem identificar se a pergunta possui exigencia.

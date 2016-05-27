@@ -1,8 +1,5 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.cogroo.text.Document;
 import org.cogroo.text.Sentence;
 import org.cogroo.text.Token;
@@ -39,7 +36,7 @@ public class DescriptionAnalyzer {
 	 */
 	public int understandableDescription(String description) {
 		float is = 0;
-		float bestResult = 1f + 1f + 0.5f + 0.2f + 0.1f;
+		float bestResult = 1f + 1f + 1f + 0.5f +0.5f + 0.5f + 0.2f + 0.1f; //4.8
 
 		if (shortDescription(description) == 1) {
 			is++;
@@ -47,16 +44,26 @@ public class DescriptionAnalyzer {
 		if (longDescription(description) == 1) {
 			is++;
 		}
+		if(avoidDescriptionWithCodeOnly(description) == 1){
+			is++;
+		}
 		if (showingExample(description) == 1) {
+			is += 0.5f;
+		}
+		if(avoidingCreatingFactoidQuestions(description) == 1){
+			is +=0.5f;
+		}
+		if(usingProperLanguage(description) == 1){
 			is += 0.5f;
 		}
 		if (includingGreetings(description) == 1) {
 			is += 0.2f;
 		}
 		if (includingVocative(description) == 1) {
-			is = is + 0.1f;
+			is += 0.1f;
 		}
-		if (is >= (bestResult / 1.40)) {
+		
+		if (is >= (3.3)) {
 			return 1;
 		}
 		return 0;
@@ -66,18 +73,19 @@ public class DescriptionAnalyzer {
 	 * presença de vocativo
 	 */
 	public int includingVocative(String description) {
+		
 		String str1 = StringUtil.trimPosition(description.toLowerCase());
 		String str2 = StringUtil.removeConnective(str1);
-		String[] str = str2.split(" ");
+		String[] tStr = StringTokenizerUtils.parseToken(str2);
 
-		if (str.length >= 3) {
+		if (tStr.length >= 3) {
 			for (int i = 0; i < 3; i++) {
-				String sn = str[i];
+				String sn = tStr[i];
 				if (sn.charAt(sn.length() - 1) == ',') {
 					return 1;
 				}
 			}
-			String s0 = str[0];
+			String s0 = tStr[0];
 			for (int i = 0; i < WordsUtils.WORDS_VACATIVES.length; i++) {
 				if (s0.equalsIgnoreCase(WordsUtils.WORDS_VACATIVES[i])) {
 					return 1;
@@ -91,11 +99,12 @@ public class DescriptionAnalyzer {
 	 * Evitar desecrição curta da pergunta
 	 */
 	public int shortDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description
-				.toLowerCase());
+		
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removeConnective(str);
-		String strSplited[] = str.split(" ");
-		if (strSplited.length > 10)
+		String tStr[] = StringTokenizerUtils.parseToken(str);
+		
+		if (tStr.length > 10)
 			return 1;
 		return 0;
 	}
@@ -105,10 +114,11 @@ public class DescriptionAnalyzer {
 	 * Evitar descrição longa demais na pergunta
 	 */
 	public int longDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description
-				.toLowerCase());
+		
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removeConnective(str);
-		String strSplited[] = str.split(" ");
+		String strSplited[] = StringTokenizerUtils.parseToken(str);
+		
 		if (strSplited.length < 800)
 			return 1;
 		return 0;
@@ -233,7 +243,9 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
-	 * Including greetings
+	 * <p>
+	 * Analisa se na descrição possui algum tipo de agradecimento
+	 * <p>
 	 */
 	public int includingGreetings(String description) {
 		String s0 = StringUtil
@@ -264,8 +276,14 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
+	 * <p>
+	 * Analisa o uso da língua adequando na descrição
+	 * <p>
 	 * 
-	 * Using proper language
+	 * Verifica se a descrição está gramaticamente correta
+	 * 
+	 * @param description descrição da paergunta a ser análisada
+	 * @return 1/0
 	 */
 	public int usingProperLanguage(String description) {
 
@@ -278,11 +296,12 @@ public class DescriptionAnalyzer {
 		return 1;
 	}
 
-	/**
-	 * Avoiding creating factoid questions
-	 */
 
 	/**
+	 * <p>
+	 * Análisa se uma pergunta é factual
+	 * <p>
+	 * 
 	 * Considera uma pergunta factual tendo: 
 	 * 
 	 * Um pronome interrogativo/advebio[relatives, interrogatives]
@@ -299,23 +318,25 @@ public class DescriptionAnalyzer {
 		
 		String s0 = StringUtil.removeConnective(description);
 		String s1 = StringUtil.removerAcentos(s0);
+		String s2 = StringUtil.removerTagsHtml(s1);
+		String s3 = StringUtil.trim(s2);
 
-		String[] tStr = StringTokenizerUtils.parseToken(s1);
+		String[] tStr = StringTokenizerUtils.parseToken(s3);
 		
 		if (tStr.length <= 8) {
 			
-			Document doc = CoGrooUtils.getDocument(s1);
+			Document doc = CoGrooUtils.getDocument(s3);
 			Sentence sentence = doc.getSentences().get(0);
 			Token token = sentence.getTokens().get(0);
 			String classe = token.getPOSTag();
 			
 			if(classe.equals(CoGrooUtils.PRON) || classe.equals(CoGrooUtils.ADV)){
 				if(this.isObjective(doc)){
-					return 1;
+					return 0;
 				}
 			}
 		}
-		return 0;
+		return 1;
 	}
 	
 	/**
@@ -325,7 +346,7 @@ public class DescriptionAnalyzer {
 	 * Considerando a aplicabilidade para perguntas factuais, tendo que uma pergunta 
 	 * factual é curta, verifica-se se o texto tem no máximo três substantivos e três verbos
 	 * 
-	 * @param doc documento do tipo CoGroo
+	 * @param doc - documento do tipo CoGroo
 	 * @return true or false
 	 */
 	private boolean isObjective(Document doc){
@@ -350,7 +371,12 @@ public class DescriptionAnalyzer {
 	}
 
 	/**
-	 * Do not create homework questions
+	 * <p>
+	 * Analisa se a descrição é de um exercicio ou tarefa de escola, faculdade, trabalho
+	 * <p>
+	 * 
+	 * Verifica se a descrição possui algumas palavras (pré defindas)
+	 * que remetem a caracteristica
 	 */
 	public int doNotCreateHomeworkQuestions(String description) {
 
@@ -359,7 +385,6 @@ public class DescriptionAnalyzer {
 		String s2 = StringUtil.removeConnective(s1).toLowerCase();
 
 		String[] aStr = StringTokenizerUtils.parseToken(s2);
-		List<String> list = Arrays.asList(aStr);
 		int flag = 0;
 
 		for (int i = 0; i < WordsUtils.HOMEWORK_WORDS.length; i++) {

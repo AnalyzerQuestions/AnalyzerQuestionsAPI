@@ -1,6 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
-import br.edu.ifpb.analyzerQuestions.entities.Question;
+import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 
 /**
@@ -10,27 +10,21 @@ import br.edu.ifpb.analyzerQuestions.util.StringUtil;
  */
 public class TitleAnalyzer {
 
-	private QuestionsAnalyzer questionsAnalyzer;
 	/**
 	 * Understandable title
 	 */
-	public int understandableTitle(String title, String description) {
-		questionsAnalyzer = new QuestionsAnalyzer();
+	public int understandableTitle(String title) {
 		
 		float is = 0;
 
 		if (mediumSizeTitle(title) == 1) {
 			is++;
 		}
-		
-		if(questionsAnalyzer.coherencyBodyAndTitle(new Question(title, description)) == 1){
-			is++;
-		}
-		if(titleCapitaLetters(description) == 1){
+		if(titleCapitaLetters(title) == 1){
 			is +=0.5f;
 		}
 		
-		if(titleCapitaLettersPartially(description) == 1){
+		if(titleCapitaLettersPartially(title) == 1){
 			is+=0.5f;
 		}
 
@@ -46,7 +40,8 @@ public class TitleAnalyzer {
 
 		String str = StringUtil.removeConnective(title);
 		String st1 = StringUtil.removeCharacterSpecial(str);
-		String[] strPart = st1.split(" ");
+		String[] strPart = StringTokenizerUtils.parseToken(st1);
+		
 		if (strPart.length > 2 && strPart.length <= 6)
 			return 1;
 		else
@@ -72,12 +67,12 @@ public class TitleAnalyzer {
 		String str = StringUtil.removeConnective(title);
 		String st1 = StringUtil.removeCharacterSpecial(str);
 
-		String[] partsToUpp = st1.split(" ");
+		String[] partsToUpp = StringTokenizerUtils.parseToken(st1);
 		for (int i = 0; i < partsToUpp.length; i++) {
 			partsToUpp[i] = partsToUpp[i].toUpperCase();
 		}
 
-		String[] part = st1.split(" ");
+		String[] part = StringTokenizerUtils.parseToken(st1);
 		for (int i = 0; i < part.length; i++) {
 			if (part[i].equals(partsToUpp[i])) {
 				return 1;

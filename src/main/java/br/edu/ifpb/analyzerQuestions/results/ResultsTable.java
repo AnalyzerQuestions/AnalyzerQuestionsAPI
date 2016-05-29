@@ -81,11 +81,11 @@ public class ResultsTable {
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
 			System.out.print("Questão "+flag+": "+qds.getTitle());
-			if(titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody()) == Integer.parseInt(qds.getTituloBemDefinido())){
-				System.out.println("IGUAL (" + titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+			if(titleAnalyzer.understandableTitle(qds.getTitle()) == Integer.parseInt(qds.getTituloBemDefinido())){
+				System.out.println("IGUAL (" + titleAnalyzer.understandableTitle(qds.getTitle())+"-"+ qds.getTituloBemDefinido()+")");
 				igual++;
 			}else{
-				System.out.println("DIFERENTE (" + titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+				System.out.println("DIFERENTE (" + titleAnalyzer.understandableTitle(qds.getTitle())+"-"+ qds.getTituloBemDefinido()+")");
 				diferente ++;
 			}
 			flag ++;

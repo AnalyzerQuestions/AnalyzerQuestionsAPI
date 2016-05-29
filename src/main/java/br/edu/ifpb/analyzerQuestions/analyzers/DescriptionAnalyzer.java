@@ -32,11 +32,10 @@ public class DescriptionAnalyzer {
 	 * que umas tem pesos maiores que outras. Considera-se que a descrição tenha
 	 * 70% dos pesos das caracteristicas cobradas
 	 * 
-	 * p1 + p2 + p3 + p(n)/1.40(~=70%)
 	 */
 	public int understandableDescription(String description) {
 		float is = 0;
-		float bestResult = 1f + 1f + 1f + 0.5f +0.5f + 0.5f + 0.2f + 0.1f; //4.8
+		float bestResult = 1f + 1f + 1f + 0.5f +0.5f + 0.5f + 0.2f + 0.1f;
 
 		if (shortDescription(description) == 1) {
 			is++;
@@ -116,7 +115,9 @@ public class DescriptionAnalyzer {
 	public int longDescription(String description) {
 		
 		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		str = StringUtil.removerTagsHtml(str);
 		str = StringUtil.removeConnective(str);
+		str = StringUtil.trim(str);
 		String strSplited[] = StringTokenizerUtils.parseToken(str);
 		
 		if (strSplited.length < 800)

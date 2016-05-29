@@ -57,15 +57,15 @@ public class App {
 		// resultsTable.executeCoherencyBodyAndTitle();
 
 		//resultsTable.executeUnderstandableTitle();
-		// resultsTable.executeTitleMedio();
+		//resultsTable.executeTitleMedio();
 		// resultsTable.executeTituloCaixaAlta();
 		// resultsTable.executeTitleCapitaLettersPartially();
 
 		 //resultsTable.executeUnderstandableDescription();
 		// resultsTable.executeIncludingVocative();
 		// esultsTable.executeShortDescription();
-		// resultsTable.executeLongDescription();
-		resultsTable.executeShowingExample();
+		resultsTable.executeLongDescription();
+		//resultsTable.executeShowingExample();
 		// resultsTable.executeIncludingGreetings();
 
 		// resultsTable.executeQuestionWithSingleProblem();

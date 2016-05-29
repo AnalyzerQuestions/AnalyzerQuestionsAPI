@@ -1,5 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.analyzers;
 
+import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 
@@ -13,11 +14,16 @@ public class TitleAnalyzer {
 	/**
 	 * Understandable title
 	 */
-	public int understandableTitle(String title) {
+	public int understandableTitle(String title, String description) {
+		
+		QuestionsAnalyzer questionsAnalyzer = new QuestionsAnalyzer();
 		
 		float is = 0;
 
 		if (mediumSizeTitle(title) == 1) {
+			is++;
+		}
+		if(questionsAnalyzer.coherencyBodyAndTitle(new Question(title, description)) == 1){
 			is++;
 		}
 		if(titleCapitaLetters(title) == 1){
@@ -53,6 +59,7 @@ public class TitleAnalyzer {
 	 */
 	public int titleCapitaLetters(String title) {
 		String titleInCapLetter = title.toUpperCase();
+		
 		if (title.equals(titleInCapLetter)) {
 			return 1;
 		} else {

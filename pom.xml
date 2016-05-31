@@ -69,17 +69,24 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>4.5.2</version>
-		<!-- API PLN Gramatical COgroo -->
+			<!-- API PLN Gramatical COgroo -->
 		</dependency>
-			<dependency>
-				<groupId>org.cogroo.lang.pt_br</groupId>
-				<artifactId>cogroo-ann-pt_br</artifactId>
-				<version>4.0.0</version>
-			</dependency>
+		<dependency>
+			<groupId>org.cogroo.lang.pt_br</groupId>
+			<artifactId>cogroo-ann-pt_br</artifactId>
+			<version>4.0.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.cogroo.lang.pt_br</groupId>
 			<artifactId>cogroo-gc-pt_br</artifactId>
 			<version>4.0.0</version>
+		</dependency>
+		
+		<!-- API analise artografia Languagetool -->
+		<dependency>
+			<groupId>org.languagetool</groupId>
+			<artifactId>language-all</artifactId>
+			<version>3.3</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -399,4 +399,13 @@ public class DescriptionAnalyzer {
 			return 0;
 		return 1;
 	}
+	
+	/**
+	 * 
+	 * @param description
+	 * @return
+	 */
+	public int includingLink(String description){
+		return 0;
+	}
 }

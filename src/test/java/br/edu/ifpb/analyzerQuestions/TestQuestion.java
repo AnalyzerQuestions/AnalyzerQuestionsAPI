@@ -19,7 +19,7 @@ public class TestQuestion {
 		questionsAnalyzer = new QuestionsAnalyzer();
 		question = new Question();
 		question.setTitle("nao sei programar em java");
-	question.setBody("nao programo");
+	question.setBody("nao programo em java");
 	
 	}
 	@Test

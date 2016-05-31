@@ -10,6 +10,10 @@ import org.cogroo.checker.GrammarChecker;
 
 import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
+import br.edu.ifpb.analyzerQuestions.enumerations.Site;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.IStackExchange;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.QuestionsList;
+import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeAPI;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 
 /**
@@ -24,26 +28,26 @@ public class App {
 		/**
 		 * API StackExchange
 		 */
-		// StackExchangeAPI api = new
-		// StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((",
-		// "CEWWD9gissG5heqD0UCc1w))");
-		// //
-		// IStackExchange siteService =
-		// api.getSiteService(Site.STACK_OVERFLOW.getSite());
-		// //
-		// QuestionsList questions = siteService.getQuestions();
+		 StackExchangeAPI api = new
+		 StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((",
+		 "CEWWD9gissG5heqD0UCc1w))");
+		
+		 IStackExchange siteService =
+		 api.getSiteService(Site.STACK_OVERFLOW.getSite());
+		
+		 QuestionsList questions = siteService.getQuestions();
 
-		// String s = new Gson().toJson(siteService.getQuestions());
-		//
-		// Type collectionType = new
-		// TypeToken<Collection<QuestionsList>>(){}.getType();
-		// QuestionsList q = new Gson().fromJson(s, collectionType);
+/*		 String s = new Gson().toJson(siteService.getQuestions());
+		
+		 Type collectionType = new
+		 TypeToken<Collection<QuestionsList>>(){}.getType();
+		 QuestionsList q = new Gson().fromJson(s, collectionType);*/
 
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
-		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
+		//ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
+		//List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
 		List<QuestionsDataSet> q2 = readerQuestions2.readCsvFile();
@@ -52,7 +56,7 @@ public class App {
 			q.add(questionsDataSet);
 		}*/
 
-		ResultsTable resultsTable = new ResultsTable(q);
+		//ResultsTable resultsTable = new ResultsTable(q);
 
 		// resultsTable.executeCoherencyBodyAndTitle();
 
@@ -64,7 +68,7 @@ public class App {
 		 //resultsTable.executeUnderstandableDescription();
 		// resultsTable.executeIncludingVocative();
 		// esultsTable.executeShortDescription();
-		resultsTable.executeLongDescription();
+		//resultsTable.executeLongDescription();
 		//resultsTable.executeShowingExample();
 		// resultsTable.executeIncludingGreetings();
 

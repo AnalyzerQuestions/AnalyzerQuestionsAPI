@@ -81,12 +81,20 @@
 			<artifactId>cogroo-gc-pt_br</artifactId>
 			<version>4.0.0</version>
 		</dependency>
-		
+
 		<!-- API analise artografia Languagetool -->
 		<dependency>
 			<groupId>org.languagetool</groupId>
 			<artifactId>language-all</artifactId>
 			<version>3.3</version>
 		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/org.languagetool/languagetool-core -->
+		<dependency>
+			<groupId>org.languagetool</groupId>
+			<artifactId>languagetool-core</artifactId>
+			<version>3.3</version>
+		</dependency>
+
 	</dependencies>
 </project>

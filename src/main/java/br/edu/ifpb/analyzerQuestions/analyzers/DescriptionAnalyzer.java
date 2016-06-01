@@ -7,6 +7,7 @@ import org.cogroo.text.Token;
 import br.edu.ifpb.analyzerQuestions.enumerations.Site;
 import br.edu.ifpb.analyzerQuestions.util.CoGrooUtils;
 import br.edu.ifpb.analyzerQuestions.util.HttpUtils;
+import br.edu.ifpb.analyzerQuestions.util.LanguageToolUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
@@ -249,8 +250,7 @@ public class DescriptionAnalyzer {
 	 * <p>
 	 */
 	public int includingGreetings(String description) {
-		String s0 = StringUtil
-				.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		String s1 = StringUtil.removeConnective(s0);
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
@@ -281,7 +281,7 @@ public class DescriptionAnalyzer {
 	 * Analisa o uso da língua adequando na descrição
 	 * <p>
 	 * 
-	 * Verifica se a descrição está gramaticamente correta
+	 * Verifica se a descrição está gramaticamente e ortograficamente correta 
 	 * 
 	 * @param description descrição da paergunta a ser análisada
 	 * @return 1/0
@@ -292,8 +292,13 @@ public class DescriptionAnalyzer {
 		String s1 = StringUtil.removerTagsHtml(s0);
 		String s2 = StringUtil.trim(s1);
 
-		if (!CoGrooUtils.isCorrectText(s2))
+		if (!CoGrooUtils.isCorrectText(s2)){
 			return 0;
+		}
+		
+		if(!LanguageToolUtils.textIsValid(s2)){
+			return 0;
+		}
 		return 1;
 	}
 

@@ -24,6 +24,8 @@ public class QuestionsDataSet {
 	private String evCriarPergDuplicada;
 	private String evPergFactoides;
 	private String evPergSobreTrabAcademicos;
+	
+	private String incluirLinkPergunta;  // add no construtor
 
 	public QuestionsDataSet(String title, String body,
 			String tituloBemDefinido, String tituloMedio,

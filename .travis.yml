@@ -1,0 +1,10 @@
+language: java
+
+jdk:
+  - openjdk7
+notifications:
+  email:
+    recipients:
+      - fjunior.aragao@gmail.com
+      - jose.rafael.feitosa@gmail.com
+    on_success: always

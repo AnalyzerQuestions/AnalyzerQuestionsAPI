@@ -1,16 +1,6 @@
 language: java
-
+script: mvn test -f ./source/pom.xml
 jdk:
   - oraclejdk8
-
-
-sudo: false
-
-script: mvn clean verify
-
-notifications:
-  email:
-    recipients:
-      - fjunior.aragao@gmail.com
-      - jose.rafael.feitosa@gmail.com
-    on_success: always
+  - oraclejdk7
+  - openjdk7

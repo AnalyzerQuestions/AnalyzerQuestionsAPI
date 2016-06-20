@@ -31,4 +31,8 @@ public class LanguageToolUtils {
 		}
 		return matches.size() > 0;
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(textIsValid("algo"));
+	}
 }

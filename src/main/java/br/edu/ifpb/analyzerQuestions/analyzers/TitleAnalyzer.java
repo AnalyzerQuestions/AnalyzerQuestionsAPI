@@ -48,7 +48,7 @@ public class TitleAnalyzer {
 		String st1 = StringUtil.removeCharacterSpecial(str);
 		String[] strPart = StringTokenizerUtils.parseToken(st1);
 		
-		if (strPart.length > 2 && strPart.length < 8)
+		if (strPart.length > 2 && strPart.length <= 8)
 			return 1;
 		else
 			return 0;

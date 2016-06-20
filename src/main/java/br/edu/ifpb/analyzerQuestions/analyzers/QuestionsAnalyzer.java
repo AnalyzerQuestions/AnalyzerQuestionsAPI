@@ -10,7 +10,7 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
  */
 public class QuestionsAnalyzer {
 
-	private static final Float VALUE_SIMILARITY = 0.0f;
+	private static final Float VALUE_SIMILARITY = 0.05f;
 	
 	/**
 	 * 
@@ -26,6 +26,7 @@ public class QuestionsAnalyzer {
 		ScoreSimilarity scoreSimilarity= new ScoreSimilarity();
 		
 		Double similarity = scoreSimilarity.getSimilarity(question.getTitle(), question.getBody());
+		System.out.println(similarity +"--------");
 		if(similarity > VALUE_SIMILARITY){
 			return 1;
 		}

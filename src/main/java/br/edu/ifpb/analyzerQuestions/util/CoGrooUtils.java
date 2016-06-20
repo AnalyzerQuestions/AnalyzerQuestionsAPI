@@ -47,8 +47,7 @@ public class CoGrooUtils {
 	 * @return sim ou não
 	 */
 	public static boolean isCorrectText(String txt) {
-		ComponentFactory factory = ComponentFactory.create(new Locale("pt",
-				"BR"));
+		ComponentFactory factory = ComponentFactory.create(new Locale("pt","BR"));
 		CheckDocument document = null;
 
 		try {

@@ -79,7 +79,7 @@ public class DescriptionAnalyzer {
 		String[] tStr = StringTokenizerUtils.parseToken(str2);
 
 		if (tStr.length >= 3) {
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 2; i++) {
 				String sn = tStr[i];
 				if (sn.charAt(sn.length() - 1) == ',') {
 					return 1;

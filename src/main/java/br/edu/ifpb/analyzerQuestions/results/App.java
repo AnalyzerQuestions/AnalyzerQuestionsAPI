@@ -28,14 +28,14 @@ public class App {
 		/**
 		 * API StackExchange
 		 */
-		 StackExchangeAPI api = new
+/*		 StackExchangeAPI api = new
 		 StackExchangeAPI("Od0ApalxujcmxgiTJ566gA((",
 		 "CEWWD9gissG5heqD0UCc1w))");
 		
 		 IStackExchange siteService =
 		 api.getSiteService(Site.STACK_OVERFLOW.getSite());
 		
-		 QuestionsList questions = siteService.getQuestions();
+		 QuestionsList questions = siteService.getQuestions();*/
 
 /*		 String s = new Gson().toJson(siteService.getQuestions());
 		
@@ -46,8 +46,8 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		//ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
-		//List<QuestionsDataSet> q = readerQuestions.readCsvFile();
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
+		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
 		List<QuestionsDataSet> q2 = readerQuestions2.readCsvFile();
@@ -56,18 +56,18 @@ public class App {
 			q.add(questionsDataSet);
 		}*/
 
-		//ResultsTable resultsTable = new ResultsTable(q);
+		ResultsTable resultsTable = new ResultsTable(q);
 
-		// resultsTable.executeCoherencyBodyAndTitle();
+		//resultsTable.executeCoherencyBodyAndTitle();
 
 		//resultsTable.executeUnderstandableTitle();
 		//resultsTable.executeTitleMedio();
 		// resultsTable.executeTituloCaixaAlta();
 		// resultsTable.executeTitleCapitaLettersPartially();
 
-		 //resultsTable.executeUnderstandableDescription();
-		// resultsTable.executeIncludingVocative();
-		// esultsTable.executeShortDescription();
+		 resultsTable.executeUnderstandableDescription();
+		 //resultsTable.executeIncludingVocative();
+		// resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
 		//resultsTable.executeShowingExample();
 		// resultsTable.executeIncludingGreetings();

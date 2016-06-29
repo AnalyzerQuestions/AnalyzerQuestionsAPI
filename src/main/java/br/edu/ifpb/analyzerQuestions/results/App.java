@@ -1,19 +1,9 @@
 package br.edu.ifpb.analyzerQuestions.results;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.Locale;
 
-import org.cogroo.analyzer.ComponentFactory;
-import org.cogroo.checker.CheckDocument;
-import org.cogroo.checker.GrammarChecker;
-
-import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
-import br.edu.ifpb.analyzerQuestions.enumerations.Site;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.IStackExchange;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.QuestionsList;
-import br.edu.ifpb.analyzerQuestions.stackExchangeAPI.StackExchangeAPI;
+import br.edu.ifpb.analyzerQuestions.util.data.ReaderFile;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 
 /**
@@ -24,7 +14,7 @@ import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 public class App {
 
 	public static void main(String[] args) {
-
+		
 		/**
 		 * API StackExchange
 		 */
@@ -65,11 +55,11 @@ public class App {
 		// resultsTable.executeTituloCaixaAlta();
 		// resultsTable.executeTitleCapitaLettersPartially();
 
-		 resultsTable.executeUnderstandableDescription();
+		// resultsTable.executeUnderstandableDescription();
 		 //resultsTable.executeIncludingVocative();
 		// resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
-		//resultsTable.executeShowingExample();
+		resultsTable.executeShowingExample();
 		// resultsTable.executeIncludingGreetings();
 
 		// resultsTable.executeQuestionWithSingleProblem();

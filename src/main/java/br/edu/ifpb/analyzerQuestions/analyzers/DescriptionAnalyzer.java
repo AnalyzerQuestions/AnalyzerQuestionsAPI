@@ -4,12 +4,11 @@ import org.cogroo.text.Document;
 import org.cogroo.text.Sentence;
 import org.cogroo.text.Token;
 
-import br.edu.ifpb.analyzerQuestions.enumerations.Site;
 import br.edu.ifpb.analyzerQuestions.util.CoGrooUtils;
-import br.edu.ifpb.analyzerQuestions.util.HttpUtils;
 import br.edu.ifpb.analyzerQuestions.util.LanguageToolUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
+import br.edu.ifpb.analyzerQuestions.util.data.ReaderFile;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 
 /**
@@ -36,7 +35,6 @@ public class DescriptionAnalyzer {
 	 */
 	public int understandableDescription(String description) {
 		float is = 0;
-		float bestResult = 1f + 1f + 1f + 0.5f +0.5f + 0.5f + 0.2f + 0.1f;
 
 		if (shortDescription(description) == 1) {
 			is++;
@@ -192,7 +190,7 @@ public class DescriptionAnalyzer {
 	 * executado antes para não ter que fazer conexão com a pagina toda vez.
 	 */
 	private void setClassesJava() {
-		javaClasses = HttpUtils.getPageContent(Site.JAVA_CLASSES.getSite());
+		javaClasses = ReaderFile.readerTxt();
 	}
 
 	/**

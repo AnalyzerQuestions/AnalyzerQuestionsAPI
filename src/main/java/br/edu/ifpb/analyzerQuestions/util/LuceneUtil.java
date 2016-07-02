@@ -52,6 +52,8 @@ public class LuceneUtil {
 				tokensResult.append(filter.getAttribute(CharTermAttribute.class).toString());
 				tokensResult.append(" ");
 			}
+			analyzer.close();
+			filter.close();
 
 		} catch (IOException e) {
 			throw new RuntimeException(e);

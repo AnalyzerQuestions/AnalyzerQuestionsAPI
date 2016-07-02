@@ -1,4 +1,4 @@
-package br.edu.ifpb.analyzerQuestions.analyzers;
+package br.edu.ifpb.analyzerQuestions.analyzers.impl;
 
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;

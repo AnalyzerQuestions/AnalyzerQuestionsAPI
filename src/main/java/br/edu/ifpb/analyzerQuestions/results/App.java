@@ -48,7 +48,7 @@ public class App {
 
 		ResultsTable resultsTable = new ResultsTable(q);
 
-		//resultsTable.executeCoherencyBodyAndTitle();
+		resultsTable.executeCoherencyBodyAndTitle();
 
 		//resultsTable.executeUnderstandableTitle();
 		//resultsTable.executeTitleMedio();
@@ -59,7 +59,7 @@ public class App {
 		 //resultsTable.executeIncludingVocative();
 		// resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
-		resultsTable.executeShowingExample();
+		//resultsTable.executeShowingExample();
 		// resultsTable.executeIncludingGreetings();
 
 		// resultsTable.executeQuestionWithSingleProblem();

@@ -2,9 +2,9 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
-import br.edu.ifpb.analyzerQuestions.analyzers.DescriptionAnalyzer;
-import br.edu.ifpb.analyzerQuestions.analyzers.QuestionsAnalyzer;
-import br.edu.ifpb.analyzerQuestions.analyzers.TitleAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.impl.DescriptionAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.impl.QuestionsAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.impl.TitleAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 

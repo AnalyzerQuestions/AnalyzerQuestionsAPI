@@ -1,4 +1,4 @@
-package br.edu.ifpb.analyzerQuestions.analyzers;
+package br.edu.ifpb.analyzerQuestions.analyzers.impl;
 
 import org.cogroo.text.Document;
 import org.cogroo.text.Sentence;

@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * Modelo para representar um token de um texto e a frequencia de desse token
- * num texto
+ * em um texto
  *
  */
 public class VectorSimilarity {

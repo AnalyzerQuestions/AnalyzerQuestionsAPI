@@ -3,7 +3,6 @@ package br.edu.ifpb.analyzerQuestions.results;
 import java.util.List;
 
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
-import br.edu.ifpb.analyzerQuestions.util.data.ReaderFile;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 
 /**
@@ -55,7 +54,7 @@ public class App {
 		//resultsTable.executeTituloCaixaAlta();
 		// resultsTable.executeTitleCapitaLettersPartially();
 
-		//resultsTable.executeUnderstandableDescription();
+		resultsTable.executeUnderstandableDescription();
 		// resultsTable.executeIncludingVocative();
 		// resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
@@ -69,7 +68,7 @@ public class App {
 		//resultsTable.executeObviatingDemandingLanguage();
 		 //resultsTable.executeAvoidingMuchCode();
 		//resultsTable.executeUsingProperLanguage();
-		resultsTable.executeAvoidingCreatingFactoidQuestions();
+		//resultsTable.executeAvoidingCreatingFactoidQuestions();
 		
 /*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
 		int i =descriptionAnalyzer.avoidingCreatingFactoidQuestions("Onde fica a configuração do jpa no projeto maven?");

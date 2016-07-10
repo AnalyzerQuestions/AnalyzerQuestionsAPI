@@ -29,7 +29,7 @@ public class WordsUtils {
 	 * Lista de palavras que podem ajudar na identificação de uma palavra
 	 * factual
 	 */
-	public final static String[] WORDS_FACTUAL = { "como", "onde", "quando",
+	public final static String[] WORDS_FACTOID = { "como", "onde", "quando",
 			"qual" };
 
 	/**

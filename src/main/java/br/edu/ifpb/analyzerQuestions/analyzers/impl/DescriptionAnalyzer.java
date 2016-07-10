@@ -329,13 +329,8 @@ public class DescriptionAnalyzer {
 		
 		if (tStr.length <= 8) {
 			
-			Document doc = CoGrooUtils.getDocument(s3);
-			Sentence sentence = doc.getSentences().get(0);
-			Token token = sentence.getTokens().get(0);
-			String classe = token.getPOSTag();
-			
-			if(classe.equals(CoGrooUtils.PRON) || classe.equals(CoGrooUtils.ADV)){
-				if(this.isObjective(doc)){
+			for (int i = 0; i < WordsUtils.WORDS_FACTOID.length; i++) {
+				if(tStr[0].equals(WordsUtils.WORDS_FACTOID[i])){
 					return 0;
 				}
 			}

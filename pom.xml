@@ -97,6 +97,7 @@
 			<version>4.5.2</version>
 			<!-- API PLN Gramatical COgroo -->
 		</dependency>
+
 		<dependency>
 			<groupId>org.cogroo.lang.pt_br</groupId>
 			<artifactId>cogroo-ann-pt_br</artifactId>
@@ -108,19 +109,33 @@
 			<version>4.0.0</version>
 		</dependency>
 
-		<!-- API analise artografia Languagetool -->
+		<dependency>
+			<groupId>org.cogroo</groupId>
+			<artifactId>cogroo-nlp</artifactId>
+			<version>4.0.0</version>
+		</dependency> 
+
+
+		<!-- https://mvnrepository.com/artifact/org.languagetool/language-all -->
 		<dependency>
 			<groupId>org.languagetool</groupId>
 			<artifactId>language-all</artifactId>
-			<version>3.3</version>
+			<version>3.4</version>
 		</dependency>
 
-		<!-- http://mvnrepository.com/artifact/org.languagetool/languagetool-core -->
+		<!-- https://mvnrepository.com/artifact/org.languagetool/languagetool-core -->
 		<dependency>
 			<groupId>org.languagetool</groupId>
 			<artifactId>languagetool-core</artifactId>
-			<version>3.3</version>
+			<version>3.4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.languagetool/language-pt -->
+		<dependency>
+			<groupId>org.languagetool</groupId>
+			<artifactId>language-pt</artifactId>
+			<version>3.4</version>
+		</dependency>
+
 
 
 	</dependencies>

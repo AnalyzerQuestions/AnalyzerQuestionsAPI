@@ -29,10 +29,11 @@ public class LanguageToolUtils {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return matches.size() > 0;
+		return matches.size() < 4;
 	}
-	
-	public static void main(String[] args) {
-		System.out.println(textIsValid("algo"));
+
+	public static void main(String[] args) throws IOException {
+
+			System.out.println(textIsValid("algo"));
 	}
 }

@@ -290,9 +290,9 @@ public class DescriptionAnalyzer {
 		String s1 = StringUtil.removerTagsHtml(s0);
 		String s2 = StringUtil.trim(s1);
 
-		if (!CoGrooUtils.isCorrectText(s2)){
+/*		if (!CoGrooUtils.isCorrectText(s2)){			//conflito de uma biblioteca que ambas as apis utilizam (mofologik)
 			return 0;
-		}
+		}*/
 		
 		if(!LanguageToolUtils.textIsValid(s2)){
 			return 0;

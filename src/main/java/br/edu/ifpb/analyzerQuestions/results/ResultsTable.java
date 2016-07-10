@@ -59,7 +59,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.print("Questão "+flag+": "+qds.getTitle());
+			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(titleAnalyzer.mediumSizeTitle(qds.getTitle()) == Integer.parseInt(qds.getTituloMedio())){
 				System.out.println("IGUAL (" + titleAnalyzer.mediumSizeTitle(qds.getTitle())+"-"+ qds.getTituloMedio()+")");
 				igual++;
@@ -80,7 +80,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.print("Questão "+flag+": "+qds.getTitle());
+			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody()) == Integer.parseInt(qds.getTituloBemDefinido())){
 				System.out.println("IGUAL (" + titleAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
 				igual++;
@@ -101,7 +101,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.print("Questão "+flag+": "+qds.getTitle());
+			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(titleAnalyzer.titleCapitaLetters(qds.getTitle()) == Integer.parseInt(qds.getTituloCaixaAlta())){
 				System.out.println("IGUAL (" + titleAnalyzer.titleCapitaLetters(qds.getTitle())+"-"+ qds.getTituloCaixaAlta()+")");
 				igual++;
@@ -124,7 +124,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.print("Questão "+flag+": "+qds.getTitle()+" "+ " Titulo Médio: -> ");
+			System.out.println("Questão "+flag+": "+qds.getTitle()+" "+ " Titulo Médio: -> ");
 			if(titleAnalyzer.titleCapitaLettersPartially(qds.getTitle()) == Integer.parseInt(qds.getTituloParCaixaAlta())){
 				System.out.println("IGUAL (" + titleAnalyzer.titleCapitaLettersPartially(qds.getTitle())+"-"+ qds.getTituloParCaixaAlta()+")");
 				igual++;

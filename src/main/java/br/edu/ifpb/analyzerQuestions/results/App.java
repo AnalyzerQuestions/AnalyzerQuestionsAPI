@@ -36,7 +36,7 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
@@ -48,28 +48,28 @@ public class App {
 
 		ResultsTable resultsTable = new ResultsTable(q);
 
-		resultsTable.executeCoherencyBodyAndTitle();
+		//resultsTable.executeCoherencyBodyAndTitle();
 
 		//resultsTable.executeUnderstandableTitle();
 		//resultsTable.executeTitleMedio();
-		// resultsTable.executeTituloCaixaAlta();
+		//resultsTable.executeTituloCaixaAlta();
 		// resultsTable.executeTitleCapitaLettersPartially();
 
-		// resultsTable.executeUnderstandableDescription();
-		 //resultsTable.executeIncludingVocative();
+		//resultsTable.executeUnderstandableDescription();
+		// resultsTable.executeIncludingVocative();
 		// resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
 		//resultsTable.executeShowingExample();
-		// resultsTable.executeIncludingGreetings();
+		 //resultsTable.executeIncludingGreetings();
 
 		// resultsTable.executeQuestionWithSingleProblem();
-		// resultsTable.executeAvoidDescriptionWithCodeOnly();
-		// resultsTable.executeDoNotCreateHomeworkQuestions();
+		//resultsTable.executeAvoidDescriptionWithCodeOnly();
+		 //resultsTable.executeDoNotCreateHomeworkQuestions();
 
-		// resultsTable.executeObviatingDemandingLanguage();
+		//resultsTable.executeObviatingDemandingLanguage();
 		 //resultsTable.executeAvoidingMuchCode();
 		//resultsTable.executeUsingProperLanguage();
-		//resultsTable.executeAvoidingCreatingFactoidQuestions();
+		resultsTable.executeAvoidingCreatingFactoidQuestions();
 		
 /*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
 		int i =descriptionAnalyzer.avoidingCreatingFactoidQuestions("Onde fica a configuração do jpa no projeto maven?");

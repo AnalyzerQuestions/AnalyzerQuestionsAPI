@@ -18,26 +18,27 @@ import org.cogroo.text.impl.DocumentImpl;
  *
  */
 public class CoGrooUtils {
-	
+
 	/**
-	 * etiquetas do coGroo seguem as definições da 
-	 * <a href="http://beta.visl.sdu.dk/visl/pt/symbolset-floresta.html">Floresta Sintáctica</a>
-	 * estes atributos são referidos a duas classes utilizadas na utilização desta classe
+	 * etiquetas do coGroo seguem as definições da <a
+	 * href="http://beta.visl.sdu.dk/visl/pt/symbolset-floresta.html">Floresta
+	 * Sintáctica</a> estes atributos são referidos a duas classes utilizadas na
+	 * utilização desta classe
 	 */
 	/**
 	 * utilizada para identificar um pronome deterministo
 	 */
 	public static final String PRON = "pron-det";
-	
+
 	/**
 	 * utilizada para identificar um adverbio
 	 */
 	public static final String ADV = "adv";
-	
+
 	/**
 	 * utilizada para idetificar um verbo[finito, infinito]
 	 */
-	public static final String[] VERB_CLASSES = {"v-fin", "v-inf"};
+	public static final String[] VERB_CLASSES = { "v-fin", "v-inf" };
 
 	/**
 	 * Método avalia se um texto está gramaticalmente correto
@@ -72,7 +73,8 @@ public class CoGrooUtils {
 	 */
 	public static Document getDocument(String txt) {
 
-		ComponentFactory factory = ComponentFactory.create(new Locale("pt","BR"));
+		ComponentFactory factory = ComponentFactory.create(new Locale("pt",
+				"BR"));
 		Analyzer cogroo = factory.createPipe();
 
 		Document document = new DocumentImpl();
@@ -81,5 +83,8 @@ public class CoGrooUtils {
 		cogroo.analyze(document);
 
 		return document;
+	}
+	public static void main(String[] args) {
+		isCorrectText("algo");
 	}
 }

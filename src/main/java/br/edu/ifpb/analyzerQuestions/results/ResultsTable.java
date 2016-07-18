@@ -2,10 +2,9 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
-import br.edu.ifpb.analyzerQuestions.analyzers.impl.DescriptionAnalyzer;
-import br.edu.ifpb.analyzerQuestions.analyzers.impl.QuestionsAnalyzer;
-import br.edu.ifpb.analyzerQuestions.analyzers.impl.TitleAnalyzer;
-import br.edu.ifpb.analyzerQuestions.entities.Question;
+import br.edu.ifpb.analyzerQuestions.analyzers.flag.DescriptionAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.flag.QuestionsAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.flag.TitleAnalyzer;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 
 /**
@@ -38,12 +37,11 @@ public class ResultsTable {
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
 			System.out.println("Questão "+flag+": "+qds.getTitle());
-			Question q = new Question(qds.getTitle(), qds.getBody());
-			if(questionAnalyzer.coherencyBodyAndTitle(q) == Integer.parseInt(qds.getCoerencia())){
-				System.out.println("IGUAL (" + questionAnalyzer.coherencyBodyAndTitle(q)+"-"+ qds.getCoerencia()+")");
+			if(questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody()) == Integer.parseInt(qds.getCoerencia())){
+				System.out.println("IGUAL (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
 				igual++;
 			}else{
-				System.out.println("DIFERENTE (" + questionAnalyzer.coherencyBodyAndTitle(q)+"-"+ qds.getCoerencia()+")");
+				System.out.println("DIFERENTE (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
 				diferente ++;
 			}
 			flag ++;

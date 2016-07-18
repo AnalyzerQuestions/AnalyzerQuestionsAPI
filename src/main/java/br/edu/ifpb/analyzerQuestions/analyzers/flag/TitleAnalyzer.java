@@ -1,4 +1,4 @@
-package br.edu.ifpb.analyzerQuestions.analyzers.impl;
+package br.edu.ifpb.analyzerQuestions.analyzers.flag;
 
 import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
@@ -23,7 +23,7 @@ public class TitleAnalyzer {
 		if (mediumSizeTitle(title) == 1) {
 			is++;
 		}
-		if(questionsAnalyzer.coherencyBodyAndTitle(new Question(title, description)) == 1){
+		if(questionsAnalyzer.coherencyBodyAndTitle(title, description) == 1){
 			is++;
 		}
 		if(titleCapitaLetters(title) == 1){

@@ -1,4 +1,7 @@
-package br.edu.ifpb.analyzerQuestions.analyzers.impl;
+package br.edu.ifpb.analyzerQuestions.analyzers.flag;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.cogroo.text.Document;
 import org.cogroo.text.Sentence;
@@ -61,7 +64,7 @@ public class DescriptionAnalyzer {
 			is += 0.1f;
 		}
 		
-		if (is >= (3.3)) {
+		if (is >= 3.5) {
 			return 1;
 		}
 		return 0;
@@ -102,7 +105,17 @@ public class DescriptionAnalyzer {
 		str = StringUtil.removeConnective(str);
 		String tStr[] = StringTokenizerUtils.parseToken(str);
 		
-		if (tStr.length > 10)
+		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
+		List<String> aux = new ArrayList<String>();
+
+		for (int i = 0; i < tStr.length; i++) {
+			for (int j = 0; j < tJavaClasses.length; j++) {
+				if(!tStr[i].equals(tJavaClasses[j])){
+					aux.add(tStr[i]);
+				}
+			}
+		}
+		if (aux.size() > 10)
 			return 1;
 		return 0;
 	}
@@ -119,7 +132,18 @@ public class DescriptionAnalyzer {
 		str = StringUtil.trim(str);
 		String strSplited[] = StringTokenizerUtils.parseToken(str);
 		
-		if (strSplited.length < 800)
+		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
+		List<String> aux = new ArrayList<String>();
+
+		for (int i = 0; i < strSplited.length; i++) {
+			for (int j = 0; j < tJavaClasses.length; j++) {
+				if(!strSplited[i].equals(tJavaClasses[j])){
+					aux.add(strSplited[i]);
+				}
+			}
+		}
+		
+		if (strSplited.length < 700)
 			return 1;
 		return 0;
 	}
@@ -153,18 +177,11 @@ public class DescriptionAnalyzer {
 	private int frenquencyOfCode(String description) {
 
 		int flag = 0;
-		for (int i = 0; i < WordsUtils.getWordsCode().length; i++) {
-			String word = WordsUtils.getWordsCode()[i];
-
-			if (description.contains(word)) {
-				flag++;
-			}
-		}
-
+		
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 
 		for (int i = 0; i < tJavaClasses.length; i++) {
-			if (description.contains(tJavaClasses[i])) {
+			if (description.toLowerCase().contains(tJavaClasses[i].toLowerCase())) {
 				flag++;
 			}
 		}
@@ -179,8 +196,7 @@ public class DescriptionAnalyzer {
 		description = description.toLowerCase();
 
 		int flag = frenquencyOfCode(description);
-
-		if (flag > 200)
+		if (flag > 100)
 			return 0;
 		return 1;
 	}

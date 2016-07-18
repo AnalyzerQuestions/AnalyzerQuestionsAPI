@@ -1,6 +1,5 @@
-package br.edu.ifpb.analyzerQuestions.analyzers.impl;
+package br.edu.ifpb.analyzerQuestions.analyzers.flag;
 
-import br.edu.ifpb.analyzerQuestions.entities.Question;
 import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
 /**
@@ -21,11 +20,11 @@ public class QuestionsAnalyzer {
 	/**
 	 * Coerência do titulo com a descrição da pergunta
 	 */
-	public int coherencyBodyAndTitle(Question question) {
+	public int coherencyBodyAndTitle(String title, String descrption) {
 		
 		ScoreSimilarity scoreSimilarity= new ScoreSimilarity();
 		
-		Double similarity = scoreSimilarity.getSimilarity(question.getTitle(), question.getBody());
+		Double similarity = scoreSimilarity.getSimilarity(title, descrption);
 		if(similarity > VALUE_SIMILARITY){
 			return 1;
 		}

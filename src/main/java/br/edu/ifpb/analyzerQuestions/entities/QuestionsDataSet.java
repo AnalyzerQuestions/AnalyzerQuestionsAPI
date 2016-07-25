@@ -25,6 +25,7 @@ public class QuestionsDataSet {
 	private String evPergFactoides;
 	private String evPergSobreTrabAcademicos;
 	
+	@SuppressWarnings("unused")
 	private String incluirLinkPergunta;  // add no construtor
 
 	public QuestionsDataSet(String title, String body,

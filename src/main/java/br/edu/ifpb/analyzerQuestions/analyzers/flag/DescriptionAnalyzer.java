@@ -1,6 +1,8 @@
 package br.edu.ifpb.analyzerQuestions.analyzers.flag;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.cogroo.text.Document;
@@ -105,14 +107,11 @@ public class DescriptionAnalyzer {
 		str = StringUtil.removeConnective(str);
 		String tStr[] = StringTokenizerUtils.parseToken(str);
 		
-		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 		List<String> aux = new ArrayList<String>();
 
-		for (int i = 0; i < tStr.length; i++) {
-			for (int j = 0; j < tJavaClasses.length; j++) {
-				if(!tStr[i].equals(tJavaClasses[j])){
-					aux.add(tStr[i]);
-				}
+		for (int j = 0; j < tStr.length; j++) {
+			if(!javaClasses.contains(tStr[j])){
+				aux.add(tStr[j]);
 			}
 		}
 		if (aux.size() > 10)
@@ -132,18 +131,15 @@ public class DescriptionAnalyzer {
 		str = StringUtil.trim(str);
 		String strSplited[] = StringTokenizerUtils.parseToken(str);
 		
-		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 		List<String> aux = new ArrayList<String>();
 
 		for (int i = 0; i < strSplited.length; i++) {
-			for (int j = 0; j < tJavaClasses.length; j++) {
-				if(!strSplited[i].equals(tJavaClasses[j])){
-					aux.add(strSplited[i]);
-				}
+			if(!javaClasses.contains(strSplited[i])){
+				aux.add(strSplited[i]);
 			}
 		}
-		
-		if (strSplited.length < 700)
+		System.out.println(aux);
+		if (aux.size() < 700)
 			return 1;
 		return 0;
 	}
@@ -182,9 +178,11 @@ public class DescriptionAnalyzer {
 
 		for (int i = 0; i < tJavaClasses.length; i++) {
 			if (description.toLowerCase().contains(tJavaClasses[i].toLowerCase())) {
+				System.out.println(tJavaClasses[i]);
 				flag++;
 			}
 		}
+		System.out.println(flag + " FREQUENCY OF CODE <>");
 		return flag;
 	}
 

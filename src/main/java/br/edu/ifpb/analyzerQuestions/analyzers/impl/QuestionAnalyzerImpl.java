@@ -238,11 +238,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		int flag = 0;
 
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
+		String strSplited[] = StringTokenizerUtils.parseToken(description);
 
-		for (int i = 0; i < tJavaClasses.length; i++) {
-			if (description.toLowerCase().contains(
-					tJavaClasses[i].toLowerCase())) {
-				flag++;
+		for (int j = 0; j < strSplited.length; j++) {
+			for (int i = 0; i < tJavaClasses.length; i++) {
+				if (strSplited[j].toLowerCase().contains(tJavaClasses[i].toLowerCase())) {
+					flag++;
+				}
 			}
 		}
 		return flag;
@@ -279,7 +281,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		description = description.toLowerCase();
 
 		int flag = frenquencyOfCode(description);
-		if (flag > 100)
+		if (flag > 150)
 			return 0;
 		return 1;
 	}

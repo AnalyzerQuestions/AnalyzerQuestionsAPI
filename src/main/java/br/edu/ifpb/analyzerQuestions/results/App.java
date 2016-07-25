@@ -63,10 +63,10 @@ public class App {
 
 		//resultsTable.executeQuestionWithSingleProblem();
 		//resultsTable.executeAvoidDescriptionWithCodeOnly();
-		 resultsTable.executeDoNotCreateHomeworkQuestions();
+		 //resultsTable.executeDoNotCreateHomeworkQuestions();
 
 		//resultsTable.executeObviatingDemandingLanguage();
-		 //resultsTable.executeAvoidingMuchCode();
+		 resultsTable.executeAvoidingMuchCode();
 		//resultsTable.executeUsingProperLanguage();
 		//resultsTable.executeAvoidingCreatingFactoidQuestions();
 		

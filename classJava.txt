@@ -4579,6 +4579,7 @@ org.hibernate
 xmlns:xsi
 <bean
 <tx
+<android
 <property
 Initiating
 Unregistered

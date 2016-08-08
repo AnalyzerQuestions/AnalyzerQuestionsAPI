@@ -35,7 +35,7 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFN.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
@@ -66,9 +66,9 @@ public class App {
 		 //resultsTable.executeDoNotCreateHomeworkQuestions();
 
 		//resultsTable.executeObviatingDemandingLanguage();
-		 resultsTable.executeAvoidingMuchCode();
+		// resultsTable.executeAvoidingMuchCode();
 		//resultsTable.executeUsingProperLanguage();
-		//resultsTable.executeAvoidingCreatingFactoidQuestions();
+		resultsTable.executeAvoidingCreatingFactoidQuestions();
 		
 /*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
 		int i =descriptionAnalyzer.avoidingCreatingFactoidQuestions("Onde fica a configuração do jpa no projeto maven?");

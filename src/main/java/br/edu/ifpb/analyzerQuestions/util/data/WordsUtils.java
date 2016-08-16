@@ -61,7 +61,7 @@ public class WordsUtils {
 	 * Lista de palvras que podem iniciar uma estrutura de código java ou xml
 	 */
 	public final static String[] WORDS_INIT_COD = { "public", "private",
-			"protected", "class", "abstract", "interface", "enum", "<" };
+			"protected", "class", "abstract", "interface", "enum", "<", ".xhtml", ".xml", ".html", ".jsp", ".java" };
 
 	/**
 	 * Lista de palavras que podem finalizar uma estrutura de código java e xml

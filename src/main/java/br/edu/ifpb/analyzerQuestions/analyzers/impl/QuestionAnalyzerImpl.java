@@ -380,7 +380,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		for (int i = 0; i < WordsUtils.WORDS_INIT_COD.length; i++) {
 			s = StringTokenizerUtils.parseToken(description.toLowerCase());
-			if (s[0].equals(WordsUtils.WORDS_INIT_COD[i])) {
+			if (s[0].trim().contains(WordsUtils.WORDS_INIT_COD[i])) {
 				isInit = true;
 			}
 		}
@@ -394,8 +394,9 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 			}
 		}
 
-		if (isInit && isEnd)
+		if (isInit && isEnd){
 			return 0;
+		}
 		return 1;
 	}
 

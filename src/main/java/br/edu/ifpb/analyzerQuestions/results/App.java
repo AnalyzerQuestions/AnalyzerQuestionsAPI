@@ -58,7 +58,7 @@ public class App {
 		//resultsTable.executeIncludingVocative();
 		//resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
-		//resultsTable.executeShowingExample();
+		resultsTable.executeShowingExample();
 		 //resultsTable.executeIncludingGreetings();
 
 		//resultsTable.executeQuestionWithSingleProblem();
@@ -68,7 +68,7 @@ public class App {
 		//resultsTable.executeObviatingDemandingLanguage();
 		// resultsTable.executeAvoidingMuchCode();
 		//resultsTable.executeUsingProperLanguage();
-		resultsTable.executeAvoidingCreatingFactoidQuestions();
+		//resultsTable.executeAvoidingCreatingFactoidQuestions();
 		
 /*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
 		int i =descriptionAnalyzer.avoidingCreatingFactoidQuestions("Onde fica a configuração do jpa no projeto maven?");

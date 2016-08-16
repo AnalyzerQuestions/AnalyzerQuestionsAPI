@@ -267,8 +267,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer longDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description
-				.toLowerCase());
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removerTagsHtml(str);
 		str = StringUtil.removeConnective(str);
 		str = StringUtil.trim(str);
@@ -292,7 +291,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	/**
 	 * <p>
-	 * Verifica a frequencia de código em uma texto
+	 * Verifica a frequencia de código em um texto
 	 * </p>
 	 * 
 	 * @param description
@@ -308,8 +307,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		for (int j = 0; j < strSplited.length; j++) {
 			for (int i = 0; i < tJavaClasses.length; i++) {
-				if (strSplited[j].toLowerCase().contains(
-						tJavaClasses[i].toLowerCase())) {
+				if (strSplited[j].toLowerCase().equals(tJavaClasses[i].toLowerCase())) {
 					flag++;
 				}
 			}
@@ -339,7 +337,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		for (int i = 0; i < WordsUtils.getWords().length; i++) {
 			String word = WordsUtils.getWords()[i];
 
-			if (description.contains(word)) {
+			if (description.equals(word)) {
 				return 1;
 			}
 		}

@@ -32,6 +32,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
+	 * Análise se o título é bem definido
+	 * </p>
+	 */
+	/**
 	 * verifica com base em outras características da análise do título, se o
 	 * mesmo é "bem definido"
 	 * 
@@ -62,6 +67,16 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		return 0;
 	}
 
+	/**
+	 * <p>
+	 * Verifica se um título tem tamanho médio.
+	 * </p>
+	 */
+	/**
+	 * Verifica se um título de uma pergunta é de tamanho médio. Considera como
+	 * um título médio se o mesmo tiver tamanho maior que dois caracteres e
+	 * menos de 9 caracteres
+	 */
 	@Override
 	public Integer mediumSizeTitle(String title) {
 		String str = StringUtil.removeConnective(title);
@@ -74,6 +89,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 			return 0;
 	}
 
+	/**
+	 * <p>
+	 * Verifica se um título tem sua formatação em caixa alta
+	 * </p
+	 */
 	@Override
 	public Integer titleCapitaLetters(String title) {
 		String titleInCapLetter = title.toUpperCase();
@@ -85,6 +105,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		}
 	}
 
+	/**
+	 * <p>
+	 * Verifica se um título tem parte de seu texto em caixa alta
+	 * </p>
+	 */
 	@Override
 	public Integer titleCapitaLettersPartially(String title) {
 		String str = StringUtil.removeConnective(title);
@@ -104,6 +129,9 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		return 0;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public Integer coherencyBodyAndTitle(String title, String descrption) {
 		ScoreSimilarity scoreSimilarity = new ScoreSimilarity();
@@ -117,7 +145,9 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
-	 * Understandable description
+	 * <p>
+	 * Verifica se a descrição é bem definida
+	 * </p>
 	 */
 	/**
 	 * Considera-se pesos para cada caracteristca que a descrição atende, sendo
@@ -163,7 +193,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * presença de vocativo
-	 * <p>
+	 * </p>
 	 */
 	/**
 	 * Verifica se uma descrição possuí vocativo
@@ -194,7 +224,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Evitar desecrição curta da pergunta
-	 * <p>
+	 * </p>
 	 */
 	/**
 	 * Verifica se uma descrição é curta. Para se considerada como uma descrição
@@ -227,7 +257,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Evitar descrição longa demais na pergunta.
-	 * <p>
+	 * </p>
 	 */
 	/**
 	 * Verifica se uma descrição de uma descrição é longa demais. Considera-se
@@ -263,7 +293,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Verifica a frequencia de código em uma texto
-	 * <p>
+	 * </p>
 	 * 
 	 * @param description
 	 *            texto
@@ -291,7 +321,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Presença de exemplo
-	 * <p>
+	 * </p>
 	 */
 	/**
 	 * Verifica se uma descrição possui exemplo, é verdadeiro caso a mesma
@@ -319,7 +349,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Evitar muito codigo
-	 * <p>
+	 * </p>
 	 */
 	@Override
 	public Integer avoidingMuchCode(String description) {
@@ -429,7 +459,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 * Verifica se a descrição está gramaticamente e ortograficamente correta
 	 * 
 	 * @param description
-	 *            descrição da paergunta a ser análisada
+	 *            descrição da pergunta a ser análisada
 	 * @return 1/0
 	 */
 	@Override
@@ -464,7 +494,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 * Objetiva e envolva um único objectivo
 	 * 
 	 * @param description
-	 * @return
+	 * @return 1/0
 	 */
 	@Override
 	public Integer avoidingCreatingFactoidQuestions(String description) {

@@ -10,7 +10,7 @@ Problema com java.util.NoSuchElementException,"Erro:
 java.util.NoSuchElementException: No child 'runtime-name' exists
 Gostaria de uns conselhos sobre esta mensagem que estar surgindo na minha aplicação... o erro esta acima.
 
-",1,1,0,0,1,0,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/100718/problema-com-java-util-nosuchelementexception,
+",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/100718/problema-com-java-util-nosuchelementexception,
 "Programação - Erro ao Passar Parâmetro da View para o Controller, JSF e Primefaces","Preciso de ajuda nessa situação.
 
 Ao clicar em um botão, direciono para a pagina, conforme abaixo:
@@ -540,7 +540,7 @@ Vou rodar o projeto em um servidor JEE completo. A aplicação terá níveis de 
 
 Obs: Meu conhecimento de Spring MVC não é muito amplo, mas já fiz coisas básicas e me pareceu bem simples.
 
-Grato.",1,1,0,1,1,0,0,1,0,0,1,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/112302/vraptor-excluir-alguns-sets-para-que-n%C3%A3o-sejam-acessados-por-um-form-da-jsp,
+Grato.",1,1,0,1,1,0,0,1,0,1,1,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/112302/vraptor-excluir-alguns-sets-para-que-n%C3%A3o-sejam-acessados-por-um-form-da-jsp,
 RecyclerView igual ExpandedListView,"Como posso fazer um RecyclerView igual ao ExpandedListView?
 
 Procurei no Google mas não achei quase nada de material...",0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114194/recyclerview-igual-expandedlistview,

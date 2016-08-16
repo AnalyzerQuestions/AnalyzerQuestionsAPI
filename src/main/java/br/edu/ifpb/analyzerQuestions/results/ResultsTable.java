@@ -214,12 +214,11 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			//System.out.println("Questão "+flag+": "+qds.getTitle());
+			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.showingExample(qds.getBody()) == Integer.parseInt(qds.getPresencaCodigo())){
-				//System.out.println("IGUAL (" + questionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
+				System.out.println("IGUAL (" + questionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
 				igual++;
 			}else{
-				System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
 				diferente ++;
 			}

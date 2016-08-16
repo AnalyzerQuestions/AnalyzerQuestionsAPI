@@ -312,7 +312,6 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 				}
 			}
 		}
-		System.out.println(flag);
 		return flag;
 	}
 

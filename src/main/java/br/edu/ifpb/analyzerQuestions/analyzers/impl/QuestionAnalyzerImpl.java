@@ -17,6 +17,11 @@ import br.edu.ifpb.analyzerQuestions.util.data.ReaderFile;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
+/**
+ * 
+ * @author franck
+ *
+ */
 public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	private String javaClasses;
@@ -26,6 +31,12 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		this.setClassesJava();
 	}
 
+	/**
+	 * verifica com base em outras características da análise do título, se o
+	 * mesmo é "bem definido"
+	 * 
+	 * Considera-se pesos para determinadas caracteristicas
+	 */
 	@Override
 	public Integer understandableTitle(String title, String description) {
 		QuestionsAnalyzer questionsAnalyzer = new QuestionsAnalyzer();
@@ -98,6 +109,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		ScoreSimilarity scoreSimilarity = new ScoreSimilarity();
 
 		Double similarity = scoreSimilarity.getSimilarity(title, descrption);
+		System.out.println(similarity);
 		if (similarity > VALUE_SIMILARITY) {
 			return 1;
 		}
@@ -242,11 +254,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		for (int j = 0; j < strSplited.length; j++) {
 			for (int i = 0; i < tJavaClasses.length; i++) {
-				if (strSplited[j].toLowerCase().contains(tJavaClasses[i].toLowerCase())) {
+				if (strSplited[j].toLowerCase().contains(
+						tJavaClasses[i].toLowerCase())) {
 					flag++;
 				}
 			}
 		}
+		System.out.println(flag);
 		return flag;
 	}
 
@@ -430,10 +444,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		String[] tStr = StringTokenizerUtils.parseToken(s3);
 
-		if (tStr.length <= 8) {
+		if (tStr.length <= 10) {
 
 			for (int i = 0; i < WordsUtils.WORDS_FACTOID.length; i++) {
-				if (tStr[0].equals(WordsUtils.WORDS_FACTOID[i])) {
+				if (tStr[0].toLowerCase().equals(
+						WordsUtils.WORDS_FACTOID[i].toLowerCase())) {
 					return 0;
 				}
 			}

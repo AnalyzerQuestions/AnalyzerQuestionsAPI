@@ -1064,7 +1064,7 @@ Como faço para informar se o usuário já existe quando apertar o botão salvar
    if (this.getId() == -1){
       comando = String.format(""INSERT INTO cadastro (nomedousuario, senha) 
             VALUES ('%s','%s');"");
-    }",0,0,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,0,1,http://pt.stackoverflow.com/questions/119990/como-fa%C3%A7o-para-informar-se-o-usu%C3%A1rio-j%C3%A1-existe-quando-apertar-o-bot%C3%A3o-salvar,
+    }",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119990/como-fa%C3%A7o-para-informar-se-o-usu%C3%A1rio-j%C3%A1-existe-quando-apertar-o-bot%C3%A3o-salvar,
 Convenções de dlls cdecl e stdcall,"Existe diferença nas chamadas das DLLs com as convenções cdecl e stdcall ?
 
 Ou programo do mesmo modo para ambas convenções?

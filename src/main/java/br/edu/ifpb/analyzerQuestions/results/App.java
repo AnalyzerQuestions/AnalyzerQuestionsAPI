@@ -52,7 +52,7 @@ public class App {
 		//resultsTable.executeUnderstandableTitle();
 		//resultsTable.executeTitleMedio();
 		//resultsTable.executeTituloCaixaAlta();
-		//resultsTable.executeTitleCapitaLettersPartially();
+		//resultsTable.executeTitleCapita///LettersPartially();
 
 		//resultsTable.executeUnderstandableDescription();
 		//resultsTable.executeIncludingVocative();
@@ -63,7 +63,7 @@ public class App {
 
 		//resultsTable.executeQuestionWithSingleProblem();
 		//resultsTable.executeAvoidDescriptionWithCodeOnly();
-		 //resultsTable.executeDoNotCreateHomeworkQuestions();
+	//	resultsTable.executeDoNotCreateHomeworkQuestions();
 
 		//resultsTable.executeObviatingDemandingLanguage();
 		// resultsTable.executeAvoidingMuchCode();

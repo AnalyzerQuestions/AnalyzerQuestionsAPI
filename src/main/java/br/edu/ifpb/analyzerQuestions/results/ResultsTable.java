@@ -33,10 +33,17 @@ public class ResultsTable {
 		for (QuestionsDataSet qds : questionsDataSet) {
 			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody()) == Integer.parseInt(qds.getCoerencia())){
-				System.out.println("IGUAL (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
+				//System.out.println("IGUAL (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
+//				System.out.println("-----------------------------------------------------------//");
+//				System.out.println(qds.getBody());
+//				System.out.println("-----------------------------------------------------------//");
 				igual++;
 			}else{
+				//System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
+//				System.out.println("-----------------------------------------------------------//");
+//				System.out.println(qds.getBody());
+//				System.out.println("-----------------------------------------------------------//");
 				diferente ++;
 			}
 			flag ++;
@@ -73,12 +80,16 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.println("Questão "+flag+": "+qds.getTitle());
+			//System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody()) == Integer.parseInt(qds.getTituloBemDefinido())){
-				System.out.println("IGUAL (" + questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+				//System.out.println("IGUAL (" + questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
 				igual++;
 			}else{
+				System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+				System.out.println("-----------------------------------------------------------//");
+				System.out.println(qds.getBody());
+				System.out.println("-----------------------------------------------------------//");
 				diferente ++;
 			}
 			flag ++;
@@ -159,11 +170,12 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.println("Questão "+flag+": "+qds.getTitle());
+			//System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.shortDescription(qds.getBody()) == Integer.parseInt(qds.getEvDescricaoCurta())){
-				System.out.println("IGUAL (" + questionAnalyzer.shortDescription(qds.getBody())+"-"+ qds.getEvDescricaoCurta()+")");
+				//System.out.println("IGUAL (" + questionAnalyzer.shortDescription(qds.getBody())+"-"+ qds.getEvDescricaoCurta()+")");
 				igual++;
 			}else{
+				System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.shortDescription(qds.getBody())+"-"+ qds.getEvDescricaoCurta()+")");
 				diferente ++;
 			}
@@ -180,11 +192,12 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.println("Questão "+flag+": "+qds.getTitle());
+			//System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.longDescription(qds.getBody()) == Integer.parseInt(qds.getEvDescricaoLonga())){
-				System.out.println("IGUAL (" + questionAnalyzer.longDescription(qds.getBody())+"-"+ qds.getEvDescricaoLonga()+")");
+				//System.out.println("IGUAL (" + questionAnalyzer.longDescription(qds.getBody())+"-"+ qds.getEvDescricaoLonga()+")");
 				igual++;
 			}else{
+				System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.longDescription(qds.getBody())+"-"+ qds.getEvDescricaoLonga()+")");
 				diferente ++;
 			}
@@ -206,6 +219,7 @@ public class ResultsTable {
 				System.out.println("IGUAL (" + questionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
 				igual++;
 			}else{
+				//System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.showingExample(qds.getBody())+"-"+ qds.getPresencaCodigo()+")");
 				diferente ++;
 			}
@@ -241,11 +255,12 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.println("Questão "+flag+": "+qds.getTitle());
+			//System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.questionWithSingleProblem(qds.getBody()) == Integer.parseInt(qds.getPerguntaUnica())){
-				System.out.println("IGUAL (" + questionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
+			//	System.out.println("IGUAL (" + questionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
 				igual++;
 			}else{
+				System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
 				diferente ++;
 			}
@@ -264,11 +279,12 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.println("Questão "+flag+": "+qds.getTitle());
+			//System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.understandableDescription(qds.getBody()) == Integer.parseInt(qds.getPerguntaBemDefinda())){
-				System.out.println("IGUAL (" + questionAnalyzer.understandableDescription(qds.getBody())+"-"+ qds.getPerguntaBemDefinda()+")");
+				//System.out.println("IGUAL (" + questionAnalyzer.understandableDescription(qds.getBody())+"-"+ qds.getPerguntaBemDefinda()+")");
 				igual++;
 			}else{
+				System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.understandableDescription(qds.getBody())+"-"+ qds.getPerguntaBemDefinda()+")");
 				diferente ++;
 			}

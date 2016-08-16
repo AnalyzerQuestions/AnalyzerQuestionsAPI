@@ -371,7 +371,9 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
 	 * evitar descricao com apenas código
+	 * </p>
 	 */
 	@Override
 	public Integer avoidDescriptionWithCodeOnly(String description) {
@@ -390,8 +392,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		String f2 = Character.toString(f.charAt(f.length() - 1));
 
 		for (int i = 0; i < WordsUtils.WORDS_END_COD.length; i++) {
-			if (s[s.length - 1].equals(WordsUtils.WORDS_END_COD[i])
-					|| f2.equals(WordsUtils.WORDS_END_COD[i])) {
+			if (s[s.length - 1].equals(WordsUtils.WORDS_END_COD[i]) || f2.equals(WordsUtils.WORDS_END_COD[i])) {
 				isEnd = true;
 			}
 		}
@@ -422,12 +423,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Analisa se na descrição possui algum tipo de agradecimento
-	 * <p>
+	 * </p>
 	 */
 	@Override
 	public Integer includingGreetings(String description) {
-		String s0 = StringUtil
-				.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		String s1 = StringUtil.removeConnective(s0);
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
@@ -454,7 +454,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Analisa o uso da língua adequando na descrição
-	 * <p>
+	 * </p>
 	 * 
 	 * Verifica se a descrição está gramaticamente e ortograficamente correta
 	 * 
@@ -482,7 +482,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	/**
 	 * <p>
 	 * Análisa se uma pergunta é factual
-	 * <p>
+	 * </p>
 	 * 
 	 * Considera uma pergunta factual tendo:
 	 * 
@@ -557,7 +557,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 * <p>
 	 * Analisa se a descrição é de um exercicio ou tarefa de escola, faculdade,
 	 * trabalho
-	 * <p>
+	 * </p>
 	 * 
 	 * Verifica se a descrição possui algumas palavras (pré defindas) que
 	 * remetem a caracteristica

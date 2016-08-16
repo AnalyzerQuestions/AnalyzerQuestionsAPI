@@ -132,13 +132,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		if (shortDescription(description) == 1) {
 			is++;
 		}
-		if (longDescription(description) == 1) {
+		if (showingExample(description) == 1) {
 			is++;
 		}
 		if (avoidDescriptionWithCodeOnly(description) == 1) {
 			is++;
 		}
-		if (showingExample(description) == 1) {
+		if (longDescription(description) == 1) {
 			is += 0.5f;
 		}
 		if (avoidingCreatingFactoidQuestions(description) == 1) {
@@ -161,7 +161,12 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
 	 * presença de vocativo
+	 * <p>
+	 */
+	/**
+	 * Verifica se uma descrição possuí vocativo
 	 */
 	@Override
 	public Integer includingVocative(String description) {
@@ -187,7 +192,15 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
 	 * Evitar desecrição curta da pergunta
+	 * <p>
+	 */
+	/**
+	 * Verifica se uma descrição é curta. Para se considerada como uma descrição
+	 * curta a mesma deve ter a quantidade de palavras menor ou igual a 1,
+	 * desconsiderando conectivos (ou, se, de e, o, a, etc), caracteres
+	 * especiais e palavras e classes do java
 	 */
 	@Override
 	public Integer shortDescription(String description) {
@@ -212,8 +225,15 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
-	 * 
-	 * Evitar descrição longa demais na pergunta
+	 * <p>
+	 * Evitar descrição longa demais na pergunta.
+	 * <p>
+	 */
+	/**
+	 * Verifica se uma descrição de uma descrição é longa demais. Considera-se
+	 * como uma descrição longa caso a mesma tenha a quantidade de palavras
+	 * maior que 700, desconsiderando caracteres especiais e palavras e classes
+	 * doo java.
 	 */
 	@Override
 	public Integer longDescription(String description) {
@@ -241,9 +261,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
+	 * Verifica a frequencia de código em uma texto
+	 * <p>
 	 * 
 	 * @param description
-	 * @return
+	 *            texto
+	 * @return a frequẽncia do texto passado
 	 */
 	private int frenquencyOfCode(String description) {
 
@@ -265,8 +289,14 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
-	 * 
+	 * <p>
 	 * Presença de exemplo
+	 * <p>
+	 */
+	/**
+	 * Verifica se uma descrição possui exemplo, é verdadeiro caso a mesma
+	 * possua uma quantidade minima de código java, ou explicitamente na
+	 * descrição tenha algo que remeta a palavra exemplo.
 	 */
 	@Override
 	public Integer showingExample(String description) {
@@ -287,7 +317,9 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
 	 * Evitar muito codigo
+	 * <p>
 	 */
 	@Override
 	public Integer avoidingMuchCode(String description) {
@@ -520,5 +552,4 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 			return 0;
 		return 1;
 	}
-
 }

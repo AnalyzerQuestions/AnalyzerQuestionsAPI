@@ -25,7 +25,7 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	private String javaClasses;
-	private static final Float VALUE_SIMILARITY = 0.05f;
+	private static final Float VALUE_SIMILARITY = 0.5f;
 
 	public QuestionAnalyzerImpl() {
 		this.setClassesJava();
@@ -137,10 +137,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		ScoreSimilarity scoreSimilarity = new ScoreSimilarity();
 
 		Double similarity = scoreSimilarity.getSimilarity(title, descrption);
-		System.out.println(similarity);
 		if (similarity > VALUE_SIMILARITY) {
+			System.out.println(similarity +"  :  "+ "SIM");
 			return 1;
 		}
+		System.out.println(similarity + "  :  "+ "NÃO");
 		return 0;
 	}
 

@@ -4,6 +4,7 @@ import java.util.List;
 
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
+import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
 /**
  * 
@@ -11,6 +12,19 @@ import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
  *
  */
 public class App {
+	
+	public static void coherencyBodyAndTitle(String title, String descrption) {
+		ScoreSimilarity scoreSimilarity = new ScoreSimilarity();
+
+		Double similarity = scoreSimilarity.getSimilarity(title, descrption);
+		//System.out.println(similarity);
+		if (similarity > 0.05f) {
+			System.out.println("SIM");
+		}else{
+			System.out.println("NÃO");
+
+		}
+	}
 
 	public static void main(String[] args) {
 		
@@ -35,7 +49,7 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFN.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
@@ -46,8 +60,16 @@ public class App {
 		}*/
 
 		ResultsTable resultsTable = new ResultsTable(q);
+		
+		
+/*		for (QuestionsDataSet questionsDataSet : q) {
+			App.coherencyBodyAndTitle(questionsDataSet.getTitle(), questionsDataSet.getBody());
+		}*/
 
-		//resultsTable.executeCoherencyBodyAndTitle();
+		
+		
+		
+		resultsTable.executeCoherencyBodyAndTitle();
 
 		//resultsTable.executeUnderstandableTitle();
 		//resultsTable.executeTitleMedio();
@@ -61,8 +83,8 @@ public class App {
 	//	resultsTable.executeShowingExample();
 		 //resultsTable.executeIncludingGreetings();
 
-		//resultsTable.executeQuestionWithSingleProblem();
-		resultsTable.executeAvoidDescriptionWithCodeOnly();
+	//resultsTable.executeQuestionWithSingleProblem();
+		//resultsTable.executeAvoidDescriptionWithCodeOnly();
 	//	resultsTable.executeDoNotCreateHomeworkQuestions();
 
 		//resultsTable.executeObviatingDemandingLanguage();

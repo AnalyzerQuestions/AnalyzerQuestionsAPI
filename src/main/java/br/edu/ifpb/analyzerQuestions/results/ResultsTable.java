@@ -31,7 +31,7 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			System.out.println("Questão "+flag+": "+qds.getTitle());
+			//System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody()) == Integer.parseInt(qds.getCoerencia())){
 				//System.out.println("IGUAL (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
 //				System.out.println("-----------------------------------------------------------//");
@@ -40,7 +40,7 @@ public class ResultsTable {
 				igual++;
 			}else{
 				//System.out.println("Questão "+flag+": "+qds.getTitle());
-				System.out.println("DIFERENTE (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
+				//System.out.println("DIFERENTE (" + questionAnalyzer.coherencyBodyAndTitle(qds.getTitle(),qds.getBody())+"-"+ qds.getCoerencia()+")");
 //				System.out.println("-----------------------------------------------------------//");
 //				System.out.println(qds.getBody());
 //				System.out.println("-----------------------------------------------------------//");

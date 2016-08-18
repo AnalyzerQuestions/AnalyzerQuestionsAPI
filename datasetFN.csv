@@ -106,7 +106,7 @@ A primeiro vez que alimento a p:dataTable é verificado que o valor é null e as
 
 Quando clico no botão PROVENTO é enviado como parametro o valor proventos conforme o f:atrribute, so que na bean o valor do parametro é atribuido mas quando o metodo listaEvento é chamado o valor da variavel opcao é sempre null e manda o valor ""Todos"" para fazer a consulta na tabela e o DataTable sempre recebe todos os registros. O valor do parametro enviado pela View se perde.
 
-Se alguem puder dar uma ajuda para resolver esse problema informando onde estou errando, agradeço.",1,0,0,1,0,0,0,1,0,1,0,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/102752/programa%C3%A7%C3%A3o-erro-ao-passar-par%C3%A2metro-da-view-para-o-controller-jsf-e-primefac,
+Se alguem puder dar uma ajuda para resolver esse problema informando onde estou errando, agradeço.",1,0,0,1,0,0,0,1,1,1,0,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/102752/programa%C3%A7%C3%A3o-erro-ao-passar-par%C3%A2metro-da-view-para-o-controller-jsf-e-primefac,
 Erro ao executar aplicação android studio - Execution failed for task ':app:transformClassesWithDexForDebug',"Error:Execution failed for task ':app:transformClassesWithDexForDebug'
 
 Ao executar a aplicação estou recebendo essa mensagem de erro:
@@ -434,7 +434,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
     return super.onOptionsItemSelected(item);
 }
-}",1,0,0,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/108408/como-preencher-um-drawerbuilder-dinamicamente-usando-um-adapter-e-recyclerview,
+}",1,0,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/108408/como-preencher-um-drawerbuilder-dinamicamente-usando-um-adapter-e-recyclerview,
 Não consigo injetar dependência do spring durante o teste de integração do Camel,"Estou tendo um problema para injetar dependência quando executo testes de integração pelo Camel.
 
 Primeiro tenho minha classe route:
@@ -540,7 +540,7 @@ Vou rodar o projeto em um servidor JEE completo. A aplicação terá níveis de 
 
 Obs: Meu conhecimento de Spring MVC não é muito amplo, mas já fiz coisas básicas e me pareceu bem simples.
 
-Grato.",1,1,0,1,1,0,0,1,0,0,1,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/112302/vraptor-excluir-alguns-sets-para-que-n%C3%A3o-sejam-acessados-por-um-form-da-jsp,
+Grato.",1,1,0,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/112302/vraptor-excluir-alguns-sets-para-que-n%C3%A3o-sejam-acessados-por-um-form-da-jsp,
 RecyclerView igual ExpandedListView,"Como posso fazer um RecyclerView igual ao ExpandedListView?
 
 Procurei no Google mas não achei quase nada de material...",0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114194/recyclerview-igual-expandedlistview,
@@ -4014,7 +4014,7 @@ Quando faço a compra, ela é determinada como concluída e depois não recebo o
 
 Abro o Developer Console e logo após entro no Wallet para cancelar a Assinatura que foi debitada.
 
-Como eu faço essa requisição dentro da aplicação? Não consigo pegar o retorno da compra até agora.",0,1,0,1,1,1,0,1,0,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/6087/assinaturas-retornam-o-inapp-purchase-data-nulo-usando-in-app-billing-v3,
+Como eu faço essa requisição dentro da aplicação? Não consigo pegar o retorno da compra até agora.",0,1,0,1,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/6087/assinaturas-retornam-o-inapp-purchase-data-nulo-usando-in-app-billing-v3,
 exception java.util.concurrent.RejectedExecutionException:,"Ando de volta de um projecto JEE onde utilizado jms e o servidor é o wildfly 8.0. Já ando de volta desta excepção há algum tempo mas ainda não consegui resolver. Penso que não me falte nenhuma configuração no jboss mas sinceramente já me faltam ideias.. alguém que tenha mais experiência que me possa ajudar.
 
 stracktrace eclipse
@@ -4354,7 +4354,7 @@ Web Service
         venda = vendDAO.cadastrarMobile(gson.fromJson(json.toString(), Venda.class));
         return venda;
 
-    }",1,1,0,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/60508/erro-500-ao-enviar-objeto-do-android-para-web-service-rest,
+    }",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/60508/erro-500-ao-enviar-objeto-do-android-para-web-service-rest,
 applet java aplicação,"import java.awt.*;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;

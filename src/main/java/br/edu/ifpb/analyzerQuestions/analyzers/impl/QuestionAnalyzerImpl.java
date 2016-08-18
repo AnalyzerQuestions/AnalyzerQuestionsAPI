@@ -1,6 +1,7 @@
 package br.edu.ifpb.analyzerQuestions.analyzers.impl;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.cogroo.text.Document;
@@ -278,16 +279,16 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 		List<String> aux = new ArrayList<String>();
-
+		
 		for (int i = 0; i < strSplited.length; i++) {
 			for (int j = 0; j < tJavaClasses.length; j++) {
-				if (!strSplited[i].equals(tJavaClasses[j])) {
+				if (strSplited[i].equals(tJavaClasses[j])) {
 					aux.add(strSplited[i]);
 				}
 			}
 		}
 
-		if (strSplited.length < 500)
+		if (aux.size() < 500)
 			return 1;
 		return 0;
 	}

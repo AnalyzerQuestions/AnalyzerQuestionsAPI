@@ -130,7 +130,12 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	}
 
 	/**
+	 * <p>
+	 * Verifica coerência de uma pergunta
+	 * </p>
 	 * 
+	 * Verifica se o título é coerente com a descrição, isso é feito
+	 *  usando calculo de similaridade  entre o título e a descrição. 
 	 */
 	@Override
 	public Integer coherencyBodyAndTitle(String title, String descrption) {
@@ -138,10 +143,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		Double similarity = scoreSimilarity.getSimilarity(title, descrption);
 		if (similarity > VALUE_SIMILARITY) {
-			System.out.println(similarity +"  :  "+ "SIM");
 			return 1;
 		}
-		System.out.println(similarity + "  :  "+ "NÃO");
 		return 0;
 	}
 

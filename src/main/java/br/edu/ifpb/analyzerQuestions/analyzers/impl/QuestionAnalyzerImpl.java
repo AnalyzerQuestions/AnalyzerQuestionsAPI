@@ -25,7 +25,7 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	private String javaClasses;
-	private static final Float VALUE_SIMILARITY = 0.5f;
+	private static final Float VALUE_SIMILARITY = 0.05f;
 
 	public QuestionAnalyzerImpl() {
 		this.setClassesJava();

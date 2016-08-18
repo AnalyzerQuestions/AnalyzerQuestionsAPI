@@ -238,8 +238,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer shortDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description
-				.toLowerCase());
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removeConnective(str);
 		String tStr[] = StringTokenizerUtils.parseToken(str);
 
@@ -288,7 +287,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 			}
 		}
 
-		if (strSplited.length < 700)
+		if (strSplited.length < 500)
 			return 1;
 		return 0;
 	}

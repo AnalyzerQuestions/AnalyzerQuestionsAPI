@@ -1,7 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.analyzers.impl;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.cogroo.text.Document;
@@ -9,7 +8,6 @@ import org.cogroo.text.Sentence;
 import org.cogroo.text.Token;
 
 import br.edu.ifpb.analyzerQuestions.analyzers.QuestionAnalyzer;
-import br.edu.ifpb.analyzerQuestions.analyzers.flag.QuestionsAnalyzer;
 import br.edu.ifpb.analyzerQuestions.util.CoGrooUtils;
 import br.edu.ifpb.analyzerQuestions.util.LanguageToolUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
@@ -45,14 +43,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer understandableTitle(String title, String description) {
-		QuestionsAnalyzer questionsAnalyzer = new QuestionsAnalyzer();
 
 		float is = 0;
 
 		if (mediumSizeTitle(title) == 1) {
 			is++;
 		}
-		if (questionsAnalyzer.coherencyBodyAndTitle(title, description) == 1) {
+		if (coherencyBodyAndTitle(title, description) == 1) {
 			is++;
 		}
 		if (titleCapitaLetters(title) == 1) {
@@ -466,19 +463,34 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer usingProperLanguage(String description) {
-		String s0 = StringUtil.removeCharacterSpecial(description);
-		String s1 = StringUtil.removerTagsHtml(s0);
-		String s2 = StringUtil.trim(s1);
+		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		s0 = StringUtil.removerTagsHtml(s0);
+		String s2 = StringUtil.trim(s0);
 
 		/*
 		 * if (!CoGrooUtils.isCorrectText(s2)){ //conflito de uma biblioteca que
 		 * ambas as apis utilizam (mofologik) return 0; }
 		 */
 
-		if (!LanguageToolUtils.textIsValid(s2)) {
-			return 0;
+		if(frenquencyOfCode(description) > 10 && frenquencyOfCode(description) < 60 ){
+			if (!LanguageToolUtils.textIsValid(s2, 30)) {
+				return 0;
+			}else{
+				return 1;
+			}
+		}else if(frenquencyOfCode(description) < 10){
+			if (!LanguageToolUtils.textIsValid(s2, 6)) {
+				return 0;
+			}else{
+				return 1;
+			}
+		}else{
+			if (!LanguageToolUtils.textIsValid(s2, 300)) {
+				return 0;
+			}else{
+				return 1;
+			}
 		}
-		return 1;
 	}
 
 	/**

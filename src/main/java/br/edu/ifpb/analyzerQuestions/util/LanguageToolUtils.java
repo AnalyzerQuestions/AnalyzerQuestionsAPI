@@ -22,18 +22,14 @@ public class LanguageToolUtils {
 	 * @param text
 	 * @return
 	 */
-	public static boolean textIsValid(String text) {
+	public static boolean textIsValid(String text, Integer freq) {
 		JLanguageTool langTool = new JLanguageTool(new BrazilianPortuguese());
 		try {
 			matches = langTool.check(text);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return matches.size() < 4;
+		return matches.size() < freq;
 	}
 
-	public static void main(String[] args) throws IOException {
-
-			System.out.println(textIsValid("algo"));
-	}
 }

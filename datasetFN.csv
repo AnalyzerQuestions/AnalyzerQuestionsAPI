@@ -1314,7 +1314,7 @@ public class Fragment1 extends Fragment implements
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
     }
-}",1,1,0,0,1,1,0,1,0,1,0,1,1,1,1,0,1,1,1,,
+}",1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,,
 "Se eu vou criar um aplicação J2EE no Eclipse, devo baixar a versão JavaEE?",Qual é a versão do Eclipse mais adequada para trabalhar com J2EE?,1,0,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,0,1,http://pt.stackoverflow.com/questions/120961/se-eu-vou-criar-um-aplica%C3%A7%C3%A3o-j2ee-no-eclipse-devo-baixar-a-vers%C3%A3o-javaee,
 Plugin Designer JSF,Estou procurando algum plug-in que realize o design do jsf como no swing +-. Qual a melhor maneira de trabalhar o visual do codigo de maneira pratica?,1,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/123303/plugin-designer-jsf,
 ERRO Java: javax.servlet.ServletException: javax/enterprise/context/spi/Contextual,"Sou novo em Java e estou tendo dificuldades para mostrar na página um grid com dados de uma tabela do banco de dados. Estou usando java + hibernate + JSF 2 + tomcat 8. Quando executo minha página xhtml apresenta o erro abaixo. O problema está no form lista do xhtml, pois o form edição executa sem problemas.Estou a um bom tempo tentando resolver e não consigo evoluir.
@@ -3064,7 +3064,7 @@ This XML file does not appear to have any style information associated with it. 
 </wsdl:definitions>
 alguém sabe o porque isto ocorre?
 
-obrigado desde já",1,1,0,0,1,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/131248/insert-pelo-soapui-em-um-webservice
+obrigado desde já",1,1,0,0,1,0,0,1,1,1,0,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/131248/insert-pelo-soapui-em-um-webservice
 ExposedContextBensNames ou ExposedContextBensAsAtrributes no Spring Boot (Thymeleaf),"Gostaria de saber como eu posso utilizar o Exposed dentro do application.properties da mesma maneira que configuraria com o @Bean manualmente ?
 
 @Bean
@@ -4840,7 +4840,7 @@ public class MemoryGame2 extends java.applet.Applet implements ActionListener
      </applet>
   </body>
 </html>
-Resultado abre a janela, a dizer applet started mas a janela está totalmente em branco, tambem abre ao mesmo tempo a minha aplicação (codigo acima).",0,1,0,0,0,0,0,1,0,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/59181/applet-java-aplica%C3%A7%C3%A3o,
+Resultado abre a janela, a dizer applet started mas a janela está totalmente em branco, tambem abre ao mesmo tempo a minha aplicação (codigo acima).",0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/59181/applet-java-aplica%C3%A7%C3%A3o,
 Controle de conteúdo - Java Sax,"[Java - Sax Parser] Boa tarde. Se alguém puder me ajudar eu ficarei grato.
 
 Preciso montar uma aplicação que funciona da seguinte maneira: Caso ele encontre a tag ""classname"", e esta possuir um atributo ""type"" com o valor ""M"" ou ""V"", então seta o nome da tag classname.

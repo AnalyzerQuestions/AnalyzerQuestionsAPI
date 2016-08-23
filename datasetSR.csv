@@ -554,7 +554,7 @@ EnterpriseDB - Using the NoSQL Capabilities in Postgres
 
 James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL
 
-James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL (repositório GitHub)",1,1,0,0,1,1,0,1,0,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/95819/postgresql-nosql-e-integra%C3%A7%C3%A3o-entre-banco-de-dados-relacionais-e-n%C3%A3o-relacionais
+James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL (repositório GitHub)",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/95819/postgresql-nosql-e-integra%C3%A7%C3%A3o-entre-banco-de-dados-relacionais-e-n%C3%A3o-relacionais
 Acessar array de objeto dentro de um switch,"Boa noite, estou tendo dificuldade em acessar e modificar um array de objetos da classe main dentro de um switch na classe de visão.
 
 O array está declarado assim no main:
@@ -1560,7 +1560,7 @@ public class DBEntityCO implements Converter {
         (...)
         return string;
     }
-}",1,1,0,1,1,1,0,1,0,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/109198/persistir-objeto-em-crud-jsf-cdi-jpa,
+}",1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/109198/persistir-objeto-em-crud-jsf-cdi-jpa,
 Atualizar JProgressBar em quanto ler um arquivo,"estou desenvolvendo uma aplicação que vai realizar leitura e escrita de um determinado arquivo txt, que segue um padrão. Eu vou ler um arquivo, realizar algumas limpezas nesse arquivo, e em seguida escrever um novo arquivo. Coloquei uma barra de progresso para ficar mais fácil pra o usuário quanto ao processo. Minha duvida consiste em vincular o tempo do processo de leitura/escrita, ao avançar da barra de progresso. Eu incrementei a barra usando Thread, mas os tempos não casam. Queria saber se tem alguma forma de pegar o tempo exato do processo de leitura/escrita, e atualizar a barra. Obrigado!
 
 EDIÇÃO

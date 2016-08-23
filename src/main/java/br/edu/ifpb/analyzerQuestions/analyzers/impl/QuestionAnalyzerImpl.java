@@ -164,29 +164,23 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		if (shortDescription(description) == 1) {
 			is++;
 		}
+		if(avoidingMuchCode(description) == 1){
+			is++;
+		}
+		if (longDescription(description) == 1) {
+			is+=0.5f;
+		}
 		if (showingExample(description) == 1) {
 			is++;
 		}
 		if (avoidDescriptionWithCodeOnly(description) == 1) {
-			is++;
+			is+=0.5f;
 		}
-		if (longDescription(description) == 1) {
-			is += 0.5f;
-		}
-		if (avoidingCreatingFactoidQuestions(description) == 1) {
-			is += 0.5f;
-		}
-		if (usingProperLanguage(description) == 1) {
-			is += 0.5f;
-		}
-		if (includingGreetings(description) == 1) {
-			is += 0.2f;
-		}
-		if (includingVocative(description) == 1) {
-			is += 0.1f;
+		if (questionWithSingleProblem(description) == 1) {
+			is+=0.5f;
 		}
 
-		if (is >= 3.5) {
+		if (is >= 3.0) {
 			return 1;
 		}
 		return 0;
@@ -285,7 +279,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 			}
 		}
 
-		if (aux.size() < 500)
+		if (aux.size() < 200)
 			return 1;
 		return 0;
 	}
@@ -472,20 +466,33 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		 * ambas as apis utilizam (mofologik) return 0; }
 		 */
 
-		if(frenquencyOfCode(description) > 10 && frenquencyOfCode(description) < 60 ){
-			if (!LanguageToolUtils.textIsValid(s2, 30)) {
+		if(frenquencyOfCode(description) == 0){
+			if (!LanguageToolUtils.textIsValid(s2, 0)) {
 				return 0;
 			}else{
 				return 1;
 			}
-		}else if(frenquencyOfCode(description) < 10){
-			if (!LanguageToolUtils.textIsValid(s2, 6)) {
+		}
+		if(frenquencyOfCode(description) > 10 && frenquencyOfCode(description) < 60 ){
+			if (!LanguageToolUtils.textIsValid(s2, 80)) {
+				return 0;
+			}else{
+				return 1;
+			}
+		}else if(frenquencyOfCode(description) >= 5){
+			if (!LanguageToolUtils.textIsValid(s2, 12)) {
+				return 0;
+			}else{
+				return 1;
+			}
+		}else if(frenquencyOfCode(description) < 5){
+			if (!LanguageToolUtils.textIsValid(s2, 5)) {
 				return 0;
 			}else{
 				return 1;
 			}
 		}else{
-			if (!LanguageToolUtils.textIsValid(s2, 300)) {
+			if (!LanguageToolUtils.textIsValid(s2, 400)) {
 				return 0;
 			}else{
 				return 1;

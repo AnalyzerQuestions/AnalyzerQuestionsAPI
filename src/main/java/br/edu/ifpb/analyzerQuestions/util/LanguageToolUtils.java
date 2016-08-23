@@ -29,7 +29,7 @@ public class LanguageToolUtils {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return matches.size() < freq;
+		return matches.size() <= freq;
 	}
 
 }

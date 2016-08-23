@@ -80,16 +80,13 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			//System.out.println("Questão "+flag+": "+qds.getTitle());
+			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody()) == Integer.parseInt(qds.getTituloBemDefinido())){
-				//System.out.println("IGUAL (" + questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
+				System.out.println("IGUAL (" + questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
 				igual++;
 			}else{
-				System.out.println("Questão "+flag+": "+qds.getTitle());
+				//System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody())+"-"+ qds.getTituloBemDefinido()+")");
-				System.out.println("-----------------------------------------------------------//");
-				System.out.println(qds.getBody());
-				System.out.println("-----------------------------------------------------------//");
 				diferente ++;
 			}
 			flag ++;

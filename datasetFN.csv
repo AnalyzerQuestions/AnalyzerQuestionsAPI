@@ -3,8 +3,8 @@ Datetime independente,"Estou desenvolvendo um aplicativo para geração de senha
 
 Já pensei em fazer o sincronismo da data com NTP para o SystemClock, mas quando o aparelho é reiniciado a data volta para a hora alterada.
 
-É possível criar um relógio independente?",1,0,0,0,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/98978/datetime-independente,
-Como colocar a imagem do artista que está tocando na tela de bloqueio do Android?,"Estou fazendo um projeto de player para Android e consegui criar a notificação mediaStyle, porém como faço para colocar também a capa do álbum como background na tela de bloqueio?",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/97862/como-colocar-a-imagem-do-artista-que-est%C3%A1-tocando-na-tela-de-bloqueio-do-android,
+É possível criar um relógio independente?",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/98978/datetime-independente,
+Como colocar a imagem do artista que está tocando na tela de bloqueio do Android?,"Estou fazendo um projeto de player para Android e consegui criar a notificação mediaStyle, porém como faço para colocar também a capa do álbum como background na tela de bloqueio?",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/97862/como-colocar-a-imagem-do-artista-que-est%C3%A1-tocando-na-tela-de-bloqueio-do-android,
 Problema com java.util.NoSuchElementException,"Erro:
 
 java.util.NoSuchElementException: No child 'runtime-name' exists
@@ -163,7 +163,7 @@ Porem tentei várias maneiras e nada da certo ao executar a aplicação, já est
 
 compile 'javax.xml.crypto:jsr105-api:1.0.1'
 compile 'commons-io:commons-io:2.4'
-Alguém poderia me ajudar",0,1,0,0,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/108102/erro-ao-executar-aplica%C3%A7%C3%A3o-android-studio-execution-failed-for-task-apptran,
+Alguém poderia me ajudar",1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/108102/erro-ao-executar-aplica%C3%A7%C3%A3o-android-studio-execution-failed-for-task-apptran,
 Fragment com Navigation Drawer do Android Studio,"Eu estava tentando iniciar um Fragmento dependendo do clique no Navigation Drawer que o Android Studio cria... O código fica assim
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -434,7 +434,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
     return super.onOptionsItemSelected(item);
 }
-}",1,0,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/108408/como-preencher-um-drawerbuilder-dinamicamente-usando-um-adapter-e-recyclerview,
+}",0,0,0,0,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/108408/como-preencher-um-drawerbuilder-dinamicamente-usando-um-adapter-e-recyclerview,
 Não consigo injetar dependência do spring durante o teste de integração do Camel,"Estou tendo um problema para injetar dependência quando executo testes de integração pelo Camel.
 
 Primeiro tenho minha classe route:
@@ -527,13 +527,13 @@ Nesse código, minha mensagem enviada pelo teste passa pelo Route e cai no meu p
 
 Preciso saber como injeto utilizando o Camel.
 
-Se puderem me ajudar. Abraços.",1,0,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/111116/n%C3%A3o-consigo-injetar-depend%C3%AAncia-do-spring-durante-o-teste-de-integra%C3%A7%C3%A3o-do-camel,
+Se puderem me ajudar. Abraços.",0,0,0,0,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/111116/n%C3%A3o-consigo-injetar-depend%C3%AAncia-do-spring-durante-o-teste-de-integra%C3%A7%C3%A3o-do-camel,
 Erro ao gerar os .class do ejb,"Tenho um projeto EJB e todavia que vou subir o mesmo ao servidor aparece o seguinte erro:
 
 com.ibm.ejs.container.EJBConfigurationException: The bean class 'exemploClasse' for EJB 'EAR#EJB.jar#exemploClasse' is not found.
 Então exportei o projeto EJB e notei que não estava gerando os arquivos .class's, já verifiquei a versão do Java e está tudo certo, o que pode ser?
 
-Obs: Projeto foi importado, não é meu.",0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/110551/erro-ao-gerar-os-class-do-ejb,
+Obs: Projeto foi importado, não é meu.",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/110551/erro-ao-gerar-os-class-do-ejb,
 AngularJs + (Spring MVC ou Especificacao),"Estou iniciando o desenvolvimento de um sistema (java), e estou com duvida sobre a tecnologia. O sistema é totalmente restrito (login/senha) e vai ser disponibilizado na internet, logo preciso de segurança. Conheço um pouco de AngularJs e queria utilizar o mesmo pela facilidade. Sendo assim, pensei em utilizar o AngularJs + Spring MVC + Spring Security. No meu pensamento eu prefiro o Spring por conta do modulo de segurança (tenho certa experiência), inclusive já fiz testes e consegui colocar segurança nos serviços rest sem muito trabalho. A minha duvida é que algumas pessoas acham isso desnecessário, preferem fazer a camada de front com angular totalmente desacoplada do servidor e implementar a segurança de forma manual, ou seja, criar algo manual mesmo para tratar os usuários autorizados (sessão), e assim proteger o sistema/serviços, essa seria a solução AngularJs + JEE (rest). Essa ultima solução seria baseada em criação de tokens (ou algo assim) de forma manual e tratar tanto no angular como nos serviços rest, porém a principio acho esse tratamento mais complexo e propenso a falhas, o spring do meu ponto de vista ja traz isso pronto. Qual a opnião de vocês? Também preferem a camada de front totalmente desacoplada? Ou alguma sugestão (esquecer angular e partir apenas de spring mvc por exemplo)?
 
 Vou rodar o projeto em um servidor JEE completo. A aplicação terá níveis de usuários, ou seja, algumas paginas e serviços só podem ser acessados por um usuário com perfil administrador por exemplo.
@@ -543,7 +543,7 @@ Obs: Meu conhecimento de Spring MVC não é muito amplo, mas já fiz coisas bás
 Grato.",1,1,0,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/112302/vraptor-excluir-alguns-sets-para-que-n%C3%A3o-sejam-acessados-por-um-form-da-jsp,
 RecyclerView igual ExpandedListView,"Como posso fazer um RecyclerView igual ao ExpandedListView?
 
-Procurei no Google mas não achei quase nada de material...",0,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114194/recyclerview-igual-expandedlistview,
+Procurei no Google mas não achei quase nada de material...",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114194/recyclerview-igual-expandedlistview,
 Login com VRaptor 4 + Widlfy 9,"Estou tentando implementar um controle de usuários com VRaptor 4 e ao anotar a classe UserWeb com @SessionScoped para mater o usuário logado, o Widlfly da esse erro ao tentar subir.
 
 Caused by: org.jboss.weld.exceptions.DefinitionException: WELD-000046: At most one scope may be specified on [EnhancedAnnotatedTypeImpl] public @Dependent @SessionScoped class br.com.nemesisweb.model.UserWeb
@@ -646,12 +646,12 @@ e o pom.xml:
 </dependencies>
 No VRaptor 3 a classe UserWeb poderia ser anotada com @Component, já no 4 não sei como pode ser anotada.
 
-Alguém pode me ajudar?",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114159/login-com-vraptor-4-widlfy-9,
+Alguém pode me ajudar?",1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114159/login-com-vraptor-4-widlfy-9,
 Autenticação com Spring Security com 3 campos em vez de apenas nome de usuário e senha,"Olá gostaria de saber se é possível fazer autenticação com Spring Security com 3 campos ao invés de apenas com usuário e senha.
 
 Eu estou usando o Spring Security 2.5.
 
-Obrigada",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/117222/autentica%C3%A7%C3%A3o-com-spring-security-com-3-campos-em-vez-de-apenas-nome-de-usu%C3%A1rio-e,
+Obrigada",0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/117222/autentica%C3%A7%C3%A3o-com-spring-security-com-3-campos-em-vez-de-apenas-nome-de-usu%C3%A1rio-e,
 AutoCompleteTextView associada ao google places api,"Está tudo a dar correcto mas quando clico em uma rua por exemplo ""Rua da aventura"" aparece me description ""{description=Rua da aventura}"" enquanto devia ser somente ""Rua da aventura"".
 
 O meu `placeJsonParser.java
@@ -1056,7 +1056,7 @@ public void importarPlanilha(File arquivo, JTable tabela) {
         Logger.getLogger(ControleImportPlanilha.class.getName()).log(Level.SEVERE, null, ex);
     }
 }
-Será que alguém ai já passou por isso?",1,1,0,1,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/117984/c%C3%A9lula-num%C3%A9rica-sendo-lida-como-string-apache-poi,
+Será que alguém ai já passou por isso?",1,1,0,1,0,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/117984/c%C3%A9lula-num%C3%A9rica-sendo-lida-como-string-apache-poi,
 Como faço para informar se o usuário já existe quando apertar o botão salvar?,"Como faço quando eu apertar o botão salvar e informar se o usuário já existe.
 
   public void salvar(){
@@ -1069,7 +1069,7 @@ Convenções de dlls cdecl e stdcall,"Existe diferença nas chamadas das DLLs co
 
 Ou programo do mesmo modo para ambas convenções?
 
-Estou utilizando Java.",0,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119169/conven%C3%A7%C3%B5es-de-dlls-cdecl-e-stdcall,
+Estou utilizando Java.",1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119169/conven%C3%A7%C3%B5es-de-dlls-cdecl-e-stdcall,
 Adaptar código ao fragment,"Bom dia tinha postado a duvida mas tentei agora simplificar para ser mais simples a ajuda espero que me possam ajudar. Eu estou a usar o googleplaces e quando escrevo em uma editText recebo sugestões de locais em recyclerView, eu segui um tutorial para fazer isto em uma activity e está a funcionar mas agora preciso de adaptar o código a uma fragment .
 
 As coisas que eu não sei se estou a fazer correcto é o seguinte no código da activity aparece para meter this e eu coloquei no fragment GetActivity().GetAppContext() para tentar adaptar o código e assim substituir não dá erro mas não sei se é correcto.
@@ -1314,8 +1314,8 @@ public class Fragment1 extends Fragment implements
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
     }
-}",1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,,
-"Se eu vou criar um aplicação J2EE no Eclipse, devo baixar a versão JavaEE?",Qual é a versão do Eclipse mais adequada para trabalhar com J2EE?,1,0,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,0,1,http://pt.stackoverflow.com/questions/120961/se-eu-vou-criar-um-aplica%C3%A7%C3%A3o-j2ee-no-eclipse-devo-baixar-a-vers%C3%A3o-javaee,
+}",1,1,0,0,1,0,0,1,1,1,0,1,1,1,1,0,1,1,1,,
+"Se eu vou criar um aplicação J2EE no Eclipse, devo baixar a versão JavaEE?",Qual é a versão do Eclipse mais adequada para trabalhar com J2EE?,0,0,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,0,1,http://pt.stackoverflow.com/questions/120961/se-eu-vou-criar-um-aplica%C3%A7%C3%A3o-j2ee-no-eclipse-devo-baixar-a-vers%C3%A3o-javaee,
 Plugin Designer JSF,Estou procurando algum plug-in que realize o design do jsf como no swing +-. Qual a melhor maneira de trabalhar o visual do codigo de maneira pratica?,1,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/123303/plugin-designer-jsf,
 ERRO Java: javax.servlet.ServletException: javax/enterprise/context/spi/Contextual,"Sou novo em Java e estou tendo dificuldades para mostrar na página um grid com dados de uma tabela do banco de dados. Estou usando java + hibernate + JSF 2 + tomcat 8. Quando executo minha página xhtml apresenta o erro abaixo. O problema está no form lista do xhtml, pois o form edição executa sem problemas.Estou a um bom tempo tentando resolver e não consigo evoluir.
 
@@ -1515,7 +1515,7 @@ at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-at java.lang.Thread.run(Unknown Source)",0,1,0,1,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,,
+at java.lang.Thread.run(Unknown Source)",1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,,
 Como atribuir dois gets em um unico caminho de url,"public class Empresa extends AppCompatActivity {
 
     Button btnfatura;
@@ -1697,7 +1697,7 @@ public UsuarioDTO getByEmail(String email){
 ## Erro ao executar List usuarios = query.getResultList();
 
 Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as col_4_0_ from Usuario usuario0_ inner join Agendamento listaagend1_ on usuari' at line 1 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) at java.lang.reflect.Constructor.newInstance(Unknown Source)
-Já procurei em todo os lugares e nada de resposta. Se puderem me ajudar, ficarei muito agradecido. Abs.",1,0,0,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/125012/usar-select-new-jpql-para-popular-dto-em-um-relacionamento-onetomany,
+Já procurei em todo os lugares e nada de resposta. Se puderem me ajudar, ficarei muito agradecido. Abs.",0,0,0,1,1,0,0,1,1,1,0,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/125012/usar-select-new-jpql-para-popular-dto-em-um-relacionamento-onetomany,
 Implementando CDI no jpa,"Pessoal estou tentando implementar o cdi no meu projeto , seguindo esse tutorial aqui.
 
 Meu problema é que o meu EntityManager só esta retornando null , veja a mensagem recebida :
@@ -1864,7 +1864,7 @@ public class DAO_001_GESTOR implements Serializable {
 
     }
 
-}",1,1,0,1,1,1,1,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/124415/implementando-cdi-no-jpa,
+}",1,1,0,1,1,0,1,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/124415/implementando-cdi-no-jpa,
 "Problemas com gravação dos objetos <selectManyCheckbox> no bando de dados
 ","Estou tentando salvar os objetos selecionados de um selectManyCheckbox, porém me parece que estou com erro no converter. Alguém poderia me ajudar?
 
@@ -2116,7 +2116,7 @@ MEU XHTML
                 <f:selectItems value=""#{cadastroImovelBean.acessibilidades}""
                     var=""acessibilidade"" itemLabel=""#{acessibilidade.descricao}""
                     itemValue=""#{acessibilidade}"" />
-</p:selectManyCheckbox>",1,1,0,0,0,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/125638/problemas-com-grava%C3%A7%C3%A3o-dos-objetos-selectmanycheckbox-no-bando-de-dados,
+</p:selectManyCheckbox>",1,1,0,0,0,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/125638/problemas-com-grava%C3%A7%C3%A3o-dos-objetos-selectmanycheckbox-no-bando-de-dados,
 "Login em java WEB com JDBC MySql, como fazer funcionar?","login.html
 
 <!DOCTYPE html>
@@ -2434,7 +2434,7 @@ RepositorioAlunoBDR.java
         }finally{
 
         }
-}",1,0,0,1,0,0,0,0,1,1,0,0,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/127303/login-em-java-web-com-jdbc-mysql-como-fazer-funcionar,
+}",0,0,0,1,0,0,0,0,1,1,0,0,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/127303/login-em-java-web-com-jdbc-mysql-como-fazer-funcionar,
 Dificuldade em Utilizar API jInstagram,"Estou utilizando a API jInstagram com Servlets para acessar informações de minha conta no Instagram.
 
 Estou tendo problema na hora de extrair o token de acesso.
@@ -2614,7 +2614,7 @@ Log de erro
     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
     at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-    at java.lang.Thread.run(Thread.java:745)",1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/129874/dificuldade-em-utilizar-api-jinstagram,
+    at java.lang.Thread.run(Thread.java:745)",1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/129874/dificuldade-em-utilizar-api-jinstagram,
 "On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified","Usando o hibernate com a classe:
 
 Texto.java
@@ -2667,7 +2667,7 @@ where
     texto0_.idTexto=?
 Porém teria que gerar uma consulta LIKE(texto0_.idAlternativo like ?) e nao texto0_.idTexto=?
 
-Qual a possível solução para o problema?",0,0,0,0,0,1,0,1,1,1,0,1,1,0,1,1,1,1,1,,
+Qual a possível solução para o problema?",0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,,
 Insert pelo soapui em um webservice,"quando tento fazer um insert utilizando o soapUI ocorre o seguinte erro:
 
     org.firebirdsql.jdbc.FBSQLException: GDS Exception. 335544347. validation error for column CON_CODIGO, value ""*** null ***""
@@ -3368,7 +3368,7 @@ service.xml MesaDAO:
     </operation>
     <parameter name=""ServiceClass"" locked=""false"">br.com.realsysten.SigadmWS.MesaDAO</parameter>
 </service>
-Obrigado desde ja!",1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/130550/n%C3%A3o-aparece-nada-ao-fazer-uma-consulta-no-firebird,
+Obrigado desde ja!",1,1,0,0,1,0,0,1,1,1,0,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/130550/n%C3%A3o-aparece-nada-ao-fazer-uma-consulta-no-firebird,
 The module has not been deployed. See the server log for details. NetBeans 7.4 Glassfish 4,Alguém aí já enfrentou esse erro ao fazer o deploy da aplicação? The module has not been deployed. See the server log for details.,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/130304/the-module-has-not-been-deployed-see-the-server-log-for-details-netbeans-7-4-g,
 Relacionar bidirecional com JPA e liquibase,"Tenho duas entidades que preciso relacionar bidirecionalmente, Question e Answer, porém testando no postman me acusa o seguinte:
 
@@ -3476,7 +3476,7 @@ public SuperEntity() {
                              initiallyDeferred=""false""
                              deleteCascade=""true""
                              referencedColumnNames=""id""
-                             referencedTableName=""question""/>",1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/133686/relacionar-bidirecional-com-jpa-e-liquibase,
+                             referencedTableName=""question""/>",1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/133686/relacionar-bidirecional-com-jpa-e-liquibase,
 Erro no Servlet,"Estou fazendo uma aplicação web que busque pessoas no meu banco, eu digo algo na index.html e mando pesquisar, passa pelo FrontControllerServlet e vai para o controller correto. So que esta lançando execeção no RequestDispatcher e no doPost, nunca vi esse erro.
 
 o stacktracee é este:
@@ -3554,7 +3554,7 @@ public String getServletInfo() {
     return ""Short description"";
 }// </editor-fold>
 
-}",0,0,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/131801/erro-no-servlet,
+}",0,0,0,0,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/131801/erro-no-servlet,
 Enviando um arquivo CSV para um servidor ftp,"Meu aplicativo faz um cadastro de pedido, já criando um arquivo CSV e jogando esse arquivo no FTP, o aplicativo cadastra cria o CSV, mas quando deve fazer o upload para o ftp da erro(eu acho), segue os código:
 
 Classe realiza pedido:
@@ -3769,9 +3769,9 @@ não chega nem entrar na thread
 
 Alguém sabe o porque?
 
-OBS: Não é apresentado nenhum erro no Log.",1,1,0,1,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/134970/enviando-um-arquivo-csv-para-um-servidor-ftp,
+OBS: Não é apresentado nenhum erro no Log.",1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/134970/enviando-um-arquivo-csv-para-um-servidor-ftp,
 "Eu preciso implementar no codigo funçoes que quando eu clicar na tela altere os valores das variaveis, mas quando eu clico continua igual",main : http://pastebin.com/m3QGVgt4 classe : http://pastebin.com/9AmV7LVD Estou com duvidas em como posso alterar e resolver isso,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/137995/eu-preciso-implementar-no-codigo-fun%C3%A7oes-que-quando-eu-clicar-na-tela-altere-os,
-Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.2.1:exec (default-cli) on project,Tenho um sistema web com maven. Quando tento executar apenas uma classe que contém um método main no NetBeans 8.1 tenho esse erro. Já rodei em outras IDE's e funciona normal. Alguém java teve esse problema?,0,1,0,0,0,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/139203/failed-to-execute-goal-org-codehaus-mojoexec-maven-plugin1-2-1exec-default-c,
+Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.2.1:exec (default-cli) on project,Tenho um sistema web com maven. Quando tento executar apenas uma classe que contém um método main no NetBeans 8.1 tenho esse erro. Já rodei em outras IDE's e funciona normal. Alguém java teve esse problema?,1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/139203/failed-to-execute-goal-org-codehaus-mojoexec-maven-plugin1-2-1exec-default-c,
 GAE MAIL API SERVLET - Tudo parece OK mas não recebo o e-mail. Google App Engine - JAVA,"estou criando uma funcionalidade de envio de e-mail de confirmação para que a conta do usuário seja validade, eu então mandaria um LINK junto com a validação.
 
 Estou usando Google App Engine e Java, abaixo o código do servlet:
@@ -3888,7 +3888,7 @@ Note que aparentemente funcionou corretamente
 Já tentei utilizar meu e-mail como ""sender"" meuemail@gmail.com
 Já tentei utilizar o formato qualquernome@myappid.appspotmail.com
 Já olhei em todas as caixas de entrada (SPAM, LIXO etc)
-Estou seguindo as diretrizes: https://cloud.google.com/appengine/docs/java/mail/",1,0,0,1,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/138298/gae-mail-api-servlet-tudo-parece-ok-mas-n%C3%A3o-recebo-o-e-mail-google-app-engine,
+Estou seguindo as diretrizes: https://cloud.google.com/appengine/docs/java/mail/",0,0,0,1,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/138298/gae-mail-api-servlet-tudo-parece-ok-mas-n%C3%A3o-recebo-o-e-mail-google-app-engine,
 O que é o Lombok?,"O que é o Lombok e como eu poderia usá lo em uma classe java?
 Quais as vantagens e desvantagens de seu manuseio em uma aplicação java?",1,0,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/141294/o-que-%C3%A9-o-lombok,
 Assinaturas retornam o 'INAPP_PURCHASE_DATA' nulo usando 'In-app Billing V3',"Estou implementando a compra de Assinaturas em uma aplicação Android.
@@ -4014,7 +4014,7 @@ Quando faço a compra, ela é determinada como concluída e depois não recebo o
 
 Abro o Developer Console e logo após entro no Wallet para cancelar a Assinatura que foi debitada.
 
-Como eu faço essa requisição dentro da aplicação? Não consigo pegar o retorno da compra até agora.",0,1,0,1,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/6087/assinaturas-retornam-o-inapp-purchase-data-nulo-usando-in-app-billing-v3,
+Como eu faço essa requisição dentro da aplicação? Não consigo pegar o retorno da compra até agora.",1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/6087/assinaturas-retornam-o-inapp-purchase-data-nulo-usando-in-app-billing-v3,
 exception java.util.concurrent.RejectedExecutionException:,"Ando de volta de um projecto JEE onde utilizado jms e o servidor é o wildfly 8.0. Já ando de volta desta excepção há algum tempo mas ainda não consegui resolver. Penso que não me falte nenhuma configuração no jboss mas sinceramente já me faltam ideias.. alguém que tenha mais experiência que me possa ajudar.
 
 stracktrace eclipse
@@ -4050,7 +4050,7 @@ Wildfly Log
 
 Alguém que me consiga dar alguma dica ?
 
-Obrigado pela atenção",0,0,0,0,0,1,0,1,1,1,0,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/45754/exception-java-util-concurrent-rejectedexecutionexception,
+Obrigado pela atenção",0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/45754/exception-java-util-concurrent-rejectedexecutionexception,
 Como faço para pegar o conteúdo de todos emails de um usuário no Gmail API?,"Estou fazendo uma aplicação que deve receber os emails de usuário do Gmail usando o Gmail API. Porém, devo receber os dados de cada email como: conteúdo, remetente, assunto e data recebimento, mas não consigo fazer.
 
 Segue o trecho que peguei no Google onde só consigo pegar o ID e a Thread ID de cada email:
@@ -4118,7 +4118,7 @@ for (Message message : messages) {
 }
 }
 
-}",1,0,0,1,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/42950/como-fa%C3%A7o-para-pegar-o-conte%C3%BAdo-de-todos-emails-de-um-usu%C3%A1rio-no-gmail-api,
+}",1,0,0,1,1,0,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/42950/como-fa%C3%A7o-para-pegar-o-conte%C3%BAdo-de-todos-emails-de-um-usu%C3%A1rio-no-gmail-api,
 Erro 500 ao enviar objeto do android para web service Rest,"Estou com um problema ao enviar um objeto de uma classe java para meu web service. Utilizando o web service RestFull no glassfish e no android utilizando o volley e gson. Recebo um erro 500 quando tento enviar o objeto.
 
 Log do LogCat no android:
@@ -4840,7 +4840,7 @@ public class MemoryGame2 extends java.applet.Applet implements ActionListener
      </applet>
   </body>
 </html>
-Resultado abre a janela, a dizer applet started mas a janela está totalmente em branco, tambem abre ao mesmo tempo a minha aplicação (codigo acima).",0,1,0,0,0,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/59181/applet-java-aplica%C3%A7%C3%A3o,
+Resultado abre a janela, a dizer applet started mas a janela está totalmente em branco, tambem abre ao mesmo tempo a minha aplicação (codigo acima).",1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/59181/applet-java-aplica%C3%A7%C3%A3o,
 Controle de conteúdo - Java Sax,"[Java - Sax Parser] Boa tarde. Se alguém puder me ajudar eu ficarei grato.
 
 Preciso montar uma aplicação que funciona da seguinte maneira: Caso ele encontre a tag ""classname"", e esta possuir um atributo ""type"" com o valor ""M"" ou ""V"", então seta o nome da tag classname.
@@ -5124,7 +5124,7 @@ public class Aktion {
         }
         return sb.toString();
     }
-}",1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/58439/controle-de-conte%C3%BAdo-java-sax,
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/58439/controle-de-conte%C3%BAdo-java-sax,
 Erro ao consumir webservice soap no android,"Tenho um web service cujo o wsdl é este:
 
 que rotorna o seguinte se executado no navegador:
@@ -5321,7 +5321,7 @@ E estou tendo o seguinte erro:
     Erro: null; }
 Pode ser que seja algo simples de resolver mas como é o primeiro web service que estou consumindo no android estou apanhando...
 
-Alguém pode me ajudar por favor?",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/65443/erro-ao-consumir-webservice-soap-no-android,
+Alguém pode me ajudar por favor?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/65443/erro-ao-consumir-webservice-soap-no-android,
 "Converter doc JSoup para string, aplicar Regex e retornar um valor em String","Estou usando um exemplo que achei chamado AndroidJsoup para pegar o source HTML de uma certa página, mas não estou conseguindo obter apenas o trecho de código que desejo que está em um determinado <script>
 
 Resumindo, o AndroidJsoup deveria rodar, pegando o HTML, aplicando um regex e retornando na String resultado1
@@ -5498,10 +5498,10 @@ Se possível um código que me permitisse adicionar outros regex para capturar o
 Fonte AndroidJsoup
 Fonte Source Code
 
-",1,0,0,0,1,1,0,1,1,1,0,1,1,0,1,0,1,1,1,questions,
+",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,questions,
 Como configurar o HttpClient do Java para aceitar JavaScript e Cookies?,"Eu preciso com que o meu retorno HttpClient consiga rodar um JavaScript e carregar cookies dentro dele, alguém sabe como configura ele pra que isso possa ser possível?
 
-Grato",1,1,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/69572/como-configurar-o-httpclient-do-java-para-aceitar-javascript-e-cookies,
+Grato",1,1,0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/69572/como-configurar-o-httpclient-do-java-para-aceitar-javascript-e-cookies,
 Erro “java.sql.SQLException: Incorrect string value: \xE7\xF5 for column”,"Boa tarde,
 
 estou tendo o erro abaixo sempre que tento executar um método de indexação.
@@ -5689,7 +5689,7 @@ protected final List findByQuery(String hql, Object... paramValues) {
 }
 Utilizamos esses mesmos métodos em outros servidores onde o Collate do mysql está sempre configurado como latin1_swedish_ci, tentamos alterar algumas confugurações como character_set do mySql e nd...
 
-Alguém sabe o que pode ser a causa desse erro?",0,1,0,0,0,1,1,1,1,1,0,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/67164/erro-java-sql-sqlexception-incorrect-string-value-xe7-xf5-for-column,
+Alguém sabe o que pode ser a causa desse erro?",1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/67164/erro-java-sql-sqlexception-incorrect-string-value-xe7-xf5-for-column,
 Em javaFX como capturo o evento de click no titulo da coluna para organizar os registros?,"Tenho uma tableView e essa tem 5 colunas. As duas primeiras colunas estão escritas com registros que peguei do banco e as outras três são apenas botões que insiro no momento da criação da tabela.
 
 Criei um evento para que os botões da tabela só apareçam quando eu clico no registro correspondente. ai é que esta o problema. Quando eu clico para organizar a tabela esses botões que eram para aparecer com o índice corrente não aparecem ao invés disso o evento mantém a ordem anterior, ou seja ele faz aparecer os botões da lista no índice anterior que o registro se encontrava :/.
@@ -5698,4 +5698,4 @@ Sei que posso resolver esse problema chamando o método responsável pela ação
 
 Voltando a pergunta cerne da questão.
 
-Como eu adiciono um evento ao clicar no título de uma coluna em uma tabela no javaFX?",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/66833/em-javafx-como-capturo-o-evento-de-click-no-titulo-da-coluna-para-organizar-os-r,
+Como eu adiciono um evento ao clicar no título de uma coluna em uma tabela no javaFX?",0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/66833/em-javafx-como-capturo-o-evento-de-click-no-titulo-da-coluna-para-organizar-os-r,

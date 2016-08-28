@@ -1,5 +1,5 @@
 title,body,tituloBemDefinido,tituloMedio,tituloCaixaAlta,tituloParCaixaAlta,coerencia,perguntaBemDefinida,vocativo,evDescricaoCurta,evDescricaoLonga,presencaCodigo,evTrechoGrandeCodigo,evPergComApenasCod,perguntaUnica,incluirAgradecimento,evSerExigente,usoNormaCultaLing,evCriarPergDuplicada,evPergFactoides,evPergSobreTrabAcademicos,incluirLinkPergunta,link
-Chamar outra classe (Java),"Como faço para chamar uma ""classe"" do tipo jFrame por exemplo a partir de minha classe principal? O meu jFrame tem seu próprio main que dá o setVisible true para ele aparecer, porém eu queria acessar esse main dele a partir da minha classe principal , para poder dar setVisible pelo main dele ao invés de eu criar uma instancia do tal e dar o setVisible pela minha classe, até porque perde qualidade do design do frame.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/133357/chamar-outra-classe-java
+Chamar outra classe (Java),"Como faço para chamar uma ""classe"" do tipo jFrame por exemplo a partir de minha classe principal? O meu jFrame tem seu próprio main que dá o setVisible true para ele aparecer, porém eu queria acessar esse main dele a partir da minha classe principal , para poder dar setVisible pelo main dele ao invés de eu criar uma instancia do tal e dar o setVisible pela minha classe, até porque perde qualidade do design do frame.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/133357/chamar-outra-classe-java,
 Ajuda em NullPointer Exception,"Antes dos dados irem pro banco estou com um nullpointer que já debuguei e não encontro onde está o problema. Abaixo minhas classes:
 
 package br.com.pokemax.controle;
@@ -336,7 +336,7 @@ Estou tentando debugar mais este caso, observei que quando chega na classe DAO, 
 log.info(""Persistindo "" + t);
 Depois ele já cai no catch. O erro mostrado na console é:
 
-13:33:20,806 WARNING [br.com.pokemax.controle.ControleHabilidade] (default task-8) Erro: null",0,1,0,0,1,1,0,1,0,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/132294/ajuda-em-nullpointer-exception
+13:33:20,806 WARNING [br.com.pokemax.controle.ControleHabilidade] (default task-8) Erro: null",1,1,0,0,1,0,0,1,0,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/132294/ajuda-em-nullpointer-exception,
 Porque “meu programa” não incrementou o valor 5 sendo que ele menor que 5.5,"
 Estou começando na programação e sempre tento desvendar as coisas que não ficam claras, até agora consegui, mas nesse aqui ja tentei e tentei e não conseguir entender porque o programa não incrementou o valor 5 sendo que ele menor que 5.5
 
@@ -359,7 +359,7 @@ public static void main(String[] args) {
     else // se não for primo
         System.out.println(x + "" não e primo"");
 }
-}",0,1,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/132247/porque-meu-programa-n%C3%A3o-incrementou-o-valor-5-sendo-que-ele-menor-que-5-5
+}",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/132247/porque-meu-programa-n%C3%A3o-incrementou-o-valor-5-sendo-que-ele-menor-que-5-5,
 Por quê não insere no banco de dados?,"Por que o seguinte código de inserção no Banco de Dados não funciona? O código chega até o Joption ""chegou!""
 
 private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {                                            
@@ -371,7 +371,7 @@ private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {
         JOptionPane.showMessageDialog(null, ""Cadastrado"", ""Cadastrado"", JOptionPane.INFORMATION_MESSAGE);
     } catch (SQLException error) {
     }
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/132241/por-qu%C3%AA-n%C3%A3o-insere-no-banco-de-dados
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/132241/por-qu%C3%AA-n%C3%A3o-insere-no-banco-de-dados,
 Inicialização do wrapper Double com int não compila,"Quero entender porque essa inicialização não funciona:
 
 (1): Double d = 10; // Não funciona
@@ -384,10 +384,10 @@ Mas parece que não é bem isso porque (1) não está compilando, se eu fizer (2
 
 Qual a justificativa para isso?
 
-",1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/131136/inicializa%C3%A7%C3%A3o-do-wrapper-double-com-int-n%C3%A3o-compila
+",1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/131136/inicializa%C3%A7%C3%A3o-do-wrapper-double-com-int-n%C3%A3o-compila,
 Validações de Strings,"Andei pesquisando como validar e-mail, datas, horas etc. E no caso do e-mail, encontrei um código como este: /^.+@.+\..{2,}$/;. Ele está incompleto. Mas queria entender o que são esses símbolos, e o que eles representam para fazer a validação de uma string?
 
-Se alguém puder esclarecer como isso funciona eu agradeço.",1,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/130963/valida%C3%A7%C3%B5es-de-strings
+Se alguém puder esclarecer como isso funciona eu agradeço.",0,0,0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/130963/valida%C3%A7%C3%B5es-de-strings,
 Armazenar valores num vetor em ordem invertida,"O objetivo é o seguinte: ler 10 valores de um determinado vetor, depois disso, criar outro vetor, que tenha os mesmos valores do primeiro vetor, porém em ordem invertida, por exemplo, o primeiro valor do 1º vetor é o décimo do 2º vetor, o segundo valor do 1º vetor é o penúltimo do 2º vetor, e assim sucessivamente. Tentei fazer porém o segundo vetor sempre tem o valor de 0. Sei que tenho que usar um for para isso, porém não sei se utilizei da maneira correta.
 
 public static void main(String[] args) {
@@ -418,12 +418,12 @@ public static void main(String[] args) {
         System.out.print(secondArray[i]+""; "");
     }
     System.out.println("""");
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/130712/armazenar-valores-num-vetor-em-ordem-invertida
-Implementar um vetor que aceite qualquer coisa,"Eu tenho que implementar um vetor que seja capaz de armazenar objetos qualquer tipo. Por exemplo: V[3]= valor_int,valor_double,valor_float,valor_String. Para fazer isso estava pensando em criar um método que fizesse parse dos valores que eu quero inserir, seria a melhor saída para esse caso?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/130707/implementar-um-vetor-que-aceite-qualquer-coisa
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/130712/armazenar-valores-num-vetor-em-ordem-invertida,
+Implementar um vetor que aceite qualquer coisa,"Eu tenho que implementar um vetor que seja capaz de armazenar objetos qualquer tipo. Por exemplo: V[3]= valor_int,valor_double,valor_float,valor_String. Para fazer isso estava pensando em criar um método que fizesse parse dos valores que eu quero inserir, seria a melhor saída para esse caso?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/130707/implementar-um-vetor-que-aceite-qualquer-coisa,
 Variável fica com outro valor mesmo sem atribuir valores à ela,"// Aqui utilizo o método get do recipesTableModel para obter minha variável (Ingredient.class)
 ViewDatasheetJFrame frame2 = new ViewDatasheetJFrame(recipesTModel.get(row));
 frame2.setLocationRelativeTo(rootPane);
-frame2.setVisible(true);",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/129732/vari%C3%A1vel-fica-com-outro-valor-mesmo-sem-atribuir-valores-%C3%A0-ela
+frame2.setVisible(true);",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/129732/vari%C3%A1vel-fica-com-outro-valor-mesmo-sem-atribuir-valores-%C3%A0-ela,
 Ler arquivo txt sempre que houver alterações,"Estou com um problema em um projeto que estou realizando, preciso fazer um programa que leia um arquivo txt e importe para o MySQL, consegui fazer até essa parte. Porém agora preciso que esse programa fique lendo esse arquivo txt sempre que houver mudanças. E que importe para o MySQL apenas os novos dados cadastrados. Alguém poderia me ajuda? Dando algumas dicas de estudos. Ou algum exemplo. Estou começando agora em java. Obrigado.
 
 package teste;
@@ -455,7 +455,7 @@ class Teste{
          System.err.println(""Erro: "" + e.getMessage());   
       }   
    }   
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/133905/ler-arquivo-txt-sempre-que-houver-altera%C3%A7%C3%B5es
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/133905/ler-arquivo-txt-sempre-que-houver-altera%C3%A7%C3%B5es,
 Como somar valores duplicados de um arrayList de objetos e manter apenas 1 de cada objeto duplicado?,"Olá tenho o seguinte problema e estou tendo bastante dificuldade em resolvelo. Tenho um código que aplica uma formula matematica. Essa formula acaba sendo aplicada varias vezes. cada vez ela gera um objeto o nome e o resultado. O problema e que tenho que somar todos os objetos que tenham o mesmo nome em um unico resultado.
 
 Exemplo resumido
@@ -479,7 +479,7 @@ O que eu preciso e gerar um novo ArrayList que contenha a soma total de todos os
 
 resultadosAtualizados.get(0) = ""FORMULA1"",""2+4"",""18""
 
-resultadosAtualizados.get(1) = ""FORMULA2"",""1+1"",""6""",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/129463/como-somar-valores-duplicados-de-um-arraylist-de-objetos-e-manter-apenas-1-de-ca
+resultadosAtualizados.get(1) = ""FORMULA2"",""1+1"",""6""",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/129463/como-somar-valores-duplicados-de-um-arraylist-de-objetos-e-manter-apenas-1-de-ca,
 Qual a diferença entre referenciar um atributo diretamente ou por get/set,"
 5
 votar contra
@@ -495,8 +495,8 @@ this.getAtributo();
 
 Em casos, não preciso pegar ou setar valores da classe na meu main() ou em outra classe, então nem crio os getters e setters, pois criar é uma forma indireta de tornar um atributo privado em atributo público, logo seria falho para segurança.
 
-Mas voltado a questão principal, é errado usar this.atributo? E qual a diferença entre usar um ou outro?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/129353/qual-a-diferen%C3%A7a-entre-referenciar-um-atributo-diretamente-ou-por-get-set
-Sobrecarga de métodos (double e float),"Tendo 2 métodos com mesmo nome, porém os tipos são diferentes (double e float), a quantidade de parâmetro é a mesma, qual dos métodos o Java vai reconhecer primeiro e por quê?",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/128247/sobrecarga-de-m%C3%A9todos-double-e-float
+Mas voltado a questão principal, é errado usar this.atributo? E qual a diferença entre usar um ou outro?",1,1,0,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/129353/qual-a-diferen%C3%A7a-entre-referenciar-um-atributo-diretamente-ou-por-get-set,
+Sobrecarga de métodos (double e float),"Tendo 2 métodos com mesmo nome, porém os tipos são diferentes (double e float), a quantidade de parâmetro é a mesma, qual dos métodos o Java vai reconhecer primeiro e por quê?",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/128247/sobrecarga-de-m%C3%A9todos-double-e-float,
 É uma boa prática de programação escrever um while com argumento true para que ele seja executado infinitamente?,"Em uma situação hipotética: É uma boa prática de programação, escrever um while dessa maneira? Para que ele continue sendo executado infinitamente?
 
     while(true){
@@ -508,18 +508,18 @@ Sobrecarga de métodos (double e float),"Tendo 2 métodos com mesmo nome, porém
     System.out.println(""5: Calcular Valor"");
     System.out.println(""6: Sair"");
     }
-",1,0,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/127807/%C3%89-uma-boa-pr%C3%A1tica-de-programa%C3%A7%C3%A3o-escrever-um-while-com-argumento-true-para-que-e
+",0,0,0,0,1,0,0,1,1,1,1,1,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/127807/%C3%89-uma-boa-pr%C3%A1tica-de-programa%C3%A7%C3%A3o-escrever-um-while-com-argumento-true-para-que-e,
 Converter String para Double mantendo conteúdo,"Preciso em Java converter uma String que possui um valor binário (Ex: ""0111010"") para um double. Testei:
 
 String teste = ""101010101"";
 double number = Double.parseDouble(teste);
 System.out.println(""The number is: "" + number);
-Porém a saída é um numero hexadecimal totalmente diferente. Preciso que a saída seja o mesmo conteúdo da String. O double pode até colocar ponto em algum lugar, sem problemas, mas precisa manter o mesmo binário e na mesma ordem.",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/126681/converter-string-para-double-mantendo-conte%C3%BAdo
+Porém a saída é um numero hexadecimal totalmente diferente. Preciso que a saída seja o mesmo conteúdo da String. O double pode até colocar ponto em algum lugar, sem problemas, mas precisa manter o mesmo binário e na mesma ordem.",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/126681/converter-string-para-double-mantendo-conte%C3%BAdo,
 Definir quais JFrames ficarão com foco?,"Preciso deixar um JFrame em foco e não permitir utilizar os demais, enquanto eu não fechar esse.
 Toda vez que abrir um novo Frame os demais abaixo dele devem ficar inoperantes.
 Como posso fazer isso?
 
-",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/126315/definir-quais-jframes-ficar%C3%A3o-com-foco
+",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/126315/definir-quais-jframes-ficar%C3%A3o-com-foco,
 Adicionar linha jTable,"Tenho uma AbstractTableModel só que eu não sei como adicionar linhas em branco, quando apertar o botão add linha no meu frame eu quero que ele chame um método chamado addLinha() do meu ModeloTabela, alguém pode me ajudar?
 
     public class ModeloTabela2 extends AbstractTableModel {
@@ -570,13 +570,13 @@ Adicionar linha jTable,"Tenho uma AbstractTableModel só que eu não sei como ad
 
     }
 
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/125956/adicionar-linha-jtable
-Como verificar se uma tabela existe usando jdbc java,Como verificar se uma tabela existe no jdbc usando Sqlite3?,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,0,1,,http://pt.stackoverflow.com/questions/125099/como-verificar-se-uma-tabela-existe-usando-jdbc-java
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/125956/adicionar-linha-jtable,
+Como verificar se uma tabela existe usando jdbc java,Como verificar se uma tabela existe no jdbc usando Sqlite3?,1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,0,1,http://pt.stackoverflow.com/questions/125099/como-verificar-se-uma-tabela-existe-usando-jdbc-java,
 Ativar JButton a partir de seleção em JTable e remover o foco inicial da tabela,"Eu tenho uma janela com um JTable, onde só é válida a seleção de uma linha inteira, e não de apenas um campo. A questão é que a janela já abre com a primeira linha selecionada, e eu gostaria de desativar isso.
 
 Nessa mesma janela eu tenho um JButton que já é desativado na hora da sua criação, porém eu gostaria de ativá-lo assim que o usuário selecionar qualquer linha do JTable ...
 
-Resumindo : Como eu desativo a seleção automática da linha do JTable no momento que a janela abre ? Como ativar um botão quando o usuário selecionar qualquer linha desse mesmo JTable ?",1,0,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/125055/ativar-jbutton-a-partir-de-sele%C3%A7%C3%A3o-em-jtable-e-remover-o-foco-inicial-da-tabela
+Resumindo : Como eu desativo a seleção automática da linha do JTable no momento que a janela abre ? Como ativar um botão quando o usuário selecionar qualquer linha desse mesmo JTable ?",0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/125055/ativar-jbutton-a-partir-de-sele%C3%A7%C3%A3o-em-jtable-e-remover-o-foco-inicial-da-tabela,
 Pesquisa sql com vários campos em java,"Como fazer uma pesquisa sql em java que envolva vários argumentos?
 Exemplo: quero pesquisar todas pessoas com nacionalidade angolana, com o curso de ciências da Computação e que têm dois ou mais anos de experiência profissional.
 
@@ -608,8 +608,8 @@ nova_lista.add(cadastro);
  rs.close();
  stm.close();
  return nova_lista;
- }",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/124781/pesquisa-sql-com-v%C3%A1rios-campos-em-java
-Converter float ou double em $ real,"Tenho um float = 11.6 quero converter em moeda brasileira R$ 11,60, alguém sabe como fazer?",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/124721/converter-float-ou-double-em-real
+ }",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/124781/pesquisa-sql-com-v%C3%A1rios-campos-em-java,
+Converter float ou double em $ real,"Tenho um float = 11.6 quero converter em moeda brasileira R$ 11,60, alguém sabe como fazer?",1,1,0,0,1,0,0,0,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/124721/converter-float-ou-double-em-real,
 Não consigo cadastrar uma ArrayList em Java,"Estou fazendo uma aplicação Java (console). Na hora de cadastrar um arraylist até vai, mas na hora de mostrar, ela me mostra lixo.
 
 O que eu faço? Segue o código:
@@ -788,7 +788,7 @@ public class Loja {
        System.out.println(""\nTelefone:"" + clientes.get(i));
      }
    }
-}",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/124673/n%C3%A3o-consigo-cadastrar-uma-arraylist-em-java
+}",1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/124673/n%C3%A3o-consigo-cadastrar-uma-arraylist-em-java,
 Aquisição de dados por parte da JTable,"Estou a tentar que o JButtonGuardar(panelInserir) passe os dados introduzidos pelo utilizador(texto hora local) do JPanelInserir para o JPanelEventos(onde está a JTable)
 
 De momento, não estou a obter sucesso, se tiverem alguma sugestão deixo a seguir o código de onde está ocorrendo o problema:
@@ -819,10 +819,10 @@ btnGuardar.addActionListener(new ActionListener() {
 
 
     }
-});",1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/124588/aquisi%C3%A7%C3%A3o-de-dados-por-parte-da-jtable
+});",1,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/124588/aquisi%C3%A7%C3%A3o-de-dados-por-parte-da-jtable,
 Calcular valor delta para assertEquals em JUnit,"Saudações.
 
-Qual a melhor forma de calcular o valor delta do método assertEquals(message, expected, actual, delta) do JUnit?",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/124070/calcular-valor-delta-para-assertequals-em-junit
+Qual a melhor forma de calcular o valor delta do método assertEquals(message, expected, actual, delta) do JUnit?",1,1,0,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/124070/calcular-valor-delta-para-assertequals-em-junit,
 Como ocorre a recursividade no código a seguir,"Gostaria de entender, pois não consigo vislumbrar mentalmente como ocorre no trecho: return fat * fatorial.fatorar(fat-1);, a questão da recursividade, no que concerne as chamadas do próprio método fatorar em relação a multiplicação com o fat.
 
 public class FatorialRecursiva
@@ -846,7 +846,7 @@ public class FatorialRecursiva
            return fat *  fatorar(fat-1);
        }
    }
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/123731/como-ocorre-a-recursividade-no-c%C3%B3digo-a-seguir
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/123731/como-ocorre-a-recursividade-no-c%C3%B3digo-a-seguir,
 Aprovar ou recusar uma requisição através do HandlerInterceptorAdapter,"Sabe-se que todas as requisições por @RequestMapping são ""públicas"", onde qualquer usuário pode acessá-las através do navegador.
 
 A questão é, como aprovar Requests onde apenas o sistema pode requisitar e recusar tal request caso sejá acessado pelo usuário diretamente no navegador.
@@ -872,14 +872,14 @@ $.ajax
    url: """",
    headers: {          
      ""Authority"" : ""KeyDefinida""
-   },",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/123581/aprovar-ou-recusar-uma-requisi%C3%A7%C3%A3o-atrav%C3%A9s-do-handlerinterceptoradapter
+   },",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/123581/aprovar-ou-recusar-uma-requisi%C3%A7%C3%A3o-atrav%C3%A9s-do-handlerinterceptoradapter,
 Como destruir uma session em java?,"Para invalidar uma sessão, meu professor passou o seguinte código:
 
 HttpSession session = request.getSession(false);  
     if (session!=null){
         session.invalidate();
     }
-Mas depois do logout, quando eu clico em Voltar no browser, consigo recuperar a mesma em que havia logado. Como consigo eliminá-la? Agradeço desde já!",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/123498/como-destruir-uma-session-em-java
+Mas depois do logout, quando eu clico em Voltar no browser, consigo recuperar a mesma em que havia logado. Como consigo eliminá-la? Agradeço desde já!",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/123498/como-destruir-uma-session-em-java,
 Como sobrescrever método equals?,"Estou tentando sobrescrever o método equals para em vez de validar se um objeto inteiro é igual ao outro apenas verificar se um valor neste objeto é igual ao outro.
 
 Cenário Real: Objeto Aluno sendo ele. nome e rg, e idade se o rg for igual quer dizer que eles são a mesma pessoa.
@@ -922,17 +922,17 @@ public class main {
       System.out.println(a1.equals(a4)); // aqui deveria retornar true
    }
 }
-Pelo visto estou fazendo uma confusão em pegar o ""this"" que é o valor do objeto antes do .equals.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/122978/como-sobrescrever-m%C3%A9todo-equals
+Pelo visto estou fazendo uma confusão em pegar o ""this"" que é o valor do objeto antes do .equals.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/122978/como-sobrescrever-m%C3%A9todo-equals,
 Tem como eu ver a implementação dos códigos da API do Java?,"Estou iniciando em Java, e acho super legal a vasta biblioteca do Java, com muitas classes e métodos que facilitam o nosso trabalho. Até no livro do Deitel recomenda o uso por vários motivos.
 
-Eu uso alguns métodos, mas como estou iniciando, gostaria de entender a implementação de alguns. Tem alguma maneira de eu acessá-los?",1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/122971/tem-como-eu-ver-a-implementa%C3%A7%C3%A3o-dos-c%C3%B3digos-da-api-do-java
+Eu uso alguns métodos, mas como estou iniciando, gostaria de entender a implementação de alguns. Tem alguma maneira de eu acessá-los?",1,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/122971/tem-como-eu-ver-a-implementa%C3%A7%C3%A3o-dos-c%C3%B3digos-da-api-do-java,
 Pegando primeira e última data do mês anterior,"Estou utilizando no Eclipse o Selenium, para automatização de envio de comandos pra um site, através de arquivos JAVA. Nesse site, preciso fazer uma consulta de datas. Eu fiz assim pra testar:
 
 element = driver.findElement(By.name(""form:dtEmissao_input""));
 element.sendKeys(""01/04/2016"");
 element = driver.findElement(By.name(""form:emissFim_input""));
 element.sendKeys(""12/04/2016"");
-Contudo, eu queria que ele sempre pegue o primeiro e o último dia do mês anterior. Como eu posso fazer isso? Precisa importar alguma biblioteca no meu arquivo JAVA?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/122881/pegando-primeira-e-%C3%BAltima-data-do-m%C3%AAs-anterior
+Contudo, eu queria que ele sempre pegue o primeiro e o último dia do mês anterior. Como eu posso fazer isso? Precisa importar alguma biblioteca no meu arquivo JAVA?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/122881/pegando-primeira-e-%C3%BAltima-data-do-m%C3%AAs-anterior,
 Como fazer uma expressão regular para validar senha JSF,"Preciso de uma expressão regular para validar senha conforme abaixo:
 
 A senha precisa ser no padrão: ipe@1234 (letras, caracteres especiais e números)
@@ -1030,7 +1030,7 @@ Caused by: org.hibernate.service.UnknownServiceException: Unknown service reques
     at org.hibernate.engine.transaction.internal.TransactionCoordinatorImpl.<init>(TransactionCoordinatorImpl.java:89)
     at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:258)
     at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1589)
-    at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:999)",1,0,1,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/122855/como-fazer-uma-express%C3%A3o-regular-para-validar-senha-jsf
+    at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:999)",0,0,1,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/122855/como-fazer-uma-express%C3%A3o-regular-para-validar-senha-jsf,
 Acessar itens de uma pilha usando for,"Estou tentando acessar uma posição a frente na pilha para fazer uma comparação, mas não esta dando certo e não consegui entender esse for.
 
 Código
@@ -1049,7 +1049,7 @@ for ( String UmToken : PilhaTokens)
 
      }
 }
-Alguém sabe me indicar algo que explique o for, ou me sugerir algo?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/122395/acessar-itens-de-uma-pilha-usando-for
+Alguém sabe me indicar algo que explique o for, ou me sugerir algo?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/122395/acessar-itens-de-uma-pilha-usando-for,
 Alterar comportamento padrão de elemento p:confirmDialog,"Preciso alterar o comportamento padrão do elemento p:confirmDialog. Ao clicar em sim, ele deve completar a request passando um valor e ao clicar em não, deve completar a request passando outro valor.
 
 <p:commandButton value=""Consultar""  onclick=""consultar.show()"">  
@@ -1062,7 +1062,7 @@ Alterar comportamento padrão de elemento p:confirmDialog,"Preciso alterar o com
         </p:commandButton>   
     </p:confirmDialog>
 </p:commandButton>  
-Mas essa solução não está funcionando. Alguém tem alguma ideia do que posso fazer? Obrigado!",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/122281/alterar-comportamento-padr%C3%A3o-de-elemento-pconfirmdialog
+Mas essa solução não está funcionando. Alguém tem alguma ideia do que posso fazer? Obrigado!",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/122281/alterar-comportamento-padr%C3%A3o-de-elemento-pconfirmdialog,
 Converter String em Calendar,"Estou tentando fazer uma conversão de String para Calendar mas sem sucesso.
 
 Minha String é no formato dd/MM/yyyy. Preciso converter para yyyy-MM-dd E setar em um objeto do tipo Calendar.  void setDATAFUNDACAO(java.util.Calendar value);
@@ -1074,7 +1074,7 @@ SimpleDateFormat sdf = new SimpleDateFormat(""yyyy-MM-dd"");
     Calendar cal =  sdf.getCalendar();
 Mas infelizmente ele lança essa exception
 
-Exception in thread ""main"" java.text.ParseException: Unparseable date: ""07/04/2016"" at java.text.DateFormat.parse(DateFormat.java:337) at teste.main(teste.java:54)",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/122216/converter-string-em-calendar
+Exception in thread ""main"" java.text.ParseException: Unparseable date: ""07/04/2016"" at java.text.DateFormat.parse(DateFormat.java:337) at teste.main(teste.java:54)",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/122216/converter-string-em-calendar,
 Validação de campos nulos do JTextField,"No meu sistema, tenho uma janela e um controller, mas por algum motivo, ele nunca esta lançando o erro, como esperado :
 
 Método que faz a validação :
@@ -1101,8 +1101,8 @@ private void eventosForm(){
         }
     });
 }
-Como disse antes, mesmo eu deixando todos os campos nulos, ele realiza o cadastro, acredito que possa ser por se tratar de um método void, mas não tenho certeza ...",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/122190/valida%C3%A7%C3%A3o-de-campos-nulos-do-jtextfield
-Qual a vantagem de usar JUnit para testar métodos de uma classe?,"Eu criei uma aplicação que basicamente é uma classe que testa se os métodos de outra classe estão retornando os valores esperados. Meu professor pediu para que eu refizesse essa classe como um caso de teste do JUnit. Fiz o que ele pediu, mas no final obtenho o mesmo resultado que teria quando uso apenas uma classe normal. Que vantagens posso tirar do JUnit nesse caso?",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/121670/qual-a-vantagem-de-usar-junit-para-testar-m%C3%A9todos-de-uma-classe
+Como disse antes, mesmo eu deixando todos os campos nulos, ele realiza o cadastro, acredito que possa ser por se tratar de um método void, mas não tenho certeza ...",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/122190/valida%C3%A7%C3%A3o-de-campos-nulos-do-jtextfield,
+Qual a vantagem de usar JUnit para testar métodos de uma classe?,"Eu criei uma aplicação que basicamente é uma classe que testa se os métodos de outra classe estão retornando os valores esperados. Meu professor pediu para que eu refizesse essa classe como um caso de teste do JUnit. Fiz o que ele pediu, mas no final obtenho o mesmo resultado que teria quando uso apenas uma classe normal. Que vantagens posso tirar do JUnit nesse caso?",0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/121670/qual-a-vantagem-de-usar-junit-para-testar-m%C3%A9todos-de-uma-classe,
 Pegar valor selecionado do JComboBox populado com Enum,"Então galera, minha dúvida é a seguinte:
 
 Eu tenho na minha janela um JComboBox com itens de um enum, e um JLabel para mostrar o valor do item selecionado no combo.
@@ -1137,7 +1137,7 @@ Enum :
             }
 
         }
-A questão é que eu tenho vários itens no enum, dai surge minha dúvida, vou ter que fazer isso que eu acabei de fazer com todos os itens ou existe uma forma menos complicada e mais eficiente de fazer isso ?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/121292/pegar-valor-selecionado-do-jcombobox-populado-com-enum
+A questão é que eu tenho vários itens no enum, dai surge minha dúvida, vou ter que fazer isso que eu acabei de fazer com todos os itens ou existe uma forma menos complicada e mais eficiente de fazer isso ?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/121292/pegar-valor-selecionado-do-jcombobox-populado-com-enum,
 É possível carregar classes dinamicamente e usá-las como tipo?,"Estou tentando fazer um código que carregue classes dinamicamente e possa usá-las para criar instancias e serem usadas para cast. Eu consigo criar uma instância na classe recém carregada usando o método minhaclasse.newInstance() , mas não consigo usar a classe recém carregada como se fosse um tipo. Por exemplo: minhaClasse meuObj = new minhaClasse(); Não funciona. É possível fazer isso?
 
 Segue o código que eu estava tentando fazer:
@@ -1149,7 +1149,7 @@ URLClassLoader ucl = new URLClassLoader(classUrls);
 Class c = ucl.loadClass(""Operation"");
 Class MyIn = ucl.loadClass(""MyInter""); 
 Object o = c.newInstance(); //ISSO FUNCIONA
-System.out.println(((MyIn) o).sum(2, 4)); //ISSO NÃO FUNCIONA. Mensagem de erro: MyIn cannot be resolved to a type",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/121160/%C3%89-poss%C3%ADvel-carregar-classes-dinamicamente-e-us%C3%A1-las-como-tipo
+System.out.println(((MyIn) o).sum(2, 4)); //ISSO NÃO FUNCIONA. Mensagem de erro: MyIn cannot be resolved to a type",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/121160/%C3%89-poss%C3%ADvel-carregar-classes-dinamicamente-e-us%C3%A1-las-como-tipo,
 Retorna os dados do banco em um jtextfield,"Estou com uma dúvida com relação a listar os dados que gravei em um banco de dados para um JTextField. Criei uma tela, com o campo para o usuário digitar o ID do cadastro no banco e um botão FILTRAR. Quero que, quando clique em filtrar, apareça os dados daquele ID nos JTextField que criei. Segue o Código do botão filtrar e o código de listar do banco.
 
 Filtrar:
@@ -1195,7 +1195,7 @@ public Agenda selecionar(int id){
         }
         return null;
     }
-Alguem poderia ajudar ? no que estou errando ?",1,1,0,0,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/120989/retorna-os-dados-do-banco-em-um-jtextfield
+Alguem poderia ajudar ? no que estou errando ?",1,1,0,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/120989/retorna-os-dados-do-banco-em-um-jtextfield,
 Não consigo atribuir valor a um ArrayList de um Objeto,"É o seguinte galera, no meu projeto tenho três classes diferentes, uma é um model (Cliente), uma é a main, que tem um arraylist de Cliente, e outra é uma janela.
 
 Meu intuito é cadastrar os dados digitados na janela no arraylist do objeto, mas não estou conseguindo !
@@ -1228,7 +1228,7 @@ btnCadastrar.addActionListener(new ActionListener() {
                 Main.clienteDB.setNome("""");
             }
         });
-A questão é que nesse Main.clienteDB.setNome só foi colocado ai para exemplificar o que eu quero fazer, pois não estou conseguindo acessar nenhum atributo do objeto Cliente. O que devo fazer ?",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/120266/n%C3%A3o-consigo-atribuir-valor-a-um-arraylist-de-um-objeto
+A questão é que nesse Main.clienteDB.setNome só foi colocado ai para exemplificar o que eu quero fazer, pois não estou conseguindo acessar nenhum atributo do objeto Cliente. O que devo fazer ?",1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/120266/n%C3%A3o-consigo-atribuir-valor-a-um-arraylist-de-um-objeto,
 Comparação de BigDecimal retorna resultado inesperado,"Em um dos meus métodos realizo a seguinte comparação, como no exemplo abaixo:
 
 public static void main(String[] args) {
@@ -1243,7 +1243,7 @@ public static void exemplo(BigDecimal valor) {
         System.out.println(""número maior"");
     }
 }
-Passando como parâmetro o valor ""100"", o problema é que a class BigDecimal acaba considerando o valor ""100"" maior que o valor ""50.000"", tentei passar o valor como: ""50.000.00"" para tentar solucionar o problema, mas a classe não me permite fazer isso, alguma solução?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/120192/compara%C3%A7%C3%A3o-de-bigdecimal-retorna-resultado-inesperado
+Passando como parâmetro o valor ""100"", o problema é que a class BigDecimal acaba considerando o valor ""100"" maior que o valor ""50.000"", tentei passar o valor como: ""50.000.00"" para tentar solucionar o problema, mas a classe não me permite fazer isso, alguma solução?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/120192/compara%C3%A7%C3%A3o-de-bigdecimal-retorna-resultado-inesperado,
 Como faço para informar se o usuário já existe quando apertar o botão salvar?,"Como faço quando eu apertar o botão salvar e informar se o usuário já existe.
 
   public void salvar(){
@@ -1251,7 +1251,7 @@ Como faço para informar se o usuário já existe quando apertar o botão salvar
    if (this.getId() == -1){
       comando = String.format(""INSERT INTO cadastro (nomedousuario, senha) 
             VALUES ('%s','%s');"");
-    }",1,0,0,0,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119990/como-fa%C3%A7o-para-informar-se-o-usu%C3%A1rio-j%C3%A1-existe-quando-apertar-o-bot%C3%A3o-salvar
+    }",0,0,0,0,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119990/como-fa%C3%A7o-para-informar-se-o-usu%C3%A1rio-j%C3%A1-existe-quando-apertar-o-bot%C3%A3o-salvar,
 Como limpar um vetor?,"Tenho um vetor em Java de tamanho 5 para alocar 5 primeiros números. Tenho de esvaziar quando ele estiver cheio, afim de alocar mais 5 números. E manter esta rotina até todos os números estiverem lidos!
 
 int x[] = new int[5];
@@ -1260,8 +1260,8 @@ x[0] = 1
 x[1] = 2
 x[2] = 3
 x[3] = 4
-x[4] = 5",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119971/como-limpar-um-vetor
-Como posso testar método com retorno void utilizando JUnit?,"É possível realizar teste automatizado, em Java, de um método que possui retorno void utilizando JUnit? Se sim, como é possível?",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119941/como-posso-testar-m%C3%A9todo-com-retorno-void-utilizando-junit
+x[4] = 5",1,1,0,0,1,0,0,1,0,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119971/como-limpar-um-vetor,
+Como posso testar método com retorno void utilizando JUnit?,"É possível realizar teste automatizado, em Java, de um método que possui retorno void utilizando JUnit? Se sim, como é possível?",0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119941/como-posso-testar-m%C3%A9todo-com-retorno-void-utilizando-junit,
 Valor estranho ao imprimir array,"Em java, estou tendo dificuldades em entender alguns conceitos.
 
 Em uma página .jsp, tenho o seguinte código:
@@ -1272,7 +1272,7 @@ Quando imprimo o array, o valor mostrado é:
 [Ljava.lang.String;@5a879b45
 Gostaria de saber o que significa esse valor, porque não consigo visualizar o valor dele, já que passei o seguinte conteúdo:
 
-[*, adm, r1]",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119840/valor-estranho-ao-imprimir-array
+[*, adm, r1]",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119840/valor-estranho-ao-imprimir-array,
 Aplicando interface em Controllers,"Tenho alguns controllers que fazem chamada aos seus respectivos models e gostaria de aplicar interface neles. Criei uma interface com alguns métodos que seria importante todos implementarem, da seguinte maneira:
 
 public interface IController<E> {
@@ -1289,7 +1289,7 @@ E é o tipo de objeto que o controller trata.(Ex. UsuarioController vai implemen
 
 Atualmente no sistema, todos os controllers já possuem estes métodos da interface. O problema é que em um dos controllers, o método adicionar(E element) precisa retornar o mesmo objeto que foi adicionado, e não void, pois este objeto retorna com o id registrado no banco, logo em seguida, exibo os dados deste objeto em tela.
 
-Diante do exposto acima, como posso aplicar uma interface a classes com comportamentos comuns(como os controllers) e uma delas possuir um dos métodos do ""contrato"" diferente?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119616/aplicando-interface-em-controllers
+Diante do exposto acima, como posso aplicar uma interface a classes com comportamentos comuns(como os controllers) e uma delas possuir um dos métodos do ""contrato"" diferente?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119616/aplicando-interface-em-controllers,
 Passagem de argumentos opcionais em Java,"Estou tentando aprender o funcionamento da classe SwingWorker<T,V>, já até fiz outra pergunta a respeito de um de seus métodos.
 
 Olhando o código fonte desta classe, encontrei o método publish() escrito da seguinte forma:
@@ -1315,7 +1315,7 @@ SafeVarargs
     }
 Na ""assinatura"" do método, ele recebe V... chunks como parâmetro. Porém, após testar um pouco esta classe, notei que, mesmo se eu definir esse tipo V na hora de iniciar uma variável, exemplo SwingWorker<Void, Integer> worker;(O V é representado pelo Integer), e passar o publish() sem parâmetro, não é gerado erro de sintaxe, e o código funciona normalmente.
 
-Diante do exposto, questiono: como é denominado essa forma de passar parâmetro sem que sejam obrigatórios e como a JVM trata esse tipo de método?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119541/passagem-de-argumentos-opcionais-em-java
+Diante do exposto, questiono: como é denominado essa forma de passar parâmetro sem que sejam obrigatórios e como a JVM trata esse tipo de método?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119541/passagem-de-argumentos-opcionais-em-java,
 Método String.equals e NullPointerException,"Apesar da dúvida ser bem básica, gostaria de entender porque o equals neste caso:
 
     String texto = null;
@@ -1330,7 +1330,7 @@ Ele estoura a exceção NullPointerException, como pode ser visto também no ide
 
 Em ambos os casos há uma comparação com null, mas o retorno é diferente conforme o lado em que o null é passado, por quê ocorre isso?
 
-",0,1,0,0,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,,http://pt.stackoverflow.com/questions/119426/m%C3%A9todo-string-equals-e-nullpointerexception
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/119426/m%C3%A9todo-string-equals-e-nullpointerexception,
 Java construtor com matriz,"estou aprendendo sobre construtores em java porém travei no exercício da faculdade que me pareceu simples, a proposta é criar uma classe construtor com uma matriz, e chamá-la numa outra classe para atribular os valores a matriz:
 
 Construtor:
@@ -1373,7 +1373,7 @@ public class Administracao {
 Porém recebo o erro:
 
 Exception in thread ""main"" java.lang.NullPointerException
-Alguém pode me ajudar a atribuir os valores à matriz chamando o construtor?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,,http://pt.stackoverflow.com/questions/119336/java-construtor-com-matriz
+Alguém pode me ajudar a atribuir os valores à matriz chamando o construtor?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,http://pt.stackoverflow.com/questions/119336/java-construtor-com-matriz,
 Método exige retorno mesmo tendo Void na “assinatura”,"Estou fazendo uns testes para entender na prática o funcionamento do método SwingWorker no swing, e notei que, mesmo que o método doInBackground exige retorno null, mesmo iniciando a variável da forma abaixo:
 
 SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
@@ -1386,7 +1386,7 @@ SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
 };
 Ao declarar SwingWorker<Void, Void>, o primeiro parâmetro remete justamente o retorno do método citado, mas mesmo sendo Void, ele obriga a retornar null(se não informar o retorno nulo, a IDE acusa erro semântico e nem compila o código). Vejam executando no IDEONE.
 
-Se a assinatura é protected Void doInBackground(), por quê exige retorno mesmo assim? Há alguma diferença entre Void e void que justifique este comportamento?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/119227/m%C3%A9todo-exige-retorno-mesmo-tendo-void-na-assinatura
+Se a assinatura é protected Void doInBackground(), por quê exige retorno mesmo assim? Há alguma diferença entre Void e void que justifique este comportamento?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119227/m%C3%A9todo-exige-retorno-mesmo-tendo-void-na-assinatura,
 Criar herança de classes,"Estou estudando programação em Java orientada a objeto e preciso efetuar o seguinte exercício:
 
 Implemente a classe Funcionario e a classe Gerente.
@@ -1441,8 +1441,8 @@ public class Tecnico extends Assistente {
     }
 
 }
-Existe algum erro na construção dos métodos e das heranças ou algum erro em geral levando em consideração o enunciado do exercício.?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,,http://pt.stackoverflow.com/questions/119082/criar-heran%C3%A7a-de-classes
-Definição de container e component em swing,Quais são as definições precisas de Container e Component no Swing? Porque esses elementos são importantes para a construção da GUI?,1,1,0,0,1,1,0,1,1,0,1,1,0,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/119038/defini%C3%A7%C3%A3o-de-container-e-component-em-swing
+Existe algum erro na construção dos métodos e das heranças ou algum erro em geral levando em consideração o enunciado do exercício.?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,http://pt.stackoverflow.com/questions/119082/criar-heran%C3%A7a-de-classes,
+Definição de container e component em swing,Quais são as definições precisas de Container e Component no Swing? Porque esses elementos são importantes para a construção da GUI?,1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/119038/defini%C3%A7%C3%A3o-de-container-e-component-em-swing,
 Null Pointer Exception JavaFX,"o que há de errado com o seguinte trecho do meu código ?
 
 public static void retorna(BufferedImage bufImage) throws IOException {
@@ -1461,7 +1461,7 @@ public static void retorna(BufferedImage bufImage) throws IOException {
 }
 tfFoto é um ImageView criado usando FXML porém não consigo de forma alguma receber esse BufferedImage de outro metodo e faze-lo aparecer em minha interface.
 
-Alguem poderia me ajudar ?",0,1,0,0,1,0,0,1,1,1,1,1,1,0,1,0,1,0,1,,http://pt.stackoverflow.com/questions/118987/null-pointer-exception-javafx
+Alguem poderia me ajudar ?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,0,1,http://pt.stackoverflow.com/questions/118987/null-pointer-exception-javafx,
 Como receber por parâmetro um array de objetos de outra classe no Java?,"Olá pessoal minha dúvida é de que estou tentando receber por parâmetro um array de objetos de outra classe,para a classe que quero colocar os array por parâmetro.
 
 As classes são : Percurso e Custos
@@ -1505,7 +1505,7 @@ Na parte Percurso [] p,preciso passar os array do objeto Percurso,com as variáv
 
 OBS : No return eu só deixei assim para não aparecer problemas,depois eu altero.
 
-Como posso fazer isso ? Se alguém souber por favor me ajude. E desculpem me se o formato do post estiver errado,sou novo aqui no fórum.Eu já li também como fazer um post decente,mas mesmo assim qualquer erro,por favor me avisem que eu arrumo.",1,0,0,0,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/118953/como-receber-por-par%C3%A2metro-um-array-de-objetos-de-outra-classe-no-java
+Como posso fazer isso ? Se alguém souber por favor me ajude. E desculpem me se o formato do post estiver errado,sou novo aqui no fórum.Eu já li também como fazer um post decente,mas mesmo assim qualquer erro,por favor me avisem que eu arrumo.",0,0,0,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/118953/como-receber-por-par%C3%A2metro-um-array-de-objetos-de-outra-classe-no-java,
 Como apagar por completo uma ArrayList e uma List,"Gostaria de saber como destruir o apagar por completo uma ArrayList e uma List por completo em tempo de execução.
 
 exemplo:
@@ -1519,7 +1519,7 @@ for (int i = 0; i<10;i++)
    e.get(i).texto2 =  ""algo"";
    e.get(i).numero = i;
 }
-Como destruir e por completo ou apaga-lo?",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118847/como-apagar-por-completo-uma-arraylist-e-uma-list
+Como destruir e por completo ou apaga-lo?",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/118847/como-apagar-por-completo-uma-arraylist-e-uma-list,
 Ordem da inicialização/instanciamento de classes,"class Bird {
  { System.out.print(""b1 ""); }
  public Bird() { System.out.print(""b2 ""); }
@@ -1540,7 +1540,7 @@ class Hawk extends Raptor {
 O resultado exibido em tela da execução do código acima é:
 
 r1 r4 pre b1 b2 r3 r2 hawk
-Entretanto estou com dúvida nisso. Entendo que como a classe Hawk precisa da classe Raptor, mas a classe Raptor precisa da classe Bird, então achava que b1 deveria ser o primeiro a ser exibido. Seria possível me explicar passo a passo como acontece as inicializações e justificar o porquê?",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118776/ordem-da-inicializa%C3%A7%C3%A3o-instanciamento-de-classes
+Entretanto estou com dúvida nisso. Entendo que como a classe Hawk precisa da classe Raptor, mas a classe Raptor precisa da classe Bird, então achava que b1 deveria ser o primeiro a ser exibido. Seria possível me explicar passo a passo como acontece as inicializações e justificar o porquê?",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/118776/ordem-da-inicializa%C3%A7%C3%A3o-instanciamento-de-classes,
 Criar tipo generico em ArrayList para persistir dados,"Estou com dificuldades em entender o conceito de Dao e como eu poderia criar um tipo especifico para armazenar os meus dados, estou utilizando a principio um ArrayList de Strings e preciso adapta-lo para um ArrayList de Objeto Produto, que teriam por exemplo código/descrição/quantidade.
 
 Como eu declaro:
@@ -1552,7 +1552,7 @@ Produto.add(codigo + "" | "" + descricao + "" | "" + quantidade);
 Como eu leio:
 
 listaDados = Produto.stream().map((string) -> string + ""\n"").reduce(listaDados, String::concat);
-Como seria isto em um objeto do tipo Produto em vez de String?",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118416/criar-tipo-generico-em-arraylist-para-persistir-dados
+Como seria isto em um objeto do tipo Produto em vez de String?",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/118416/criar-tipo-generico-em-arraylist-para-persistir-dados,
 Problema com centavos ao usar o tipo BigInteger,"Estou tendo um problema para somar centavos. Informo 1200, retorna 1.200,00 em vez de 12,00.
 
 Código:
@@ -1565,7 +1565,7 @@ private int formatar_data(int inteiro){
     String formatado = nf.format (valor);
     System.out.println(formatado);
     return inteiro;
-}",1,1,0,0,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118407/problema-com-centavos-ao-usar-o-tipo-biginteger
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/118407/problema-com-centavos-ao-usar-o-tipo-biginteger,
 Uso de instanceof,"Criar uma classe abstrata Conta, e outras duas classes concretas ContaF e ContaJ que herdam da classe principal. Criar outra classe com um método que recebe uma lista de contaF e ContaJ e ArrayList<Conta> e calcule quantos elementos tem em ContaF e ContaJ
 
 Estou quase finalizando:
@@ -1601,7 +1601,7 @@ public static void main( String[] args )
     }  
 }
 }
-Como posso guardar a quantidade pelo instanceof de cada e depois exibir?",1,0,0,0,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118285/uso-de-instanceof
+Como posso guardar a quantidade pelo instanceof de cada e depois exibir?",0,0,0,0,0,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/118285/uso-de-instanceof,
 Como pegar valor da URL,"Me ajudem...
 
 Estou travado na seguinte questão...
@@ -1614,7 +1614,7 @@ Mas não sei como pegar esse valor ""id=3"".
 
 É enviado um link para o email do usuário que esqueceu a senha, então quando o usuário clica no link esse valor não existe mais no ManagedBean, aí onde estou travado. Como faço para pegar esse valor?
 
-Me ajudem, por favor.",1,1,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118240/como-pegar-valor-da-url
+Me ajudem, por favor.",1,1,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/118240/como-pegar-valor-da-url,
 Array multidimensional de tipos diferentes,"Tenho uma view no banco da minha aplicação onde contabilizo o nome do usuário, o setor dele e o total de registros emitidos(conto de outra tabela):
 
 Tabela(View) TotalPorUsuario
@@ -1657,13 +1657,13 @@ O meu código atual está(só consegui fazendo com 2 colunas):
     }
 Qual a forma recomendada de retornar as três colunas: em 3 Arraylist ou existe uma forma menos complexa usando map?
 
-",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/118237/array-multidimensional-de-tipos-diferentes
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/118237/array-multidimensional-de-tipos-diferentes,
 Como funciona a criação de um Array?,"Ao usar o comando new() para a criação de qualquer objeto chamamos o construtor da classe desse objeto e obtemos a referência para a instância criada. Entretanto, o que ocorre na criação de um Array?
 
-Para onde aponta (sei que esse termo é incoerente em relação a Java, pois não estamos trabalhando com ponteiros) a referência retornada na criação? Entendo que não é para um objeto do tipo, pois não estamos usando o construtor da classe.",1,1,0,0,1,1,0,1,1,0,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117974/como-funciona-a-cria%C3%A7%C3%A3o-de-um-array
+Para onde aponta (sei que esse termo é incoerente em relação a Java, pois não estamos trabalhando com ponteiros) a referência retornada na criação? Entendo que não é para um objeto do tipo, pois não estamos usando o construtor da classe.",1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117974/como-funciona-a-cria%C3%A7%C3%A3o-de-um-array,
 Executar ações a partir do item selecionado no JComboBox,"Então galera, minha dúvida é a seguinte,eu queria atribuir valor a uma outra classe, conforme o que estiver selecionado no JComboBox. Por exemplo, se o item ""Ativo"" de um combo estiver selecionado eu queria atribuir um valor para uma string de uma classe externa, se o usuário tivesse colocado o item do combo ""Inativo"" idem. Como eu faço para saber qual dos dois itens estão selecionados?
 
-OBS : Adote o nome cmbStatus como nome do JComboBox, onde existem apenas dois itens : ""Ativo"" e ""Inativo""",1,1,0,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117900/executar-a%C3%A7%C3%B5es-a-partir-do-item-selecionado-no-jcombobox
+OBS : Adote o nome cmbStatus como nome do JComboBox, onde existem apenas dois itens : ""Ativo"" e ""Inativo""",1,1,0,0,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117900/executar-a%C3%A7%C3%B5es-a-partir-do-item-selecionado-no-jcombobox,
 Como alterar um valor de uma variavel dentro de um if em java?,"Criei uma classe abstrata chamada Jogador e criei também as subclasses de jogador.
 
 Agora eu preciso criar um menu para o usuário escolher qual será o personagem que ele vai usar na batalha, mas eu não consigo criar uma nova variável dentro do if ou alterar uma variável já declarada do lado de fora.
@@ -1686,10 +1686,10 @@ Já na situação acima, não funciona por motivo óbvio, já que ela será ence
 
 Então, alguém com um pouco mais de conhecimento que eu, consegue me explicar uma solução para que eu consiga selecionar um dos personagens?
 
-java",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117836/como-alterar-um-valor-de-uma-variavel-dentro-de-um-if-em-java
+java",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117836/como-alterar-um-valor-de-uma-variavel-dentro-de-um-if-em-java,
 Método que crie uma nova lista com base em elementos de uma lista existente?,"Em c# existe a função numeros.GetRange(0, quant);
 
-Gostaria de saber qual o função equivalente ao  numeros.GetRange(0, quant); do C# em Java",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117811/m%C3%A9todo-que-crie-uma-nova-lista-com-base-em-elementos-de-uma-lista-existente
+Gostaria de saber qual o função equivalente ao  numeros.GetRange(0, quant); do C# em Java",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117811/m%C3%A9todo-que-crie-uma-nova-lista-com-base-em-elementos-de-uma-lista-existente,
 Qual é o propósito do comando super quando usado na declaração de parametros de um método?,"
 3
 votar contra
@@ -1697,7 +1697,7 @@ favorita
 Em Java o comando super tem a função de chamar o construtor da superclasse. No entanto, na declaração do método forEach() da classe ArrayList ele é utilizado de uma forma diferente do comum, veja a assinatura do método que contem o comando super:
 
 public void forEach(Consumer<? super E> action)
-A sintaxe acima do método forEach() me deixou confuso em relação ao uso do super e eu gostaria de saber qual é o propósito dele quando ele é usado desse modo como citado acima?",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117765/qual-%C3%A9-o-prop%C3%B3sito-do-comando-super-quando-usado-na-declara%C3%A7%C3%A3o-de-parametros-de
+A sintaxe acima do método forEach() me deixou confuso em relação ao uso do super e eu gostaria de saber qual é o propósito dele quando ele é usado desse modo como citado acima?",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117765/qual-%C3%A9-o-prop%C3%B3sito-do-comando-super-quando-usado-na-declara%C3%A7%C3%A3o-de-parametros-de,
 Como converter um byte[] de uma imagem para uma imagem jpeg para carregar no html?,"No html(jsp) de cadastro tenho um campo que o usuário cadastra a foto dele ficando a tag img com o seguinte resultado.
 
 <img src=""data:image/png;Base64,/9/0kmkdmkewnsjdncijndcjdxncdjcdscjnccc/ccnkjdncnsjnidckcmokcmoskcmkosmcokmdscjncjncjcsnckdjncojnscjncdjnckmkdmcokscmksmdckcmsokcmnjncjemncmokkjcmdjsdccmslckjplqmkmokswkmxokamlamklmockmclmdkcmlodkcmokcmkmcokmsomcksmcsfhhgfrfcghjkuytredfhjolkjhsSWswjshuhuwhuhyhuimcoskcmkmsckmkmkcmc""
@@ -1749,7 +1749,7 @@ E gravo no banco o byte[] gerado.
 
 Primeiro queria saber como antes de gravar no banco, pegar o tipo da imagem(png,ttf,jpg,psd) e converter para JPEG, e aí gerar uma array dela e gravar no banco?
 
-Segundo, gostaria de saber como converto esse byte[] gravado no banco para uma String data:image/jpeg;Base64,{byte[]} para colocar em uma tag img em outra pagina JSP?",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117712/como-converter-um-byte-de-uma-imagem-para-uma-imagem-jpeg-para-carregar-no-htm
+Segundo, gostaria de saber como converto esse byte[] gravado no banco para uma String data:image/jpeg;Base64,{byte[]} para colocar em uma tag img em outra pagina JSP?",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117712/como-converter-um-byte-de-uma-imagem-para-uma-imagem-jpeg-para-carregar-no-htm,
 Como reproduzir relacionamento em Objetos?,"Segundo a definição deste site:
 
 CARDINALIDADE
@@ -1870,12 +1870,12 @@ public class PedidoItem {
     }
 
 }
-",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117592/como-reproduzir-relacionamento-em-objetos
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117592/como-reproduzir-relacionamento-em-objetos,
 Simular diferente timezone com Java,"Desenvolvi uma aplicação web (com java) e nela eu tenho uma regra de negócio o qual necessita salvar o horário de assinatura do usuário. Porém preciso salvar 3 horários: timezone local do usuário, timezone global, e timezone do servidor.
 
 O meu problema é em testar o timezone local do usuário. Alguem sabe como consigo simular um timezone diferente para o browser, para eu simular este teste?
 
-Obs: eu pensei em criar uma máquina virtual, e hospedar minha aplicação nela, e fazer o teste, pois teria somente que alterar o timezone da maquina virtual. Portanto esse processo demandará um bom tempo, quero saber se existe alguma maneira simples.",1,1,0,0,1,1,0,1,0,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117397/simular-diferente-timezone-com-java
+Obs: eu pensei em criar uma máquina virtual, e hospedar minha aplicação nela, e fazer o teste, pois teria somente que alterar o timezone da maquina virtual. Portanto esse processo demandará um bom tempo, quero saber se existe alguma maneira simples.",1,1,0,0,1,0,0,1,0,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117397/simular-diferente-timezone-com-java,
 Como passar variável por parâmetro criada no enum em Java?,"Criei uma Classe enum do java
 
 public enum Cor {
@@ -1894,7 +1894,7 @@ No menu vai tá assim
                 System.err.println(""1-Azul"");
                 System.err.println(""2-Vermelho"");
                 System.err.println(""3-Verde"");
-Ao usuário digitar 1 deve pegar a cor Azul.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117271/como-passar-vari%C3%A1vel-por-par%C3%A2metro-criada-no-enum-em-java
+Ao usuário digitar 1 deve pegar a cor Azul.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117271/como-passar-vari%C3%A1vel-por-par%C3%A2metro-criada-no-enum-em-java,
 Como posso persistir dados usando ArrayList?,"Preciso que minha estrutura de dados ArrayList seja visível em mais de um metodo da minha classe Produtos.
 
 Estou trabalhando da seguinte maneira:
@@ -1951,7 +1951,7 @@ Da opção menu eu acesso Cadastro e realizo o cadastro de um produto que será 
 
 Depois eu volto para outra classe chamada Menu e seleciono a Opção Listar, que acessa o método listar();
 
-Nesse método o ArrayList não é global, portando eu não consigo acesso a ele, como eu posso torna-lo global para realizar a leitura neste método ?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117270/como-posso-persistir-dados-usando-arraylist
+Nesse método o ArrayList não é global, portando eu não consigo acesso a ele, como eu posso torna-lo global para realizar a leitura neste método ?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117270/como-posso-persistir-dados-usando-arraylist,
 Como fazer uma busca dentro desse vetor de objetos?,"Como eu faria a busca de um registro dentro do meu objeto?
 
 O programa é uma agenda de contatos, e eu queria que ele fizesse a busca pelo nome que eu digitar em um JPane e retornasse os dados do contato buscado. Aqui está o código comentado.
@@ -1999,7 +1999,7 @@ public class Agenda {
         //retornar o objeto correspondente
         return dados;
     }
-}",0,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117184/como-fazer-uma-busca-dentro-desse-vetor-de-objetos
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117184/como-fazer-uma-busca-dentro-desse-vetor-de-objetos,
 NullPointException ao inserir elemento em lista,"No código abaixo está saindo um NullPointException, tentei corrigir sem mudar completamente o código mas não deu certo, alguém tem uma solução simples?
 
 Estou querendo adicionar um produto na lista List<Produto>produtos lá na classe Orcamento.
@@ -2096,7 +2096,7 @@ Segue o erro:
 
 Exception in thread ""main"" java.lang.NullPointerException
 at Crud.adicionarProduto(Crud.java:8)
-at Teste.main(Teste.java:12)",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/117077/nullpointexception-ao-inserir-elemento-em-lista
+at Teste.main(Teste.java:12)",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/117077/nullpointexception-ao-inserir-elemento-em-lista,
 Converter String para Date (request.getParameter),"Tenho um formulário em JSP que realiza um cadastro que possui uma data.
 
 <form  method=""Post"" action=""InserirCompromisso"">
@@ -2147,7 +2147,7 @@ protected void processRequest(HttpServletRequest request, HttpServletResponse re
     }
 
 }
-",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/116743/converter-string-para-date-request-getparameter
+",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/116743/converter-string-para-date-request-getparameter,
 Como ao ler um arquivo txt armazenar o valor no tipo inteiro?,"Estou utilizando este exemplo:
 
 try {
@@ -2169,14 +2169,14 @@ No arquivo txt está assim
 
 fulano
 R.drawble.image
-Gostaria como fazer R.drawble.image armazenar num tipo inteiro pois tentei converte de String para int mas não deu certo.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/116421/como-ao-ler-um-arquivo-txt-armazenar-o-valor-no-tipo-inteiro
+Gostaria como fazer R.drawble.image armazenar num tipo inteiro pois tentei converte de String para int mas não deu certo.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/116421/como-ao-ler-um-arquivo-txt-armazenar-o-valor-no-tipo-inteiro,
 Como criar um vetor sem determinar seu tamanho em java?,"Tenho uma classe TesteAplicacao que é para testar e um a classe Teste com atributos e métodos.
 
 Ao criar um vetor em Java:
 
 Teste[] t = new Teste[10];// veja que teve definir um tamanho 
-Teria como criar vetor sem tamanho definido igual em C?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/116370/como-criar-um-vetor-sem-determinar-seu-tamanho-em-java
-É possível armazenar um ArrayList em um Banco de Dados em Java?,"Tratando-se de Banco de Dados utilizando Java, é possível armazenar um objeto ArrayList em um Banco de Dados MySql? Se sim, como posso armazenar este tipo de dado? E como posso recuperá-lo da base de Dados? Se possível, poderiam mostrar um exemplo simples?",1,1,0,0,1,1,0,1,1,0,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/116086/%C3%89-poss%C3%ADvel-armazenar-um-arraylist-em-um-banco-de-dados-em-java
+Teria como criar vetor sem tamanho definido igual em C?",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/116370/como-criar-um-vetor-sem-determinar-seu-tamanho-em-java,
+É possível armazenar um ArrayList em um Banco de Dados em Java?,"Tratando-se de Banco de Dados utilizando Java, é possível armazenar um objeto ArrayList em um Banco de Dados MySql? Se sim, como posso armazenar este tipo de dado? E como posso recuperá-lo da base de Dados? Se possível, poderiam mostrar um exemplo simples?",1,1,0,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/116086/%C3%89-poss%C3%ADvel-armazenar-um-arraylist-em-um-banco-de-dados-em-java,
 Como inverter uma String?,"Um usuário digitará uma frase e devo mostrar esta frase invertida e em maiúsculo. Como posso fazer isto?
 
 import javax.swing.JOptionPane;
@@ -2188,7 +2188,7 @@ import javax.swing.JOptionPane;
             String frase = JOptionPane.showInputDialog(null, ""Digite uma frase: "");
             vetor = frase.toCharArray();
         }
-    }",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/116062/como-inverter-uma-string
+    }",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/116062/como-inverter-uma-string,
 Qual a finalidade do Transient e Volatile no Java?,"As vezes quando vou declarar meus atributos noto o transient e o volatile. Tenho as seguintes dúvidas
 
 O transient e volatile são modificadores de acesso?
@@ -2196,12 +2196,12 @@ Qual a finalidade de utilizá-los?
 Exemplo:
 
 transient String a;
-volatile String b;",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/116047/qual-a-finalidade-do-transient-e-volatile-no-java
+volatile String b;",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/116047/qual-a-finalidade-do-transient-e-volatile-no-java,
 Como gerar uma matriz de 3 colunas onde para cada coluna existem 3 possibilidades distintas?,"O problema é o seguinte: Em um vetor eu tenho 3 conjuntos (A, B e C). Cada conjunto pode ter até 3 valores distintos(0, 1 ou 2). Dessa forma eu preciso gerar todas as combinações possíveis para esse caso, com fórmula 3³ = 27 possibilidades.
 
 Exemplo: print -> {0,0,1} - {0,1,0}  - {0,1,1} -  {1,0,0} - {1,0,1} - {1,1,0} - {1,1,1} - {0,0,2} - {0,2,0} - {2,0,0} - {0,1,2} - {0,2,1} - {1,2,1} - {...} - {2,2,2}
 
-Alguém tem alguma ideia de como realizar isso? Conhece algum algoritmo que faça isso ou algo parecido? Pode ser em Java ou C#.",1,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115885/como-gerar-uma-matriz-de-3-colunas-onde-para-cada-coluna-existem-3-possibilidade
+Alguém tem alguma ideia de como realizar isso? Conhece algum algoritmo que faça isso ou algo parecido? Pode ser em Java ou C#.",0,0,0,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115885/como-gerar-uma-matriz-de-3-colunas-onde-para-cada-coluna-existem-3-possibilidade,
 "Como trabalhar com valores que excedem muito o valor limite do long (64 bits)
 
 ","Como é armazenado e realizado operações com números que excedem os valores limites do tipo long e double? Como são feitas as quatro operações primárias com estes números (soma, subtração, multiplicação e divisão)?
@@ -2215,7 +2215,7 @@ googolplex
 mol (unidade química)
 Long.MAX_VALUE * Long.MAX_VALUE * Long.MAX_VALUE (JAVA)
 googolplex * googolplex
-Quais seriam possíveis soluções em C (muito desempenho) e Java (muito conhecida)",1,0,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115809/como-trabalhar-com-valores-que-excedem-muito-o-valor-limite-do-long-64-bits
+Quais seriam possíveis soluções em C (muito desempenho) e Java (muito conhecida)",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115809/como-trabalhar-com-valores-que-excedem-muito-o-valor-limite-do-long-64-bits,
 Como formatar data por extenso?,"Existe alguma classe em java que trabalhe com formatação de data por extenso?
 
 Por exemplo:
@@ -2277,7 +2277,7 @@ public class Exemplo {
 }
 A saida foi:
 
-27 de Fevereiro de 2016",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115559/como-formatar-data-por-extenso
+27 de Fevereiro de 2016",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115559/como-formatar-data-por-extenso,
 Como listar o nome dos arquivos que estão no diretório?,"A saída do método a seguir é:
 
 C:\Users\Usuario\Desktop\arquivos\nomedoarquivo.jpg
@@ -2296,7 +2296,7 @@ public static void getImgs(String path){
     }catch (Exception e){
         e.printStackTrace();
     }
-}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115458/como-listar-o-nome-dos-arquivos-que-est%C3%A3o-no-diret%C3%B3rio
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115458/como-listar-o-nome-dos-arquivos-que-est%C3%A3o-no-diret%C3%B3rio,
 Usar Double no método compareTo,"Estou com uma dúvida.
 
 Tenho varios métodos de comparação, porém, um dos atributos utilizados para fazer a comparação é double.
@@ -2331,14 +2331,14 @@ public static class Empreendimento implements Comparable<Empreendimento>{
         });
     }
 
-%>",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115444/usar-double-no-m%C3%A9todo-compareto
+%>",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115444/usar-double-no-m%C3%A9todo-compareto,
 Recuperar o valor de um atributo de um objeto genérico em Java,"Eu estou fazendo um sistema em que leio objetos Java, de tipos diferentes, de arquivos XML. Logo não tenho um único tipo de objeto e consequentemente não conheço seus atributos ou métodos. Eu gostaria de realizar uma pesquisa, em que entrasse com uma string indicando atributo e valor, e essa pesquisa me retornasse todos os objetos que tivessem esse atributos e que fosse igual ao valor em um ArrayList.
 
 Exemplo: Tenho alguns arquivos XML, dos tipos Produto, Pessoa e Carro, já estão lidos e instanciados. Quero procurar os objetos que tenham a seguinte característica ano: 1996, as classes Produto e Carro tem o atributo ano, porém Pessoa não tem ele. Percorreria os objetos, onde tivesse seria analisado se o valor é igual e tomaria os passos necessários, caso o atributo não existisse retornaria null ou uma Exception a ser tratada.
 
 Alguém tem ideia de como posso fazer essa recuperação, o maior problema é quem podem ser objetos de tipos diferentes, é que um trabalho de banco não-relacional, se fosse relacional seria muito fácil, com os tipos definidos.
 
-Gostaria de algo que como um .getAtributte (String nomeAtributo, Object o), em que o primeiro é um nome do atributo e o segundo o objeto analisado.",1,1,0,0,1,1,0,1,0,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115439/recuperar-o-valor-de-um-atributo-de-um-objeto-gen%C3%A9rico-em-java
+Gostaria de algo que como um .getAtributte (String nomeAtributo, Object o), em que o primeiro é um nome do atributo e o segundo o objeto analisado.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115439/recuperar-o-valor-de-um-atributo-de-um-objeto-gen%C3%A9rico-em-java,
 Converter String para Float com virgula em Java,"Como faço para converter de uma forma elegante String pra float em java?
 
 As strings estão com a localização brasileira, isto é, os valores vêm com vírgula como separador decimal (""12,345"").
@@ -2352,7 +2352,7 @@ Acho tão... ""feio"" usar
         {
             cadastro.setPreco(0);
         }
-Não dá pra acreditar que o java não tenha alguma localização...existe alguma maneira?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/115362/converter-string-para-float-com-virgula-em-java
+Não dá pra acreditar que o java não tenha alguma localização...existe alguma maneira?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115362/converter-string-para-float-com-virgula-em-java,
 Qual é a finalidade do construtor de uma enum?,"Em Java construtores são necessários para criar um objeto na memória, ou seja, para instanciar a classe que foi definida. Entretanto, eu descobri que uma enum possui um construtor, porem ele não é uma classe, e eu pensava que apenas as classes possuíam construtores.
 
 Veja esta enum como exemplo:
@@ -2373,12 +2373,12 @@ Considere que a enum esta dentro de uma classe que representa uma pessoa, classe
 Veja que para usar a enum a classe não precisa ser instanciada, exemplo:
 
 Pessoa.Genero.FEMININO
-Gostaria de saber qual é a finalidade do construtor de uma enum e se a enum tem as mesmas propriedades de uma classe?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/114575/qual-%C3%A9-a-finalidade-do-construtor-de-uma-enum
-Como armazenar imagens num vetor Android?,Tenho imagens dentro da drawable e para acessa-la basta R.drawable.myimage. Como armazenar essa imagens num vetor?,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/114433/como-armazenar-imagens-num-vetor-android
+Gostaria de saber qual é a finalidade do construtor de uma enum e se a enum tem as mesmas propriedades de uma classe?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114575/qual-%C3%A9-a-finalidade-do-construtor-de-uma-enum,
+Como armazenar imagens num vetor Android?,Tenho imagens dentro da drawable e para acessa-la basta R.drawable.myimage. Como armazenar essa imagens num vetor?,1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114433/como-armazenar-imagens-num-vetor-android,
 Alternativa ao Scanner para entrada de dados,"Em java, quando estamos aprendendo a capturar entrada de dados, geralmente por modo de texto, somos instruídos a utilizar a classe Scanner.
 
-Há alguma alternativa ao Scanner para pegar entrada de dados por modo de texto? Se sim, como funciona?",1,1,0,0,1,1,0,1,1,0,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/114417/alternativa-ao-scanner-para-entrada-de-dados
-Como criar um TextView e uma ImageView via código?,Gostaria de saber como cria via código um TextView e uma ImageView e destrui-lo via código.,1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/114302/como-criar-um-textview-e-uma-imageview-via-c%C3%B3digo
+Há alguma alternativa ao Scanner para pegar entrada de dados por modo de texto? Se sim, como funciona?",1,1,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114417/alternativa-ao-scanner-para-entrada-de-dados,
+Como criar um TextView e uma ImageView via código?,Gostaria de saber como cria via código um TextView e uma ImageView e destrui-lo via código.,1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/114302/como-criar-um-textview-e-uma-imageview-via-c%C3%B3digo,
 Onde fechar EntityManager,"Estou desenvolvendo uma aplicação Java, e estou com dúvida aonde fechar o Entity Manager.
 
 Tenho uma classe Abstrata AbstractService<T> que é extendida por todas as entidades do sistema, e essa classe possui os métodos de persistência.
@@ -2703,10 +2703,10 @@ Jsp exemplo, fechando o entityManager no final:
     ds.closeTX();
 %>
 </body>
-</html>",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113948/onde-fechar-entitymanager
+</html>",1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113948/onde-fechar-entitymanager,
 Como funciona o Padrão DAO?,"Pesquisei e li a respeito do Padrão DAO (Data Access Object), porem não estou conseguindo entender como é o seu funcionamento e como é a estrutura dele, ele também é responsável pelas regras de negócio de uma aplicação? Ou ele é apenas responsável pelo CRUD e pelas transações e conexões?
 
-Obs: De preferencia, se puder mostrar sua implementação e seu funcionamento pratico em Java.",1,1,0,1,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113840/como-funciona-o-padr%C3%A3o-dao
+Obs: De preferencia, se puder mostrar sua implementação e seu funcionamento pratico em Java.",1,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113840/como-funciona-o-padr%C3%A3o-dao,
 Dúvida sobre Herança,"Tenho o seguinte caso:
 
 Avo.java:
@@ -2753,12 +2753,12 @@ Exemplo:
 Filho filho2 = new Filho();
     Mae mae2 = (Mae)filho2;
 mae2.algumMetodoDaClasseMae();
-Se a classe da mae2 é Filho, onde está o método algumMetodoDaClasseMae()?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113797/d%C3%BAvida-sobre-heran%C3%A7a
+Se a classe da mae2 é Filho, onde está o método algumMetodoDaClasseMae()?",0,1,0,0,0,1,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113797/d%C3%BAvida-sobre-heran%C3%A7a,
 Diferença entre métodos para fechar JFrame e JDialog após evento do teclado,"Estou precisando implementar em uma aplicação desktop feita usando swing, uma forma para que o JFrame principal feche a aplicação quando o usuário clicar em ESC, e as JDialogs filhas deste JFrame, fechem apenas si mesmas ao apertar ESC.
 
 Pesquisando aqui mesmo no sopt, encontrei esta pergunta a respeito, mas algumas dúvidas relativas ao código das duas respostas postadas respectivamente pelo @utluiz♦ e pelo @renan, onde o primeiro usa um recurso que não sobrescreve o método windowClosing e o segundo já sobrescreve este método, delegando o fechamento a um método personalizado.
 
-Existe diferença entre usar o AbstractAction e o KeyboardFocusManager para este fim? Ambos podem afetar de alguma maneira outros listeners usados na aplicação?",1,0,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113769/diferen%C3%A7a-entre-m%C3%A9todos-para-fechar-jframe-e-jdialog-ap%C3%B3s-evento-do-teclado
+Existe diferença entre usar o AbstractAction e o KeyboardFocusManager para este fim? Ambos podem afetar de alguma maneira outros listeners usados na aplicação?",0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113769/diferen%C3%A7a-entre-m%C3%A9todos-para-fechar-jframe-e-jdialog-ap%C3%B3s-evento-do-teclado,
 Dados não persistem no arquivo txt,"Bom dia, eu estou com uma dúvida, tenho esse código, que é uma agenda de contatos e os dados deveriam ser persistidos em um arquivo txt. O que acontece é que o programa executa normalmente, porém os dados não são salvos nesse arquivo, que armazenei em uma pasta localizada no disco c, alguém poderia me dar uma luz?
 
 package agenda.estruturada;
@@ -2912,11 +2912,11 @@ public static void main(String[] args) throws IOException {
 
                             }
                     }
-}",1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113684/dados-n%C3%A3o-persistem-no-arquivo-txt
-Redirecionar saída do System.out.println para JTextArea,"Estou tendo problemas para fazer esse redirecionamento, vamos a explicação. Eu possuo uma classe chamada Engine.java, essa classe é responsável por fazer meu processamento e nela tem todos os System.out.prints do processo, o problema é que agora eu criei uma janela utilizando Java Swing, e gostaria de nela chamar esse método, e queria que todo o texto do System.out.print fosse para um JTextArea criado por mim. É possível?",1,1,0,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113619/redirecionar-sa%C3%ADda-do-system-out-println-para-jtextarea
+}",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113684/dados-n%C3%A3o-persistem-no-arquivo-txt,
+Redirecionar saída do System.out.println para JTextArea,"Estou tendo problemas para fazer esse redirecionamento, vamos a explicação. Eu possuo uma classe chamada Engine.java, essa classe é responsável por fazer meu processamento e nela tem todos os System.out.prints do processo, o problema é que agora eu criei uma janela utilizando Java Swing, e gostaria de nela chamar esse método, e queria que todo o texto do System.out.print fosse para um JTextArea criado por mim. É possível?",1,1,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113619/redirecionar-sa%C3%ADda-do-system-out-println-para-jtextarea,
 Recuperar os primeiros elementos de uma lista de Integer,"Tenho uma lista ArrayList<Integer> list = new ArrayList<Integer>(); onde nela tenho mais de 40.000 registros. Gostaria de saber se tem uma maneira de pegar apenas os 10.000 primeiros. Sei que tem como fazer um for e passar para uma nova lista, mas isso demanda muito processamento.
 
-Teria um modo mais simples? Ou com Lambda?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113569/recuperar-os-primeiros-elementos-de-uma-lista-de-integer
+Teria um modo mais simples? Ou com Lambda?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113569/recuperar-os-primeiros-elementos-de-uma-lista-de-integer,
 Problema ao imprimir o conteúdo de um vetor,"Como fazer um acumulador de pontuação para cada resposta.
 
 package modulo02;
@@ -2989,7 +2989,7 @@ public class vetorGabarito {
 
 
     }
-}",1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,1,11,0,1,,http://pt.stackoverflow.com/questions/113602/problema-ao-imprimir-o-conte%C3%BAdo-de-um-vetor
+}",1,1,0,0,0,1,0,0,1,1,1,1,1,0,1,1,11,0,1,http://pt.stackoverflow.com/questions/113602/problema-ao-imprimir-o-conte%C3%BAdo-de-um-vetor,
 Como atribuir retorno de textview a uma string?,"Bom sou iniciante em Android/Java, queria fazer o seguinte pegar o resultado de um textview que é pego através do barcode scan e jogar numa string para fazer uma lista de resultados pegos pelo barcode scan. Como faço para jogar o resultado em uma string?
 
 Segue o trecho do código:
@@ -3004,7 +3004,7 @@ String[] itens = new String[]{""Item 1"", ""Item 2""};
 ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,(itens));
 Deste modo mosta na tela o Listview com o item 1 e 2, quero que seja mostrado com o retorno do txResult.
 
-Obrigado.",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,,http://pt.stackoverflow.com/questions/113518/como-atribuir-retorno-de-textview-a-uma-string
+Obrigado.",1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/113518/como-atribuir-retorno-de-textview-a-uma-string,
 Como comparar o conteúdo de dois vetores?,"public class VetorTurma {
 
     public static void main(String[] args) {
@@ -3044,4 +3044,4 @@ Como comparar o conteúdo de dois vetores?,"public class VetorTurma {
     }
 O contador do if retorna sempre zero. O que deve estar errado?
 
-OBS: Pode parecer estranho números como gabarito o certo seria a,b,c,d.Mas primeiro quero fazer com números e depois como caracteres.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,,http://pt.stackoverflow.com/questions/113143/como-comparar-o-conte%C3%BAdo-de-dois-vetores
+OBS: Pode parecer estranho números como gabarito o certo seria a,b,c,d.Mas primeiro quero fazer com números e depois como caracteres.",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,http://pt.stackoverflow.com/questions/113143/como-comparar-o-conte%C3%BAdo-de-dois-vetores,

@@ -52,15 +52,9 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		if (coherencyBodyAndTitle(title, description) == 1) {
 			is++;
 		}
-		if (titleCapitaLetters(title) == 1) {
-			is += 0.5f;
-		}
 
-		if (titleCapitaLettersPartially(title) == 1) {
-			is += 0.5f;
-		}
 
-		if (is >= 1.0)
+		if (is >= 2.0)
 			return 1;
 		return 0;
 	}
@@ -132,8 +126,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 * Verifica coerência de uma pergunta
 	 * </p>
 	 * 
-	 * Verifica se o título é coerente com a descrição, isso é feito
-	 *  usando calculo de similaridade  entre o título e a descrição. 
+	 * Verifica se o título é coerente com a descrição, isso é feito usando
+	 * calculo de similaridade entre o título e a descrição.
 	 */
 	@Override
 	public Integer coherencyBodyAndTitle(String title, String descrption) {
@@ -164,27 +158,24 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		if (shortDescription(description) == 1) {
 			is++;
 		}
-		if(avoidingMuchCode(description) == 1){
-			is++;
-		}
-		if (longDescription(description) == 1) {
-			is+=0.5f;
-		}
 		if (showingExample(description) == 1) {
 			is++;
 		}
+		if (avoidingMuchCode(description) == 1) {
+			is++;
+		}
 		if (avoidDescriptionWithCodeOnly(description) == 1) {
-			is+=0.5f;
+			is += 0.5f;
 		}
 		if (questionWithSingleProblem(description) == 1) {
-			is+=0.5f;
+			is += 0.5f;
 		}
-
-		if (is >= 3.0) {
+		if (is >= 3.5) {
 			return 1;
 		}
 		return 0;
 	}
+
 
 	/**
 	 * <p>
@@ -230,7 +221,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer shortDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		String str = StringUtil.removeCharacterSpecial(description
+				.toLowerCase());
 		str = StringUtil.removeConnective(str);
 		String tStr[] = StringTokenizerUtils.parseToken(str);
 
@@ -262,7 +254,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer longDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		String str = StringUtil.removeCharacterSpecial(description
+				.toLowerCase());
 		str = StringUtil.removerTagsHtml(str);
 		str = StringUtil.removeConnective(str);
 		str = StringUtil.trim(str);
@@ -270,7 +263,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 		List<String> aux = new ArrayList<String>();
-		
+
 		for (int i = 0; i < strSplited.length; i++) {
 			for (int j = 0; j < tJavaClasses.length; j++) {
 				if (strSplited[i].equals(tJavaClasses[j])) {
@@ -293,19 +286,32 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 *            texto
 	 * @return a frequẽncia do texto passado
 	 */
-	private int frenquencyOfCode(String description) {
+	private int frenquencyOfCode(String description, Integer type) {
 
 		int flag = 0;
 
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
 		String strSplited[] = StringTokenizerUtils.parseToken(description);
 
-		for (int j = 0; j < strSplited.length; j++) {
-			for (int i = 0; i < tJavaClasses.length; i++) {
-				if (strSplited[j].toLowerCase().equals(tJavaClasses[i].toLowerCase())) {
-					flag++;
+		if (type == 1) {
+			for (int j = 0; j < strSplited.length; j++) {
+				for (int i = 0; i < tJavaClasses.length; i++) {
+					
+					if (strSplited[j].toLowerCase().equals(tJavaClasses[i].toLowerCase())) {
+						flag++;
+					}
 				}
 			}
+		} else {
+			for (int j = 0; j < strSplited.length; j++) {
+				for (int i = 0; i < tJavaClasses.length; i++) {
+					
+					if (strSplited[j].toLowerCase().contains(tJavaClasses[i].toLowerCase())) {
+						flag++;
+					}
+				}
+			}
+
 		}
 		return flag;
 	}
@@ -324,15 +330,18 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	public Integer showingExample(String description) {
 		description = StringUtil.removeConnective(description);
 
-		if (frenquencyOfCode(description) >= 4) {
+		if (frenquencyOfCode(description, 1) >= 4) {
 			return 1;
 		}
 
-		for (int i = 0; i < WordsUtils.getWords().length; i++) {
-			String word = WordsUtils.getWords()[i];
+		String strSplited[] = StringTokenizerUtils.parseToken(description);
+		for (int i = 0; i < strSplited.length; i++) {
+			for (int j = 0; j < WordsUtils.WORDS_EXAMPLES.length; j++) {
+				String word = WordsUtils.WORDS_EXAMPLES[j].toLowerCase();
 
-			if (description.equals(word)) {
-				return 1;
+				if (strSplited[i].toLowerCase().equals(word)) {
+					return 1;
+				}
 			}
 		}
 		return 0;
@@ -348,8 +357,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 		description = description.toLowerCase();
 
-		int flag = frenquencyOfCode(description);
-		if (flag > 150)
+		int flag = frenquencyOfCode(description, 2);
+		if (flag > 160)
 			return 0;
 		return 1;
 	}
@@ -384,12 +393,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		String f2 = Character.toString(f.charAt(f.length() - 1));
 
 		for (int i = 0; i < WordsUtils.WORDS_END_COD.length; i++) {
-			if (s[s.length - 1].equals(WordsUtils.WORDS_END_COD[i]) || f2.equals(WordsUtils.WORDS_END_COD[i])) {
+			if (s[s.length - 1].equals(WordsUtils.WORDS_END_COD[i])
+					|| f2.equals(WordsUtils.WORDS_END_COD[i])) {
 				isEnd = true;
 			}
 		}
 
-		if (isInit && isEnd){
+		if (isInit && isEnd) {
 			return 0;
 		}
 		return 1;
@@ -406,7 +416,6 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 				flag++;
 			}
 		}
-
 		if (flag > 1) {
 			return 0;
 		}
@@ -420,7 +429,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer includingGreetings(String description) {
-		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil
+				.removeCharacterSpecial(description.toLowerCase());
 		String s1 = StringUtil.removeConnective(s0);
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
@@ -457,7 +467,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer usingProperLanguage(String description) {
-		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil
+				.removeCharacterSpecial(description.toLowerCase());
 		s0 = StringUtil.removerTagsHtml(s0);
 		String s2 = StringUtil.trim(s0);
 
@@ -466,35 +477,36 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		 * ambas as apis utilizam (mofologik) return 0; }
 		 */
 
-		if(frenquencyOfCode(description) == 0){
+		if (frenquencyOfCode(description, 2) == 0) {
 			if (!LanguageToolUtils.textIsValid(s2, 0)) {
 				return 0;
-			}else{
+			} else {
 				return 1;
 			}
 		}
-		if(frenquencyOfCode(description) > 10 && frenquencyOfCode(description) < 60 ){
+		if (frenquencyOfCode(description, 2) > 10
+				&& frenquencyOfCode(description, 2) < 60) {
 			if (!LanguageToolUtils.textIsValid(s2, 80)) {
 				return 0;
-			}else{
+			} else {
 				return 1;
 			}
-		}else if(frenquencyOfCode(description) >= 5){
+		} else if (frenquencyOfCode(description, 2) >= 5) {
 			if (!LanguageToolUtils.textIsValid(s2, 12)) {
 				return 0;
-			}else{
+			} else {
 				return 1;
 			}
-		}else if(frenquencyOfCode(description) < 5){
+		} else if (frenquencyOfCode(description, 2) < 5) {
 			if (!LanguageToolUtils.textIsValid(s2, 5)) {
 				return 0;
-			}else{
+			} else {
 				return 1;
 			}
-		}else{
+		} else {
 			if (!LanguageToolUtils.textIsValid(s2, 400)) {
 				return 0;
-			}else{
+			} else {
 				return 1;
 			}
 		}

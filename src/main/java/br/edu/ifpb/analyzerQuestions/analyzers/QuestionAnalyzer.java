@@ -39,9 +39,5 @@ public interface QuestionAnalyzer {
 	Integer doNotCreateHomeworkQuestions(String description);
 	
 	
-	
-	
-	
-
 
 }

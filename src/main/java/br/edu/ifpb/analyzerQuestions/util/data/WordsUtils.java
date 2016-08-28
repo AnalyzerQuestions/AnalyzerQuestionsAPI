@@ -23,7 +23,8 @@ public class WordsUtils {
 	 * Lista de palavras que podem identificador presença de exemplo numa
 	 * pergunta
 	 */
-	public final static String WORDS_EXAMPLES = "por exemplo,codigo,segue o codigo,ex:";
+	public final static String[] WORDS_EXAMPLES = 
+		{"por exemplo", "codigo", "segue o codigo", "ex:","por exemplo:", "exemplo", "exemplo:"};
 
 	/**
 	 * Lista de palavras que podem ajudar na identificação de uma palavra
@@ -267,10 +268,6 @@ public class WordsUtils {
 			"xtivermos", "xtivesse", "xtivessem", "xtiveste", "xtivestes",
 			"xtou", "xtas", "xtao", "n" };
 
-	public static String[] getWords() {
-		String[] splited = WORDS_EXAMPLES.split(",");
-		return splited;
-	}
 
 	public static String[] getWordsCode() {
 		String[] splited = WORDS_CODE.split(",");

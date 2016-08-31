@@ -1,11 +1,12 @@
-AWTException
+java.awt.AWTException
 AclNotFoundException
 ActivationException
+AlreadyBoundException
 AlreadyBoundException
 ApplicationException
 ArithmeticException
 ArrayIndexOutOfBoundsException
-AssertionException
+AssertionError
 BackingStoreException
 BadAttributeValueExpException
 BadBinaryOpValueExpException

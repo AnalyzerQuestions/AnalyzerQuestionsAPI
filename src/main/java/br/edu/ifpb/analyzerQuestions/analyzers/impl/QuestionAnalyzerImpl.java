@@ -2,6 +2,7 @@ package br.edu.ifpb.analyzerQuestions.analyzers.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.prefs.BackingStoreException;
 
 import org.cogroo.text.Document;
 import org.cogroo.text.Sentence;
@@ -26,10 +27,14 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	private String javaClasses;
+	private String javaClassesException;
 	private static final Float VALUE_SIMILARITY = 0.05f;
+	
+	BackingStoreException s = null;
 
 	public QuestionAnalyzerImpl() {
 		this.setClassesJava();
+		this.setClassesJavaExceptions();
 	}
 
 	/**
@@ -370,7 +375,15 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 * executado antes para não ter que fazer conexão com a pagina toda vez.
 	 */
 	private void setClassesJava() {
-		javaClasses = ReaderFile.readerTxt();
+		javaClasses = ReaderFile.readerTxt("classJava.txt");
+	}
+	
+	/**
+	 * método auxiliar para carregar os nomes das classes exception do java. Deve ser
+	 * executado antes para não ter que fazer conexão com a pagina toda vez.
+	 */
+	private void setClassesJavaExceptions(){
+		javaClassesException = ReaderFile.readerTxt("classOnlyExceptionJava.txt");
 	}
 
 	/**
@@ -634,11 +647,10 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	@Override
 	public Integer demonstrateInterest(String description) {
 		String s0 = StringUtil.removerAcentos(description);
-		String s1 = StringUtil.removeCharacterSpecial(s0);
-		String s2 = StringUtil.removeConnective(s1).toLowerCase();
+		String s1 = StringUtil.removeCharacterSpecial(s0).toLowerCase();
 		
 		for (int i = 0 ; i < WordsUtils.WORDS_INTEREST.length; i++){
-			if(s2.contains(WordsUtils.WORDS_INTEREST[i])){
+			if(s1.contains(WordsUtils.WORDS_INTEREST[i])){
 				return 1;
 			}
 		}
@@ -646,10 +658,39 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		return 0;
 	}
 
+	/**
+	 * <p>
+	 * Verifica se a descrição contém uma exception java e se contém algum palavra restrita a logs
+	 * </p>
+	 * 
+	 */
+	
 	@Override
 	public Integer containsLog(String description) {
+
+		String s1 = StringUtil.replaceByDot(description).toLowerCase();
 		
-		return null;
+		String[] tJavaExceptionClasses = StringTokenizerUtils.parseToken(javaClassesException);
+		
+		int countFreq = 0;
+		
+		for (int i = 0 ; i < tJavaExceptionClasses.length; i++){
+			if(s1.contains(tJavaExceptionClasses[i].toLowerCase())){
+				countFreq = 1;
+			}
+		}
+		
+		for(int i = 0 ; i < WordsUtils.WORDS_LOG.length ; i++){
+			if(s1.contains(WordsUtils.WORDS_LOG[i])){
+				countFreq ++;
+			}
+		}
+		
+		if (countFreq > 1) {
+			return 1;
+		}
+		
+		return 0;
 	}
 	
 	

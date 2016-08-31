@@ -102,5 +102,13 @@ public class StringUtil {
 	public static String lrtrim(String source) {
 		return ltrim(rtrim(source));
 	}
+	
+	public static String replaceByDot(String str){
+		String result = str.replace(".", " ");
+		result = result.replace(":", " ");
+		result = result.replace(";", " ");
+		
+		return result;
+	}
 
 }

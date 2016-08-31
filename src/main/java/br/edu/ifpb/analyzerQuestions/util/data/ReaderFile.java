@@ -6,12 +6,12 @@ import java.io.IOException;
 
 public class ReaderFile {
 
-	public static String readerTxt() {
+	public static String readerTxt(String fileName) {
 
 		BufferedReader br;
 		StringBuilder sb = null;
 		try {
-			br = new BufferedReader(new FileReader("classJava.txt"));
+			br = new BufferedReader(new FileReader(fileName));
 			sb = new StringBuilder();
 			String line = br.readLine();
 

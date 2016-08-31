@@ -18,7 +18,9 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
 /**
  * 
- * @author franck & Rafael.
+ * @author franck
+ * 
+ * Rafael.
  *
  */
 public class QuestionAnalyzerImpl implements QuestionAnalyzer {
@@ -622,6 +624,13 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		return 1;
 	}
 
+	/**
+	 * <p>
+	 * Verifica se a descrição contém alguma palavra ou sequência de palavras 
+	 * que remetam ao autor da pergunta tenha demostrado interesse em resolver o seu problema
+	 * </p>
+	 * 
+	 */
 	@Override
 	public Integer demonstrateInterest(String description) {
 		String s0 = StringUtil.removerAcentos(description);
@@ -636,6 +645,14 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		
 		return 0;
 	}
+
+	@Override
+	public Integer containsLog(String description) {
+		
+		return null;
+	}
+	
+	
 	
 	
 }

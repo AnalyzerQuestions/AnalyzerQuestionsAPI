@@ -45,7 +45,7 @@ public class WordsUtils {
 	
 	public final static String[] WORDS_INTEREST = {"tentei resolver", "busquei", 
 			"nao encontrei", "pesquisei", "encontrei", "nao achei", "ja procurei", "procurei", 
-			"fui atras", "já tentei", "varias formas",   
+			"fui atras", "já tentei", "varias formas" ,"http:", "link",   
 	};
 
 	/**
@@ -54,7 +54,7 @@ public class WordsUtils {
 	public final static String[] WORDS_VACATIVES = { "pessoal", "galera",
 			"povo", "gente", "povao", "turma", "povareu", "grupo", "bando",
 			"negrada", "individuos", "habitantes", "nacao", "publico",
-			"populacao", "parentada", "povaleu", "todos" };
+			"populacao", "parentada", "povaleu", "todos", "terraqueos" };
 
 	/**
 	 * Lista de palavras que pode identificar agradecimento no texto

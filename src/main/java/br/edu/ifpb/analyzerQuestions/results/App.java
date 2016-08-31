@@ -2,6 +2,8 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
+import br.edu.ifpb.analyzerQuestions.analyzers.QuestionAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.impl.QuestionAnalyzerImpl;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
@@ -76,7 +78,7 @@ public class App {
 		//resultsTable.executeTituloCaixaAlta();
 		//resultsTable.executeTitleCapita///LettersPartially();
 
-	resultsTable.executeUnderstandableDescription();
+	//resultsTable.executeUnderstandableDescription();
 		//resultsTable.executeIncludingVocative();
 		//resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();

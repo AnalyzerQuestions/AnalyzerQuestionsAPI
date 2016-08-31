@@ -18,7 +18,7 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
 /**
  * 
- * @author franck
+ * @author franck & Rafael.
  *
  */
 public class QuestionAnalyzerImpl implements QuestionAnalyzer {
@@ -210,7 +210,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	/**
 	 * <p>
-	 * Evitar desecrição curta da pergunta
+	 * Evitar descrição curta da pergunta
 	 * </p>
 	 */
 	/**
@@ -279,7 +279,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 
 	/**
 	 * <p>
-	 * Verifica a frequencia de código em um texto
+	 * Verifica a frequência de código em um texto
 	 * </p>
 	 * 
 	 * @param description
@@ -440,6 +440,12 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		}
 		return 0;
 	}
+	
+	/**
+	 *	<p>
+	 * Verifica se a descrição possui algum tipo sequência de palavra ou palavra que remeta a exigências 
+	 * </p>
+	 */
 
 	@Override
 	public Integer obviatingDemandingLanguage(String description) {
@@ -615,4 +621,21 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 			return 0;
 		return 1;
 	}
+
+	@Override
+	public Integer demonstrateInterest(String description) {
+		String s0 = StringUtil.removerAcentos(description);
+		String s1 = StringUtil.removeCharacterSpecial(s0);
+		String s2 = StringUtil.removeConnective(s1).toLowerCase();
+		
+		for (int i = 0 ; i < WordsUtils.WORDS_INTEREST.length; i++){
+			if(s2.contains(WordsUtils.WORDS_INTEREST[i])){
+				return 1;
+			}
+		}
+		
+		return 0;
+	}
+	
+	
 }

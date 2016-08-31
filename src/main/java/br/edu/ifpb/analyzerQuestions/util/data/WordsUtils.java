@@ -38,10 +38,15 @@ public class WordsUtils {
 	 */
 	public final static String[] WORDS_DEMANDING = { "urgente",
 			"me mandem o codigo", "mandem o codigo", "mandem um exemplo",
-			"estou com pressa", "o mais rapido possivel", "sim eu sei",
-			"mandem a resposta", "Como possa fazer isso", "como faz isso",
-			"respondam", "merda", "porra", "Me ajudem, " + "codigo abaixo",
-			"Me ajudem codigo abaixo" };
+			"estou com pressa", "mais rapido possivel", "sim eu sei",
+			"mandem a resposta", "como posso fazer isso", "como faz isso",
+			"respondam", "merda", "porra", "me ajudem, " + "codigo abaixo",
+			"me ajudem codigo abaixo" };
+	
+	public final static String[] WORDS_INTEREST = {"tentei resolver", "busquei", 
+			"nao encontrei", "pesquisei", "encontrei", "nao achei", "ja procurei", "procurei", 
+			"fui atras", "já tentei", "varias formas",   
+	};
 
 	/**
 	 * Lista de palavras que pode identificar presença de vocativo em um texto

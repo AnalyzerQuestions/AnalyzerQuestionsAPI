@@ -702,10 +702,22 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		return null;
 	}
 
+	/**
+	 * <p>
+	 *Verifiva se existe palavras ou sequências de palavras que rementem ao presença de detalhes sobre ferramentas utilizadas e etc.
+	 * </p>
+	 */
 	@Override
 	public Integer detailsPresence(String description) {
+		String s1 = StringUtil.removeCharacterSpecial(description).toLowerCase();
 		
-		return null;
+		for (int i = 0 ; i < WordsUtils.WORDS_DETAILS.length; i++){
+			if(s1.contains(WordsUtils.WORDS_DETAILS[i])){
+				return 1;
+			}
+		}
+		
+		return 0;
 	}
 	
 	

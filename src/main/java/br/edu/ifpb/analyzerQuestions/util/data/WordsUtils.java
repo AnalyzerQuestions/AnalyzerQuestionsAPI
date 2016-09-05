@@ -33,8 +33,11 @@ public class WordsUtils {
 	public final static String[] WORDS_FACTOID = { "como", "onde", "quando",
 			"qual" };
 
-	
-	public final static String[] WORDS_LOG = { "at", "Caused", "fatal","grave" };
+
+	/**
+	 * Lista de palavras que rementem a logs de erros em perguntas publicadas.
+	 */
+	public final static String[] WORDS_LOG = { "at", "caused", "fatal","grave" };
 
 	/**
 	 * Lista de palavras que podem identificar se a pergunta possui exigencia.

@@ -42,5 +42,8 @@ public interface QuestionAnalyzer {
 	
 	Integer containsLog(String description);
 	
+	Integer completeCode(String description);
+	
+	Integer detailsPresence(String description);
 
 }

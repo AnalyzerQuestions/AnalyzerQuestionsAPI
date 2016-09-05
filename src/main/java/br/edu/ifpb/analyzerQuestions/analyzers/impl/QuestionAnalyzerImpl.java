@@ -692,6 +692,21 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 		
 		return 0;
 	}
+
+	/**
+	 * 
+	 */
+	@Override
+	public Integer completeCode(String description) {
+		
+		return null;
+	}
+
+	@Override
+	public Integer detailsPresence(String description) {
+		
+		return null;
+	}
 	
 	
 	

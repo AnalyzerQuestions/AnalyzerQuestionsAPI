@@ -231,6 +231,36 @@ public class QuestionAnalyzerFinal {
 		return 1;
 	}
 	
+	
+
+	public Integer avoidingMuchCode(String description) {
+
+		description = description.toLowerCase();
+
+		int flag = frenquencyOfCode(description, 2);
+		if (flag > 160)
+			return 0;
+		return 1;
+	}
+	 
+	/**
+	 * Verifica se a descrição está relacionada a um único problema.
+	 */
+	private boolean isQuestionUnique(String description){
+		int flag = 0;
+		
+		String[] strSplited = StringTokenizerUtils.parseToken(description);
+		
+		for (int i = 0; i < strSplited.length; i++) {
+			if (strSplited[i].contains("?")) {
+				flag++;
+			}
+		}
+		if (flag > 1) {
+			return false;
+		}
+		return true;
+	}
 	/**
 	 * <p>
 	 * Verifica a frequência de código em um texto

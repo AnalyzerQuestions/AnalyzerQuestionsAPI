@@ -49,7 +49,7 @@ public class App {
 		/**
 		 * RESULTS TABELAS DE QUESTÕES
 		 */
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetR.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetSR.csv");
 		List<QuestionsDataSet> q = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
@@ -76,14 +76,14 @@ public class App {
 		//resultsTable.executeTituloCaixaAlta();
 		//resultsTable.executeTitleCapita///LettersPartially();
 
-	resultsTable.executeUnderstandableDescription();
+	//resultsTable.executeUnderstandableDescription();
 		//resultsTable.executeIncludingVocative();
 		//resultsTable.executeShortDescription();
 		//resultsTable.executeLongDescription();
 	//resultsTable.executeShowingExample();
 		 //resultsTable.executeIncludingGreetings();
 
-	//resultsTable.executeQuestionWithSingleProblem();
+	resultsTable.executeQuestionWithSingleProblem();
 		//resultsTable.executeAvoidDescriptionWithCodeOnly();
 	//	resultsTable.executeDoNotCreateHomeworkQuestions();
 

@@ -251,12 +251,12 @@ public class ResultsTable {
 		int igual = 0;
 		int diferente = 0;
 		for (QuestionsDataSet qds : questionsDataSet) {
-			//System.out.println("Questão "+flag+": "+qds.getTitle());
+			System.out.println("Questão "+flag+": "+qds.getTitle());
 			if(questionAnalyzer.questionWithSingleProblem(qds.getBody()) == Integer.parseInt(qds.getPerguntaUnica())){
-			//	System.out.println("IGUAL (" + questionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
+				System.out.println("IGUAL (" + questionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
 				igual++;
 			}else{
-				System.out.println("Questão "+flag+": "+qds.getTitle());
+				//System.out.println("Questão "+flag+": "+qds.getTitle());
 				System.out.println("DIFERENTE (" + questionAnalyzer.questionWithSingleProblem(qds.getBody())+"-"+ qds.getPerguntaUnica()+")");
 				diferente ++;
 			}

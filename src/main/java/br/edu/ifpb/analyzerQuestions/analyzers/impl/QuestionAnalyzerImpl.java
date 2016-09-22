@@ -146,9 +146,6 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 * </p>
 	 */
 	/**
-	 * Considera-se pesos para cada caracteristca que a descrição atende, sendo
-	 * que umas tem pesos maiores que outras. Considera-se que a descrição tenha
-	 * 70% dos pesos das caracteristicas cobradas
 	 * 
 	 */
 	@Override
@@ -411,8 +408,11 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	@Override
 	public Integer questionWithSingleProblem(String description) {
 		int flag = 0;
-		for (int i = 0; i < description.length(); i++) {
-			if (description.charAt(i) == '?') {
+		
+		String[] strSplited = StringTokenizerUtils.parseToken(description);
+		
+		for (int i = 0; i < strSplited.length; i++) {
+			if (strSplited[i].contains("?")) {
 				flag++;
 			}
 		}

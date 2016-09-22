@@ -1261,7 +1261,7 @@ x[1] = 2
 x[2] = 3
 x[3] = 4
 x[4] = 5",1,1,0,0,1,0,0,1,0,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119971/como-limpar-um-vetor,
-Como posso testar método com retorno void utilizando JUnit?,"É possível realizar teste automatizado, em Java, de um método que possui retorno void utilizando JUnit? Se sim, como é possível?",0,0,0,0,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119941/como-posso-testar-m%C3%A9todo-com-retorno-void-utilizando-junit,
+Como posso testar método com retorno void utilizando JUnit?,"É possível realizar teste automatizado, em Java, de um método que possui retorno void utilizando JUnit? Se sim, como é possível?",0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/119941/como-posso-testar-m%C3%A9todo-com-retorno-void-utilizando-junit,
 Valor estranho ao imprimir array,"Em java, estou tendo dificuldades em entender alguns conceitos.
 
 Em uma página .jsp, tenho o seguinte código:
@@ -1461,7 +1461,7 @@ public static void retorna(BufferedImage bufImage) throws IOException {
 }
 tfFoto é um ImageView criado usando FXML porém não consigo de forma alguma receber esse BufferedImage de outro metodo e faze-lo aparecer em minha interface.
 
-Alguem poderia me ajudar ?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,0,1,0,1,http://pt.stackoverflow.com/questions/118987/null-pointer-exception-javafx,
+Alguem poderia me ajudar ?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,0,1,0,1,http://pt.stackoverflow.com/questions/118987/null-pointer-exception-javafx,
 Como receber por parâmetro um array de objetos de outra classe no Java?,"Olá pessoal minha dúvida é de que estou tentando receber por parâmetro um array de objetos de outra classe,para a classe que quero colocar os array por parâmetro.
 
 As classes são : Percurso e Custos
@@ -2215,7 +2215,7 @@ googolplex
 mol (unidade química)
 Long.MAX_VALUE * Long.MAX_VALUE * Long.MAX_VALUE (JAVA)
 googolplex * googolplex
-Quais seriam possíveis soluções em C (muito desempenho) e Java (muito conhecida)",0,0,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115809/como-trabalhar-com-valores-que-excedem-muito-o-valor-limite-do-long-64-bits,
+Quais seriam possíveis soluções em C (muito desempenho) e Java (muito conhecida)",0,0,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115809/como-trabalhar-com-valores-que-excedem-muito-o-valor-limite-do-long-64-bits,
 Como formatar data por extenso?,"Existe alguma classe em java que trabalhe com formatação de data por extenso?
 
 Por exemplo:
@@ -2352,7 +2352,7 @@ Acho tão... ""feio"" usar
         {
             cadastro.setPreco(0);
         }
-Não dá pra acreditar que o java não tenha alguma localização...existe alguma maneira?",1,1,0,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115362/converter-string-para-float-com-virgula-em-java,
+Não dá pra acreditar que o java não tenha alguma localização...existe alguma maneira?",1,1,0,0,1,1,0,1,1,1,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/115362/converter-string-para-float-com-virgula-em-java,
 Qual é a finalidade do construtor de uma enum?,"Em Java construtores são necessários para criar um objeto na memória, ou seja, para instanciar a classe que foi definida. Entretanto, eu descobri que uma enum possui um construtor, porem ele não é uma classe, e eu pensava que apenas as classes possuíam construtores.
 
 Veja esta enum como exemplo:
@@ -2706,7 +2706,7 @@ Jsp exemplo, fechando o entityManager no final:
 </html>",1,1,0,0,1,0,0,1,1,1,0,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113948/onde-fechar-entitymanager,
 Como funciona o Padrão DAO?,"Pesquisei e li a respeito do Padrão DAO (Data Access Object), porem não estou conseguindo entender como é o seu funcionamento e como é a estrutura dele, ele também é responsável pelas regras de negócio de uma aplicação? Ou ele é apenas responsável pelo CRUD e pelas transações e conexões?
 
-Obs: De preferencia, se puder mostrar sua implementação e seu funcionamento pratico em Java.",1,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113840/como-funciona-o-padr%C3%A3o-dao,
+Obs: De preferencia, se puder mostrar sua implementação e seu funcionamento pratico em Java.",1,1,0,1,1,0,0,1,1,0,1,1,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/113840/como-funciona-o-padr%C3%A3o-dao,
 Dúvida sobre Herança,"Tenho o seguinte caso:
 
 Avo.java:

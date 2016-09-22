@@ -2,8 +2,8 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
-import br.edu.ifpb.analyzerQuestions.analyzers.QuestionAnalyzer;
-import br.edu.ifpb.analyzerQuestions.analyzers.impl.QuestionAnalyzerImpl;
+import br.edu.ifpb.analyzerQuestions.analyzers.initial.QuestionAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.initial.impl.QuestionAnalyzerImpl;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 
 /**

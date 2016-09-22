@@ -22,6 +22,7 @@ public class ReaderQuestions {
 	 * 
 	 */
 	
+	@SuppressWarnings("static-access")
 	public ReaderQuestions(String file) {
 		this.FILE_NAME = file;
 	}

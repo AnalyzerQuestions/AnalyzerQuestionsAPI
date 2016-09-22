@@ -1,4 +1,4 @@
-package br.edu.ifpb.analyzerQuestions.analyzers.impl;
+package br.edu.ifpb.analyzerQuestions.analyzers.initial.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.cogroo.text.Document;
 import org.cogroo.text.Sentence;
 import org.cogroo.text.Token;
 
-import br.edu.ifpb.analyzerQuestions.analyzers.QuestionAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.initial.QuestionAnalyzer;
 import br.edu.ifpb.analyzerQuestions.util.CoGrooUtils;
 import br.edu.ifpb.analyzerQuestions.util.LanguageToolUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;

@@ -1,4 +1,4 @@
-package br.edu.ifpb.analyzerQuestions.analyzers;
+package br.edu.ifpb.analyzerQuestions.analyzers.initial;
 
 public interface QuestionAnalyzer {
 	

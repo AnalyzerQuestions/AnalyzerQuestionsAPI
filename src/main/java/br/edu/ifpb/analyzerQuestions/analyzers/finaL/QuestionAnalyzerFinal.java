@@ -11,12 +11,10 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 public class QuestionAnalyzerFinal {
 	
 	private String javaClasses;
-	private String javaClassesException;
 	private static final Float VALUE_SIMILARITY = 0.05f;
 	
 	public QuestionAnalyzerFinal() {
 		this.setClassesJava();
-		this.setClassesJavaExceptions();
 	}
 	
 	/**
@@ -87,6 +85,13 @@ public class QuestionAnalyzerFinal {
 	 * 
 	 */
 	public Integer analyzerDetailAboutContext(String description){
+		String s1 = StringUtil.removeCharacterSpecial(description).toLowerCase();
+		
+		for (int i = 0 ; i < WordsUtils.WORDS_DETAILS.length; i++){
+			if(s1.contains(WordsUtils.WORDS_DETAILS[i])){
+				return 1;
+			}
+		}
 		
 		return 0;
 	}
@@ -273,11 +278,4 @@ public class QuestionAnalyzerFinal {
 		javaClasses = ReaderFile.readerTxt("classJava.txt");
 	}
 	
-	/**
-	 * método auxiliar para carregar os nomes das classes exception do java. Deve ser
-	 * executado antes para não ter que fazer conexão com a pagina toda vez.
-	 */
-	private void setClassesJavaExceptions(){
-		javaClassesException = ReaderFile.readerTxt("classOnlyExceptionJava.txt");
-	}
 }

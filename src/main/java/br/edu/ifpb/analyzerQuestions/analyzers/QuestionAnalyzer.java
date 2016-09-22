@@ -38,6 +38,12 @@ public interface QuestionAnalyzer {
 	
 	Integer doNotCreateHomeworkQuestions(String description);
 	
+	Integer demonstrateInterest (String description);
 	
+	Integer containsLog(String description);
+	
+	Integer completeCode(String description);
+	
+	Integer detailsPresence(String description);
 
 }

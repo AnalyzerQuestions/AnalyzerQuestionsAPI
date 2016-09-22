@@ -2,6 +2,8 @@ package br.edu.ifpb.analyzerQuestions.results;
 
 import java.util.List;
 
+import br.edu.ifpb.analyzerQuestions.analyzers.QuestionAnalyzer;
+import br.edu.ifpb.analyzerQuestions.analyzers.impl.QuestionAnalyzerImpl;
 import br.edu.ifpb.analyzerQuestions.entities.QuestionsDataSet;
 import br.edu.ifpb.analyzerQuestions.util.data.ReaderQuestions;
 import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
@@ -95,6 +97,33 @@ public class App {
 /*		DescriptionAnalyzer descriptionAnalyzer = new DescriptionAnalyzer();
 		int i =descriptionAnalyzer.avoidingCreatingFactoidQuestions("Onde fica a configuração do jpa no projeto maven?");
 		System.out.println(i);*/
+		
+		String log = "FATAL: /pages/instituicao.xhtml @30,84 actionListener=#{instituicaoBean.verPDF}: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean: nome.javax.faces.FacesException: /pages/instituicao.xhtml @30,84 actionListener=#{instituicaoBean.verPDF}: net.sf.jasperreports.engine.JRException: Error retrieving field value from bean: nome. at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:89)  at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)"
+   +"at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)"
+    +"at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)"
+   +"at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)"
+   +"at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)"
+    +"at org.primefaces.webapp.filter.FileUploadFilter.doFilter(FileUploadFilter.java:78)"
+    +"at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)"
+  + " at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)"
+   + "at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)"
+   + "at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)"
+  + "at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)"
+   + "at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)"
+   +" at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)"
+ +  " at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)"
+ +  " at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)"
+ +  " at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)"
+   +" at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)"
+   +" at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)"
+    
+   +" at java.lang.Thread.run(Unknown Source)"
++"Caused by: javax.el.ELException: /pages/instituicao.xhtml @30,84 actionListener=#{instituicaoBean.verPDF}: "
++ "net.sf.jasperreports.engine.JRException: Error retrieving field value from bean: nome.";
+   
+		
+		QuestionAnalyzer analyzer = new QuestionAnalyzerImpl();
+		System.out.println(analyzer.containsLog(log));
 		
 		
 	}

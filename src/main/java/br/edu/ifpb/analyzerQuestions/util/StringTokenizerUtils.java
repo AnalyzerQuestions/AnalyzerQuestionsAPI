@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class StringTokenizerUtils {
 
 	/**
-	 * Trasnforma uma String em tokens
+	 * Transforma uma String em tokens
 	 * 
 	 * @param str String a ser tokenizada
 	 * @return array de tokens
@@ -29,4 +29,12 @@ public class StringTokenizerUtils {
 		}
 		return result;
 	}
+	
+	public static String[] parseTokenWithoutPointer(String str){
+		
+		String [] result = str.split(".");
+		
+		return result;
+	}
+	
 }

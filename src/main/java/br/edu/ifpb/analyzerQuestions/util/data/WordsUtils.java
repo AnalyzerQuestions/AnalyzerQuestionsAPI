@@ -10,6 +10,13 @@ package br.edu.ifpb.analyzerQuestions.util.data;
 public class WordsUtils {
 
 	/**
+	 * Lista de palavras para ajudar na identificação de uma 
+	 * pergunta duplicada.
+	 */
+	public final static String[] WORDS_DUPLICATE_CODE = {"pergunta duplicada", "já resolvido", "problema duplicado",
+		"possível duplicação", "problema resolvido"};
+	
+	/**
 	 * Lista de palavras que podem identificar um exemplo numa pergunta
 	 */
 	public final static String WORDS_CODE = "abstract,assert,boolean,break,byte,case,catch,char,class,const,default"

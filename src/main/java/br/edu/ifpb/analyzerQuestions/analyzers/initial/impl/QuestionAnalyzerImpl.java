@@ -225,8 +225,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer shortDescription(String description) {
-		String str = StringUtil.removeCharacterSpecial(description
-				.toLowerCase());
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		str = StringUtil.removeConnective(str);
 		String tStr[] = StringTokenizerUtils.parseToken(str);
 

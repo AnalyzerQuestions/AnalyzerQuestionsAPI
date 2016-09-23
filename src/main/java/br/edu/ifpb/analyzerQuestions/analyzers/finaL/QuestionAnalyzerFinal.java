@@ -1,5 +1,7 @@
 package br.edu.ifpb.analyzerQuestions.analyzers.finaL;
 
+import java.util.StringTokenizer;
+
 import br.edu.ifpb.analyzerQuestions.util.LanguageToolUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringTokenizerUtils;
 import br.edu.ifpb.analyzerQuestions.util.StringUtil;
@@ -53,7 +55,16 @@ public class QuestionAnalyzerFinal {
 	 * (Ter uma descricao curta, reduzir pergunta em um único problema, evitar muito codigo)
 	 */
 	public Integer analyzerObjective(String description){
+		Integer cont = 0;
+		if(this.analyzerShortDescriptionQuestion(description) == 1)
+			cont++;
+		if(this.isQuestionUnique(description))
+			cont++;
+		if(avoidingMuchCode(description) == 1)
+			cont++;
 		
+		if(cont >= 3)
+			return 1;
 		return 0;
 	}
 	
@@ -189,6 +200,14 @@ public class QuestionAnalyzerFinal {
 	 * Evitar perguntas duplicadas
 	 */
 	public Integer avoidCreateDuplicateQuestion(String comment){
+		String[] duplicates = WordsUtils.WORDS_DUPLICATE_CODE;
+		
+		for (int i = 0; i < duplicates.length; i++) {
+			if(comment.contains(duplicates[i])){
+				return 1;
+			}
+		}
+		
 		
 		return 0;
 	}
@@ -198,8 +217,14 @@ public class QuestionAnalyzerFinal {
 	 * 
 	 */
 	public Integer analyzerShortDescriptionQuestion(String description){
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		str = StringUtil.removeConnective(str);
 		
-		return 0;
+		StringTokenizer st = new StringTokenizer(str);
+		
+		if(st.countTokens() > 200)
+			return 0;
+		return 1;
 	}
 	
 	/**
@@ -233,6 +258,11 @@ public class QuestionAnalyzerFinal {
 	
 	
 
+	
+	/**
+	 * Evitar pergunta com muito código
+	 * 
+	 */
 	public Integer avoidingMuchCode(String description) {
 
 		description = description.toLowerCase();

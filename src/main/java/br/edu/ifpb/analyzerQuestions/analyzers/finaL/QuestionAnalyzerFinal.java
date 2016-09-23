@@ -158,8 +158,7 @@ public class QuestionAnalyzerFinal {
 	 * @return 1/0
 	 */
 	public Integer analyzerUsingProperLanguage(String description){
-		String s0 = StringUtil
-				.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		s0 = StringUtil.removerTagsHtml(s0);
 		String s2 = StringUtil.trim(s0);
 
@@ -232,14 +231,19 @@ public class QuestionAnalyzerFinal {
 	 * 
 	 */
 	public Integer analyzerShortDescriptionQuestion(String description){
-		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
-		str = StringUtil.removeConnective(str);
 		
-		StringTokenizer st = new StringTokenizer(str);
-		
-		if(st.countTokens() > 200)
+		if(this.avoidingMuchCode(description) != 1){
+			String str = this.removeAllCode(description);
+			str = StringUtil.removeConnective(str);
+			
+			StringTokenizer st = new StringTokenizer(str);
+			
+			if(st.countTokens() > 200)
+				return 0;
+			return 1;
+		}else{
 			return 0;
-		return 1;
+		}
 	}
 	
 	/**
@@ -305,6 +309,22 @@ public class QuestionAnalyzerFinal {
 		if (flag > 160)
 			return 0;
 		return 1;
+	}
+	
+	private String removeAllCode(String description){
+		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
+		String tStr[] = StringTokenizerUtils.parseToken(str);
+		String result = "";
+		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
+
+		for (int i = 0; i < tStr.length; i++) {
+			for (int j = 0; j < tJavaClasses.length; j++) {
+				if (!tStr[i].equals(tJavaClasses[j])) {
+					result += tStr[i] + " ";
+				}
+			}
+		}
+		return result;
 	}
 	 
 	/**

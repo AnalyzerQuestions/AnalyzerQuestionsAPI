@@ -97,6 +97,12 @@ public class QuestionAnalyzerFinal {
 	 */
 	public Integer  analyzerUnderstandableDescription(String title, String description){
 		
+		if(this.analyzerObjective(description) == 1){
+			
+			if(this.analyzerClarity(title, description) == 1){
+				return 1;
+			}
+		}
 		return 0;
 	}
 	

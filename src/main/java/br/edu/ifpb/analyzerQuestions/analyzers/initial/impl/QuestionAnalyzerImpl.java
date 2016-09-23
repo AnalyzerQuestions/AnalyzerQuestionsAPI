@@ -79,8 +79,8 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	@Override
 	public Integer mediumSizeTitle(String title) {
 		String str = StringUtil.removeConnective(title);
-		String st1 = StringUtil.removeCharacterSpecial(str);
-		String[] strPart = StringTokenizerUtils.parseToken(st1);
+		str = StringUtil.removeCharacterSpecial(str);
+		String[] strPart = StringTokenizerUtils.parseToken(str);
 
 		if (strPart.length > 2 && strPart.length <= 8)
 			return 1;
@@ -443,8 +443,7 @@ public class QuestionAnalyzerImpl implements QuestionAnalyzer {
 	 */
 	@Override
 	public Integer includingGreetings(String description) {
-		String s0 = StringUtil
-				.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		String s1 = StringUtil.removeConnective(s0);
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {

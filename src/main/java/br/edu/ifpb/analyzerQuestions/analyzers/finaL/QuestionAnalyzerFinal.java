@@ -213,6 +213,12 @@ public class QuestionAnalyzerFinal {
 	 */
 	public Integer understandableTitle(String title, String description){
 		
+		if(isMediumSizeTitle(title)){
+			
+			if(analyzerCoherencyBodyAndTitle(title, description) == 1){
+				return 1;
+			}
+		}
 		return 0;
 	}
 	
@@ -315,6 +321,17 @@ public class QuestionAnalyzerFinal {
 		if (flag > 160)
 			return 0;
 		return 1;
+	}
+	
+	private boolean isMediumSizeTitle(String title){
+		String str = StringUtil.removeConnective(title);
+		str = StringUtil.removeCharacterSpecial(str);
+		String[] strPart = StringTokenizerUtils.parseToken(str);
+
+		if (strPart.length > 2 && strPart.length <= 8)
+			return true;
+		else
+			return false;
 	}
 	
 	private String removeAllCode(String description){

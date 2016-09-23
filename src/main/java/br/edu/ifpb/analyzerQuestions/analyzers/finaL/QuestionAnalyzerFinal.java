@@ -121,6 +121,12 @@ public class QuestionAnalyzerFinal {
 	 */
 	public Integer analyzerBeEducated(String description){
 		
+		if (this.analyzerUsingProperLanguage(description) == 1) {
+		
+			if (this.includingGreetings(description) == 1) {
+				return 1;
+			}
+		}
 		return 0;
 	}
 	
@@ -267,6 +273,25 @@ public class QuestionAnalyzerFinal {
 	
 	
 
+	
+	
+	/**
+	 * <p>
+	 * Analisa se na descrição possui algum tipo de agradecimento
+	 * </p>
+	 */
+	public Integer includingGreetings(String description) {
+		String s0 = StringUtil
+				.removeCharacterSpecial(description.toLowerCase());
+		String s1 = StringUtil.removeConnective(s0);
+
+		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
+			if (s1.contains(WordsUtils.WORDS_GREETINGS[i])) {
+				return 1;
+			}
+		}
+		return 0;
+	}
 	
 	/**
 	 * Evitar pergunta com muito código

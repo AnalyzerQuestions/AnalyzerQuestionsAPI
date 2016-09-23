@@ -78,7 +78,16 @@ public class QuestionAnalyzerFinal {
 	 *				 mostrar exemplo
 	 */
 	public Integer analyzerClarity(String title, String description){
+		Integer count = 0;
+		if(this.analyzerObjective(description) == 1)
+			count++;
+		if(analyzerCoherencyBodyAndTitle(title, description) == 1)
+			count++;
+		if(analyzerShowExample(description) == 1)
+			count++;
 		
+		if(count >= 4)
+			return 1;
 		return 0;
 		
 	}

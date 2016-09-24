@@ -86,6 +86,14 @@ public class QuestionAnalyzerFinal {
 		if(analyzerShowExample(description) == 1)
 			count++;
 		
+		if(isQuestionUnique(description)){
+			count++;
+		}else{
+			if(isEvidentProbleam(description)){
+				count++;
+			}
+		}
+		
 		if(count >= 4)
 			return 1;
 		return 0;
@@ -287,10 +295,6 @@ public class QuestionAnalyzerFinal {
 		return 1;
 	}
 	
-	
-
-	
-	
 	/**
 	 * <p>
 	 * Analisa se na descrição possui algum tipo de agradecimento
@@ -321,6 +325,17 @@ public class QuestionAnalyzerFinal {
 		if (flag > 160)
 			return 0;
 		return 1;
+	}
+	
+	private boolean isEvidentProbleam(String description){
+		String[] duplicates = WordsUtils.WORDS_EVIDENT_EXPRESSIONS;
+		
+		for (int i = 0; i < duplicates.length; i++) {
+			if(description.contains(duplicates[i])){
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	private boolean isMediumSizeTitle(String title){

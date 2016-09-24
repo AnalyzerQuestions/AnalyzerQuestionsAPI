@@ -10,6 +10,16 @@ package br.edu.ifpb.analyzerQuestions.util.data;
 public class WordsUtils {
 
 	/**
+	 * Lista de expressões para verificar se uma pergunta está bem evidiciada.
+	 * 
+	 */
+	public final static String[] WORDS_EVIDENT_EXPRESSIONS = {
+				"meu problema e que", "nao sei como", "nao sei por que",
+				"como faz", "como faço", "como faco", "como posso", "meu problema e o seguinte", "meu problema e esse",
+				"o erro e este", "aqui o erro", "como e feita", "como se faz", "qual a melhor", "nao estou conseguindo", "nao sei como",
+				"o problema esta quando", "o problema e que", "nao sei porque", "o que posso fazer", "como posso fazer"
+	};
+	/**
 	 * Lista de palavras para ajudar na identificação de uma 
 	 * pergunta duplicada.
 	 */

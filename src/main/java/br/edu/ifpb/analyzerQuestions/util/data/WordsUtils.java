@@ -18,7 +18,7 @@ public class WordsUtils {
 				"como faz", "como faço", "como faco", "como posso", "meu problema e o seguinte", "meu problema e esse",
 				"o erro e este", "aqui o erro", "como e feita", "como se faz", "qual a melhor", "nao estou conseguindo", "nao sei como",
 				"o problema esta quando", "o problema e que", "nao sei porque", "o que posso fazer", "como posso fazer",
-				"o que representam"
+				"o que representam", "objetivo e o seguinte"
 	};
 	/**
 	 * Lista de palavras para ajudar na identificação de uma 

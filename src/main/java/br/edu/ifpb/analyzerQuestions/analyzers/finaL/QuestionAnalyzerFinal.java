@@ -328,10 +328,11 @@ public class QuestionAnalyzerFinal {
 	}
 	
 	private boolean isEvidentProbleam(String description){
+		String str = StringUtil.removerAcentos(description);
 		String[] duplicates = WordsUtils.WORDS_EVIDENT_EXPRESSIONS;
 		
 		for (int i = 0; i < duplicates.length; i++) {
-			if(description.contains(duplicates[i])){
+			if(str.contains(duplicates[i])){
 				return true;
 			}
 		}

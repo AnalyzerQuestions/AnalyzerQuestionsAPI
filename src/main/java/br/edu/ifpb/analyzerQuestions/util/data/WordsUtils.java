@@ -17,7 +17,8 @@ public class WordsUtils {
 				"meu problema e que", "nao sei como", "nao sei por que",
 				"como faz", "como faço", "como faco", "como posso", "meu problema e o seguinte", "meu problema e esse",
 				"o erro e este", "aqui o erro", "como e feita", "como se faz", "qual a melhor", "nao estou conseguindo", "nao sei como",
-				"o problema esta quando", "o problema e que", "nao sei porque", "o que posso fazer", "como posso fazer"
+				"o problema esta quando", "o problema e que", "nao sei porque", "o que posso fazer", "como posso fazer",
+				"o que representam"
 	};
 	/**
 	 * Lista de palavras para ajudar na identificação de uma 

@@ -55,7 +55,7 @@ public class WordsUtils {
 	 */
 	public final static String[] WORDS_LOG = { "at", "caused", "fatal", "grave" };
 
-	public final static String[] WORDS_DETAILS = { "eclipse", "netbeans", "intelliJ idea Community edition", "intellij",
+	public final static String[] WORDS_DETAILS = { "eclipse", "java", "netbeans", "intelliJ idea Community edition", "intellij",
 			"android studio", "enide studio", "bluej", "jedit", "jgrasp", "jsource", "jdeveloper", "drjava", "tomcat",
 			"widfly", "glassfish", "jetty", "jboss", "ibm WebSphere", "red hat", "tmax", "fujitsu", "apache geronimo",
 			"oracle", "cosminexus", "jdk", "java 1.5", "java 1.6", "java 1.7", "java 1.8"};

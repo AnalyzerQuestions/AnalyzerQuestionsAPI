@@ -14,14 +14,14 @@ public class WordsUtils {
 	 * 
 	 */
 	public final static String[] WORDS_EVIDENT_EXPRESSIONS = {
-			"meu problema e que", "nao sei como", "nao sei por que",
-			"como faz", "como faço", "como faco", "como posso",
+			"meu problema e que", "Gostaria de entender", "como consigo", "nao sei como", "nao sei por que",
+			"como faz", "como faço", "como faco", "como posso", "estou tentando",
 			"meu problema e o seguinte", "meu problema e esse",
 			"o erro e este", "aqui o erro", "como e feita", "como se faz",
 			"qual a melhor", "nao estou conseguindo", "nao sei como",
 			"o problema esta quando", "o problema e que", "nao sei porque",
 			"o que posso fazer", "como posso fazer", "o que representam",
-			"objetivo e o seguinte", "preciso que a saida" };
+			"objetivo e o seguinte", "preciso que a saida", "gostaria de saber" };
 	/**
 	 * Lista de palavras para ajudar na identificação de uma pergunta duplicada.
 	 */
@@ -58,8 +58,8 @@ public class WordsUtils {
 	 */
 	public final static String[] WORDS_LOG = { "at", "caused", "fatal", "grave" };
 
-	public final static String[] WORDS_DETAILS = { "eclipse", "jframe", "sql",
-			"junit", "jdbc", "java", "netbeans",
+	public final static String[] WORDS_DETAILS = { "eclipse", "sql",
+			"junit", "jdbc", "java", "netbeans","instancia", "void", "classe", "main",
 			"intelliJ idea Community edition", "intellij", "android studio",
 			"enide studio", "bluej", "jedit", "jgrasp", "jsource",
 			"jdeveloper", "drjava", "tomcat", "widfly", "glassfish", "jetty",

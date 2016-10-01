@@ -319,9 +319,9 @@ public class QuestionAnalyzerFinal {
 	 */
 	public Integer avoidingMuchCode(String description) {
 
-		description = description.toLowerCase();
+		String str = description.toLowerCase();
 
-		int flag = frenquencyOfCode(description, 2);
+		int flag = frenquencyOfCode(str, 2);
 		if (flag > 160)
 			return 0;
 		return 1;

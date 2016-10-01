@@ -59,7 +59,7 @@ public class WordsUtils {
 	public final static String[] WORDS_LOG = { "at", "caused", "fatal", "grave" };
 
 	public final static String[] WORDS_DETAILS = { "eclipse", "sql",
-			"junit", "jdbc", "java", "netbeans","instancia", "void", "classe", "main",
+			"junit", "jdbc", "java", "netbeans",
 			"intelliJ idea Community edition", "intellij", "android studio",
 			"enide studio", "bluej", "jedit", "jgrasp", "jsource",
 			"jdeveloper", "drjava", "tomcat", "widfly", "glassfish", "jetty",

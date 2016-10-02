@@ -252,8 +252,9 @@ public class QuestionAnalyzerFinal {
 	 */
 	public Integer analyzerShortDescriptionQuestion(String description){
 		
-		if(this.avoidingMuchCode(description) != 1){
+		if(this.avoidingMuchCode(description) == 1){
 			String str = this.removeAllCode(description);
+			str = StringUtil.removeCharacterSpecial(str);
 			str = StringUtil.removeConnective(str);
 			
 			StringTokenizer st = new StringTokenizer(str);
@@ -301,11 +302,11 @@ public class QuestionAnalyzerFinal {
 	 * </p>
 	 */
 	public Integer includingGreetings(String description) {
-		String s0 = StringUtil
-				.removeCharacterSpecial(description.toLowerCase());
+		String s0 = StringUtil.removeCharacterSpecial(description.toLowerCase());
 		String s1 = StringUtil.removeConnective(s0);
 
 		for (int i = 0; i < WordsUtils.WORDS_GREETINGS.length; i++) {
+			
 			if (s1.contains(WordsUtils.WORDS_GREETINGS[i])) {
 				return 1;
 			}
@@ -325,6 +326,12 @@ public class QuestionAnalyzerFinal {
 		if (flag > 160)
 			return 0;
 		return 1;
+	}
+	
+	public static void main(String[] args) {
+		QuestionAnalyzerFinal q = new QuestionAnalyzerFinal();
+		String s = " public merda; { } java é loco mano void na veia Integer é foda";
+		System.out.println(q.removeAllCode(s));
 	}
 	
 	private boolean isEvidentProbleam(String description){
@@ -351,19 +358,23 @@ public class QuestionAnalyzerFinal {
 	}
 	
 	private String removeAllCode(String description){
-		String str = StringUtil.removeCharacterSpecial(description.toLowerCase());
-		String tStr[] = StringTokenizerUtils.parseToken(str);
 		String result = "";
-		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
+		String tStr[] = StringTokenizerUtils.parseToken(description.toLowerCase());
+		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses.toLowerCase());
 
 		for (int i = 0; i < tStr.length; i++) {
 			for (int j = 0; j < tJavaClasses.length; j++) {
-				if (!tStr[i].equals(tJavaClasses[j])) {
-					result += tStr[i] + " ";
+				if(tStr[i].contains(tJavaClasses[j])){
+					tStr[i] = "";
 				}
 			}
 		}
-		return result;
+		
+		for (String string : tStr) {
+			result += string + " ";
+		}
+		
+		return StringUtil.trim(result);
 	}
 	 
 	/**
@@ -372,7 +383,8 @@ public class QuestionAnalyzerFinal {
 	private boolean isQuestionUnique(String description){
 		int flag = 0;
 		
-		String[] strSplited = StringTokenizerUtils.parseToken(description);
+		String str = this.removeAllCode(description);
+		String[] strSplited = StringTokenizerUtils.parseToken(str);
 		
 		for (int i = 0; i < strSplited.length; i++) {
 			if (strSplited[i].contains("?")) {
@@ -384,6 +396,7 @@ public class QuestionAnalyzerFinal {
 		}
 		return true;
 	}
+	
 	/**
 	 * <p>
 	 * Verifica a frequência de código em um texto
@@ -397,14 +410,14 @@ public class QuestionAnalyzerFinal {
 
 		int flag = 0;
 
-		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses);
-		String strSplited[] = StringTokenizerUtils.parseToken(description);
+		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses.toLowerCase());
+		String[] strSplited = StringTokenizerUtils.parseToken(description.toLowerCase());
 
 		if (type == 1) {
 			for (int j = 0; j < strSplited.length; j++) {
 				for (int i = 0; i < tJavaClasses.length; i++) {
 					
-					if (strSplited[j].toLowerCase().equals(tJavaClasses[i].toLowerCase())) {
+					if (strSplited[j].equals(tJavaClasses[i])) {
 						flag++;
 					}
 				}
@@ -413,7 +426,7 @@ public class QuestionAnalyzerFinal {
 			for (int j = 0; j < strSplited.length; j++) {
 				for (int i = 0; i < tJavaClasses.length; i++) {
 					
-					if (strSplited[j].toLowerCase().contains(tJavaClasses[i].toLowerCase())) {
+					if (strSplited[j].contains(tJavaClasses[i])) {
 						flag++;
 					}
 				}
@@ -428,7 +441,7 @@ public class QuestionAnalyzerFinal {
 	 * executado antes para não ter que fazer conexão com a pagina toda vez.
 	 */
 	private void setClassesJava() {
-		javaClasses = ReaderFile.readerTxt("classJava.txt");
+		javaClasses = ReaderFile.readerTxt("classJava.txt").toLowerCase();
 	}
 	
 }

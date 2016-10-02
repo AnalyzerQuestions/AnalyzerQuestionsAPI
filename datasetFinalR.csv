@@ -1062,7 +1062,7 @@ Alterar comportamento padrão de elemento p:confirmDialog,"Preciso alterar o com
         </p:commandButton>   
     </p:confirmDialog>
 </p:commandButton>  
-Mas essa solução não está funcionando. Alguém tem alguma ideia do que posso fazer? Obrigado!",1,,1,1,,,,,,,1,1,http://pt.stackoverflow.com/questions/122281/alterar-comportamento-padr%C3%A3o-de-elemento-pconfirmdialog
+Mas essa solução não está funcionando. Alguém tem alguma ideia do que posso fazer? Obrigado!",1,1,1,1,1,0,1,1,1,1,1,1,
 Converter String em Calendar,"Estou tentando fazer uma conversão de String para Calendar mas sem sucesso.
 
 Minha String é no formato dd/MM/yyyy. Preciso converter para yyyy-MM-dd E setar em um objeto do tipo Calendar.  void setDATAFUNDACAO(java.util.Calendar value);
@@ -1951,7 +1951,7 @@ Da opção menu eu acesso Cadastro e realizo o cadastro de um produto que será 
 
 Depois eu volto para outra classe chamada Menu e seleciono a Opção Listar, que acessa o método listar();
 
-Nesse método o ArrayList não é global, portando eu não consigo acesso a ele, como eu posso torna-lo global para realizar a leitura neste método ?",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/117270/como-posso-persistir-dados-usando-arraylist
+Nesse método o ArrayList não é global, portando eu não consigo acesso a ele, como eu posso torna-lo global para realizar a leitura neste método ?",1,1,1,0,0,0,1,0,1,1,1,1,http://pt.stackoverflow.com/questions/117270/como-posso-persistir-dados-usando-arraylist
 Como fazer uma busca dentro desse vetor de objetos?,"Como eu faria a busca de um registro dentro do meu objeto?
 
 O programa é uma agenda de contatos, e eu queria que ele fizesse a busca pelo nome que eu digitar em um JPane e retornasse os dados do contato buscado. Aqui está o código comentado.

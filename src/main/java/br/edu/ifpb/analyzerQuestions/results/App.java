@@ -15,9 +15,6 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		/**
-		 * RESULTS TABELAS DE QUESTÕES
-		 */
 		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFinalR.csv");
 		List<QuestionsDataSetPojo> listQuestionsDS = readerQuestions.readCsvFile();
 
@@ -31,8 +28,19 @@ public class App {
 		ResultsDataSetDetail resultsTable = new ResultsDataSetDetail(listQuestionsDS);
 		
 		
+		//resultsTable.detailAnalyzerCoherencyBodyAndTitle();
+		//resultsTable.detailAnalyzerUnderstandableTitle();
 		//resultsTable.detailAnalyzerShowExample();
-		resultsTable.detailAnalyzerObjective();
+		//resultsTable.detailAnalyzerUsingProperLanguage();
+		//resultsTable.detailAnalyzerBeEducated();
+		//resultsTable.detailAnalyzerDetailAboutContext();
+		//resultsTable.detailAnalyzerAnalyzerShortDescriptionQuestion();
+		//resultsTable.detailAnalyzerObjective();
+		//resultsTable.detailAnalyzerClarity();
+		//resultsTable.detailAnalyzerUnderstandableDescription();
+		//resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
+		
+		//resultsTable.detailAnalyzerAvoidCreateDuplicateQuestion(comment);;
 
 
 		

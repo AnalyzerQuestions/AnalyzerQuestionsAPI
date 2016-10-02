@@ -9,7 +9,11 @@ import br.edu.ifpb.analyzerQuestions.util.data.ReaderFile;
 import br.edu.ifpb.analyzerQuestions.util.data.WordsUtils;
 import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 
-
+/**
+ * 
+ * @author franck
+ *
+ */
 public class QuestionAnalyzerFinal {
 	
 	private String javaClasses;
@@ -219,7 +223,7 @@ public class QuestionAnalyzerFinal {
 	/**
 	 * Título bem definido
 	 */
-	public Integer understandableTitle(String title, String description){
+	public Integer analyzerUnderstandableTitle(String title, String description){
 		
 		if(isMediumSizeTitle(title)){
 			
@@ -233,7 +237,7 @@ public class QuestionAnalyzerFinal {
 	/**
 	 * Evitar perguntas duplicadas
 	 */
-	public Integer avoidCreateDuplicateQuestion(String comment){
+	public Integer analyzerAvoidCreateDuplicateQuestion(String comment){
 		String[] duplicates = WordsUtils.WORDS_DUPLICATE_CODE;
 		
 		for (int i = 0; i < duplicates.length; i++) {
@@ -276,7 +280,7 @@ public class QuestionAnalyzerFinal {
 	 * Verifica se a descrição possui algumas palavras (pré defindas) que
 	 * remetem a caracteristica
 	 */
-	public Integer doNotCreateHomeworkQuestions(String description) {
+	public Integer analyzerDoNotCreateHomeworkQuestions(String description) {
 		String s0 = StringUtil.removerAcentos(description);
 		String s1 = StringUtil.removeCharacterSpecial(s0);
 		String s2 = StringUtil.removeConnective(s1).toLowerCase();
@@ -326,12 +330,6 @@ public class QuestionAnalyzerFinal {
 		if (flag > 160)
 			return 0;
 		return 1;
-	}
-	
-	public static void main(String[] args) {
-		QuestionAnalyzerFinal q = new QuestionAnalyzerFinal();
-		String s = " public merda; { } java é loco mano void na veia Integer é foda";
-		System.out.println(q.removeAllCode(s));
 	}
 	
 	private boolean isEvidentProbleam(String description){

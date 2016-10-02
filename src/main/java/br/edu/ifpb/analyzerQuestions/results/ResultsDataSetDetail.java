@@ -296,7 +296,7 @@ public class ResultsDataSetDetail {
 		for (QuestionsDataSetPojo qds : questionsDataSet) {
 			System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
 
-			int resultMethod = questionAnalyzer.understandableTitle(qds.getTitle(), qds.getBody());
+			int resultMethod = questionAnalyzer.analyzerUnderstandableTitle(qds.getTitle(), qds.getBody());
 			int resultDataset = Integer.parseInt(qds.getTituloBemDefinido());
 			
 			if(resultMethod == resultDataset){
@@ -329,7 +329,7 @@ public class ResultsDataSetDetail {
 		for (QuestionsDataSetPojo qds : questionsDataSet) {
 			System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
 
-			int resultMethod = questionAnalyzer.avoidCreateDuplicateQuestion(comment);
+			int resultMethod = questionAnalyzer.analyzerAvoidCreateDuplicateQuestion(comment);
 			int resultDataset = Integer.parseInt(qds.getEvPerguntaDuplicada());
 			
 			if(resultMethod == resultDataset){
@@ -395,7 +395,7 @@ public class ResultsDataSetDetail {
 			for (QuestionsDataSetPojo qds : questionsDataSet) {
 				System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
 	
-				int resultMethod = questionAnalyzer.doNotCreateHomeworkQuestions(qds.getBody());
+				int resultMethod = questionAnalyzer.analyzerDoNotCreateHomeworkQuestions(qds.getBody());
 				int resultDataset = Integer.parseInt(qds.getEvPergSobreTrabAcademicos());
 				
 				if(resultMethod == resultDataset){

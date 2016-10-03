@@ -336,7 +336,7 @@ Estou tentando debugar mais este caso, observei que quando chega na classe DAO, 
 log.info(""Persistindo "" + t);
 Depois ele já cai no catch. O erro mostrado na console é:
 
-13:33:20,806 WARNING [br.com.pokemax.controle.ControleHabilidade] (default task-8) Erro: null",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/132294/ajuda-em-nullpointer-exception
+13:33:20,806 WARNING [br.com.pokemax.controle.ControleHabilidade] (default task-8) Erro: null",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/132294/ajuda-em-nullpointer-exception
 Porque “meu programa” não incrementou o valor 5 sendo que ele menor que 5.5,"
 Estou começando na programação e sempre tento desvendar as coisas que não ficam claras, até agora consegui, mas nesse aqui ja tentei e tentei e não conseguir entender porque o programa não incrementou o valor 5 sendo que ele menor que 5.5
 
@@ -387,7 +387,7 @@ Qual a justificativa para isso?
 ",1,1,1,1,0,1,1,1,1,1,0,1,http://pt.stackoverflow.com/questions/131136/inicializa%C3%A7%C3%A3o-do-wrapper-double-com-int-n%C3%A3o-compila
 Validações de Strings,"Andei pesquisando como validar e-mail, datas, horas etc. E no caso do e-mail, encontrei um código como este: /^.+@.+\..{2,}$/;. Ele está incompleto. Mas queria entender o que são esses símbolos, e o que eles representam para fazer a validação de uma string?
 
-Se alguém puder esclarecer como isso funciona eu agradeço.",1,0,1,1,1,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/130963/valida%C3%A7%C3%B5es-de-strings
+Se alguém puder esclarecer como isso funciona eu agradeço.",1,0,0,1,1,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/130963/valida%C3%A7%C3%B5es-de-strings
 Armazenar valores num vetor em ordem invertida,"O objetivo é o seguinte: ler 10 valores de um determinado vetor, depois disso, criar outro vetor, que tenha os mesmos valores do primeiro vetor, porém em ordem invertida, por exemplo, o primeiro valor do 1º vetor é o décimo do 2º vetor, o segundo valor do 1º vetor é o penúltimo do 2º vetor, e assim sucessivamente. Tentei fazer porém o segundo vetor sempre tem o valor de 0. Sei que tenho que usar um for para isso, porém não sei se utilizei da maneira correta.
 
 public static void main(String[] args) {
@@ -495,7 +495,7 @@ this.getAtributo();
 
 Em casos, não preciso pegar ou setar valores da classe na meu main() ou em outra classe, então nem crio os getters e setters, pois criar é uma forma indireta de tornar um atributo privado em atributo público, logo seria falho para segurança.
 
-Mas voltado a questão principal, é errado usar this.atributo? E qual a diferença entre usar um ou outro?",1,0,1,0,0,1,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/129353/qual-a-diferen%C3%A7a-entre-referenciar-um-atributo-diretamente-ou-por-get-set
+Mas voltado a questão principal, é errado usar this.atributo? E qual a diferença entre usar um ou outro?",1,1,1,0,0,1,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/129353/qual-a-diferen%C3%A7a-entre-referenciar-um-atributo-diretamente-ou-por-get-set
 Sobrecarga de métodos (double e float),"Tendo 2 métodos com mesmo nome, porém os tipos são diferentes (double e float), a quantidade de parâmetro é a mesma, qual dos métodos o Java vai reconhecer primeiro e por quê?",1,1,0,1,1,1,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/128247/sobrecarga-de-m%C3%A9todos-double-e-float
 É uma boa prática de programação escrever um while com argumento true para que ele seja executado infinitamente?,"Em uma situação hipotética: É uma boa prática de programação, escrever um while dessa maneira? Para que ele continue sendo executado infinitamente?
 
@@ -1030,7 +1030,7 @@ Caused by: org.hibernate.service.UnknownServiceException: Unknown service reques
     at org.hibernate.engine.transaction.internal.TransactionCoordinatorImpl.<init>(TransactionCoordinatorImpl.java:89)
     at org.hibernate.internal.SessionImpl.<init>(SessionImpl.java:258)
     at org.hibernate.internal.SessionFactoryImpl$SessionBuilderImpl.openSession(SessionFactoryImpl.java:1589)
-    at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:999)",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/122855/como-fazer-uma-express%C3%A3o-regular-para-validar-senha-jsf
+    at org.hibernate.internal.SessionFactoryImpl.openSession(SessionFactoryImpl.java:999)",0,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/122855/como-fazer-uma-express%C3%A3o-regular-para-validar-senha-jsf
 Acessar itens de uma pilha usando for,"Estou tentando acessar uma posição a frente na pilha para fazer uma comparação, mas não esta dando certo e não consegui entender esse for.
 
 Código
@@ -1272,7 +1272,7 @@ Quando imprimo o array, o valor mostrado é:
 [Ljava.lang.String;@5a879b45
 Gostaria de saber o que significa esse valor, porque não consigo visualizar o valor dele, já que passei o seguinte conteúdo:
 
-[*, adm, r1]",1,1,1,1,0,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/119840/valor-estranho-ao-imprimir-array
+[*, adm, r1]",1,1,0,1,0,1,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/119840/valor-estranho-ao-imprimir-array
 Aplicando interface em Controllers,"Tenho alguns controllers que fazem chamada aos seus respectivos models e gostaria de aplicar interface neles. Criei uma interface com alguns métodos que seria importante todos implementarem, da seguinte maneira:
 
 public interface IController<E> {
@@ -1315,7 +1315,7 @@ SafeVarargs
     }
 Na ""assinatura"" do método, ele recebe V... chunks como parâmetro. Porém, após testar um pouco esta classe, notei que, mesmo se eu definir esse tipo V na hora de iniciar uma variável, exemplo SwingWorker<Void, Integer> worker;(O V é representado pelo Integer), e passar o publish() sem parâmetro, não é gerado erro de sintaxe, e o código funciona normalmente.
 
-Diante do exposto, questiono: como é denominado essa forma de passar parâmetro sem que sejam obrigatórios e como a JVM trata esse tipo de método?",1,1,1,0,0,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/119541/passagem-de-argumentos-opcionais-em-java
+Diante do exposto, questiono: como é denominado essa forma de passar parâmetro sem que sejam obrigatórios e como a JVM trata esse tipo de método?",0,0,1,0,0,1,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/119541/passagem-de-argumentos-opcionais-em-java
 Método String.equals e NullPointerException,"Apesar da dúvida ser bem básica, gostaria de entender porque o equals neste caso:
 
     String texto = null;
@@ -1601,7 +1601,7 @@ public static void main( String[] args )
     }  
 }
 }
-Como posso guardar a quantidade pelo instanceof de cada e depois exibir?",0,0,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/118285/uso-de-instanceof
+Como posso guardar a quantidade pelo instanceof de cada e depois exibir?",1,0,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/118285/uso-de-instanceof
 Como pegar valor da URL,"Me ajudem...
 
 Estou travado na seguinte questão...
@@ -1689,7 +1689,7 @@ Então, alguém com um pouco mais de conhecimento que eu, consegue me explicar u
 java",1,7,1,1,1,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/117836/como-alterar-um-valor-de-uma-variavel-dentro-de-um-if-em-java
 Método que crie uma nova lista com base em elementos de uma lista existente?,"Em c# existe a função numeros.GetRange(0, quant);
 
-Gostaria de saber qual o função equivalente ao  numeros.GetRange(0, quant); do C# em Java",1,0,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/117811/m%C3%A9todo-que-crie-uma-nova-lista-com-base-em-elementos-de-uma-lista-existente
+Gostaria de saber qual o função equivalente ao  numeros.GetRange(0, quant); do C# em Java",0,0,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/117811/m%C3%A9todo-que-crie-uma-nova-lista-com-base-em-elementos-de-uma-lista-existente
 Qual é o propósito do comando super quando usado na declaração de parametros de um método?,"
 3
 votar contra
@@ -1697,7 +1697,7 @@ favorita
 Em Java o comando super tem a função de chamar o construtor da superclasse. No entanto, na declaração do método forEach() da classe ArrayList ele é utilizado de uma forma diferente do comum, veja a assinatura do método que contem o comando super:
 
 public void forEach(Consumer<? super E> action)
-A sintaxe acima do método forEach() me deixou confuso em relação ao uso do super e eu gostaria de saber qual é o propósito dele quando ele é usado desse modo como citado acima?",1,0,0,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/117765/qual-%C3%A9-o-prop%C3%B3sito-do-comando-super-quando-usado-na-declara%C3%A7%C3%A3o-de-parametros-de
+A sintaxe acima do método forEach() me deixou confuso em relação ao uso do super e eu gostaria de saber qual é o propósito dele quando ele é usado desse modo como citado acima?",1,0,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/117765/qual-%C3%A9-o-prop%C3%B3sito-do-comando-super-quando-usado-na-declara%C3%A7%C3%A3o-de-parametros-de
 Como converter um byte[] de uma imagem para uma imagem jpeg para carregar no html?,"No html(jsp) de cadastro tenho um campo que o usuário cadastra a foto dele ficando a tag img com o seguinte resultado.
 
 <img src=""data:image/png;Base64,/9/0kmkdmkewnsjdncijndcjdxncdjcdscjnccc/ccnkjdncnsjnidckcmokcmoskcmkosmcokmdscjncjncjcsnckdjncojnscjncdjnckmkdmcokscmksmdckcmsokcmnjncjemncmokkjcmdjsdccmslckjplqmkmokswkmxokamlamklmockmclmdkcmlodkcmokcmkmcokmsomcksmcsfhhgfrfcghjkuytredfhjolkjhsSWswjshuhuwhuhyhuimcoskcmkmsckmkmkcmc""
@@ -1951,7 +1951,7 @@ Da opção menu eu acesso Cadastro e realizo o cadastro de um produto que será 
 
 Depois eu volto para outra classe chamada Menu e seleciono a Opção Listar, que acessa o método listar();
 
-Nesse método o ArrayList não é global, portando eu não consigo acesso a ele, como eu posso torna-lo global para realizar a leitura neste método ?",1,1,1,0,0,0,1,0,1,1,1,1,http://pt.stackoverflow.com/questions/117270/como-posso-persistir-dados-usando-arraylist
+Nesse método o ArrayList não é global, portando eu não consigo acesso a ele, como eu posso torna-lo global para realizar a leitura neste método ?",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/117270/como-posso-persistir-dados-usando-arraylist
 Como fazer uma busca dentro desse vetor de objetos?,"Como eu faria a busca de um registro dentro do meu objeto?
 
 O programa é uma agenda de contatos, e eu queria que ele fizesse a busca pelo nome que eu digitar em um JPane e retornasse os dados do contato buscado. Aqui está o código comentado.
@@ -2147,7 +2147,7 @@ protected void processRequest(HttpServletRequest request, HttpServletResponse re
     }
 
 }
-",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/116743/converter-string-para-date-request-getparameter
+",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/116743/converter-string-para-date-request-getparameter
 Como ao ler um arquivo txt armazenar o valor no tipo inteiro?,"Estou utilizando este exemplo:
 
 try {
@@ -2175,7 +2175,7 @@ Como criar um vetor sem determinar seu tamanho em java?,"Tenho uma classe TesteA
 Ao criar um vetor em Java:
 
 Teste[] t = new Teste[10];// veja que teve definir um tamanho 
-Teria como criar vetor sem tamanho definido igual em C?",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/116370/como-criar-um-vetor-sem-determinar-seu-tamanho-em-java
+Teria como criar vetor sem tamanho definido igual em C?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/116370/como-criar-um-vetor-sem-determinar-seu-tamanho-em-java
 É possível armazenar um ArrayList em um Banco de Dados em Java?,"Tratando-se de Banco de Dados utilizando Java, é possível armazenar um objeto ArrayList em um Banco de Dados MySql? Se sim, como posso armazenar este tipo de dado? E como posso recuperá-lo da base de Dados? Se possível, poderiam mostrar um exemplo simples?",1,1,0,1,0,0,1,0,0,0,1,1,http://pt.stackoverflow.com/questions/116086/%C3%89-poss%C3%ADvel-armazenar-um-arraylist-em-um-banco-de-dados-em-java
 Como inverter uma String?,"Um usuário digitará uma frase e devo mostrar esta frase invertida e em maiúsculo. Como posso fazer isto?
 
@@ -2753,12 +2753,12 @@ Exemplo:
 Filho filho2 = new Filho();
     Mae mae2 = (Mae)filho2;
 mae2.algumMetodoDaClasseMae();
-Se a classe da mae2 é Filho, onde está o método algumMetodoDaClasseMae()?",1,1,1,1,0,0,1,0,0,0,1,1,http://pt.stackoverflow.com/questions/113797/d%C3%BAvida-sobre-heran%C3%A7a
+Se a classe da mae2 é Filho, onde está o método algumMetodoDaClasseMae()?",0,0,1,1,0,0,1,0,0,0,1,1,http://pt.stackoverflow.com/questions/113797/d%C3%BAvida-sobre-heran%C3%A7a
 Diferença entre métodos para fechar JFrame e JDialog após evento do teclado,"Estou precisando implementar em uma aplicação desktop feita usando swing, uma forma para que o JFrame principal feche a aplicação quando o usuário clicar em ESC, e as JDialogs filhas deste JFrame, fechem apenas si mesmas ao apertar ESC.
 
 Pesquisando aqui mesmo no sopt, encontrei esta pergunta a respeito, mas algumas dúvidas relativas ao código das duas respostas postadas respectivamente pelo @utluiz♦ e pelo @renan, onde o primeiro usa um recurso que não sobrescreve o método windowClosing e o segundo já sobrescreve este método, delegando o fechamento a um método personalizado.
 
-Existe diferença entre usar o AbstractAction e o KeyboardFocusManager para este fim? Ambos podem afetar de alguma maneira outros listeners usados na aplicação?",1,0,0,1,0,0,1,0,0,0,1,1,http://pt.stackoverflow.com/questions/113769/diferen%C3%A7a-entre-m%C3%A9todos-para-fechar-jframe-e-jdialog-ap%C3%B3s-evento-do-teclado
+Existe diferença entre usar o AbstractAction e o KeyboardFocusManager para este fim? Ambos podem afetar de alguma maneira outros listeners usados na aplicação?",1,0,1,1,0,0,1,0,0,0,1,1,http://pt.stackoverflow.com/questions/113769/diferen%C3%A7a-entre-m%C3%A9todos-para-fechar-jframe-e-jdialog-ap%C3%B3s-evento-do-teclado
 Dados não persistem no arquivo txt,"Bom dia, eu estou com uma dúvida, tenho esse código, que é uma agenda de contatos e os dados deveriam ser persistidos em um arquivo txt. O que acontece é que o programa executa normalmente, porém os dados não são salvos nesse arquivo, que armazenei em uma pasta localizada no disco c, alguém poderia me dar uma luz?
 
 package agenda.estruturada;
@@ -2989,7 +2989,7 @@ public class vetorGabarito {
 
 
     }
-}",0,0,1,0,0,0,0,0,0,0,11,1,http://pt.stackoverflow.com/questions/113602/problema-ao-imprimir-o-conte%C3%BAdo-de-um-vetor
+}",0,0,1,0,0,0,1,0,0,0,11,1,http://pt.stackoverflow.com/questions/113602/problema-ao-imprimir-o-conte%C3%BAdo-de-um-vetor
 Como atribuir retorno de textview a uma string?,"Bom sou iniciante em Android/Java, queria fazer o seguinte pegar o resultado de um textview que é pego através do barcode scan e jogar numa string para fazer uma lista de resultados pegos pelo barcode scan. Como faço para jogar o resultado em uma string?
 
 Segue o trecho do código:
@@ -3044,4 +3044,4 @@ Como comparar o conteúdo de dois vetores?,"public class VetorTurma {
     }
 O contador do if retorna sempre zero. O que deve estar errado?
 
-OBS: Pode parecer estranho números como gabarito o certo seria a,b,c,d.Mas primeiro quero fazer com números e depois como caracteres.",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/113143/como-comparar-o-conte%C3%BAdo-de-dois-vetores
+OBS: Pode parecer estranho números como gabarito o certo seria a,b,c,d.Mas primeiro quero fazer com números e depois como caracteres.",0,0,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/113143/como-comparar-o-conte%C3%BAdo-de-dois-vetores

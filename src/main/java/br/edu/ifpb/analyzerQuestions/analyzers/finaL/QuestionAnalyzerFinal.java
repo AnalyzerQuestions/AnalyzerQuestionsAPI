@@ -246,7 +246,6 @@ public class QuestionAnalyzerFinal {
 			}
 		}
 		
-		
 		return 0;
 	}
 	
@@ -295,7 +294,7 @@ public class QuestionAnalyzerFinal {
 				}
 			}
 		}
-		if (flag > 2)
+		if (flag >= 2)
 			return 0;
 		return 1;
 	}
@@ -327,7 +326,7 @@ public class QuestionAnalyzerFinal {
 		String str = description.toLowerCase();
 
 		int flag = frenquencyOfCode(str, 2);
-		if (flag > 160)
+		if (flag > 180)
 			return 0;
 		return 1;
 	}
@@ -361,6 +360,7 @@ public class QuestionAnalyzerFinal {
 		String[] tJavaClasses = StringTokenizerUtils.parseToken(javaClasses.toLowerCase());
 
 		for (int i = 0; i < tStr.length; i++) {
+			
 			for (int j = 0; j < tJavaClasses.length; j++) {
 				if(tStr[i].contains(tJavaClasses[j])){
 					tStr[i] = "";

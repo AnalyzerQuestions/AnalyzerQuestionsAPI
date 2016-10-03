@@ -840,7 +840,148 @@ selectOneMenu Estado e Cidade junto com commandLink que busca o objeto seleciona
   </p:commandLink>
 </p:column>",1,1,1,1,0,0,0,0,0,0,1,1,1
 "Uso de dois certificados diferentes para emissão de nfse abrasf
-",,1,1,1,,,,,,,,,,
+","Estou enviando notas para a abrasf usando o código abaixo para carregar informações do certificado keystrore e tals.
+
+Só que quando envio com um certificado e depois com outro de outro contribuinte recusa informando este erro.
+
+Código erro: GOV14. Mensagem: Emissor não tem autorização de emitir notas para esse contribuinte.. Possível Correção: O emissor da nota deve ser o próprio contribuinte ou o contador.
+
+Ele considera que o certificado anterior que está fazendo a comunicação com o web service.
+
+Mas se eu derrubar o tomcat e abrir de novo a aplicação ele aceita usar o segundo, porém não deixa usar o primeiro, obtendo o mesmo erro. Ou seja somente fechando o java, a informação do primeiro certificado que conectou com este web service desaparece.
+
+O interessante que para o web service da Nota Fiscal Eletrônica Modelo 55, funciona normalmente, com quantos certificados for necessários. Alguém já passou por este problema?
+
+Usando o keystore dinâmico http://www.javac.com.br/jc/posts/list/222-resolven...-a3-protocolsocketfactory.page, recebo o erro handshake failure.
+
+Segue código:
+
+ public String enviarNFse(String xmlCabecalho, String xmlEnvNFse) throws ExceptionServicoAbrasf {
+    try {
+        AssinarXMLNFse assinarXML = new AssinarXMLNFse(this.keyStoreService.getKeystore(), this.keyStoreService.getAliasCert(), this.keyStoreService.getSenhaPfx());
+        xmlEnvNFse = assinarXML.assinaNfseEnvio(xmlEnvNFse);
+        loadInfoCertificado();
+        return executarServicoEnvioNFse(xmlCabecalho, xmlEnvNFse);
+    } catch (Exception ex) {
+        throw new ExceptionServicoAbrasf(""Erro em assinatura do xml. "" + ex.getMessage());
+    }
+
+}
+//add xml to sign
+  public String assinaNfseEnvio(String xml) throws Exception {
+      //sign
+    return assinar(xml, ""InfDeclaracaoPrestacaoServico"", ""Rps"");
+}
+//sign
+
+   private String assinar(String xml, String tag, String tagPaiSignature) throws Exception {
+    Document document = documentFactory(xml);
+
+    XMLSignatureFactory signatureFactory = XMLSignatureFactory
+            .getInstance(""DOM"");
+    ArrayList<Transform> transformList = signatureFactory(signatureFactory);
+    loadCertificates(signatureFactory);
+
+    NodeList elements = document.getElementsByTagName(tag);
+    org.w3c.dom.Element el = (org.w3c.dom.Element) elements.item(0);
+    el.setIdAttribute(""Id"", true);
+    String id = el.getAttribute(""Id"");
+
+    Reference ref = signatureFactory.newReference(""#"" + id,
+            signatureFactory.newDigestMethod(DigestMethod.SHA1, null),
+            transformList, null, null);
+
+    SignedInfo si = signatureFactory.newSignedInfo(signatureFactory
+            .newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE,
+                    (C14NMethodParameterSpec) null), signatureFactory
+            .newSignatureMethod(SignatureMethod.RSA_SHA1, null),
+            Collections.singletonList(ref));
+
+    XMLSignature signature = signatureFactory.newXMLSignature(si, keyInfo);
+
+    DOMSignContext dsc = new DOMSignContext(privateKey, document.getElementsByTagName(tagPaiSignature).item(0));
+    signature.sign(dsc);
+
+    return outputXML(document);
+}  
+//load certificate
+ protected void loadCertificates(XMLSignatureFactory signatureFactory) throws Exception {
+    if (keyStore != null) {
+        KeyStore.PrivateKeyEntry pkEntry = null;
+        if (keyStore.isKeyEntry(alias)) {
+            char[] pin = (senha == null ? """" : senha).toCharArray();
+            pkEntry = (KeyStore.PrivateKeyEntry) keyStore.getEntry(alias,
+                    new KeyStore.PasswordProtection(pin));
+            privateKey = pkEntry.getPrivateKey();
+            X509Certificate cert = (X509Certificate) pkEntry.getCertificate();
+
+            KeyInfoFactory keyInfoFactory = signatureFactory.getKeyInfoFactory();
+            List<X509Certificate> x509Content = new ArrayList<>();
+
+            x509Content.add(cert);
+            X509Data x509Data = keyInfoFactory.newX509Data(x509Content);
+            keyInfo = keyInfoFactory.newKeyInfo(Collections.singletonList(x509Data));
+        } else {
+            throw new Exception(""Alias do certificado inv�lido."");
+        }
+    } else {
+        throw new Exception(""Informa��es do Certificado inv�lidas."");
+    }
+}
+///normalize xml
+ protected String outputXML(Document doc) throws TransformerException {
+    ByteArrayOutputStream os = new ByteArrayOutputStream();
+    TransformerFactory tf = TransformerFactory.newInstance();
+    Transformer trans = tf.newTransformer();
+    trans.transform(new DOMSource(doc), new StreamResult(os));
+    String xml = os.toString();
+    if ((xml != null) && (!"""".equals(xml))) {
+        xml = xml.replaceAll(""\\r\\n"", """");
+        xml = xml.replaceAll("" standalone=\""no\"""", """");
+    }
+    return xml;
+}
+//load info certificate
+     private void loadInfoCertificado() {
+    System.setProperty(""java.protocol.handler.pkgs"", ""com.sun.net.ssl.internal.www.protocol"");
+    Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
+
+    System.setProperty(""javax.net.ssl.keyStoreType"", ""PKCS12"");
+
+    System.clearProperty(""javax.net.ssl.keyStore"");
+    System.clearProperty(""javax.net.ssl.keyStorePassword"");
+    System.clearProperty(""javax.net.ssl.trustStore"");
+    System.setProperty(""javax.net.ssl.keyStore"", this.keyStoreService.getPathPfx());
+    System.setProperty(""javax.net.ssl.keyStorePassword"", this.keyStoreService.getSenhaPfx());
+
+    System.setProperty(""javax.net.ssl.trustStoreType"", ""JKS"");
+    System.setProperty(""javax.net.ssl.trustStore"", this.pathCacerts);
+
+}
+//send web service
+    private String executarServicoEnvioNFse(String xmlCabecalho, String xmlCorpo) throws ExceptionServicoAbrasf {
+    Input input = new Input(xmlCabecalho, xmlCorpo);
+    Output output = gerarNfse(input);
+    return output.getOutputXML();
+
+}
+//generate conexao web service
+    private Output gerarNfse(ws.Input parameters) throws ExceptionServicoAbrasf {
+    ws.Nfse port = loadNfseDivPort();
+    return port.gerarNfse(parameters);
+}
+//return web service
+    private ws.Nfse loadNfseDivPort() throws ExceptionServicoAbrasf {
+    try {
+        String urlStr = this.tpAmb.equals(TpAmbiente.PRODUCAO) ? this.wsdlLocation : this.wsdlLocationHomolog;
+        URL url = new URL(urlStr);
+        ws.NfseServiceImplDivService service = new ws.NfseServiceImplDivService(url);
+        ws.Nfse port = service.getNfseDivPort();
+        return port;
+    } catch (MalformedURLException ex) {
+        throw new ExceptionServicoAbrasf(""URL do serviço gerarNfse mal formada. "" + ex.getMessage());
+    }
+}",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/76290/uso-de-dois-certificados-diferentes-para-emiss%C3%A3o-de-nfse-abrasf
 Conversão de String para Date através de um formulário html,"Estou tendo problemas na conversão de String para Date, eis os códigos:
 
 Evento:
@@ -3434,7 +3575,7 @@ http://www.portalandroid.org/comunidade/viewtopic.php?f=7&t=17389
 
 porem utiliza Eclipse e tomcat, é possivel a integração entre o Android Studio e o tomcat?
 
-",0,0,0,0,0,0,1,0,,0,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
+",0,0,0,0,0,0,1,0,0,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android,
 Java - Como gerar e exportar um arquivo PBM através de um bitArray?,"Através de um BitArray quero gerar e exportar uma imagem em formato PBM
 
 Passando uma sequencia assim por exemplo:
@@ -4422,7 +4563,7 @@ protected void onPostExecute(String file_url) {
 
 
             }
-        });",0,0,1,1,0,0,1,1,0,,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
+        });",0,0,1,1,0,0,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
 "Login Com Certificado Digital ( E-CPF, E-CNPJ ) com Servlet / JSP","Olá.
 
 Estou querendo desenvolver um sistema de Login similar ao que os portais do governo usam ( E-CAC, NFE e similares ), onde é usado o E-CNPJ para logar.
@@ -8644,7 +8785,7 @@ Setar largura de JDialog de acordo com o tamanho das somas das colunas de uma ta
      }
 Estes são os métodos, usando o pack() ele redimensiona certo, porem eu tenho que fazer isso em todas as janelas do mesmo tipo, como o mesmo tem uma base, fazendo nesta base ela funcionaria para todas que a implementam.
 
-",,0,,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73411/como-passar-a-refer%C3%AAncia-de-um-objeto-java-para-uma-fun%C3%A7%C3%A3o-dentro-de-scriptlet
+",0,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73411/como-passar-a-refer%C3%AAncia-de-um-objeto-java-para-uma-fun%C3%A7%C3%A3o-dentro-de-scriptlet,1,
 Criar Tabelas com Hbernate,"Boa tarde !!
 
 Sou novo com o Hibernate e estou a dois dias tentando implementa a criação de tabelas com ele, já segui vários tutoriais, mas não funciona.

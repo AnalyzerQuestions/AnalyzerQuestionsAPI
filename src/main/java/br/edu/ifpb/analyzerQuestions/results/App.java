@@ -31,7 +31,7 @@ public class App {
 		//resultsTable.detailAnalyzerCoherencyBodyAndTitle();
 		//resultsTable.detailAnalyzerUnderstandableTitle();
 		//resultsTable.detailAnalyzerShowExample();
-		//resultsTable.detailAnalyzerUsingProperLanguage();
+		resultsTable.detailAnalyzerUsingProperLanguage();
 		//resultsTable.detailAnalyzerBeEducated();
 		//resultsTable.detailAnalyzerDetailAboutContext();
 		//resultsTable.detailAnalyzerAnalyzerShortDescriptionQuestion();

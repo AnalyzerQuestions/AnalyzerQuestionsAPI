@@ -1,9 +1,12 @@
 package br.edu.ifpb.analyzerQuestions.util;
 
+import java.io.IOException;
 import java.util.Locale;
 
 import org.cogroo.analyzer.Analyzer;
 import org.cogroo.analyzer.ComponentFactory;
+import org.cogroo.checker.CheckDocument;
+import org.cogroo.checker.GrammarChecker;
 import org.cogroo.text.Document;
 import org.cogroo.text.impl.DocumentImpl;
 
@@ -45,16 +48,23 @@ public class CoGrooUtils {
 	 * @return sim ou não
 	 */
 	public static boolean isCorrectText(String txt) {
-		ComponentFactory factory = ComponentFactory.create(new Locale("pt","BR"));
+		ComponentFactory factory = ComponentFactory.create(new Locale("pt", "BR"));
+		CheckDocument document = null;
 		Analyzer cogroo = factory.createPipe();
 
-		Document document = new DocumentImpl();
-		document.setText(txt);
 
-		cogroo.analyze(document);
+		try {
+			GrammarChecker gc = new GrammarChecker(cogroo);
+			document = new CheckDocument(txt);
+			gc.analyze(document);
+
+		} catch (IllegalArgumentException | IOException e) {
+			e.printStackTrace();
+		}
 		
+		if (document.getMistakes().size() > 0)
+			return false;
 		return true;
-
 	}
 
 	/**

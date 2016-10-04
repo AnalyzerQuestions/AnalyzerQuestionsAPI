@@ -30,7 +30,7 @@ public class App {
 		
 		//resultsTable.detailAnalyzerCoherencyBodyAndTitle();
 		//resultsTable.detailAnalyzerUnderstandableTitle();
-		resultsTable.detailAnalyzerShowExample();
+		//resultsTable.detailAnalyzerShowExample();
 		//resultsTable.detailAnalyzerUsingProperLanguage();
 		//resultsTable.detailAnalyzerBeEducated();
 		//resultsTable.detailAnalyzerDetailAboutContext();
@@ -38,7 +38,7 @@ public class App {
 		//resultsTable.detailAnalyzerObjective();
 		//resultsTable.detailAnalyzerClarity();
 		//resultsTable.detailAnalyzerUnderstandableDescription();
-		//resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
+		resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
 		
 		//resultsTable.detailAnalyzerAvoidCreateDuplicateQuestion(comment);;
 

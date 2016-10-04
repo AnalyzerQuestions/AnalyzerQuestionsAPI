@@ -3575,7 +3575,7 @@ http://www.portalandroid.org/comunidade/viewtopic.php?f=7&t=17389
 
 porem utiliza Eclipse e tomcat, é possivel a integração entre o Android Studio e o tomcat?
 
-",0,0,0,0,0,0,1,0,0,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android,
+",0,0,0,0,0,0,1,0,0,1,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
 Java - Como gerar e exportar um arquivo PBM através de um bitArray?,"Através de um BitArray quero gerar e exportar uma imagem em formato PBM
 
 Passando uma sequencia assim por exemplo:
@@ -4486,7 +4486,7 @@ A situação é a seguinte, minha classe ItemPedidoMOD tem um atributo chamado t
 
 caso for CC eu quero alinha a linha do JTable a esquerda, e caso for CI preciso alinha a linha a direita e pintar a letra de vermelho.
 
-Tem como fazer isso?",1,1,1,1,0,0,0,0,0,o,1,1,http://pt.stackoverflow.com/questions/119920/alinhamento-de-linhas-jtable
+Tem como fazer isso?",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/119920/alinhamento-de-linhas-jtable
 Problemas com encoding no java,"Estou com um problema classico de encoding, fiz varios testes, porem nada resolveu. O problema ocorre apenas com dados trazidos da base de dados em Sql Server, com o texto fixo na tela ta funcionando perfeitamente.
 
 tentei:

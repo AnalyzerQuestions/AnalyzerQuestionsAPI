@@ -1,5 +1,6 @@
 package br.edu.ifpb.analyzerQuestions.analyzers.finaL;
 
+import java.util.List;
 import java.util.StringTokenizer;
 
 import br.edu.ifpb.analyzerQuestions.util.CoGrooUtils;
@@ -244,15 +245,17 @@ public class QuestionAnalyzerFinal {
 	/**
 	 * Evitar perguntas duplicadas
 	 */
-	public Integer analyzerAvoidCreateDuplicateQuestion(String comment) {
+	public Integer analyzerAvoidCreateDuplicateQuestion(List<String> comments) {
 		String[] duplicates = WordsUtils.WORDS_DUPLICATE_CODE;
-
+		
 		for (int i = 0; i < duplicates.length; i++) {
-			if (comment.contains(duplicates[i])) {
-				return 1;
+			for (String comment : comments) {
+				if(comment.contains(duplicates[i])){
+					return 1;
+				}
 			}
 		}
-
+		
 		return 0;
 	}
 

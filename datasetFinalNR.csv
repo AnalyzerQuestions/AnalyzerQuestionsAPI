@@ -383,7 +383,7 @@ Vi os métodos setPic e galleryAddPic no site, mas não sei onde vou aplicar.
 
 Alguém pode ajudar qual código insiro no OnActivityResult?
 
-",1,0,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/108876/obter-uri-de-uma-full-size-foto-pela-camera-no-onactivityresult
+",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/108876/obter-uri-de-uma-full-size-foto-pela-camera-no-onactivityresult
 Como alterar valores do input HTML com EditText utilizando WebView?,"Existe algum jeito de alterar um campo do formulário pegando o valor do EditText, usando um cliente WebView ?
 Tenho uma aplicação no qual acessa meu site e lá tem 2 campos, um de usuário e outro de senha, quando digito nos ""EditText"" o usuário e a senha, preciso que esse valor passe para o formulário html.
 
@@ -466,7 +466,7 @@ W/chromium: [WARNING:proxy_service.cc(888)] PAC support disabled because there i
 W/AwContents: nativeOnDraw failed; clearing to background color.
 I/chromium: [INFO:CONSOLE(1)] ""Uncaught TypeError: Cannot set property 'value' of null"", source:  (1)
 I/chromium: [INFO:async_pixel_transfer_manager_android.cc(56)] Async pixel transfers not supported
-I/chromium: [INFO:async_pixel_transfer_manager_android.cc(56)] Async pixel transfers not supported",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/98313/como-alterar-valores-do-input-html-com-edittext-utilizando-webview
+I/chromium: [INFO:async_pixel_transfer_manager_android.cc(56)] Async pixel transfers not supported",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/98313/como-alterar-valores-do-input-html-com-edittext-utilizando-webview
 "Cliente-Servidor, Threads, erro cliente ao ficar online","Estou desenvolvendo uma aplicação cliente-servidor, o servidor tem duas thread (uma in e outra out) bem implementadas.
 
 Percorro o servidor (tudo bem), percorro o primeiro cliente e coloco como online (tudo bem), percorro o segundo cliente e quando carrego no online ele fica bloqueado.
@@ -554,7 +554,7 @@ EnterpriseDB - Using the NoSQL Capabilities in Postgres
 
 James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL
 
-James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL (repositório GitHub)",1,0,1,1,0,0,0,0,0,0,1,0,http://pt.stackoverflow.com/questions/95819/postgresql-nosql-e-integra%C3%A7%C3%A3o-entre-banco-de-dados-relacionais-e-n%C3%A3o-relacionais
+James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL (repositório GitHub)",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/95819/postgresql-nosql-e-integra%C3%A7%C3%A3o-entre-banco-de-dados-relacionais-e-n%C3%A3o-relacionais
 Acessar array de objeto dentro de um switch,"Boa noite, estou tendo dificuldade em acessar e modificar um array de objetos da classe main dentro de um switch na classe de visão.
 
 O array está declarado assim no main:
@@ -1390,7 +1390,7 @@ public class FileUploader extends HttpServlet {
         response.getWriter().print(ajaxUpdateResult);
 
     }
-}",1,1,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/135709/como-resolver-o-erro-java-lang-indexoutofboundsexception-index-25-size-25
+}",0,0,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/122495/ajax-n%C3%A3o-passa-informa%C3%A7%C3%B5es-para-servlet
 Salvar um arquivo csv,"Estou tentando salvar um arquivo csv com os dados de 2 tabela, então fiz da seguinte forma:
 
 Método escrever:
@@ -1841,7 +1841,7 @@ public class ClientFrame extends JFrame {
         menuItemAjuda[0].addActionListener(sobreHandler);
 
     }
-}",1,1,1,1,0,0,0,0,0,0,1,0,http://pt.stackoverflow.com/questions/116832/implementar-a%C3%A7%C3%A3o-para-o-bot%C3%A3o-salvar
+}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/116832/implementar-a%C3%A7%C3%A3o-para-o-bot%C3%A3o-salvar
 Persistir objeto em CRUD JSF + CDI + JPA,"Estou fazendo um CRUD simples, usando JSF, JPA e CDI.
 
 Tenho duas telas:
@@ -2594,7 +2594,7 @@ android:layout_width=""match_parent""
 android:layout_height=""match_parent""
 android:id=""@+id/map""
 tools:context=""br.com.projeto.caminhossembarreiras.MainActivity""
-android:name=""com.google.android.gms.maps.SupportMapFragment""/>",1,0,1,0,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/120087/erro-de-inflateexception
+android:name=""com.google.android.gms.maps.SupportMapFragment""/>",1,0,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/120087/erro-de-inflateexception
 Como ler arquivos txt e colocar seus dados em um vetor,"Estou tentando fazer um codigo que leia latitudes e longitudes que estão em um arquivo txt. ou seja, colocar o que está no arquivo em um vetor e fazer um laço for para chamar todos dentro da polyline.
 
    try {
@@ -2649,7 +2649,7 @@ Esse é o código:
         </h:panelGrid>
     </p:dialog>
 </h:form>
-</body>",1,1,1,1,0,0,0,1,0,0,1,1,http://pt.stackoverflow.com/questions/68430/pdialog-n%C3%A3o-funciona
+</body>",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/68430/pdialog-n%C3%A3o-funciona
 Como utilizar métodos de redirecionamento com as Servlets Java,"Olá, tenho uma página ordem_servico.jsp com um formulário que quando submetido vai para a ServletInsertOrdemServico que insere os dados do formulário no banco de dados.
 Estou tentando fazer com que quando os dados forem inseridos, o browser retorne para a página ordem_servico.jsp e apresente um alert do javascript dizendo que a ordem foi inserida com sucesso, meu código está assim:
 
@@ -3552,7 +3552,7 @@ public abstract class AbstractNewFinder<T> implements java.io.Serializable {
     }
 
 }",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/128947/nullpointerexception-ao-executar-o-metodo-getrequest
-AutoComplete não funciona em apenas um projeto,"AutoComplete (space + ctrl) não funciona em um Dynamic Web Project com Tomcat. Porém nos outros projetos importados que tenho no eclipse funciona, acredito que é apenas uma configuração no projeto que não está funcionando. Alguma Sugestão?",1,1,0,1,0,0,1,1,1,0,1,1,http://pt.stackoverflow.com/questions/130430/autocomplete-n%C3%A3o-funciona-em-apenas-um-projeto
+AutoComplete não funciona em apenas um projeto,"AutoComplete (space + ctrl) não funciona em um Dynamic Web Project com Tomcat. Porém nos outros projetos importados que tenho no eclipse funciona, acredito que é apenas uma configuração no projeto que não está funcionando. Alguma Sugestão?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/130430/autocomplete-n%C3%A3o-funciona-em-apenas-um-projeto
 Duvidas sobre android,"tenho um programa em delphi ha a possibilidade de eu acessar esse programa através do android?
 
 por exemplo: eu tenho um sistema de restaurante em delphi com uma tela com varias mesas e ao fazer um pedido para determinada mesa, a image button altera para uma outra imagem indicando que existe um pedido para aquela mesa.
@@ -3575,7 +3575,7 @@ http://www.portalandroid.org/comunidade/viewtopic.php?f=7&t=17389
 
 porem utiliza Eclipse e tomcat, é possivel a integração entre o Android Studio e o tomcat?
 
-",0,0,0,0,0,0,1,0,0,1,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
+",1,1,1,0,0,0,1,0,0,1,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
 Java - Como gerar e exportar um arquivo PBM através de um bitArray?,"Através de um BitArray quero gerar e exportar uma imagem em formato PBM
 
 Passando uma sequencia assim por exemplo:
@@ -3586,7 +3586,7 @@ Passando uma sequencia assim por exemplo:
 11110000
 Onde 1 = preto e 0 = branco
 
-Fiz algumas pesquisas sobre isso, seria exatamente o que este site explica: https://pt.wikipedia.org/wiki/Formato_Netpbm",1,1,1,0,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/128462/java-como-gerar-e-exportar-um-arquivo-pbm-atrav%C3%A9s-de-um-bitarray
+Fiz algumas pesquisas sobre isso, seria exatamente o que este site explica: https://pt.wikipedia.org/wiki/Formato_Netpbm",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/128462/java-como-gerar-e-exportar-um-arquivo-pbm-atrav%C3%A9s-de-um-bitarray
 "Problema para converter data para o padrão brasileiro utilizando JAXB
 
 ","Estou com problema ao fazer a conversão do xml em objeto, utilizando JAXB. A data vem no formato Sun Jan 30 16:08:23 BRT 18, e quero converter para o formato brasileiro 12-08-2009 16:08:23.
@@ -3868,7 +3868,7 @@ static class MessageDialogViewHolder extends RecyclerView.ViewHolder implements 
         onItemClickListener.onChatMessageItemClick(message);
     }
 }
-}",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/109114/agrupar-itens-da-recyclerview-pelo-item-time-semelhante-ao-facebook-messenger
+}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/109114/agrupar-itens-da-recyclerview-pelo-item-time-semelhante-ao-facebook-messenger
 "Dúvida sobre atualizar JLabel no JFrame
 
 ","Por que não consigo atualizar meu labelHora no Frame? Usando um print após a linha labelHora.setText(x); percebi que o conteúdo de labelHora muda, mas na tela continua o padrão, que no caso é ""zzz"".
@@ -4563,7 +4563,7 @@ protected void onPostExecute(String file_url) {
 
 
             }
-        });",0,0,1,1,0,0,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
+        });",1,1,1,1,0,0,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
 "Login Com Certificado Digital ( E-CPF, E-CNPJ ) com Servlet / JSP","Olá.
 
 Estou querendo desenvolver um sistema de Login similar ao que os portais do governo usam ( E-CAC, NFE e similares ), onde é usado o E-CNPJ para logar.
@@ -4638,7 +4638,7 @@ Porém NÃO FUNCIONA. Sempre cai na parte ""Cliente sem Certificado Digital 1""
 
 Cheguei a testar em um servidor AWS (Só não fiz o passo 3) com certificado SSL válido e também não deu certo.
 
-Alguma ideia do que pode estar errado?",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/118928/login-com-certificado-digital-e-cpf-e-cnpj-com-servlet-jsp
+Alguma ideia do que pode estar errado?",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/118928/login-com-certificado-digital-e-cpf-e-cnpj-com-servlet-jsp
 Mongodb parando de funcionar,"Estamos na empresa testando um projeto usando banco de dados MongoDB. O banco está instalado em um servidor Linux(CentOS), com 32GB de RAM, mas vez ou outra o banco de dados para de funcionar e precisa ser iniciado novamente.
 
 Alguém que já teve experiência com MongoDB e também enfrentou esse problema?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/104846/mongodb-parando-de-funcionar
@@ -5234,7 +5234,7 @@ public class SecureJavaxWebSocketServer
             t.printStackTrace(System.err);
         }
     }
-}",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/110710/conex%C3%A3o-websocket-com-aplica%C3%A7%C3%A3o-java
+}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/110710/conex%C3%A3o-websocket-com-aplica%C3%A7%C3%A3o-java
 Java trabalhando JSON,"Bom, estou iniciando meus estudos em java, por este motivo estou meio cru nas possibilidade, nas bibliotecas e outras qualidades que existem na programação JAVA. Dentro muitas duvidas gostaria de entender se existe alguma forma de pegar um objeto do tipo ResultSet que no caso é o retorno de um query feita da seguinte maneira:
 
  ResultSet rs_tbl_CONTROLE_SINCRONISMO = con.query(""SELECT * FROM DB_EGLISE.tbl_CONTROLE_SINCRONISMO;"");
@@ -5281,7 +5281,7 @@ Existe alguma forma de fazer isto?
 
 Encontrei uma possível solução no StackOverflow que parece ser gambiarra. Mas ela não funciona na versão 8 do Java, é lançada uma exceção ao chamar:
 
-Field field = Class.class.getDeclaredField(""annotations"");",1,1,1,1,0,0,0,1,1,1,1,1,http://pt.stackoverflow.com/questions/130666/%C3%89-poss%C3%ADvel-alterar-o-valor-de-uma-anota%C3%A7%C3%A3o-em-tempo-de-execu%C3%A7%C3%A3o
+Field field = Class.class.getDeclaredField(""annotations"");",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/130666/%C3%89-poss%C3%ADvel-alterar-o-valor-de-uma-anota%C3%A7%C3%A3o-em-tempo-de-execu%C3%A7%C3%A3o
 Java charset - Como ler corretamente do System.in?,"Estou criando um aplicativo para trocar mensagens entre computadores utilizando Sockets, através do cmd ou terminal (quero que rode em linux e windows, aplicação de console).
 
 Mas estou com problema quanto a codificação. Quando leio um entrada através do System.in, no console do Windows 7, a saída é bugada. Com o seguinte código:
@@ -5763,7 +5763,7 @@ public class SellItem implements Serializable {
     private Sell sell;
     //Getters e setter omitidos
 }
-Caso necessário, peça mais informações nos comentários.",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/139632/erro-repository-spring-de-entidade-com-relacionamentos
+Caso necessário, peça mais informações nos comentários.",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/139632/erro-repository-spring-de-entidade-com-relacionamentos
 Como desativar componente no JFrame,"Tenho dois JFrames o primeiro tem o nome de ""Sistema"" e outro ""Acessar"" quando concluir a autenticação no ""Acessar"" queria que o componente chamado de ""mnUsuario"" que está descrito abaixo fosse desativado para que eu possa ter um controle sobre os privilégios de cada usuário no programa.
 
 JFrame: Sistema
@@ -6237,7 +6237,7 @@ protected void processRequest(HttpServletRequest request, HttpServletResponse re
 try (PrintWriter out = response.getWriter()) {
 
     }
-}",1,1,1,1,0,0,1,1,1,1,1,0,http://pt.stackoverflow.com/questions/101477/ler-json-gerado-jquery-post-com-servlet-java
+}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/101477/ler-json-gerado-jquery-post-com-servlet-java
 Exibir vídeo com JavaCV usando applet,"Estou utilizando um applet que exibe imagem de uma câmera de segurança através do JavaCV.
 
 Executando sozinho, o applet exibe o vídeo perfeitamente.
@@ -8610,7 +8610,7 @@ for(int rowIndex = 1;rowIndex<=10;rowIndex++)
     Cell data = row.createCell(0);
     data.setCellValue(""10/02/2012"");
 
-}",0,0,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/134680/preencher-serie-xls-com-poi-java
+}",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/134680/preencher-serie-xls-com-poi-java
 Dispositivo dá erro e depois reinicia após tentar desinstalar aplicação,"Estou tendo um bug com a aplicação que eu criei, o código está compilando normal e sem nenhum erro ou warning, e a aplicação também está funcionando no celular, mas quando eu tento desinstalar essa aplicação do celular eu recebo a seguinte mensagem:
 
 ""O aplicativo instalador do pacote parou.""
@@ -8785,7 +8785,7 @@ Setar largura de JDialog de acordo com o tamanho das somas das colunas de uma ta
      }
 Estes são os métodos, usando o pack() ele redimensiona certo, porem eu tenho que fazer isso em todas as janelas do mesmo tipo, como o mesmo tem uma base, fazendo nesta base ela funcionaria para todas que a implementam.
 
-",0,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73411/como-passar-a-refer%C3%AAncia-de-um-objeto-java-para-uma-fun%C3%A7%C3%A3o-dentro-de-scriptlet,1,
+",1,0,0,0,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73019/setar-largura-de-jdialog-de-acordo-com-o-tamanho-das-somas-das-colunas-de-uma-ta
 Criar Tabelas com Hbernate,"Boa tarde !!
 
 Sou novo com o Hibernate e estou a dois dias tentando implementa a criação de tabelas com ele, já segui vários tutoriais, mas não funciona.
@@ -9275,7 +9275,7 @@ public class ProdutoBean implements Serializable {
         this.fotoDAO = fotoDAO;
     }
 
-}",0,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/65726/m%C3%A9todo-com-fileuploadevent-de-managedbean-n%C3%A3o-encontrado-javax-el-methodnotfoun
+}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/65726/m%C3%A9todo-com-fileuploadevent-de-managedbean-n%C3%A3o-encontrado-javax-el-methodnotfoun
 Como tratar exceção em uma Webview?,"Queria saber como tratar exceções na minha Webview, pois as vezes o site ta off, e a pagina não carrega, e as vezes ate trava a aplicação. tentei um try catch no load, mas não entra na exceção, quero que quando o servidor estiver off, ele mande a mensagem, SERVIDOR INDISPONÍVEL!
 
 vejam minha Webview:

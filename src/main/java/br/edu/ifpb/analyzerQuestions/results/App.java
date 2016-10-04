@@ -15,7 +15,7 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFinalNR2.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFinalNR3.csv");
 		List<QuestionsDataSetPojo> listQuestionsDS = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");
@@ -38,7 +38,7 @@ public class App {
 		//resultsTable.detailAnalyzerObjective();
 		//resultsTable.detailAnalyzerClarity();
 		//resultsTable.detailAnalyzerUnderstandableDescription();
-		//resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
+		resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
 		
 		//resultsTable.detailAnalyzerAvoidCreateDuplicateQuestion(comment);;
 

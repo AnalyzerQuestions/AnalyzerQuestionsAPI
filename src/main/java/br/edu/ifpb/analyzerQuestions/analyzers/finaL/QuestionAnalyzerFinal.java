@@ -18,10 +18,12 @@ import br.edu.ifpb.analyzerQuestions.util.similarity.ScoreSimilarity;
 public class QuestionAnalyzerFinal {
 
 	private String javaClasses;
+	private String javaClassesException;
 	private static final Float VALUE_SIMILARITY = 0.05f;
 
 	public QuestionAnalyzerFinal() {
 		this.setClassesJava();
+		this.setClassesJavaExceptions();
 	}
 
 	/**
@@ -33,12 +35,19 @@ public class QuestionAnalyzerFinal {
 	 * possua uma quantidade minima de código java, ou explicitamente na
 	 * descrição tenha algo que remeta a palavra exemplo.
 	 */
+<<<<<<< HEAD
 	public Integer analyzerShowExample(String description) {
 		// description = StringUtil.removeConnective(description);
+=======
+	public Integer analyzerShowExample(String description){
+		description = StringUtil.removeConnective(description);
+>>>>>>> dc053ddbee7e9c9317b2f710fa1557482ba6d389
 
 		if (frenquencyOfCode(description, 1) >= 4) {
 			return 1;
+		
 		}
+		
 
 		String strSplited[] = StringTokenizerUtils.parseToken(description);
 		for (int i = 0; i < strSplited.length; i++) {
@@ -50,7 +59,8 @@ public class QuestionAnalyzerFinal {
 				}
 			}
 		}
-		return 0;
+		
+		return containsLog(description);
 	}
 
 	/**
@@ -450,5 +460,50 @@ public class QuestionAnalyzerFinal {
 	private void setClassesJava() {
 		javaClasses = ReaderFile.readerTxt("classJava.txt").toLowerCase();
 	}
+<<<<<<< HEAD
 
+=======
+	
+	/**
+	 * método auxiliar para carregar os nomes das classes exception do java. Deve ser
+	 * executado antes para não ter que fazer conexão com a pagina toda vez.
+	 */
+	private void setClassesJavaExceptions(){
+		javaClassesException = ReaderFile.readerTxt("classOnlyExceptionJava.txt");
+	}
+	
+	/**
+	 * <p>
+	 * Verifica se a descrição contém uma exception java e se contém algum palavra restrita a logs
+	 * </p>
+	 * 
+	 */
+	private Integer containsLog(String description) {
+
+		String s1 = StringUtil.replaceByDot(description).toLowerCase();
+		
+		String[] tJavaExceptionClasses = StringTokenizerUtils.parseToken(javaClassesException);
+		
+		int countFreq = 0;
+		
+		for (int i = 0 ; i < tJavaExceptionClasses.length; i++){
+			if(s1.contains(tJavaExceptionClasses[i].toLowerCase())){
+				countFreq = 1;
+			}
+		}
+		
+		for(int i = 0 ; i < WordsUtils.WORDS_LOG.length ; i++){
+			if(s1.contains(WordsUtils.WORDS_LOG[i])){
+				countFreq ++;
+			}
+		}
+		
+		if (countFreq > 1) {
+			return 1;
+		}
+		
+		return 0;
+	}
+	
+>>>>>>> dc053ddbee7e9c9317b2f710fa1557482ba6d389
 }

@@ -33,7 +33,7 @@ public class QuestionAnalyzerFinal {
 	 * descrição tenha algo que remeta a palavra exemplo.
 	 */
 	public Integer analyzerShowExample(String description){
-		description = StringUtil.removeConnective(description);
+		//description = StringUtil.removeConnective(description);
 
 		if (frenquencyOfCode(description, 1) >= 4) {
 			return 1;

@@ -44,7 +44,7 @@ public class WordsUtils {
 	 * pergunta
 	 */
 	public final static String[] WORDS_EXAMPLES = { "por exemplo", "codigo",
-			"segue o codigo", "ex:", "por exemplo:", "exemplo", "exemplo:" };
+			"segue o codigo", "ex:", "por exemplo:", "exemplo", "exemplo:","{","}", "seguinte código", "xml"  };
 
 	/**
 	 * Lista de palavras que podem ajudar na identificação de uma palavra

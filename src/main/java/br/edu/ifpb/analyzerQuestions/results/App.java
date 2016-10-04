@@ -29,7 +29,7 @@ public class App {
 		
 		
 		//resultsTable.detailAnalyzerCoherencyBodyAndTitle();
-		resultsTable.detailAnalyzerUnderstandableTitle();
+		//resultsTable.detailAnalyzerUnderstandableTitle();
 		//resultsTable.detailAnalyzerShowExample();
 		//resultsTable.detailAnalyzerUsingProperLanguage();
 		//resultsTable.detailAnalyzerBeEducated();

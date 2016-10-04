@@ -38,7 +38,7 @@ public class App {
 		//resultsTable.detailAnalyzerObjective();
 		//resultsTable.detailAnalyzerClarity();
 		//resultsTable.detailAnalyzerUnderstandableDescription();
-		resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
+		//resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
 		
 		//resultsTable.detailAnalyzerAvoidCreateDuplicateQuestion(comment);;
 

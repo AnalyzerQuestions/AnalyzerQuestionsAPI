@@ -1390,7 +1390,7 @@ public class FileUploader extends HttpServlet {
         response.getWriter().print(ajaxUpdateResult);
 
     }
-}",1,1,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/135709/como-resolver-o-erro-java-lang-indexoutofboundsexception-index-25-size-25
+}",0,0,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/122495/ajax-n%C3%A3o-passa-informa%C3%A7%C3%B5es-para-servlet
 Salvar um arquivo csv,"Estou tentando salvar um arquivo csv com os dados de 2 tabela, então fiz da seguinte forma:
 
 Método escrever:
@@ -3575,7 +3575,7 @@ http://www.portalandroid.org/comunidade/viewtopic.php?f=7&t=17389
 
 porem utiliza Eclipse e tomcat, é possivel a integração entre o Android Studio e o tomcat?
 
-",0,0,0,0,0,0,1,0,0,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android,
+",1,0,0,0,0,0,1,0,0,1,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
 Java - Como gerar e exportar um arquivo PBM através de um bitArray?,"Através de um BitArray quero gerar e exportar uma imagem em formato PBM
 
 Passando uma sequencia assim por exemplo:
@@ -4563,7 +4563,7 @@ protected void onPostExecute(String file_url) {
 
 
             }
-        });",0,0,1,1,0,0,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
+        });",1,0,1,1,0,0,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
 "Login Com Certificado Digital ( E-CPF, E-CNPJ ) com Servlet / JSP","Olá.
 
 Estou querendo desenvolver um sistema de Login similar ao que os portais do governo usam ( E-CAC, NFE e similares ), onde é usado o E-CNPJ para logar.
@@ -8610,7 +8610,7 @@ for(int rowIndex = 1;rowIndex<=10;rowIndex++)
     Cell data = row.createCell(0);
     data.setCellValue(""10/02/2012"");
 
-}",0,0,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/134680/preencher-serie-xls-com-poi-java
+}",1,0,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/134680/preencher-serie-xls-com-poi-java
 Dispositivo dá erro e depois reinicia após tentar desinstalar aplicação,"Estou tendo um bug com a aplicação que eu criei, o código está compilando normal e sem nenhum erro ou warning, e a aplicação também está funcionando no celular, mas quando eu tento desinstalar essa aplicação do celular eu recebo a seguinte mensagem:
 
 ""O aplicativo instalador do pacote parou.""
@@ -8785,7 +8785,7 @@ Setar largura de JDialog de acordo com o tamanho das somas das colunas de uma ta
      }
 Estes são os métodos, usando o pack() ele redimensiona certo, porem eu tenho que fazer isso em todas as janelas do mesmo tipo, como o mesmo tem uma base, fazendo nesta base ela funcionaria para todas que a implementam.
 
-",0,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73411/como-passar-a-refer%C3%AAncia-de-um-objeto-java-para-uma-fun%C3%A7%C3%A3o-dentro-de-scriptlet,1,
+",1,0,0,0,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73019/setar-largura-de-jdialog-de-acordo-com-o-tamanho-das-somas-das-colunas-de-uma-ta
 Criar Tabelas com Hbernate,"Boa tarde !!
 
 Sou novo com o Hibernate e estou a dois dias tentando implementa a criação de tabelas com ele, já segui vários tutoriais, mas não funciona.
@@ -9275,7 +9275,7 @@ public class ProdutoBean implements Serializable {
         this.fotoDAO = fotoDAO;
     }
 
-}",0,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/65726/m%C3%A9todo-com-fileuploadevent-de-managedbean-n%C3%A3o-encontrado-javax-el-methodnotfoun
+}",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/65726/m%C3%A9todo-com-fileuploadevent-de-managedbean-n%C3%A3o-encontrado-javax-el-methodnotfoun
 Como tratar exceção em uma Webview?,"Queria saber como tratar exceções na minha Webview, pois as vezes o site ta off, e a pagina não carrega, e as vezes ate trava a aplicação. tentei um try catch no load, mas não entra na exceção, quero que quando o servidor estiver off, ele mande a mensagem, SERVIDOR INDISPONÍVEL!
 
 vejam minha Webview:

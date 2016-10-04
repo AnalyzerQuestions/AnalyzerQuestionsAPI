@@ -35,20 +35,13 @@ public class QuestionAnalyzerFinal {
 	 * possua uma quantidade minima de código java, ou explicitamente na
 	 * descrição tenha algo que remeta a palavra exemplo.
 	 */
-<<<<<<< HEAD
 	public Integer analyzerShowExample(String description) {
-		// description = StringUtil.removeConnective(description);
-=======
-	public Integer analyzerShowExample(String description){
-		description = StringUtil.removeConnective(description);
->>>>>>> dc053ddbee7e9c9317b2f710fa1557482ba6d389
-
+		
 		if (frenquencyOfCode(description, 1) >= 4) {
 			return 1;
 		
 		}
 		
-
 		String strSplited[] = StringTokenizerUtils.parseToken(description);
 		for (int i = 0; i < strSplited.length; i++) {
 			for (int j = 0; j < WordsUtils.WORDS_EXAMPLES.length; j++) {
@@ -460,10 +453,7 @@ public class QuestionAnalyzerFinal {
 	private void setClassesJava() {
 		javaClasses = ReaderFile.readerTxt("classJava.txt").toLowerCase();
 	}
-<<<<<<< HEAD
 
-=======
-	
 	/**
 	 * método auxiliar para carregar os nomes das classes exception do java. Deve ser
 	 * executado antes para não ter que fazer conexão com a pagina toda vez.
@@ -504,6 +494,4 @@ public class QuestionAnalyzerFinal {
 		
 		return 0;
 	}
-	
->>>>>>> dc053ddbee7e9c9317b2f710fa1557482ba6d389
 }

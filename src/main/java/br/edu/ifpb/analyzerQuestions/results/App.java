@@ -31,14 +31,14 @@ public class App {
 		//resultsTable.detailAnalyzerCoherencyBodyAndTitle();
 		//resultsTable.detailAnalyzerUnderstandableTitle();
 		//resultsTable.detailAnalyzerShowExample();
-		resultsTable.detailAnalyzerUsingProperLanguage();
+		//resultsTable.detailAnalyzerUsingProperLanguage();
 		//resultsTable.detailAnalyzerBeEducated();
 		//resultsTable.detailAnalyzerDetailAboutContext();
 		//resultsTable.detailAnalyzerAnalyzerShortDescriptionQuestion();
 		//resultsTable.detailAnalyzerObjective();
 		//resultsTable.detailAnalyzerClarity();
 		//resultsTable.detailAnalyzerUnderstandableDescription();
-		resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
+	//	resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
 		
 		//resultsTable.detailAnalyzerAvoidCreateDuplicateQuestion(comment);;
 

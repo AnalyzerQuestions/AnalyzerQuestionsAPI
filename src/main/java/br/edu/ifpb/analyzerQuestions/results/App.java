@@ -15,7 +15,7 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFinalNR3.csv");
+		ReaderQuestions readerQuestions = new ReaderQuestions("datasetFinalNR.csv");
 		List<QuestionsDataSetPojo> listQuestionsDS = readerQuestions.readCsvFile();
 
 /*		ReaderQuestions readerQuestions2 = new ReaderQuestions("datasetSR.csv");

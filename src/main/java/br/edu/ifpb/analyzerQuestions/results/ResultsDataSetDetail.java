@@ -96,13 +96,13 @@ public class ResultsDataSetDetail {
 		int trueNeg = 0;
 		
 		for (QuestionsDataSetPojo qds : questionsDataSet) {
-			System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
+			//System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
 
 			int resultMethod = questionAnalyzer.analyzerClarity(qds.getTitle(), qds.getBody());
 			int resultDataset = Integer.parseInt(qds.getClareza());
 			
 			if(resultMethod == resultDataset){
-				System.out.println("IGUAL (" + resultMethod +"-"+resultDataset+")");
+			//	System.out.println("IGUAL (" + resultMethod +"-"+resultDataset+")");
 				equal++;
 				
 				if(resultMethod == 1){
@@ -112,6 +112,8 @@ public class ResultsDataSetDetail {
 				}
 				
 			}else{
+				System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
+
 				System.out.println("DIFERENTE (" + resultMethod +"-"+resultDataset + ")");
 				different ++;
 			}

@@ -1,6 +1,6 @@
-# Analyzer Questions API (Deprecated)
+# Analyzer Questions API (Analyzers Deprecated)
 
-### API para análise de atratividade de questões de programação
+### Project for analysis of GUJ questions and stack Overflow
 [![Build Status](https://travis-ci.org/AnalyzerQuestions/AnalyzerQuestionsAPI.svg?branch=master)](https://travis-ci.org/AnalyzerQuestions/AnalyzerQuestionsAPI)
 
 

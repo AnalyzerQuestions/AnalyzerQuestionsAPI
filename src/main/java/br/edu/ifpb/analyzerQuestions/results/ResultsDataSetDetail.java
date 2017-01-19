@@ -317,40 +317,7 @@ public class ResultsDataSetDetail {
 			questionNumber ++;
 		}
 		this.output(equal, different, truePos, trueNeg);
-	}	
-
-	public void detailAnalyzerAvoidCreateDuplicateQuestion(String comment){
-		
-		int questionNumber = 1;
-		int equal = 0;
-		int different = 0;
-		int truePos = 0;
-		int trueNeg = 0;
-		
-		for (QuestionsDataSetPojo qds : questionsDataSet) {
-			System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
-
-			int resultMethod = questionAnalyzer.analyzerAvoidCreateDuplicateQuestion(comment);
-			int resultDataset = Integer.parseInt(qds.getEvPerguntaDuplicada());
-			
-			if(resultMethod == resultDataset){
-				System.out.println("IGUAL (" + resultMethod +"-"+resultDataset+")");
-				equal++;
-				
-				if(resultMethod == 1){
-					truePos++;
-				}else{
-					trueNeg++;
-				}
-				
-			}else{
-				System.out.println("DIFERENTE (" + resultMethod +"-"+resultDataset + ")");
-				different ++;
-			}
-			questionNumber ++;
-		}
-		this.output(equal, different, truePos, trueNeg);
-	}	
+	}		
 
 	public void detailAnalyzerAnalyzerShortDescriptionQuestion(){
 			

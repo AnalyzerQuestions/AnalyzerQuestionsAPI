@@ -29,15 +29,7 @@ public class WordsUtils {
 			"já resolvido", "problema duplicado", "possível duplicação",
 			"problema resolvido" };
 
-	/**
-	 * Lista de palavras que podem identificar um exemplo numa pergunta
-	 */
-	public final static String WORDS_CODE = "abstract,assert,boolean,break,byte,case,catch,char,class,const,default"
-			+ "else,enum,extends,false,final,finally,float,for,goto"
-			+ "if,implements,instanceof,int,long,native,new,null"
-			+ "private,protected,public,return,short,static,strictfp,super,switch,synchronized"
-			+ "this,throw,throws,transient,true,try,void,volatile,while,continue,equals,out,interger,"
-			+ "valueof,super,get,set,|,||,&,&&,from. where,like,select,join";
+	public final static String[] WORDS_URL = {"http://", "https://"};
 
 	/**
 	 * Lista de palavras que podem identificador presença de exemplo numa
@@ -308,8 +300,4 @@ public class WordsUtils {
 			"xtivermos", "xtivesse", "xtivessem", "xtiveste", "xtivestes",
 			"xtou", "xtas", "xtao", "n" };
 
-	public static String[] getWordsCode() {
-		String[] splited = WORDS_CODE.split(",");
-		return splited;
-	}
 }

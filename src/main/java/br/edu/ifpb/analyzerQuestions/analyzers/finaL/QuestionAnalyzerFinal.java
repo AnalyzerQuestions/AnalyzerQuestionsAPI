@@ -516,6 +516,25 @@ public class QuestionAnalyzerFinal {
 		return 0;
 	}
 	
+	/**
+	 * 
+	 * @param description
+	 * @return
+	 */
+	public int combinateURLWithContent(String description) {
+		if(this.getURL(description) == null) return 0;
+		
+		String url = this.getURL(description);
+		String contentPage = this.getContentOfPage(url);
+		contentPage = StringUtil.removerTagsHtml(contentPage);
+		
+		String descriptionReferenceUrl = this.getDescriptionReferentURL(description);
+		int coherency = this.analyzerCoherencyBodyAndTitle(description,descriptionReferenceUrl);
+			
+		return coherency;
+		
+	}
+	
 	private String getURL(String description) {
 		String[] tDescription = StringTokenizerUtils.parseToken(description);
 		for (int i = 0; i < tDescription.length; i++) {
@@ -532,11 +551,23 @@ public class QuestionAnalyzerFinal {
 		for (int i = 0; i < tDescription.length; i++) {
 			if (isURI(tDescription[i])) {
 				for (int j = i+1; j < tDescription.length; j++) {
-					afterParagraph += tDescription[j];
+					afterParagraph += tDescription[j] +" ";
+				}
+
+				for (int j = i-1; j >= 0; j--) {
+					char t = tDescription[j].charAt(tDescription[j].length()-1);
+					if(t == '.'){
+						char in = tDescription[j+1].charAt(0);
+						if(Character.isUpperCase(in)) {
+							for (int k = j+1; k < i; k++) {
+								afterParagraph+= tDescription[k] + " ";
+							}
+						}
+					}
 				}
 			}
 		}
-		return afterParagraph + " " + beforeParagraph;
+		return beforeParagraph +" "+ afterParagraph;
 	}
 
 	/**
@@ -552,20 +583,6 @@ public class QuestionAnalyzerFinal {
 		} catch (MalformedURLException e) {
 			return false;
 		}
-	}
-	
-	public int combinateURLWithContent(String description) {
-		if(this.getURL(description) == null) return 0;
-		
-		String url = this.getURL(description);
-		String contentPage = this.getContentOfPage(url);
-		contentPage = StringUtil.removerTagsHtml(contentPage);
-		
-		String descriptionReferenceUrl = this.getDescriptionReferentURL(description);
-		int coherency = this.analyzerCoherencyBodyAndTitle(description,descriptionReferenceUrl);
-			
-		return coherency;
-		
 	}
 	
 	/**
@@ -597,20 +614,5 @@ public class QuestionAnalyzerFinal {
 		
 		String content = sb.toString(); 
 		return content.equals("")? null:content;
-	}
-
-	
-	public static void main(String[] args) {
-		QuestionAnalyzerFinal f = new QuestionAnalyzerFinal();
-		
-		String str = "http://www.google.com";
-		
-		System.out.println(f.containsURL(str));
-		
-		System.out.println(f.getContentOfPage(str));
-		
-		System.out.println(f.combinateURLWithContent("dedede dededededede http://www.google.com mvn jc"));
-		
-		System.out.println(f.getDescriptionReferentURL("dedededede. Miidededde dedede   http://google.com. efrfr fr fr fr"));
 	}
 }

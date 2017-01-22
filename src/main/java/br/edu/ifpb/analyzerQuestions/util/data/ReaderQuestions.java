@@ -34,7 +34,9 @@ public class ReaderQuestions {
 					"pergBemDefinida", 
 					"evCriarPergDuplicada", 
 					"evPergSobreTrabAcademicos",
-					"Link", 
+					"terLink",
+					"combLinkConteudo",
+					"Link"
 	};
 		
 	private static final String TITLE = "title";
@@ -51,6 +53,8 @@ public class ReaderQuestions {
 	private static final String PERGUNTA_BEM_DEFINIDA = "pergBemDefinida";
 	private static final String EV_CRIAR_PERGUNTAS_DUPLICADAS = "evCriarPergDuplicada";
 	private static final String EV_PERG_SOBRE_TRAB_ACADEMICOS = "evPergSobreTrabAcademicos";
+	private static final String TER_LINK = "terLink";
+	private static final String COMB_LINK_CONTEUDO = "combLinkConteudo";
 
 	private static String FILE_NAME;
 	private List<QuestionsDataSetPojo> questions;
@@ -91,7 +95,9 @@ public class ReaderQuestions {
 						record.get(CLAREZA), 
 						record.get(PERGUNTA_BEM_DEFINIDA),
 						record.get(EV_CRIAR_PERGUNTAS_DUPLICADAS),
-						record.get(EV_PERG_SOBRE_TRAB_ACADEMICOS));
+						record.get(EV_PERG_SOBRE_TRAB_ACADEMICOS),
+						record.get(TER_LINK),
+						record.get(COMB_LINK_CONTEUDO));
 				
 				questions.add(question);
 			}

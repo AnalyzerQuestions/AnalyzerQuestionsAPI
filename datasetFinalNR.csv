@@ -1,4 +1,4 @@
-title,body,coerenciaTeD,tituloBemDefinido,exemplo,usoNormaCultaLing,educacao,detailContexto,descricaoCurta,objetividade,clareza,pergBemDefinida,evCriarPergDuplicada,evPergSobreTrabAcademicos,Link
+title,body,coerenciaTeD,tituloBemDefinido,exemplo,usoNormaCultaLing,educacao,detailContexto,descricaoCurta,objetividade,clareza,pergBemDefinida,evCriarPergDuplicada,evPergSobreTrabAcademicos,terLink,combLinkConteudo,Link
 “Too many connections” Java + Msql,"Olá, estou com seguinte problema, eu tenho uma função que busca no banco e retorna um objeto. Tenho uma função ""for"" que chama esse metodo quase que 300 vezes, devido a essa quantidade de chamadas o mysql está retornando o seguinte erro.
 
 Algo deu errado ao fazer uma ação envolvendo formulações. com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: ""Too many connections""
@@ -66,7 +66,7 @@ public class Conexao {
         return conn;
     }
 }
-",1,1,1,1,0,0,0,0,0,0,0,1,http://pt.stackoverflow.com/questions/122495/ajax-n%C3%A3o-passa-informa%C3%A7%C3%B5es-para-servlet
+",1,1,1,1,0,0,0,0,0,0,0,1,0,0,http://pt.stackoverflow.com/questions/122495/ajax-n%C3%A3o-passa-informa%C3%A7%C3%B5es-para-servlet
 Semáforo: Problemas na detecção de deadlock,"Fiz uma pesquisa por aqui e não encontrei nada que finalizasse minhas dúvidas, com isso, espero que alguém possa me ajudar. Vou colocar o código aqui, pra que vocês visualizem melhor o problema. Ah, qualquer sugestão de organização do código e sobre quem tem responsabilidade de quê é muito bem vinda também.
 
 O problema é o seguinte:
@@ -325,7 +325,7 @@ public class Main {
         p.start();
         //p1.start();
     }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/82112/sem%C3%A1foro-problemas-na-detec%C3%A7%C3%A3o-de-deadlock
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/82112/sem%C3%A1foro-problemas-na-detec%C3%A7%C3%A3o-de-deadlock
 "Obter URI de uma full size foto pela Camera no OnActivityResult
 
 ","Estou usando a câmera do Android para tirar foto e salvá-la a partir de um WebService. Consegui fazer isso, porém usando o método de pegar uma thumbnail. A minha intenção é pegar a imagem em full size.
@@ -383,7 +383,7 @@ Vi os métodos setPic e galleryAddPic no site, mas não sei onde vou aplicar.
 
 Alguém pode ajudar qual código insiro no OnActivityResult?
 
-",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/108876/obter-uri-de-uma-full-size-foto-pela-camera-no-onactivityresult
+",1,0,1,1,0,0,0,0,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/108876/obter-uri-de-uma-full-size-foto-pela-camera-no-onactivityresult
 Como alterar valores do input HTML com EditText utilizando WebView?,"Existe algum jeito de alterar um campo do formulário pegando o valor do EditText, usando um cliente WebView ?
 Tenho uma aplicação no qual acessa meu site e lá tem 2 campos, um de usuário e outro de senha, quando digito nos ""EditText"" o usuário e a senha, preciso que esse valor passe para o formulário html.
 
@@ -466,7 +466,7 @@ W/chromium: [WARNING:proxy_service.cc(888)] PAC support disabled because there i
 W/AwContents: nativeOnDraw failed; clearing to background color.
 I/chromium: [INFO:CONSOLE(1)] ""Uncaught TypeError: Cannot set property 'value' of null"", source:  (1)
 I/chromium: [INFO:async_pixel_transfer_manager_android.cc(56)] Async pixel transfers not supported
-I/chromium: [INFO:async_pixel_transfer_manager_android.cc(56)] Async pixel transfers not supported",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/98313/como-alterar-valores-do-input-html-com-edittext-utilizando-webview
+I/chromium: [INFO:async_pixel_transfer_manager_android.cc(56)] Async pixel transfers not supported",1,0,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/98313/como-alterar-valores-do-input-html-com-edittext-utilizando-webview
 "Cliente-Servidor, Threads, erro cliente ao ficar online","Estou desenvolvendo uma aplicação cliente-servidor, o servidor tem duas thread (uma in e outra out) bem implementadas.
 
 Percorro o servidor (tudo bem), percorro o primeiro cliente e coloco como online (tudo bem), percorro o segundo cliente e quando carrego no online ele fica bloqueado.
@@ -497,7 +497,7 @@ public PainelEstadoContacto(JanelaUtilizador janelaUtilizador) {
             new Thread(new ThreadCliente(this.socket)).start();                              }
         this.socketCliente.enviar(mensagem);
 
-    });",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/104848/cliente-servidor-threads-erro-cliente-ao-ficar-online
+    });",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/104848/cliente-servidor-threads-erro-cliente-ao-ficar-online
 PostgreSQL NoSQL e integração entre banco de dados relacionais e não-relacionais,"Estive pesquisando sobre PostgreSQL NoSQL e encontrei o conceito de Key-Value Stores em algumas publicações, também do HSTORE. Além disso pesquisei também sobre a integração entre o PostgreSQL e com o framework Spring e encontrei o seguinte exemplo de código:
 
 package com.jamesward.model;
@@ -554,7 +554,7 @@ EnterpriseDB - Using the NoSQL Capabilities in Postgres
 
 James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL
 
-James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL (repositório GitHub)",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/95819/postgresql-nosql-e-integra%C3%A7%C3%A3o-entre-banco-de-dados-relacionais-e-n%C3%A3o-relacionais
+James Ward - NoSQL Inside SQL with Java, Spring, Hibernate, and PostgreSQL (repositório GitHub)",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/95819/postgresql-nosql-e-integra%C3%A7%C3%A3o-entre-banco-de-dados-relacionais-e-n%C3%A3o-relacionais
 Acessar array de objeto dentro de um switch,"Boa noite, estou tendo dificuldade em acessar e modificar um array de objetos da classe main dentro de um switch na classe de visão.
 
 O array está declarado assim no main:
@@ -653,7 +653,7 @@ public Cliente cadastraCliente() {
 
   return umCliente;   
   }
-A minha duvida é sobre como eu posso criar um array de objetos (na classe principal), e pelo switch acessar esse método para adicionar um cliente.",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/99673/acessar-array-de-objeto-dentro-de-um-switch
+A minha duvida é sobre como eu posso criar um array de objetos (na classe principal), e pelo switch acessar esse método para adicionar um cliente.",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/99673/acessar-array-de-objeto-dentro-de-um-switch
 JavaMail: MailBox sempre baixa os mesmos email,"Estou baixando os emails do Gmail, e guardando no banco de dados os que são importantes para o sistema do meu cliente.
 
 Só que o problema está quando uso o código abaixo, ele sempre me retorna os mesmos emails, ficando em duplicidade.
@@ -705,7 +705,7 @@ try {
     e.printStackTrace();
 } catch (Exception e) {
     e.printStackTrace();
-}",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/81483/javamail-mailbox-sempre-baixa-os-mesmos-email
+}",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/81483/javamail-mailbox-sempre-baixa-os-mesmos-email
 "SelectOneMenu não é carregado ao selecinar objeto para edição
 
 ","Tenho um componente SelectOneMenu (Primefaces) de cidades, que é carregado de acordo com o estado selecionado.
@@ -838,7 +838,7 @@ selectOneMenu Estado e Cidade junto com commandLink que busca o objeto seleciona
     <p:graphicImage value=""/resources/img/icon/Edit16x16.png"" />
     <f:setPropertyActionListener value=""#{obj}"" target=""#{funcionarioBean.funcionario}"" />
   </p:commandLink>
-</p:column>",1,1,1,1,0,0,0,0,0,0,1,1,1
+</p:column>",1,1,1,1,0,0,0,0,0,0,1,1,0,0,link
 "Uso de dois certificados diferentes para emissão de nfse abrasf
 ","Estou enviando notas para a abrasf usando o código abaixo para carregar informações do certificado keystrore e tals.
 
@@ -981,7 +981,7 @@ Segue código:
     } catch (MalformedURLException ex) {
         throw new ExceptionServicoAbrasf(""URL do serviço gerarNfse mal formada. "" + ex.getMessage());
     }
-}",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/76290/uso-de-dois-certificados-diferentes-para-emiss%C3%A3o-de-nfse-abrasf
+}",1,1,1,0,0,0,0,0,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/76290/uso-de-dois-certificados-diferentes-para-emiss%C3%A3o-de-nfse-abrasf
 Conversão de String para Date através de um formulário html,"Estou tendo problemas na conversão de String para Date, eis os códigos:
 
 Evento:
@@ -1289,7 +1289,7 @@ public Result getPageditarEvento(long id) {
 }
 
 }
-Eis o problema, através do formulário html, onde eu vou pegar os atributos para criar um novo evento, vou usar o que foi preenchido e através do eventoController setar os atributos na classe Evento, porém quando se trata de pegar os valores dos 2 datetime-local inicioEvento e TerminoEvento (formulário html) e usá-los para setar os atributos inicio e fim da classe Evento, eu me deparo com um pequeno problema. Aparentemente os datetime-local do formulário html retornam Strings e os setInicio() e setTermino() da classe Evento requerem um Date como parâmetro, mas eu não consigo fazer tal conversão dentro da classe eventoController, alguma ideia de como fazer?",1,1,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/125010/convers%C3%A3o-de-string-para-date-atrav%C3%A9s-de-um-formul%C3%A1rio-html
+Eis o problema, através do formulário html, onde eu vou pegar os atributos para criar um novo evento, vou usar o que foi preenchido e através do eventoController setar os atributos na classe Evento, porém quando se trata de pegar os valores dos 2 datetime-local inicioEvento e TerminoEvento (formulário html) e usá-los para setar os atributos inicio e fim da classe Evento, eu me deparo com um pequeno problema. Aparentemente os datetime-local do formulário html retornam Strings e os setInicio() e setTermino() da classe Evento requerem um Date como parâmetro, mas eu não consigo fazer tal conversão dentro da classe eventoController, alguma ideia de como fazer?",1,1,1,1,1,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/125010/convers%C3%A3o-de-string-para-date-atrav%C3%A9s-de-um-formul%C3%A1rio-html
 Ajax não passa informações para servlet,"<form id=""form1"">    
 
     <label for=""sampleText"">Please enter a text</label>
@@ -1390,7 +1390,7 @@ public class FileUploader extends HttpServlet {
         response.getWriter().print(ajaxUpdateResult);
 
     }
-}",0,0,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/122495/ajax-n%C3%A3o-passa-informa%C3%A7%C3%B5es-para-servlet
+}",0,0,1,1,1,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/122495/ajax-n%C3%A3o-passa-informa%C3%A7%C3%B5es-para-servlet
 Salvar um arquivo csv,"Estou tentando salvar um arquivo csv com os dados de 2 tabela, então fiz da seguinte forma:
 
 Método escrever:
@@ -1605,7 +1605,7 @@ public class ExportarPedidoTask extends AsyncTask<String, Void, Boolean> {
             }
         }
     }
-e é o mesmo erro.",1,1,1,1,1,0,0,0,0,1,1,1,http://pt.stackoverflow.com/questions/134316/salvar-um-arquivo-csv
+e é o mesmo erro.",1,1,1,1,1,0,0,0,0,1,1,1,0,0,http://pt.stackoverflow.com/questions/134316/salvar-um-arquivo-csv
 Implementar ação para o botão salvar,"Sou novato em programação e contruí a GUI da imagem a partir de uma exemplo do livro da faculdade, porém o botão salvar não tem nenhum funcionalidade. E peço auxilio para implementar no botão salvar algum código que salve os dados informados em uma tabela. // classe principal
 
 import javax.swing.JFrame;
@@ -1841,7 +1841,7 @@ public class ClientFrame extends JFrame {
         menuItemAjuda[0].addActionListener(sobreHandler);
 
     }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/116832/implementar-a%C3%A7%C3%A3o-para-o-bot%C3%A3o-salvar
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/116832/implementar-a%C3%A7%C3%A3o-para-o-bot%C3%A3o-salvar
 Persistir objeto em CRUD JSF + CDI + JPA,"Estou fazendo um CRUD simples, usando JSF, JPA e CDI.
 
 Tenho duas telas:
@@ -1948,7 +1948,7 @@ public class DBEntityCO implements Converter {
         (...)
         return string;
     }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/109198/persistir-objeto-em-crud-jsf-cdi-jpa
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/109198/persistir-objeto-em-crud-jsf-cdi-jpa
 Atualizar JProgressBar em quanto ler um arquivo,"estou desenvolvendo uma aplicação que vai realizar leitura e escrita de um determinado arquivo txt, que segue um padrão. Eu vou ler um arquivo, realizar algumas limpezas nesse arquivo, e em seguida escrever um novo arquivo. Coloquei uma barra de progresso para ficar mais fácil pra o usuário quanto ao processo. Minha duvida consiste em vincular o tempo do processo de leitura/escrita, ao avançar da barra de progresso. Eu incrementei a barra usando Thread, mas os tempos não casam. Queria saber se tem alguma forma de pegar o tempo exato do processo de leitura/escrita, e atualizar a barra. Obrigado!
 
 EDIÇÃO
@@ -2026,8 +2026,8 @@ new Thread() {
     }.start();
 Minha única dúvida realmente é como vincular o tempo do processo ao status da barra.
 
-",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/104347/atualizar-jprogressbar-em-quanto-ler-um-arquivo
-Clicar em dia no JCalendar?,"Como faço para colocar um evento em cada dia do JCalendar? Minha intenção é clicar em um dia e criar uma espécie de lembrete que fica relacionado com o dia, de um jeito que quando o usuário clica novamente no dia ele vê o lembrete, mas não faço ideia de como fazer com que cada dia do calendário funcione como um botão.",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/101389/clicar-em-dia-no-jcalendar
+",1,1,1,0,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/104347/atualizar-jprogressbar-em-quanto-ler-um-arquivo
+Clicar em dia no JCalendar?,"Como faço para colocar um evento em cada dia do JCalendar? Minha intenção é clicar em um dia e criar uma espécie de lembrete que fica relacionado com o dia, de um jeito que quando o usuário clica novamente no dia ele vê o lembrete, mas não faço ideia de como fazer com que cada dia do calendário funcione como um botão.",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/101389/clicar-em-dia-no-jcalendar
 Spring Boot configuração erro: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter,"Spring Boot configuração erro: org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter
 
 votar a favor
@@ -2324,7 +2324,7 @@ POM.xml
             </plugin>
         </plugins>
         <finalName>restaurante</finalName>
-    </build>",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/129348/spring-boot-configura%C3%A7%C3%A3o-erro-org-springframework-boot-autoconfigure-orm-jpa-jp
+    </build>",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/129348/spring-boot-configura%C3%A7%C3%A3o-erro-org-springframework-boot-autoconfigure-orm-jpa-jp
 Problemas para gerar o JSON com JAVA,"Estou com problemas para gerar este json
 
 {
@@ -2557,7 +2557,7 @@ private List<RelatorioReceitasTO> orderRevenuesListbyID(List<ReceitaTO> receitas
     }
     return receitas;
 }
-",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/110789/problemas-para-gerar-o-json-com-java
+",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/110789/problemas-para-gerar-o-json-com-java
 Erro de InflateException,"Estou recebendo um erro de InflateException, porem não sei como resolver.
 
 Erro:
@@ -2594,7 +2594,7 @@ android:layout_width=""match_parent""
 android:layout_height=""match_parent""
 android:id=""@+id/map""
 tools:context=""br.com.projeto.caminhossembarreiras.MainActivity""
-android:name=""com.google.android.gms.maps.SupportMapFragment""/>",1,0,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/120087/erro-de-inflateexception
+android:name=""com.google.android.gms.maps.SupportMapFragment""/>",1,0,1,0,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/120087/erro-de-inflateexception
 Como ler arquivos txt e colocar seus dados em um vetor,"Estou tentando fazer um codigo que leia latitudes e longitudes que estão em um arquivo txt. ou seja, colocar o que está no arquivo em um vetor e fazer um laço for para chamar todos dentro da polyline.
 
    try {
@@ -2621,7 +2621,7 @@ Como ler arquivos txt e colocar seus dados em um vetor,"Estou tentando fazer um 
     } catch (Exception e) {
         e.printStackTrace();
     }
-o problema é que a polyline nunca aparece quando coloco esse codigo e nao estou encontrando o erro nele. ja tentei colocar o arquivo no raw e usar R.raw e no assets e usar o getAssets(), nenhum dos dois abriu a polyline tambem as linhas estao sem delimitaçoes, ou seja, so dei enter mesmo pra ir pra outra linha, mas antes tinha feito um texto delimitando com ; e usando stringtokenizer e tambem nao apareceu as polylines",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/75362/como-ler-arquivos-txt-e-colocar-seus-dados-em-um-vetor
+o problema é que a polyline nunca aparece quando coloco esse codigo e nao estou encontrando o erro nele. ja tentei colocar o arquivo no raw e usar R.raw e no assets e usar o getAssets(), nenhum dos dois abriu a polyline tambem as linhas estao sem delimitaçoes, ou seja, so dei enter mesmo pra ir pra outra linha, mas antes tinha feito um texto delimitando com ; e usando stringtokenizer e tambem nao apareceu as polylines",1,1,1,0,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/75362/como-ler-arquivos-txt-e-colocar-seus-dados-em-um-vetor
 <p:dialog> não funciona,"Estou seguindo o exemplo do showcase porém não funciona. Era pra aparecer um icone e depois que eu clicasse nesse ícone ele abria o Dialog porém quando abro a página já fica desse jeito:
 
 Esse é o código:
@@ -2649,7 +2649,7 @@ Esse é o código:
         </h:panelGrid>
     </p:dialog>
 </h:form>
-</body>",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/68430/pdialog-n%C3%A3o-funciona
+</body>",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/68430/pdialog-n%C3%A3o-funciona
 Como utilizar métodos de redirecionamento com as Servlets Java,"Olá, tenho uma página ordem_servico.jsp com um formulário que quando submetido vai para a ServletInsertOrdemServico que insere os dados do formulário no banco de dados.
 Estou tentando fazer com que quando os dados forem inseridos, o browser retorne para a página ordem_servico.jsp e apresente um alert do javascript dizendo que a ordem foi inserida com sucesso, meu código está assim:
 
@@ -2669,7 +2669,7 @@ Ao invés de usar o getRequestDispatcher(), eu já tentei usar o response.sendRe
 
 Alguém que já passou por essa situação teria alguma sugestão?
 
-Agradeço a todos!",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/63099/como-utilizar-m%C3%A9todos-de-redirecionamento-com-as-servlets-java
+Agradeço a todos!",1,1,1,1,0,0,1,1,1,1,1,1,1,0,http://pt.stackoverflow.com/questions/63099/como-utilizar-m%C3%A9todos-de-redirecionamento-com-as-servlets-java
 Como faço para uma imagem não passar por cima de outra?,"Tudo bem? Tenho um código em que posso movimentar várias imagens com o mouse mas ao arrastar uma imagem ela passa por cima das outras. Quero movimenta-la sem passar por cima.
 
 Segue os códigos:
@@ -2801,7 +2801,7 @@ XML:
     android:src=""@drawable/ic_launcher"" />
 
 </RelativeLayout>
-",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/63601/como-fa%C3%A7o-para-uma-imagem-n%C3%A3o-passar-por-cima-de-outra
+",1,0,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/63601/como-fa%C3%A7o-para-uma-imagem-n%C3%A3o-passar-por-cima-de-outra
 Erro de session em Java,"Tenho os seguintes métodos :
 
 public void delete(Class c, int id) throws SQLException {        
@@ -2825,7 +2825,7 @@ public Object getById(Class c, Integer id) {
 }
 Porém a seguinte exception é retornada: Illegal attempt to associate a collection with two open sessions
 
-O que devo fazer ?",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/63004/erro-de-session-em-java
+O que devo fazer ?",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/63004/erro-de-session-em-java
 Como trocar mensagens com cliente e servidor java Socket?,"Não estou conseguindo fazer a troca de mensagens de servidor para o cliente java Socket.
 
 O servidor está pronto, mas o cliente não consegue fazer de acordo com o servidor. Qual é a classe que envia mensagem para o servidor?
@@ -2957,7 +2957,7 @@ public class MessageCliente {
         saida.close(); 
     }
 }
-",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/119478/como-trocar-mensagens-com-cliente-e-servidor-java-socket
+",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/119478/como-trocar-mensagens-com-cliente-e-servidor-java-socket
 "Como configurar DB atravez de uma variavel de ambiente
 
 ","tenho uma aplicação JSP em varios clientes.
@@ -2970,7 +2970,7 @@ private static String getUrlBanco() {
 O problema eh que não e padrão a localização da base e o arquivo eh compactado junto com o war, o que me obriga a gerar um war por cliente.
 
 Queria um meio de que isso fosse setado fora da aplicação, sei lá, por variável de ambiente, por configuração no tomcat...
-Aceito sugestões",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/114926/como-configurar-db-atravez-de-uma-variavel-de-ambiente
+Aceito sugestões",1,1,1,0,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/114926/como-configurar-db-atravez-de-uma-variavel-de-ambiente
 "Método que chama thread para consultar um web service sempre retorna null
 
 ","Quando vou chamar este método a seguir em outra classe ele está retornando null. Porem já realizei o debug na linha ""return listNotas;"" e ela está sendo preenchida normalmente.
@@ -3045,7 +3045,7 @@ public List<Nota> baixarNotas (final String matricula, final int etapa){
 
         return listaNotas;
 }
-",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/153886/m%C3%A9todo-que-chama-thread-para-consultar-um-web-service-sempre-retorna-null
+",1,0,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/153886/m%C3%A9todo-que-chama-thread-para-consultar-um-web-service-sempre-retorna-null
 Clico no botão mas não acontece nada,"Boa noite, quando clico em algum dos botões de editar ou excluir não tenho ação, coloquei um breakpoint nos 2 métodos pra ver se passava por lá mas nada. Alguém me ajuda a entender onde estou errando?
 
 Minha página:
@@ -3073,7 +3073,7 @@ public void excluir(Long id){
         }
 }
 
-",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/133351/clico-no-bot%C3%A3o-mas-n%C3%A3o-acontece-nada
+",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/133351/clico-no-bot%C3%A3o-mas-n%C3%A3o-acontece-nada
 Sql de cidades e estados do mundo,"Olá, boa noite.
 
 Tudo bem ?
@@ -3083,7 +3083,7 @@ Eu estou fazendo três JComboBox em java. Uma para nacionalidades, cidades e est
 Obrigada.
 
 Abraços.
-",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/132105/sql-de-cidades-e-estados-do-mundo
+",1,1,0,1,0,0,1,1,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/132105/sql-de-cidades-e-estados-do-mundo
 Como manter o contexto de uma Lista fora da Thread,"Queria carregar a lista na Thread e depois ter acesso a mesma após o termino da ação.
 
 Tem este código mas ao termino da thread a lista esta null;
@@ -3129,7 +3129,7 @@ public class ThreadListarClientes {
         this.contaid = contaid;
     }
 }
-j",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/131977/como-manter-o-contexto-de-uma-lista-fora-da-thread
+j",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/131977/como-manter-o-contexto-de-uma-lista-fora-da-thread
 Erro no Servlet,"Estou fazendo uma aplicação web que busque pessoas no meu banco, eu digo algo na index.html e mando pesquisar, passa pelo FrontControllerServlet e vai para o controller correto. So que esta lançando execeção no RequestDispatcher e no doPost, nunca vi esse erro.
 
 o stacktracee é este:
@@ -3207,7 +3207,7 @@ public String getServletInfo() {
     return ""Short description"";
 }// </editor-fold>
 
-}",1,0,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/131801/erro-no-servlet
+}",1,0,1,0,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/131801/erro-no-servlet
 "Problemas de biblioteca no servidor JBoss
 
 ","Estou com um problema meio estranho, minha aplicação funciona perfeitamente no NetBeans porém ao subir para o servidor o mesmo esta dando erro, diz que não encontra algumas bibliotecas. Achei muito estranho tendo em vista que todas as bibliotecas estão no classpath e que no Glassfish do Jboss inicia normalmente. Testei também no Tomcat e funcionou.
@@ -3424,7 +3424,7 @@ Caused by: java.lang.ClassNotFoundException: com.google.common.base.Predicate fr
     at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:456)
     at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
     at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:120)
-    ... 25 more",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/114865/problemas-de-biblioteca-no-servidor-jboss
+    ... 25 more",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/114865/problemas-de-biblioteca-no-servidor-jboss
 NullPointerException ao executar o metodo getRequest(),"Olá.
 
 Criei uma classe abstrata para realizar pesquisas, essa minha classe tem um param com escopo de pedido, na primeira chamada ao método getBeanFromParam() o funcionamento do método é perfeito, do jeito que eu preciso. Quando esse método é chamado novamente, está me retornando o seguinte erro:
@@ -3551,8 +3551,8 @@ public abstract class AbstractNewFinder<T> implements java.io.Serializable {
         return (T) Util.jsonMapper(json, this.getBeanClass());
     }
 
-}",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/128947/nullpointerexception-ao-executar-o-metodo-getrequest
-AutoComplete não funciona em apenas um projeto,"AutoComplete (space + ctrl) não funciona em um Dynamic Web Project com Tomcat. Porém nos outros projetos importados que tenho no eclipse funciona, acredito que é apenas uma configuração no projeto que não está funcionando. Alguma Sugestão?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/130430/autocomplete-n%C3%A3o-funciona-em-apenas-um-projeto
+}",1,1,1,0,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/128947/nullpointerexception-ao-executar-o-metodo-getrequest
+AutoComplete não funciona em apenas um projeto,"AutoComplete (space + ctrl) não funciona em um Dynamic Web Project com Tomcat. Porém nos outros projetos importados que tenho no eclipse funciona, acredito que é apenas uma configuração no projeto que não está funcionando. Alguma Sugestão?",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/130430/autocomplete-n%C3%A3o-funciona-em-apenas-um-projeto
 Duvidas sobre android,"tenho um programa em delphi ha a possibilidade de eu acessar esse programa através do android?
 
 por exemplo: eu tenho um sistema de restaurante em delphi com uma tela com varias mesas e ao fazer um pedido para determinada mesa, a image button altera para uma outra imagem indicando que existe um pedido para aquela mesa.
@@ -3575,7 +3575,7 @@ http://www.portalandroid.org/comunidade/viewtopic.php?f=7&t=17389
 
 porem utiliza Eclipse e tomcat, é possivel a integração entre o Android Studio e o tomcat?
 
-",1,1,1,0,0,0,1,0,0,1,1,1,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
+",1,1,1,0,0,0,1,0,0,1,1,1,1,0,http://pt.stackoverflow.com/questions/128913/duvidas-sobre-android
 Java - Como gerar e exportar um arquivo PBM através de um bitArray?,"Através de um BitArray quero gerar e exportar uma imagem em formato PBM
 
 Passando uma sequencia assim por exemplo:
@@ -3586,7 +3586,7 @@ Passando uma sequencia assim por exemplo:
 11110000
 Onde 1 = preto e 0 = branco
 
-Fiz algumas pesquisas sobre isso, seria exatamente o que este site explica: https://pt.wikipedia.org/wiki/Formato_Netpbm",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/128462/java-como-gerar-e-exportar-um-arquivo-pbm-atrav%C3%A9s-de-um-bitarray
+Fiz algumas pesquisas sobre isso, seria exatamente o que este site explica: https://pt.wikipedia.org/wiki/Formato_Netpbm",1,1,1,0,0,0,1,1,1,1,1,1,1,0,http://pt.stackoverflow.com/questions/128462/java-como-gerar-e-exportar-um-arquivo-pbm-atrav%C3%A9s-de-um-bitarray
 "Problema para converter data para o padrão brasileiro utilizando JAXB
 
 ","Estou com problema ao fazer a conversão do xml em objeto, utilizando JAXB. A data vem no formato Sun Jan 30 16:08:23 BRT 18, e quero converter para o formato brasileiro 12-08-2009 16:08:23.
@@ -3608,7 +3608,7 @@ public class DateAdapter extends XmlAdapter<String, Date> {
         return dateFormat.parse(v);
     }
 
-}",1,0,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/113417/problema-para-converter-data-para-o-padr%C3%A3o-brasileiro-utilizando-jaxb
+}",1,0,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/113417/problema-para-converter-data-para-o-padr%C3%A3o-brasileiro-utilizando-jaxb
 Agrupar itens da recyclerview pelo item.time semelhante ao facebook messenger,"Estou tentando criar comportamento semelhante ao que acontece no Facebook Messenger, quando se enviar varias mensagens consecutivas, para isso criei vários background drawables com border radius diferentes para serem aplicados nos itens da recyclerview e dar a aparência de que um item tem relação com o outro.
 
 Existe um método addItem que é usado para postar um novo item na conversa e nele eu tenho minha lógica que verifica se a paracarpo do tempo da última mensagem e a mensagem atual é inferior a 5 segundos, e se sim, é feito um loop para iterar os últimos itens da lista e aplicar o novo layout com base em alguns testes lógicos que irão decidir se o item terá a aparência de topo no grupo, de centro ou de rodapé, isso é feito através de 4 métodos do adaptes, sao eles: setItemAsTop, setItemAsBottom, setItemAsCenter e setItemAsSingle para o caso da mensagem não entrar no teste dos 5s, estes métodos simplesmente mudam o valor de uma variável e notificam a mudança, variável que é usada para aplicar o layout na celular no item em cada passada do onBindViewHolder.
@@ -3868,7 +3868,7 @@ static class MessageDialogViewHolder extends RecyclerView.ViewHolder implements 
         onItemClickListener.onChatMessageItemClick(message);
     }
 }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/109114/agrupar-itens-da-recyclerview-pelo-item-time-semelhante-ao-facebook-messenger
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/109114/agrupar-itens-da-recyclerview-pelo-item-time-semelhante-ao-facebook-messenger
 "Dúvida sobre atualizar JLabel no JFrame
 
 ","Por que não consigo atualizar meu labelHora no Frame? Usando um print após a linha labelHora.setText(x); percebi que o conteúdo de labelHora muda, mas na tela continua o padrão, que no caso é ""zzz"".
@@ -3970,14 +3970,14 @@ public class DataEHora extends FrameInicio{
 }
 Essa atualizaria.
 
-",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/101450/d%C3%BAvida-sobre-atualizar-jlabel-no-jframe
+",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/101450/d%C3%BAvida-sobre-atualizar-jlabel-no-jframe
 Abrir JFrame no Java maximizado,"Estou com um problema, estou criando um JFrame e quero que ele abra maximizado. Estou utilizando o seguinte código:
 
 frame.setExtendedState(Frame.MAXIMIZED_BOTH);
 frame.setLocationRelativeTo(null);
 O tamanho do JFrame está maximizado, mas o botão para eu maximizar ainda está disponível, então, se eu clicar nele, ele aumenta a tela um pouquinho mais ainda.
 
-Quero abrir ele maximizado de verdade, com o botão de restaurar tamanho disponível. Alguém sabe o que tem de errado no código? Ou como fazer? Obrigado.",1,1,1,1,1,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/126211/abrir-jframe-no-java-maximizado
+Quero abrir ele maximizado de verdade, com o botão de restaurar tamanho disponível. Alguém sabe o que tem de errado no código? Ou como fazer? Obrigado.",1,1,1,1,1,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/126211/abrir-jframe-no-java-maximizado
 Preencher double zero a esquerda em java,"Gostaria de saber como faço para formatar um doouble com duas casas a esquerda do ponto e duas a direita do ponto.
 
 Exemplo: tenho o double 1.1
@@ -3986,7 +3986,7 @@ quero que seja formatado para 01.10;
 
 entrada: 10.1 / 1.05
 
-saída : 10.01 / 01.05",1,1,1,1,1,0,1,1,1,1,0,1,http://pt.stackoverflow.com/questions/126063/preencher-double-zero-a-esquerda-em-java
+saída : 10.01 / 01.05",1,1,1,1,1,0,1,1,1,1,0,1,0,0,http://pt.stackoverflow.com/questions/126063/preencher-double-zero-a-esquerda-em-java
 Invalidar caracteres de um MaskFormatter,"Então galera, tenho uma janela onde preciso passar por uma validação de campos nulos de diversos JTextField e um JFormattedTextField, onde este último possui uma máscara para números de telefone ""(##)####-####"". O fato é que mesmo eu não digitando nada nesse campo, ele pega os caracteres da máscara : ()- e entende que o campo não está nulo. Gostaria de saber se não há algum método que ignore caracteres de uma máscara, ou vou ter que fazer todo aquele trampo com substring ? Vale deixar claro que eu apenas quero ignorar na hora da validação, e não remover esses caracteres, pois depois terei que apresentá-los ao usuário !
 
 Como instancio :
@@ -4000,8 +4000,8 @@ try {
     txtTel = new JFormattedTextField(mskTel);
 Como é feita a validação :
 
-form.txtTel.getText() == null || form.txtTel.getText().trim().isEmpty()",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/125412/invalidar-caracteres-de-um-maskformatter
-Certificar PDF com Java,"Estou desenvolvendo um sistema de GED(Gestão Eletrônica de Documentos) em Java Web. Nesse sistema necessito ter uma funcionalidade de certificar PDF, no qual será utilizado o certificado do modelo A3. Não tenho ideia de como fazer isto. Alguém pode me ajudar?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/123730/certificar-pdf-com-java
+form.txtTel.getText() == null || form.txtTel.getText().trim().isEmpty()",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/125412/invalidar-caracteres-de-um-maskformatter
+Certificar PDF com Java,"Estou desenvolvendo um sistema de GED(Gestão Eletrônica de Documentos) em Java Web. Nesse sistema necessito ter uma funcionalidade de certificar PDF, no qual será utilizado o certificado do modelo A3. Não tenho ideia de como fazer isto. Alguém pode me ajudar?",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/123730/certificar-pdf-com-java
 Inserção de dados - Chaves estrangeiras em Java,"Estou com um pouco de dificuldade para implementar as chaves estrangeiras no meu projeto.
 
 DAOProduto.java
@@ -4255,7 +4255,7 @@ public void setRazaosocial_Fornecedor(String razaosocial_Fornecedor) {
 }
 
 }
-j",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/101317/inser%C3%A7%C3%A3o-de-dados-chaves-estrangeiras-em-java
+j",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/101317/inser%C3%A7%C3%A3o-de-dados-chaves-estrangeiras-em-java
 Adicionar JComponents num JDialog/JFrame,"Então, eu tenho três JLabel e JTextField para adicionar em um painel, e dois JButton e um JTable para adicionar em outro painel, de modo que um fique em baixo do outro. Eu crio um painel mais genérico (pnlPrincipal) para setar suas posições através do BorderLayout., adiciono tudo certinho, só que no JDialog só aparecem componentes avulsos.
 
 Trecho onde eu adiciono os painéis :
@@ -4306,7 +4306,7 @@ Depois desse trecho, eu dou new em todos os componentes que vou usar no pnlDep:
 
     scr.setViewportView(grid);
     pnlDep.add(BorderLayout.CENTER, scr);
-Depois eu adiciono mais dois botões avulsos na janela, e eles são os únicos que aparecem na janela, o resto dos elementos não aparecem ... OBS: O tamanho da janela é : 650x500 !",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/123029/adicionar-jcomponents-num-jdialog-jframe
+Depois eu adiciono mais dois botões avulsos na janela, e eles são os únicos que aparecem na janela, o resto dos elementos não aparecem ... OBS: O tamanho da janela é : 650x500 !",1,1,1,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/123029/adicionar-jcomponents-num-jdialog-jframe
 Mostrar Fragment em Activity com transição,"Boa tarde, possuo uma activity principal com um botão e gostaria que quando a pessoa clicasse nesse botão esse fragment abrisse na tela, são três botões dentro de um linear layout.
 
 <FrameLayout xmlns:android=""http://schemas.android.com/apk/res/android""
@@ -4366,10 +4366,10 @@ tools:context=""com.example.jelbez.wolterskluwer_agendadeobricacoes.DrawerFragme
         android:drawablePadding=""10dp""
         android:textAlignment=""textStart""
         android:paddingLeft=""30dp""/>
-</LinearLayout>",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/100751/mostrar-fragment-em-activity-com-transi%C3%A7%C3%A3o
+</LinearLayout>",1,1,1,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/100751/mostrar-fragment-em-activity-com-transi%C3%A7%C3%A3o
 Como utilizar atalhos o jMenuItem com uma jTable?,"Enquanto seleciono uma linha da minha jTable não consigo utilizar as teclas de atalho do meu jMenuItem.
 
-Como faço para utilizar os dois componentes juntos?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/120304/como-utilizar-atalhos-o-jmenuitem-com-uma-jtable
+Como faço para utilizar os dois componentes juntos?",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/120304/como-utilizar-atalhos-o-jmenuitem-com-uma-jtable
 Alinhamento de linhas JTable,"
 votar contra
 favorita
@@ -4486,7 +4486,7 @@ A situação é a seguinte, minha classe ItemPedidoMOD tem um atributo chamado t
 
 caso for CC eu quero alinha a linha do JTable a esquerda, e caso for CI preciso alinha a linha a direita e pintar a letra de vermelho.
 
-Tem como fazer isso?",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/119920/alinhamento-de-linhas-jtable
+Tem como fazer isso?",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/119920/alinhamento-de-linhas-jtable
 Problemas com encoding no java,"Estou com um problema classico de encoding, fiz varios testes, porem nada resolveu. O problema ocorre apenas com dados trazidos da base de dados em Sql Server, com o texto fixo na tela ta funcionando perfeitamente.
 
 tentei:
@@ -4500,7 +4500,7 @@ e outras, mas não consegui resolver o problema, segue a baixo um registro da ta
 
 ""EstÃƒÂ¡ ocorrendo uma falha no cadastro WS""
 
-alguem sabe me o q posso fazer pra resolver isso?",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/118125/problemas-com-encoding-no-java
+alguem sabe me o q posso fazer pra resolver isso?",1,1,1,0,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/118125/problemas-com-encoding-no-java
 Variável Edittext dentro de Hashmap,"Estou tentando usar um SimpleAdapter que mostra um textview e um edittext. Sendo que ambas já vem preenchidas (o textview com um nome e o editext com um valor). Estou tentando modificar os valores dentro do edittext e salvá-los como novas variáveis, ou sobreescrever as antigas. Segue a classe:
 
 protected String doInBackground(String... args) {
@@ -4563,7 +4563,7 @@ protected void onPostExecute(String file_url) {
 
 
             }
-        });",1,1,1,1,0,0,1,1,0,1,1,1,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
+        });",1,1,1,1,0,0,1,1,0,1,1,1,0,0,http://pt.stackoverflow.com/questions/117970/vari%C3%A1vel-edittext-dentro-de-hashmap
 "Login Com Certificado Digital ( E-CPF, E-CNPJ ) com Servlet / JSP","Olá.
 
 Estou querendo desenvolver um sistema de Login similar ao que os portais do governo usam ( E-CAC, NFE e similares ), onde é usado o E-CNPJ para logar.
@@ -4638,17 +4638,17 @@ Porém NÃO FUNCIONA. Sempre cai na parte ""Cliente sem Certificado Digital 1""
 
 Cheguei a testar em um servidor AWS (Só não fiz o passo 3) com certificado SSL válido e também não deu certo.
 
-Alguma ideia do que pode estar errado?",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/118928/login-com-certificado-digital-e-cpf-e-cnpj-com-servlet-jsp
+Alguma ideia do que pode estar errado?",1,0,1,1,0,0,0,0,0,0,1,1,1,0,http://pt.stackoverflow.com/questions/118928/login-com-certificado-digital-e-cpf-e-cnpj-com-servlet-jsp
 Mongodb parando de funcionar,"Estamos na empresa testando um projeto usando banco de dados MongoDB. O banco está instalado em um servidor Linux(CentOS), com 32GB de RAM, mas vez ou outra o banco de dados para de funcionar e precisa ser iniciado novamente.
 
-Alguém que já teve experiência com MongoDB e também enfrentou esse problema?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/104846/mongodb-parando-de-funcionar
+Alguém que já teve experiência com MongoDB e também enfrentou esse problema?",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/104846/mongodb-parando-de-funcionar
 JSF + Wildfly conexão em vários bancos dinamicamente,"Olá, tenho uma aplicação Web utilizando JSF + CDI + JPA e o WildFly 8 como servidor de aplicação. Até o momento estou deixando o servidor gerenciar as transações, onde as informações de conexão com o banco de dados, serviços de email, autenticação... estão nas configurações do servidor (standalone.xml). Agora meu problema é que preciso que o sistema acesse várias bases de dados. De forma que quando o cliente for logar, ele coloque seu login e senha e também escolha a base de dados.
 
 Já pesquisei bastante e soluções como multi-tenancy não pareceram muito interessantes. Pensei também em tirar essa responsabilidade do servidor, fazendo a conexão na aplicação e ainda conseguindo utiliza as injeções normalmente, mas eu teria que fazer muitas alterações no sistema.
 
 Alguma dica ou ideia de como resolver este problema?
 
-Obrigado desde já galera!",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/153307/jsf-wildfly-conex%C3%A3o-em-v%C3%A1rios-bancos-dinamicamente
+Obrigado desde já galera!",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/153307/jsf-wildfly-conex%C3%A3o-em-v%C3%A1rios-bancos-dinamicamente
 Configuração Template jsp usando Apache Tiles com Spring,"Fiz toda cofiguração abaixo, porém a estrutura do Template que criei usando o Tiles, não está sendo apresentado na página principal juntamente com seu CSS. Se alguém puder ajudar!
 
 tiles-config.xml
@@ -5112,7 +5112,7 @@ Pom.xml
         </plugins>
         <finalName>restaurante</finalName>
     </build>
-</project>",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/128062/configura%C3%A7%C3%A3o-template-jsp-usando-apache-tiles-com-spring
+</project>",1,1,1,1,0,0,0,0,0,0,1,1,1,0,http://pt.stackoverflow.com/questions/128062/configura%C3%A7%C3%A3o-template-jsp-usando-apache-tiles-com-spring
 Gerar tooltip utilizando ChartFactory do JFreeChart,"Boa tarde,
 
 Estou criando gráficos utilizando o método :
@@ -5129,7 +5129,7 @@ http://www.jfree.org/jfreechart/api/javadoc/org/jfree/chart/ChartFactory.html
 
 do objeto ChartFactory sendo um de seus parâmetros é o boolean tooltips. Eu gostaria de fazer aparecer em uma coluna do gráfico (ao usuário passar o mouse em cima) a quantidade de amostra utilizada para chegar naquele valor (dado este que já possuo). Setando esse tooptips como true, gostaria de saber como atribuir um valor para ele.
 
-Agradeço desde já.",1,1,1,1,1,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/111066/gerar-tooltip-utilizando-chartfactory-do-jfreechart
+Agradeço desde já.",1,1,1,1,1,0,1,1,1,1,1,1,1,0,http://pt.stackoverflow.com/questions/111066/gerar-tooltip-utilizando-chartfactory-do-jfreechart
 Como alterar TextSize do AlertDialog?,"Como posso alterar o TextSize da mensagem do AlertDialog?
 
 Pesquisando achei este exemplo:
@@ -5137,7 +5137,7 @@ Pesquisando achei este exemplo:
 AlertDialog dialog = new AlertDialog.Builder(this).setMessage(""Hello world"").show();
 TextView textView = (TextView) dialog.findViewById(android.R.id.message);
 textView.setTextSize(40);
-Mas queria alterar através do XML, ou criar um style, existe esta possibilidade?",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/110783/como-alterar-textsize-do-alertdialog
+Mas queria alterar através do XML, ou criar um style, existe esta possibilidade?",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/110783/como-alterar-textsize-do-alertdialog
 Conexão WebSocket com aplicação Java,"Estou tentando conectar uma aplicação web com um aplicativo local Java através do websocket. Utilizando o protocolo ws a conexão ocorre normalmente, mas ao utilizar wss a conexão retorna o seguinte erro:
 
 WebSocket connection to wss://localhost:8010/echo?encoding=text' failed: WebSocket opening handshake was canceled
@@ -5234,13 +5234,13 @@ public class SecureJavaxWebSocketServer
             t.printStackTrace(System.err);
         }
     }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/110710/conex%C3%A3o-websocket-com-aplica%C3%A7%C3%A3o-java
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/110710/conex%C3%A3o-websocket-com-aplica%C3%A7%C3%A3o-java
 Java trabalhando JSON,"Bom, estou iniciando meus estudos em java, por este motivo estou meio cru nas possibilidade, nas bibliotecas e outras qualidades que existem na programação JAVA. Dentro muitas duvidas gostaria de entender se existe alguma forma de pegar um objeto do tipo ResultSet que no caso é o retorno de um query feita da seguinte maneira:
 
  ResultSet rs_tbl_CONTROLE_SINCRONISMO = con.query(""SELECT * FROM DB_EGLISE.tbl_CONTROLE_SINCRONISMO;"");
 E transformar em um formato JSON ?
 
-Existe alguma biblioteca que faça isto para mim ?",1,1,1,0,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/110658/java-trabalhando-json
+Existe alguma biblioteca que faça isto para mim ?",1,1,1,0,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/110658/java-trabalhando-json
 "EditText - mais de um Listener?
 ","Estou dando prosseguimento a um projeto que faz pedidos no Android, e me deparei com a formatação monetária no EditText
 
@@ -5252,7 +5252,7 @@ Minha dúvida deve ser daquelas bem básica mais não estou conseguindo passar a
 
 Não consigo calcular porque apliquei no componente Quantidade e desconto o evento addTextChangedListener(new TextWatcher()) aplicando a máscara como posso ter outro Listener com um propósito de calcular o valor Total ?
 
-Não ficaria correto colocar um botão apenas para a finalidade de mostrar o valor total, o correto seria quando o usuário interagisse com o campo isto acontecer",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/109314/edittext-mais-de-um-listener
+Não ficaria correto colocar um botão apenas para a finalidade de mostrar o valor total, o correto seria quando o usuário interagisse com o campo isto acontecer",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/109314/edittext-mais-de-um-listener
 É possível alterar o valor de uma anotação em tempo de execução?,"Considerando a anotação seguinte:
 
 @Target(ElementType.TYPE)
@@ -5281,7 +5281,7 @@ Existe alguma forma de fazer isto?
 
 Encontrei uma possível solução no StackOverflow que parece ser gambiarra. Mas ela não funciona na versão 8 do Java, é lançada uma exceção ao chamar:
 
-Field field = Class.class.getDeclaredField(""annotations"");",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/130666/%C3%89-poss%C3%ADvel-alterar-o-valor-de-uma-anota%C3%A7%C3%A3o-em-tempo-de-execu%C3%A7%C3%A3o
+Field field = Class.class.getDeclaredField(""annotations"");",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/130666/%C3%89-poss%C3%ADvel-alterar-o-valor-de-uma-anota%C3%A7%C3%A3o-em-tempo-de-execu%C3%A7%C3%A3o
 Java charset - Como ler corretamente do System.in?,"Estou criando um aplicativo para trocar mensagens entre computadores utilizando Sockets, através do cmd ou terminal (quero que rode em linux e windows, aplicação de console).
 
 Mas estou com problema quanto a codificação. Quando leio um entrada através do System.in, no console do Windows 7, a saída é bugada. Com o seguinte código:
@@ -5309,7 +5309,7 @@ String s;
 while ((s = br.readLine()) != null) {
     System.out.println(s);
 }
-A questão é, como ler corretamente do console e transmitir de modo que o o outro usuário receba e seja capaz de visualizar em seu console?",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/107066/java-charset-como-ler-corretamente-do-system-in
+A questão é, como ler corretamente do console e transmitir de modo que o o outro usuário receba e seja capaz de visualizar em seu console?",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/107066/java-charset-como-ler-corretamente-do-system-in
 Como pegar um contexto dentro de uma classe?,"Estou num parser de um Web Service. Com ele, eu peguei os dados e já dei set em cada um deles (está funcionando de acordo). Porém, na hora de inserir os mesmo no banco ele apresenta o seguinte erro (null):
 
 Attempt to invoke virtual method 'android.database.sqlite.SQLiteDatabase android.content.Context.openOrCreateDatabase(java.lang.String, int, android.database.sqlite.SQLiteDatabase$CursorFactory, android.database.DatabaseErrorHandler)' on a null object reference
@@ -5574,7 +5574,7 @@ Atualização *Chamada da classe WSParserSetValoresBD na activity Opcoes_BaixarR
                      };
             Thread queryTodosDados = new Thread(gravandoDados);
             queryTodosDados.start();
-     }",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/106618/como-pegar-um-contexto-dentro-de-uma-classe
+     }",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/106618/como-pegar-um-contexto-dentro-de-uma-classe
 Como tratar exceptions com JTA?,"Eu tenho um projeto onde estou utilizando JPA com JTA. No método gravar, eu coloquei a anotação @Transactional(Transactional.TxType.REQUIRED) e nele existe uma chamada a um método de validação que pode lançar uma exceção chamada ValidacaoException que herda de RuntimeException.
 
 Na documentação eu vi que quando a exceção é do tipo RuntimeException, o container irá fazer o rollback da transação. E no meu caso realmente está, só que este método salvar está sendo chamado dentro de um ManagedBean e no try/catch, a exceção que é capturada é a TransactionalException e esta não tem a mensagem que eu coloquei na validação.
@@ -5719,7 +5719,7 @@ javax.transaction.RollbackException: Transaction marked for rollback.
     at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
     at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:591)
     at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:571)
-    at java.lang.Thread.run(Thread.java:745)",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/135807/como-tratar-exceptions-com-jta
+    at java.lang.Thread.run(Thread.java:745)",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/135807/como-tratar-exceptions-com-jta
 Erro Repository Spring de Entidade com Relacionamentos,"Estou com um projeto usando Spring Boot para servir JSON em um WebService. Um erro ocorreu quando adiciono a classe de Repository. Se removê-la o programa inicia normalmente (sem erros no console, não falo de funcionalidades).
 
 O erro é: http://www.cjoint.com/c/FGir7xhZgvR (coloquei no Cjoint por ser muito grande).
@@ -5763,7 +5763,7 @@ public class SellItem implements Serializable {
     private Sell sell;
     //Getters e setter omitidos
 }
-Caso necessário, peça mais informações nos comentários.",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/139632/erro-repository-spring-de-entidade-com-relacionamentos
+Caso necessário, peça mais informações nos comentários.",1,1,1,1,0,0,0,0,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/139632/erro-repository-spring-de-entidade-com-relacionamentos
 Como desativar componente no JFrame,"Tenho dois JFrames o primeiro tem o nome de ""Sistema"" e outro ""Acessar"" quando concluir a autenticação no ""Acessar"" queria que o componente chamado de ""mnUsuario"" que está descrito abaixo fosse desativado para que eu possa ter um controle sobre os privilégios de cada usuário no programa.
 
 JFrame: Sistema
@@ -6021,7 +6021,7 @@ JFrame: Sistema
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         contentPane.setLayout(new BorderLayout(0, 0));
         setContentPane(contentPane);
- ",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/102497/como-desativar-componente-no-jframe
+ ",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/102497/como-desativar-componente-no-jframe
 Biblioteca Xstream gerando xml com nó vazio,"Estou utilizando a biblioteca xstream 1.4.8 com a seguinte XML:
 
 <root>
@@ -6165,7 +6165,7 @@ public class Teste {
             e.printStackTrace();
         }
     }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/102395/biblioteca-xstream-gerando-xml-com-n%C3%B3-vazio
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/102395/biblioteca-xstream-gerando-xml-com-n%C3%B3-vazio
 Ligação entre Controller e outras classes no diagrama de classes,"Estou modelando um projeto por meio do diagrama de classes UML, esse projeto está pautado no padrão MVC, de forma que em determinado método do Controller eu recebo informações, instancio um novo objeto e insiro esse novo objeto numa lista encadeada. A minha dúvida é: existe alguma associação entre o objeto que está sendo inserido na lista e o Controller no diagrama de classes? Primeiramente eu havia pensado que a associação de cada objeto da lista seria com os nós, mas por um segundo momento lembrei que eu estou instanciando os novos objetos no Controller e apenas chamando o método da lista que vai fazer ele ser inserido nessa estrutura de dados.
 
 Segue uma simplificação da classe Controller com o método de inserir na lista:
@@ -6185,7 +6185,7 @@ public class SACMarianaController {
         listaProdutos.inserirFinal(novoProduto);
 
         return novoProduto;
-    }",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/101976/liga%C3%A7%C3%A3o-entre-controller-e-outras-classes-no-diagrama-de-classes
+    }",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/101976/liga%C3%A7%C3%A3o-entre-controller-e-outras-classes-no-diagrama-de-classes
 Ler Json gerado Jquery post com Servlet java,"Bom dia, sou inciante java e estou fazendo um projeto para faculdade de um ecommerce porem estou com a seguinte dificuldade.
 
 Estou tentando ler o json gerado de um formulário Html e enviado via $.post jquery para minha servlet controle java usando o api org.json:
@@ -6237,12 +6237,12 @@ protected void processRequest(HttpServletRequest request, HttpServletResponse re
 try (PrintWriter out = response.getWriter()) {
 
     }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/101477/ler-json-gerado-jquery-post-com-servlet-java
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/101477/ler-json-gerado-jquery-post-com-servlet-java
 Exibir vídeo com JavaCV usando applet,"Estou utilizando um applet que exibe imagem de uma câmera de segurança através do JavaCV.
 
 Executando sozinho, o applet exibe o vídeo perfeitamente.
 
-Quando eu rodo o applet na minha aplicação web, ele até renderiza os componentes swing, mas não é exibido vídeo, nem imagem. Estou utilizando o código exibido na resposta a esta pergunta",1,1,0,1,0,0,1,1,9,9,1,1,http://pt.stackoverflow.com/questions/44857/exibir-v%C3%ADdeo-com-javacv-usando-applet
+Quando eu rodo o applet na minha aplicação web, ele até renderiza os componentes swing, mas não é exibido vídeo, nem imagem. Estou utilizando o código exibido na resposta a esta pergunta",1,1,0,1,0,0,1,1,9,9,1,1,0,0,http://pt.stackoverflow.com/questions/44857/exibir-v%C3%ADdeo-com-javacv-usando-applet
 colorir linha JTable,"Gostaria de colorir as linhas através das condiçães, mas só estou conseguindo colorir as colunas por inteiro
 
 private void routeadoresForum() {
@@ -6368,9 +6368,9 @@ public void pingRoteadores(JTable table, String dados, String dados1, String dad
                         };
            table.setDefaultRenderer(Object.class, renderer);              
             model.addRow(new Object[]{dados, dados1});
-}",1,1,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/95357/colorir-linha-jtable
-Onde posso encontrar a documentação JavaServer Pages Standard Tag Library 1.1 Tag Reference para download?,Encontrei a documentação nesse link aqui para ler online mas realmente seria interessante baixar essa documentação. As vezes preciso consultá-la e as vezes não tenho acesso a internet.Estou trabalhando em um projeto java web e preciso consultar essa documentação.,1,0,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/92676/onde-posso-encontrar-a-documenta%C3%A7%C3%A3o-javaserver-pages-standard-tag-library-1-1-ta
-Erro no JDBC do Postgres no Eclipse,"Estou tentando fazer um projeto pra testar a conexão no banco de dados PostgreSQL (Estou utilizando a versão 9.2) no Eclipse (Versão Mars). Estou utilizando o postgresql-9.2-1004.jdbc3 e adicionando o mesmo na Build Path. Só que, ao tentar executar a classe pra testar a conexão, aparece uma mensagem de match e pede pra escolher uma classe que está no pacote do JDBC e a classe de teste. Ao tentar executar a classe de teste, diz a que a tentativa de conexão falhou. Como devo proceder?",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/91302/erro-no-jdbc-do-postgres-no-eclipse
+}",1,1,1,0,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/95357/colorir-linha-jtable
+Onde posso encontrar a documentação JavaServer Pages Standard Tag Library 1.1 Tag Reference para download?,Encontrei a documentação para ler online mas realmente seria interessante baixar essa documentação. As vezes preciso consultá-la e as vezes não tenho acesso a internet.Estou trabalhando em um projeto java web e preciso consultar essa documentação.,1,0,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/92676/onde-posso-encontrar-a-documenta%C3%A7%C3%A3o-javaserver-pages-standard-tag-library-1-1-ta
+Erro no JDBC do Postgres no Eclipse,"Estou tentando fazer um projeto pra testar a conexão no banco de dados PostgreSQL (Estou utilizando a versão 9.2) no Eclipse (Versão Mars). Estou utilizando o postgresql-9.2-1004.jdbc3 e adicionando o mesmo na Build Path. Só que, ao tentar executar a classe pra testar a conexão, aparece uma mensagem de match e pede pra escolher uma classe que está no pacote do JDBC e a classe de teste. Ao tentar executar a classe de teste, diz a que a tentativa de conexão falhou. Como devo proceder?",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/91302/erro-no-jdbc-do-postgres-no-eclipse
 StackOverflowError - Loop infinito ao fazer deploy de ear com ejb e demoiselle,"Ao fazer o deploy de um EAR com um EJB que depende do demoiselle-core, uma exceção do StackOverflowError é lançada.
 
 Ocorre que ao tentar criar um ResourceBundle (ResourceBundleProducer.createNamed(ResourceBundleProducer.java:77)) a classe Beans (linha 159) lança uma NoSuchElementException que é tratada no bloco:
@@ -6401,7 +6401,7 @@ Edição:
 
 Após estudar o código do demoiselle (github.com/demoiselle), percebi que se o meu projeto dependesse de um dos pacotes - demoiselle-se ou demoiselle-servlet - o objeto da classe java.util.Locale poderia ser injetado resolvendo assim a exception lançada NoSuchElementException.
 
-O resultado é que todo projeto que dependa do demoiselle-core também deve depender de uma destas duas dependências para funcionar corretamente.",1,0,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/48659/stackoverflowerror-loop-infinito-ao-fazer-deploy-de-ear-com-ejb-e-demoiselle
+O resultado é que todo projeto que dependa do demoiselle-core também deve depender de uma destas duas dependências para funcionar corretamente.",1,0,1,1,0,0,1,1,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/48659/stackoverflowerror-loop-infinito-ao-fazer-deploy-de-ear-com-ejb-e-demoiselle
 Dúvida sobre distribuição de dados entre classes,"Eu tenho uma classe chamada Socio que pede o nome, telefone... e eu criei métodos getters e setters. E uma outra classe chamada DadosDoUsuario que irá pedir as informações para preencher o cadastro, mas o que acontece é que nessa classe DadosDoUsuario está recebendo informações do usuário e inserindo no banco.
 
 Eu gostaria de fazer uma outra classe InsereNoBanco recebendo os dados digitados pelo usuário... Ou seja, a classe DadosDoUsuario só iria receber as informações e passar para a classe InsereNoBanco. Vocês poderiam me dar algumas dicas, pois já tentei de todas as formas e está complicado. Desde já agradeço a todos. Obrigado!
@@ -6521,7 +6521,7 @@ public class SocioDAO {
         comando.executeUpdate();
 
     }
-}",1,1,1,1,1,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/64312/d%C3%BAvida-sobre-distribui%C3%A7%C3%A3o-de-dados-entre-classes
+}",1,1,1,1,1,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/64312/d%C3%BAvida-sobre-distribui%C3%A7%C3%A3o-de-dados-entre-classes
 Iniciar a leitura do começo da string list,"Como faço para após adicionar uma string em uma lista (pode ser na lista A ou B), o meu código volte e comece a leitura do inicio da string list, ou seja da primeira string?
 
 Eu tenho uma lista com 20 strings. Mas ta dando um erro porque o meu código adiciona a string e segue para a próxima posição. Ele não volta e começa a leitura do início. Assim tem strings que não são adicionadas.
@@ -6641,7 +6641,7 @@ Alguém pode me passar um exemplo? Estou quebrando a cabeça com isso e não sai
                     }
                 }
         }
-",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/62511/iniciar-a-leitura-do-come%C3%A7o-da-string-list
+",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/62511/iniciar-a-leitura-do-come%C3%A7o-da-string-list
 Como exportar banco de dados?,"Preciso exportar meu banco para um arquivo texto. Já vi algumas perguntas do tipo por aqui, mas nenhum com uma resposta coesa ou coerente.
 
 Segue trecho do meu código:
@@ -6696,7 +6696,7 @@ public void Cadastrar (View view) {
     else {
         Toast.makeText(this, ""Erro ao Cadastrar!"", Toast.LENGTH_SHORT).show();
     }
-}",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/60201/como-exportar-banco-de-dados
+}",1,1,1,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/60201/como-exportar-banco-de-dados
 Pegar indice de uma ArrayList para gerar relatório no ireport,"Como consigo pegar a o indice da lista para passar pro ireport? Ja tentei dar um ""get"" porém da erro. Esse é meu método que gera o relatório:
 
  public void gerarRelatorio(ArrayList list) {
@@ -6826,7 +6826,7 @@ public Cliente criaContato(Element elemento){
 
     return contato;
 }
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/58143/pegar-indice-de-uma-arraylist-para-gerar-relat%C3%B3rio-no-ireport
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/58143/pegar-indice-de-uma-arraylist-para-gerar-relat%C3%B3rio-no-ireport
 Problema ao carregar imagem do banco com JSF,"Estou com um problema ao carregar imagens do banco com JSF e CDI, segue abaixo o código para uma melhor compreensão do problema.
 
 <ui:define name=""titulo"">Detalhes Anuncio</ui:define>
@@ -7126,7 +7126,7 @@ Quando chamo a página pra listar os anuncios acontece o seguinte erro:
 Apr 28, 2015 6:18:38 PM org.primefaces.application.resource.StreamedContentHandler handle SEVERE: Error in streaming dynamic resource. Error reading 'anuncioImagem' on type br.com.comparison.shoop.managedBeans.ImagemMB Apr 28, 2015 6:18:38 PM org.apache.catalina.core.StandardWrapperValve invoke SEVERE: Servlet.service() for servlet [Faces Servlet] in context with path [/comparison-shopp] threw exception java.io.IOException: javax.el.ELException: Error reading 'anuncioImagem' on type br.com.comparison.shoop.managedBeans.ImagemMB at org.primefaces.application.resource.StreamedContentHandler.handle(StreamedContentHandler.java:78) at org.primefaces.application.resource.PrimeResourceHandler.handleResourceRequest(PrimeResourceHandler.java:72) at javax.faces.webapp.FacesServlet.service(FacesServlet.java:643) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) at br.com.comparison.shoop.filtros.AutorizacaoFilter.doFilter(AutorizacaoFilter.java:37) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:240) at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:164) at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:462) at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:164) at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100) at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:562) at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:395) at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:250) at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:188) at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:302) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) at java.lang.Thread.run(Thread.java:745) Caused by: javax.el.ELException: Error reading 'anuncioImagem' on type br.com.comparison.shoop.managedBeans.ImagemMB at javax.el.BeanELResolver.getValue(BeanELResolver.java:91) at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:176) at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:203) at org.apache.el.parser.AstValue.getValue(AstValue.java:169) at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:189) at org.jboss.weld.el.WeldValueExpression.getValue(WeldValueExpression.java:50) at org.primefaces.application.resource.StreamedContentHandler.handle(StreamedContentHandler.java:53) ... 21 more Caused by: org.jboss.weld.context.ContextNotActiveException: WELD-001303: No active contexts for scope type javax.faces.view.ViewScoped at org.jboss.weld.manager.BeanManagerImpl.getContext(BeanManagerImpl.java:691) at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:79) at org.jboss.weld.bean.proxy.ProxyMethodHandler.getInstance(ProxyMethodHandler.java:125) at br.com.comparison.shoop.managedBeans.AnuncioMB$Proxy$$$_WeldClientProxy.getMapAnuncios(Unknown Source) at br.com.comparison.shoop.managedBeans.ImagemMB.getAnuncioImagem(ImagemMB.java:50) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:606) at javax.el.BeanELResolver.getValue(BeanELResolver.java:87) ... 27 more
 Gostaria de entender onde estou errando. Sei que esse processo não funciona para o @ViewScoped, por isso criei um managedBean somente para carregar a imagem do banco.
 
-",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/60611/problema-ao-carregar-imagem-do-banco-com-jsf
+",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/60611/problema-ao-carregar-imagem-do-banco-com-jsf
 Erro ao criar Bean SpringMVC,"Sou novo em Java e estou fazendo vários cursos online e tentando desenvolver por conta própria, pra ir treinando, mas me deparei com um erro que não faço idéia como resolver. Erro ao criar o bean:
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in ServletContext resource [/WEB-INF/spring-servlet.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Unable to load class declared as <mapping class=""com.luan.model.Student""/> in the configuration:
@@ -7248,7 +7248,7 @@ public void setYearlevel(int yearlevel) {
 }
 Não sei qual é o problema. Se alguem puder ajudar agradeço.
 
-Link da video aula: https://www.youtube.com/watch?v=rdYQOqxq9F0",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/54188/erro-ao-criar-bean-springmvc
+Link da video aula: https://www.youtube.com/watch?v=rdYQOqxq9F0",1,1,1,1,0,0,0,0,0,0,1,1,1,0,http://pt.stackoverflow.com/questions/54188/erro-ao-criar-bean-springmvc
 Erro de mapeamento duplicado: org.hibernate.DuplicateMappingExceptionn,"Estou utilizando Hibernate 5 e estou tendo o seguinte problema:
 
 Caused by: org.hibernate.DuplicateMappingException: duplicate import: br.edu.unifeob.entidades.apuracao.Avaliacao refers to both br.edu.unifeob.entidades.apuracao.Avaliacao and br.edu.unifeob.entidades.apuracao.Serie (try using auto-import=""false"")
@@ -7267,7 +7267,7 @@ public class Avaliacao {
 public class Avaliacao{
 ...
 }
-As duas classes estão em unidades de persistência diferentes. Alguém sabe o que pode ser? Já pesquisei e a única forma que encontrei de resolver o problema é utilizar o name da anotação @Entity pra diferenciar as entidades",1,1,1,1,1,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/80758/erro-de-mapeamento-duplicado-org-hibernate-duplicatemappingexceptionn
+As duas classes estão em unidades de persistência diferentes. Alguém sabe o que pode ser? Já pesquisei e a única forma que encontrei de resolver o problema é utilizar o name da anotação @Entity pra diferenciar as entidades",1,1,1,1,1,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/80758/erro-de-mapeamento-duplicado-org-hibernate-duplicatemappingexceptionn
 getId() voltando nulo (AWT-EventQueue-0 java.lang.NullException),"Estou construindo um sistema básico que auxilie nos chamados do setor de TI. O problema é o seguinte: como já está no título, o método getId() da entidade setor está voltando nulo. Vendo isso, resolvi criar uma classe de teste, que funciona sem problemas:
 
     Setor set = new Setor();
@@ -7403,7 +7403,7 @@ at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116
 at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
 at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
-at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/49205/getid-voltando-nulo-awt-eventqueue-0-java-lang-nullexception
+at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/49205/getid-voltando-nulo-awt-eventqueue-0-java-lang-nullexception
 O que devo implementar para imprimir o nome do usuário em uma saída de dados?,"Segue meu código abaixo:
 
 import java.util.ArrayList;
@@ -7593,8 +7593,8 @@ class clienteCodigo {
         Operacoes teste1 = new Operacoes();
         teste1.cadastroCliente(1);
     }
-}",0,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/49147/o-que-devo-implementar-para-imprimir-o-nome-do-usu%C3%A1rio-em-uma-sa%C3%ADda-de-dados
-Problema com JFormattedTextField quando o componente sai do foco ele retorna o ultimo número válido,Estou com um problema referente a JFormattedTextField quando eu adiciono a mascara e digito algum número válido depois apago e não escrevo nada no campo.. mas quando o componente sai do foco ele retorna o ultimo número válido.. Alguém tem alguma sugestão para solucionar isto?,1,0,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/42813/problema-com-jformattedtextfield-quando-o-componente-sai-do-foco-ele-retorna-o-u
+}",0,0,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/49147/o-que-devo-implementar-para-imprimir-o-nome-do-usu%C3%A1rio-em-uma-sa%C3%ADda-de-dados
+Problema com JFormattedTextField quando o componente sai do foco ele retorna o ultimo número válido,Estou com um problema referente a JFormattedTextField quando eu adiciono a mascara e digito algum número válido depois apago e não escrevo nada no campo.. mas quando o componente sai do foco ele retorna o ultimo número válido.. Alguém tem alguma sugestão para solucionar isto?,1,0,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/42813/problema-com-jformattedtextfield-quando-o-componente-sai-do-foco-ele-retorna-o-u
 Erro de ponteiro em um método de preencher tabela,"Aparentemente é pra estar certo, porém quando mando rodar sai os seguintes erros:
 
 Exception in thread ""AWT-EventQueue-0"" java.lang.NullPointerException
@@ -8101,7 +8101,7 @@ try {
  JOptionPane.showMessageDialog(null, ""Erro SQL: "" + e.getMessage());
  } 
       }
-}",0,0,1,0,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/41264/erro-de-ponteiro-em-um-m%C3%A9todo-de-preencher-tabela
+}",0,0,1,0,0,0,0,0,0,0,1,1,1,0,http://pt.stackoverflow.com/questions/41264/erro-de-ponteiro-em-um-m%C3%A9todo-de-preencher-tabela
 Erro Conversão String para Int,"Estou fazendo um programinha simples, onde lê um arquivo .csv (Excel) e então gera um gráfico do mesmo. Porém estou tendo problemas na hora da conversão do String para o Int. Segue abaixo o codigo do evento do Botão:
 
 private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -8131,7 +8131,7 @@ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
     jPanel1.add(panel, BorderLayout.CENTER);
     jPanel1.validate();
 
-}  ",1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/111627/erro-convers%C3%A3o-string-para-int
+}  ",1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/111627/erro-convers%C3%A3o-string-para-int
 java.lang.IllegalStateException ao declarar aspecto com Spring,"Estou tentando declarar o seguinte aspecto:
 
 @Aspect
@@ -8319,7 +8319,7 @@ xsi:schemaLocation=""http://maven.apache.org/POM/4.0.0 http://maven.apache.org/x
             </configuration>
         </plugin>
     </plugins>
-</build>",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/99975/java-lang-illegalstateexception-ao-declarar-aspecto-com-spring
+</build>",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/99975/java-lang-illegalstateexception-ao-declarar-aspecto-com-spring
 Interceptar SQL´s em um custom JDBC,"É possível criar uma implementação customizada baseada em JDBC para interceptar todos os sql´s executados na aplicação?
 
 Não encontrei nada muito concreto sobre isso no Google, fiz um teste simples apenas herdando a interface do driver que queria e com isso fiz a conexão com o banco e as querys executam perfeitamente mas ainda não descobri como interceptar o que foi executado, se alguém tiver alguma ideia ou exemplo que possa a ajudar a decifrar o enigma, ou qual o melhor caminho pra isso, ou se é impossível.
@@ -8351,7 +8351,7 @@ public class Teste {
         conn.close();
         System.out.println(""CONEXAO ENCERRADA"");
     }
-}",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/121105/interceptar-sql%C2%B4s-em-um-custom-jdbc
+}",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/121105/interceptar-sql%C2%B4s-em-um-custom-jdbc
 "Ordenar um List
 
 ","Estou com dificuldades para fazer o meu código ordenar uma Lista. A questão é que eu gostaria de que a lista gerada por este código fosse ordenada pela coluna quadra do maior valor para o menor, ou seja, em ordem decrescente. Alguem tem uma ideia de como eu faço isso?
@@ -8468,7 +8468,7 @@ O resultado é o seguinte:
 
 3 4 5 7 8 18:quadra = 0|quina = 0|sena = 0
 
-3 4 5 7 8 22:quadra = 0|quina = 0|sena = 0",1,0,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/156140/ordenar-um-list
+3 4 5 7 8 22:quadra = 0|quina = 0|sena = 0",1,0,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/156140/ordenar-um-list
 Consultar usuario no SQLite,"Preciso validar um usuário no banco de dados. Caso seja válido, quero chamar a segunda Activity.
 
 Qual método usar para fazer essa validação no banco de dados do android?
@@ -8519,7 +8519,7 @@ public Professor consutaProfessorNoBanco(String usuario, String senha) {
     }
 
     return professor;
-}",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/151774/consultar-usuario-no-sqlite
+}",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/151774/consultar-usuario-no-sqlite
 MojoFailureException causada por charsetName em Maven Archetype,"Um projeto de WAR que estou tentando usar de base para executar mvn archetype:create-from-project causa a seguinte stack exception após tentar ler um dos arquivos .java:
 
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-archetype-plugin:2.2:create-from-project (default-cli) on project ConfiguradorWAR: charsetName -> [Help 1]
@@ -8597,8 +8597,8 @@ e
         </webResources>
     </configuration>
 </plugin>
-O melhor conselho que tive dos colegas de trabalho, até o momento é de tentar dar replace de todos os acentos do projeto. Tenho um outro projeto EJB com a mesma encode que o archetype funcionou de primeira.",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/129081/calculadora-de-expressoes-problema-na-quebra-da-express%C3%A3o
-Multi Tenancy com Hibernate update schema,Olá estou com uma aplicação que usa vários bancos de dados (multi-tenancy) usando hibernate. Gostaria de saber se alguém sabe alguma maneira de o Hibernate fazer o update no esquema dos bancos. Já setei a propriedade hibernate.hbm2dll.auto : update. mas não funciona.,1,1,0,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/139022/multi-tenancy-com-hibernate-update-schema
+O melhor conselho que tive dos colegas de trabalho, até o momento é de tentar dar replace de todos os acentos do projeto. Tenho um outro projeto EJB com a mesma encode que o archetype funcionou de primeira.",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/129081/calculadora-de-expressoes-problema-na-quebra-da-express%C3%A3o
+Multi Tenancy com Hibernate update schema,Olá estou com uma aplicação que usa vários bancos de dados (multi-tenancy) usando hibernate. Gostaria de saber se alguém sabe alguma maneira de o Hibernate fazer o update no esquema dos bancos. Já setei a propriedade hibernate.hbm2dll.auto : update. mas não funciona.,1,1,0,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/139022/multi-tenancy-com-hibernate-update-schema
 Preencher Serie xls com POI java,"Tenho um código dentro de um for que ele pega uma determinada coluna e inseri o valor, e atribui as quantidades de linhas definidas no for, por exemplo rows =1 ; rows<=10, coloco o setCellValue(""10/02/2012"") então ele preenche todos campo com esta mesma data, como faço para preencher em serie, onde vai encrementando.
 
 for(int rowIndex = 1;rowIndex<=10;rowIndex++)
@@ -8610,7 +8610,7 @@ for(int rowIndex = 1;rowIndex<=10;rowIndex++)
     Cell data = row.createCell(0);
     data.setCellValue(""10/02/2012"");
 
-}",1,1,1,1,0,0,1,1,0,0,1,1,http://pt.stackoverflow.com/questions/134680/preencher-serie-xls-com-poi-java
+}",1,1,1,1,0,0,1,1,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/134680/preencher-serie-xls-com-poi-java
 Dispositivo dá erro e depois reinicia após tentar desinstalar aplicação,"Estou tendo um bug com a aplicação que eu criei, o código está compilando normal e sem nenhum erro ou warning, e a aplicação também está funcionando no celular, mas quando eu tento desinstalar essa aplicação do celular eu recebo a seguinte mensagem:
 
 ""O aplicativo instalador do pacote parou.""
@@ -8746,7 +8746,7 @@ dependencies {
 Estou usando o adView para fazer alguns testes com o adMob, é possível que o problema seja relacionado a isso?
 
 Se precisarem de mais alguma coisa do código é só falar que eu posto aqui.
-Muito obrigado aos que tentarem ajudar!",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/92479/dispositivo-d%C3%A1-erro-e-depois-reinicia-ap%C3%B3s-tentar-desinstalar-aplica%C3%A7%C3%A3o
+Muito obrigado aos que tentarem ajudar!",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/92479/dispositivo-d%C3%A1-erro-e-depois-reinicia-ap%C3%B3s-tentar-desinstalar-aplica%C3%A7%C3%A3o
 Web Services com Axis2,"Comecei estudar web services agora e esta dando esse erro
 
 This Web axisService has deployment faults
@@ -8756,13 +8756,13 @@ org.apache.axis2.deployment.DeploymentClassLoader at
 org.apache.axis2.deployment.ServiceBuilder.populateService(ServiceBuilder.java:131) at 
 org.apache.axis2.deployment.repository.util.ArchiveReader.buildServiceGroup(ArchiveReader.java:101) at 
 org.apache.axis2.deployment.repository.util.ArchiveReader.processServiceGroup(ArchiveReader.java:178) at org.apache.axis2.deployment.ServiceDeployer.deploy(ServiceDeployer.java:82) at org.apache.axis2.deployment.repository.util.DeploymentFileData.deploy(DeploymentFileData.java:136) at org.apache.axis2.deployment.DeploymentEngine.doDeploy(DeploymentEngine.java:661) at org.apache.axis2.deployment.repository.util.WSInfoList.update(WSInfoList.java:144) at org.apache.axis2.deployment.RepositoryListener.update(RepositoryListener.java:337) at org.apache.axis2.deployment.RepositoryListener.checkServices(RepositoryListener.java:241) at org.apache.axis2.deployment.DeploymentEngine.loadServices(DeploymentEngine.java:131) at org.apache.axis2.deployment.WarBasedAxisConfigurator.loadServices(WarBasedAxisConfigurator.java:284) at org.apache.axis2.context.ConfigurationContextFactory.createConfigurationContext(ConfigurationContextFactory.java:95) at org.apache.axis2.transport.http.AxisServlet.initConfigContext(AxisServlet.java:567) at org.apache.axis2.transport.http.AxisServlet.init(AxisServlet.java:452) at org.apache.axis2.webapp.AxisAdminServlet.init(AxisAdminServlet.java:56) at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1213) at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1026) at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4425) at org.apache.catalina.core.StandardContext.start(StandardContext.java:4738) at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060) at org.apache.catalina.core.StandardHost.start(StandardHost.java:822) at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060) at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463) at org.apache.catalina.core.StandardService.start(StandardService.java:525) at org.apache.catalina.core.StandardServer.start(StandardServer.java:759) at org.apache.catalina.startup.Catalina.start(Catalina.java:595) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) at java.lang.reflect.Method.invoke(Unknown Source) at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289) at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
-",0,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/75612/web-services-com-axis2
+",0,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/75612/web-services-com-axis2
 Testar um metodo void com mockito,"Como testar um metodo void com mockito?
 
 Esse é a sintax básica para um método com retorno
 
 when(Classe.metodo()).thenReturn(variavelRetorno);
-Porém, como eu faço para testar um método void?",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/139652/testar-um-metodo-void-com-mockito
+Porém, como eu faço para testar um método void?",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/139652/testar-um-metodo-void-com-mockito
 Setar largura de JDialog de acordo com o tamanho das somas das colunas de uma tabela,"Tenho a soma da largura das colunas e preciso setar este valor de forma que não oculte partes das colunas e diminua a janela. Alguma sugestão? Criei um método que retorna a soma do tamanho das colunas. Ai fiz outro método pra somar este valor com a da janela.
 
  public void autoSetLargura(List<Integer> colunas){
@@ -8785,7 +8785,7 @@ Setar largura de JDialog de acordo com o tamanho das somas das colunas de uma ta
      }
 Estes são os métodos, usando o pack() ele redimensiona certo, porem eu tenho que fazer isso em todas as janelas do mesmo tipo, como o mesmo tem uma base, fazendo nesta base ela funcionaria para todas que a implementam.
 
-",1,0,0,0,1,1,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/73019/setar-largura-de-jdialog-de-acordo-com-o-tamanho-das-somas-das-colunas-de-uma-ta
+",1,0,0,0,1,1,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/73019/setar-largura-de-jdialog-de-acordo-com-o-tamanho-das-somas-das-colunas-de-uma-ta
 Criar Tabelas com Hbernate,"Boa tarde !!
 
 Sou novo com o Hibernate e estou a dois dias tentando implementa a criação de tabelas com ele, já segui vários tutoriais, mas não funciona.
@@ -8909,7 +8909,7 @@ public void setId(Long id) {
     this.id = id;
 }   
 }
-Log --------- jul 09, 2016 2:04:51 PM org.hibernate.Version logVersion INFO: HHH000412: Hibernate Core {5.2.1.Final} jul 09, 2016 2:04:51 PM org.hibernate.cfg.Environment INFO: HHH000206: hibernate.properties not found jul 09, 2016 2:04:51 PM org.hibernate.cfg.Environment buildBytecodeProvider INFO: HHH000021: Bytecode provider name : javassist jul 09, 2016 2:04:51 PM org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead. Support for obsolete DTD/XSD namespaces may be removed at any time. jul 09, 2016 2:04:51 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final} jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!) jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator INFO: HHH10001005: using driver [null] at URL [jdbc:mysql://127.0.0.1:3306/testebanco] jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator INFO: HHH10001001: Connection properties: {user=root, drive_class=com.mysql.jdbc.Driver, password=****} jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator INFO: HHH10001003: Autocommit mode: false jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections INFO: HHH000115: Hibernate connection pool size: 1 (min=1) Sat Jul 09 14:04:52 BRT 2016 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification. jul 09, 2016 2:04:52 PM org.hibernate.dialect.Dialect INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect jul 09, 2016 2:04:52 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@45385f75' jul 09, 2016 2:04:53 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/testebanco]",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/139761/criar-tabelas-com-hbernate
+Log --------- jul 09, 2016 2:04:51 PM org.hibernate.Version logVersion INFO: HHH000412: Hibernate Core {5.2.1.Final} jul 09, 2016 2:04:51 PM org.hibernate.cfg.Environment INFO: HHH000206: hibernate.properties not found jul 09, 2016 2:04:51 PM org.hibernate.cfg.Environment buildBytecodeProvider INFO: HHH000021: Bytecode provider name : javassist jul 09, 2016 2:04:51 PM org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead. Support for obsolete DTD/XSD namespaces may be removed at any time. jul 09, 2016 2:04:51 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final} jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!) jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator INFO: HHH10001005: using driver [null] at URL [jdbc:mysql://127.0.0.1:3306/testebanco] jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator INFO: HHH10001001: Connection properties: {user=root, drive_class=com.mysql.jdbc.Driver, password=****} jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator INFO: HHH10001003: Autocommit mode: false jul 09, 2016 2:04:51 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections INFO: HHH000115: Hibernate connection pool size: 1 (min=1) Sat Jul 09 14:04:52 BRT 2016 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification. jul 09, 2016 2:04:52 PM org.hibernate.dialect.Dialect INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect jul 09, 2016 2:04:52 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@45385f75' jul 09, 2016 2:04:53 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl stop INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://127.0.0.1:3306/testebanco]",1,1,1,1,0,0,0,0,0,0,1,1,1,1,http://pt.stackoverflow.com/questions/139761/criar-tabelas-com-hbernate
 Método com FileUploadEvent de ManagedBean não encontrado: javax.el.MethodNotFoundException,"Esse é o erro apresentado:
 
 ADVERTÊNCIA: Method not found: com.gravar.imagem.ProdutoBean@18154909.upload()
@@ -9275,7 +9275,7 @@ public class ProdutoBean implements Serializable {
         this.fotoDAO = fotoDAO;
     }
 
-}",1,1,1,1,0,0,0,0,0,0,1,1,http://pt.stackoverflow.com/questions/65726/m%C3%A9todo-com-fileuploadevent-de-managedbean-n%C3%A3o-encontrado-javax-el-methodnotfoun
+}",1,1,1,1,0,0,0,0,0,0,1,1,0,0,http://pt.stackoverflow.com/questions/65726/m%C3%A9todo-com-fileuploadevent-de-managedbean-n%C3%A3o-encontrado-javax-el-methodnotfoun
 Como tratar exceção em uma Webview?,"Queria saber como tratar exceções na minha Webview, pois as vezes o site ta off, e a pagina não carrega, e as vezes ate trava a aplicação. tentei um try catch no load, mas não entra na exceção, quero que quando o servidor estiver off, ele mande a mensagem, SERVIDOR INDISPONÍVEL!
 
 vejam minha Webview:
@@ -9298,4 +9298,4 @@ public void carregarSite() {
         }
     } else           
         msgConexao(); // metodo de msg de conexao
-}",1,1,1,1,0,0,1,1,1,1,1,1,http://pt.stackoverflow.com/questions/38098/como-tratar-exce%C3%A7%C3%A3o-em-uma-webview
+}",1,1,1,1,0,0,1,1,1,1,1,1,0,0,http://pt.stackoverflow.com/questions/38098/como-tratar-exce%C3%A7%C3%A3o-em-uma-webview

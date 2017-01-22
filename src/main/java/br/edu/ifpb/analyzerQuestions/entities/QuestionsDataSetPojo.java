@@ -21,6 +21,8 @@ public class QuestionsDataSetPojo {
 	private String pergBemDefinida;
 	private String evPerguntaDuplicada;
 	private String evPergSobreTrabAcademicos;
+	private String terLink;
+	private String combLinkConteudo;
 	
 	public QuestionsDataSetPojo(
 			String title,
@@ -36,7 +38,9 @@ public class QuestionsDataSetPojo {
 			String clareza,
 			String pergBemDefinida, 
 			String evPerguntaDuplicada,
-			String evPergSobreTrabAcademicos 
+			String evPergSobreTrabAcademicos,
+			String terLink,
+			String combLinkConteudo
 	) {
 		this.title = title;
 		this.body = body;
@@ -52,7 +56,18 @@ public class QuestionsDataSetPojo {
 		this.pergBemDefinida = pergBemDefinida;
 		this.evPerguntaDuplicada = evPerguntaDuplicada;
 		this.evPergSobreTrabAcademicos = evPergSobreTrabAcademicos;
+		this.terLink = terLink;
+		this.combLinkConteudo = combLinkConteudo;
 	}
+
+	public String getTerLink() {
+		return terLink;
+	}
+	
+	public String getCombLinkConteudo() {
+		return combLinkConteudo;
+	}
+
 
 	public String getTitle() {
 		return title;

@@ -387,6 +387,73 @@ public class ResultsDataSetDetail {
 		}
 	
 	
+public void detailContainsURL(){
+		
+		int questionNumber = 1;
+		int equal = 0;
+		int different = 0;
+		int truePos = 0;
+		int trueNeg = 0;
+		
+		for (QuestionsDataSetPojo qds : questionsDataSet) {
+			System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
+
+			int resultMethod = questionAnalyzer.containsURL(qds.getBody());
+			int resultDataset = Integer.parseInt(qds.getTerLink());
+			
+			if(resultMethod == resultDataset){
+				System.out.println("IGUAL (" + resultMethod +"-"+resultDataset+")");
+				equal++;
+				
+				if(resultMethod == 1){
+					truePos++;
+				}else{
+					trueNeg++;
+				}
+				
+			}else{
+				System.out.println("DIFERENTE (" + resultMethod +"-"+resultDataset + ")");
+				different ++;
+			}
+			questionNumber ++;
+		}
+		this.output(equal, different, truePos, trueNeg);
+	}
+
+public void detailCombURLWithContent(){
+	
+	int questionNumber = 1;
+	int equal = 0;
+	int different = 0;
+	int truePos = 0;
+	int trueNeg = 0;
+	
+	for (QuestionsDataSetPojo qds : questionsDataSet) {
+		System.out.println("Pergunta "+questionNumber+": "+qds.getTitle());
+
+		int resultMethod = questionAnalyzer.combinateURLWithContent(qds.getBody());
+		int resultDataset = Integer.parseInt(qds.getCombLinkConteudo());
+		
+		if(resultMethod == resultDataset){
+			System.out.println("IGUAL (" + resultMethod +"-"+resultDataset+")");
+			equal++;
+			
+			if(resultMethod == 1){
+				truePos++;
+			}else{
+				trueNeg++;
+			}
+			
+		}else{
+			System.out.println("DIFERENTE (" + resultMethod +"-"+resultDataset + ")");
+			different ++;
+		}
+		questionNumber ++;
+	}
+	this.output(equal, different, truePos, trueNeg);
+}
+	
+	
 	private void output(int equal, int different, int truePos, int trueNeg){
 		System.out.println("____________________________");
 		System.out.println("IGUAIS: " + equal);

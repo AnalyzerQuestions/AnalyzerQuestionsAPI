@@ -526,7 +526,8 @@ public class QuestionAnalyzerFinal {
 		
 		String url = this.getURL(description);
 		String contentPage = this.getContentOfPage(url);
-		contentPage = StringUtil.removerTagsHtml(contentPage);
+		if(contentPage != null)
+			contentPage = StringUtil.removerTagsHtml(contentPage);
 		
 		String descriptionReferenceUrl = this.getDescriptionReferentURL(description);
 		int coherency = this.analyzerCoherencyBodyAndTitle(description,descriptionReferenceUrl);

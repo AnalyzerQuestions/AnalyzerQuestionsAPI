@@ -39,6 +39,8 @@ public class App {
 		//resultsTable.detailAnalyzerClarity();
 		//resultsTable.detailAnalyzerUnderstandableDescription();
 	//	resultsTable.detailAnalyzerAnalyzerDoNotCreateHomeworkQuestions();
+		// resultsTable.detailContainsURL();
+		resultsTable.detailCombURLWithContent();
 		
 		//resultsTable.detailAnalyzerAvoidCreateDuplicateQuestion(comment);;
 
